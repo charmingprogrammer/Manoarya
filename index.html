@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoarya</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e0ab445c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- container for all -->
+    <div id="Container">
+      <!-- navigation  -->
+      <nav>
+        <div id="logo">
+          <a href="index.html"
+            ><img
+              src="https://scontent.fdel2-3.fna.fbcdn.net/v/t1.6435-9/173847946_958933801541905_4815372956943920154_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=174925&_nc_ohc=JGtOu6MZZ-AAX-IPpn9&_nc_oc=AQk16BQwCNOthOs2UE1JViUn9EAAvMPAApEZgnJpH5RUZjpNpYEmzHfFdNQPRoMIbN8&_nc_ht=scontent.fdel2-3.fna&oh=95dd49a68b8ae08b1caf47612ba06a47&oe=61AB5A7B"
+              alt="Manoarya Logo"
+            /><b>Manoarya</b></a
+          >
+        </div>
+        <div id="icons">
+          <i class="fas fa-search" onclick="SearchOpen()"></i>
+          <i class="fas fa-bars" onclick="SidebarOpener()" id="bars"></i>
+        </div>
+      </nav>
+      <!-- slider -->
+      <div id="home_container">
+        <div id="SidebarCloser" onclick="SidebarCloser()"></div>
+        <div id="Sidebar">
+          <!-- User Image and name  -->
+          <div id="user_container">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png"
+              alt="Manoarya User Image"
+            />
+            <b>Welcome Manohar Anand</b>
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Notes</a></li>
+            <li><a href="#">Motivational</a></li>
+            <li><a href="#">Learn More</a></li>
+          </ul>
+        </div>
+        <div id="slider_container">
+          <div id="trending_container">
+            <div id="trendingCtrl">
+              <i class="fas fa-caret-left fa-2x" onclick="Tleft()"></i>
+              <i class="fas fa-caret-right fa-2x" onclick="TRight()"></i>
+            </div>
+          </div>
+          <!-- All Notes container -->
+          <div class="postContainer">
+            <!-- post slider -->
+            <div id="PostSlider"></div>
+          </div>
+          <div id="contact_us"></div>
+          <footer></footer>
+        </div>
+      </div>
+    </div>
+    <!-- searching structure  -->
+    <div id="searchCon">
+      <!-- search input and result -->
+      <div id="SearchClose" onclick="SearchClose()"></div>
+      <div id="searchCon2">
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search for names.."
+        />
+
+        <ul id="myUL">
+        </ul>
+      </div>
+    </div>
+    <script src="AllPost.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
