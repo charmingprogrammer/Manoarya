@@ -335,6 +335,10 @@ footer {
     color: black;
     border-radius: 10px;
   }
+  #postCon img{
+    height: 300px;
+    width: 100%;
+  }
   #user_container {
     border: none;
   }
