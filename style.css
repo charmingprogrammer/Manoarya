@@ -328,9 +328,9 @@ footer {
   #postCon {
     height: 300px;
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     background: white;
-    transform: scale(0.98);
+    transform: scale(1);
     text-decoration: none;
     color: black;
     border-radius: 10px;
