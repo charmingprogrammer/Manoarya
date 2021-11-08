@@ -334,6 +334,7 @@ footer {
     text-decoration: none;
     color: black;
     border-radius: 10px;
+    border-bottom: 10px solid gray;
   }
   #postCon img{
     height: 300px;
