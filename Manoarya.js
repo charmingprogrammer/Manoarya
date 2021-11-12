@@ -339,6 +339,15 @@
       "PostUrl": "https://classnotes.tech",
       "alt": "coding",
       "trending": "true"
+    },
+      {
+      "category":"Notes",
+      "Title": "Manohar Anand",
+      "Paragraph": "Manohar magna laborum commodo officia. Adipisicing officia cillum enim aute proident ipsum cillum anim in elit ipsum. Lorem amet aliqua ut exercitation consectetur.",
+      "ImageUrl": "https://cdn.pixabay.com/photo/2021/09/15/15/48/seals-6627197_1280.jpg",
+      "PostUrl": "https://classnotes.tech",
+      "alt": "coding",
+      "trending": "true"
     }
   ]
   
