@@ -22,7 +22,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 1px 1px gray;
 }
 
 #logo_container {
@@ -117,7 +116,6 @@ nav {
   background:white;
   position: fixed;
   bottom: 0;
-  box-shadow: 0 0 1px 1px gray;
   z-index: 12377;
   display: flex;
   justify-content: center;
