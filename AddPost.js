@@ -1,13 +1,13 @@
 const AllPost = [
     {
-      category: "Notes",
-      Title: "How To Make a website using Html and Css",
+      category: "HTM",
+      Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript",
       Paragraph:
-        " et cillum eiusmod. Laborum ipsum laborum eiusmod amet ullamco dolor pariatur do.",
+        "",
       ImageUrl:
-        "https://cdn.pixabay.com/photo/2021/10/28/20/20/hut-6750482_960_720.jpg",
+        "https://charmingprogrammer.github.io/All-Manoarya-Images/Navigation.png",
       PostUrl: "https://classnotes.tech",
-      alt: "coding",
+      alt: "Navigation by Manoarya",
       trending: "true",
     },
    
