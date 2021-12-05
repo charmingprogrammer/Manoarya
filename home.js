@@ -2,20 +2,6 @@
   document.getElementById("add_input_container").style.transform = "scale(0)";
 document.querySelector('*').scrollTo(0,0);
   container.innerHTML = "";
-  
-  async function getData() {
-  const fetchData = await fetch('https://charmingprogrammer.github.io/Manoarya/Manoarya.js');
- const Data = await fetchData.json();
- 
-Data.map(AllDataSearch => {
-   container.insertAdjacentHTML(
-      "afterbegin",
-      `<a href="${AllDataSearch.PostUrl}" class="box"><img src="${AllDataSearch.ImageUrl}" alt="${AllDataSearch.alt}" />
-    <h2>${AllDataSearch.Title}</h2>
-    <p>${AllDataSearch.Paragraph}</p></a>`
-    );
- })
-  
   //   looping data from this script
   for (let i = 0; i < AllPost.length; i++) {
     const data = AllPost[i];
