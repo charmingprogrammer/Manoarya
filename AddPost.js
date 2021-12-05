@@ -9,7 +9,8 @@ const AllPost = [
       PostUrl: "https://classnotes.tech",
       alt: "Navigation by Manoarya",
       trending: "true",
-    },
+    }
+   
   
   ];
   
