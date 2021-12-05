@@ -1,4 +1,4 @@
-const AllPost = [
+[
     {
       category: "HTM",
       Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript",
@@ -12,6 +12,6 @@ const AllPost = [
     }
    
   
-  ];
+];
   
   
