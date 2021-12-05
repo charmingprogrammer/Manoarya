@@ -10,7 +10,6 @@ const AllPost = [
       alt: "Navigation by Manoarya",
       trending: "true",
     },
-   
   
   ];
   
