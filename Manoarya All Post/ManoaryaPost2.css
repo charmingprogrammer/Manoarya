@@ -1,0 +1,371 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+  scroll-behavior: smooth;
+}
+body{
+  background: #edecec;
+}
+pre{
+padding: 10px 10px;
+  width: 100%;
+  height: 100%;
+  white-space: pre-wrap;
+  white-space: -o-pre-wrap; word-wrap: break-word;
+  border-radius: 10px;
+}
+code {
+  border-radius: 10px;
+  font-size: 17px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+nav{
+  height: 50px;
+  width: 100%;
+  background:white;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  z-index: 12;
+ position: sticky;
+ top: 0;
+}
+.navLeft{
+  height:100%;
+  width: 50%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.navLeft img {
+  height: 50px;
+  width: 50px;
+  background: #42c1e3;
+ transform: scale(0.7);
+ margin-left: 10px;
+ border-radius: 5px;
+}
+.navRight{
+  height:100%;
+  width: 50%;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.navRight i{
+  margin-right: 10px;
+}
+.navRight i:active{
+  transform: scale(0.89);
+  color: #42c1e3;
+}
+.navRight img {
+  height: 50px;
+  width: 50px;
+  background: #42c1e3;
+ transform: scale(0.8);
+ margin-left: 10px;
+ border-radius:100px;
+ display: none;
+}
+.navRight button{
+ padding: 10px 20px;
+ transform: scale(0.9);
+ background: #42c1e3;
+ border: none;
+ color: white;
+ border-radius: 5px;
+ border: 1px solid #42c1e3;
+}
+.navRight button:active{
+  transform: scale(0.89);
+  background: #35b8db;
+}
+#searchContainer{
+  height: 100vh;
+  width: 100%;
+  background: white;
+  z-index: 12345;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: .2s ease-in;
+  overflow-y: scroll;
+}
+.search_header{
+  height: 50px ;
+  width: 100%;
+  background: #3d3d3d07;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 2px  #969696;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_header i{
+  width : 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  color: #303030;
+}
+.search_header i:active{
+  transform: scale(0.89);
+  background: #29292938;
+}
+#searchInput{
+  padding: 15px 20px;
+  width: 90%;
+  background:#12121200;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+.post_Img_Con {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+.post_Img_Con img {
+  height: 100%;
+  width: 100%;
+}
+.postContainer{
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+.postContainer h1{
+  padding: 10px 20px;
+  font-size: 24px;
+}
+.postContainer h2 {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #434343;
+}
+.postContainer p {
+  padding: 10px 20px;
+  color: #434343;
+  font-size: 18px;
+}
+.postContainer a {
+  font-size: 18px;
+  color: white;
+  background:#42c1e3;
+  border-radius: 3px;
+  padding: 5px;
+}
+.postContainer a:hover{
+  background:#f4f4f4;
+  color:#42c1e3;
+}
+#postSuggestionContainer{
+  height: 100%;
+  width: 100%;
+  background:#ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition: .3s ease-in;
+}
+.box{
+  height:300px;
+  width: 100%;
+  background: white;
+  transform: scale(0.97);  
+  border-radius: 10px;
+}
+.box:active {
+  background: #c6c6c6;
+}
+.box img{
+  height: 220px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box h3 {
+  font-size: 20px;
+  text-transform:capitalize ;
+  margin-left:10px;
+}
+.showMore{
+  height:50px;
+  width: 100%;
+  background: #5fceec;
+  transform: scale(0.9);
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+  display: none;
+}
+.showLess{
+  height:50px;
+  width: 100%;
+  background: #5fceec;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 0;
+  transform: scale(0);
+  transition: .1s ease-in;
+  z-index: 12345;
+}
+.showLess:active{
+  background: #fdfdfdc3;
+}
+.showMore:active {
+  transform: scale(0.88);
+  backdrop-filter: blur(100px);
+}
+#comment_input_container{
+  height:100%;
+  width: 100%;
+   background:none;
+  display: none;
+  transform: scale(0.9);
+}
+#comment_input {
+  height:100%;
+  width: 100%;
+  background:white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+#comment_input_container button {
+  padding: 10px 20px;
+  background:#35c6e9;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+#comment_input_container button:active{
+  transform: scale(0.88);
+}
+#comment_output_container{
+  height:100%;
+  width: 100%;
+   background:none;
+  transform: scale(0.98);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.commentBox{
+  max-height:100%;
+  width: 100%;
+   background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+  transform: scale(0.9);
+  padding: 10px 20px;
+}
+.commentBox img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+.commentBox b{
+  margin-left: 10px;
+}
+.commentBox p{
+  margin-left: 10px;
+}
+footer {
+  height:300px;
+  width: 100%;
+  background:white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul{
+  padding: 10px 20px;
+}
+footer ul li{
+ list-style-type: none;
+ transition: .2s ease-out;
+}
+footer ul li:hover{
+  background: #e3e3e3;
+  transform: scale(0.98);
+  border-left: 2px solid #60ddf5;
+}
+footer p{
+  text-align: center;
+  color: #535353;
+}
+#myUL{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+#myUL li a{
+border:1px solid #ebebeb;
+ background-color:#ffffff;
+ padding:10px 20px;
+ text-decoration:none;
+ font-size:17px;
+ color:black;
+display:block;
+}
+#myUL li a:hover:not(.header){
+ background-color:#eee;
+}
+@media only screen and (min-width: 700px) {
+  #container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #page1{
+    width: 68%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-radius: 10px;
+  }
+  #page2{
+  width:30%;
+  position: sticky;
+  top: 60px;
+  }
+  .post_Img_Con {
+  width:100%;
+}
+  .postContainer{
+  height: 100%;
+  width: 100%;
+}
+  #postSuggestionContainer{
+  width: 100%;
+  transform: scale(0.9);
+  }
+
+#comment_input_container{
+  width: 100%;
+  border-radius: none;
+}
+#comment_output_container{
+  width: 100%;
+  border-radius: none;
+}
+}
