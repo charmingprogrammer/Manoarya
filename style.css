@@ -36,6 +36,7 @@ nav {
   width: 50px;
   background: #4ac8ed;
   object-fit: fill;
+  transform: scale(0.8);
 }
 #logo_container b {
 }
