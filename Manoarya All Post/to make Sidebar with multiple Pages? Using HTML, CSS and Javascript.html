@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>How to make Sidebar with multiple Pages? Using HTML, CSS and Javascript</title>
+
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  
+  <!--code highlighter links-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+</head>
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="index.html" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+<div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()"/>
+    </div>
+<ul id="myUL">
+
+</ul>
+  </div>
+  <div id="container">
+  <div id="page1">
+  <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+  <!--post image -->
+  <div class="post_Img_Con">
+    <img src="https://charmingprogrammer.github.io/All-Manoarya-Images/Navigation.png" alt="Navigation" />
+  </div>
+  <!--Main Post-->
+  <div class="postContainer">
+    <h1 id="postTitle">How to make Sidebar with multiple Pages using HTML, CSS and Javascript</h1>
+    <p><b>Category : </b>  <span id="category">HTM</span> </p> 
+  
+  <p>Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going to assist you with How to make Sidebar with multiple Pages using HTML, CSS and Javascript. <br><br> Are you Guys exited. Let me know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a href="https://charmingprogrammer.github.io/Demo/Navigation.html">See Demo</a> <br> <br> Fist of all you need to create three files and  name it like show below.  <br>  <br> 1. Navigation.html <br> 2. Navigation.css <br> 3. Navigation.js <br><br> Now time to copy/Paste <br> <br>  <b>Copy Following HTML Code and paste in your environment Navigation.html File. </b> </p>
+  <pre>
+    <code class="language-html">
+&lt;!DOCTYPE html&gt;<br/>&lt;head&gt;<br/>  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br/>  &lt;meta name=&quot;viewport&quot;<br/>  content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot;&gt;<br/>  &lt;!--Add title that show on the browser header--&gt;<br/>  &lt;title&gt;Navigation Made by Manoarya&lt;/title&gt;<br/>  &lt;!--Add Css file link inside of href= &quot;Add css file name &quot;--&gt;<br/>  &lt;link rel=&quot;stylesheet&quot; href=&quot;Navigation.css&quot; type=&quot;text/css&quot; /&gt;<br/>  &lt;script src=&quot;https://kit.fontawesome.com/9e0ab445c3.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>  &lt;!--Navigation bar (header)--&gt;<br/>  &lt;nav&gt;<br/>    &lt;i class=&quot;fas fa-bars&quot; onclick=&quot;nav_opener()&quot; id=&quot;bars&quot;&gt;&lt;/i&gt;<br/>    &lt;img src=&quot;https://cdn.pixabay.com/photo/2021/12/03/14/28/14-28-28-361_1280.png&quot; alt=&quot;Logo&quot; /&gt;<br/>  &lt;/nav&gt;<br/>  &lt;!--Navigation menu container--&gt;<br/>  &lt;div id=&quot;nav_container&quot;&gt;<br/>    &lt;div class=&quot;nav_content&quot;&gt;<br/>      &lt;button onclick=&quot;page1()&quot;&gt;Page 01&lt;/button&gt;<br/>      &lt;button onclick=&quot;page2()&quot;&gt;Page 02&lt;/button&gt;<br/>      &lt;button onclick=&quot;page3()&quot;&gt;Page 03&lt;/button&gt;<br/>      &lt;button onclick=&quot;page4()&quot;&gt;Page 04&lt;/button&gt;<br/>      &lt;button onclick=&quot;page5()&quot;&gt;Page 05&lt;/button&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class=&quot;nav_closer&quot; onclick=&quot;nav_closer()&quot;&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>  &lt;!--All Pages container--&gt;<br/>  &lt;div id=&quot;page_container&quot;&gt;<br/>  &lt;/div&gt;<br/>  &lt;script src=&quot;Navigation.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br/>&lt;/body&gt;
+    </code>
+  </pre>
+   <p><b>Copy Following CSS code and paste in your environment Navigation.css File.</b></p> 
+   
+   <pre>
+     <code>
+       * {<br/>margin: 0;<br/>  padding: 0;<br/>  box-sizing: border-box;<br/>  font-family: Arial;<br/>}<br/>body {<br/>  background: #f1f1f1;<br/>}<br/>nav {<br/>  height: 50px;<br/>  width: 100%;<br/>  background: white;<br/>  box-shadow: 0 0 1px 1px gray;<br/>  display: flex;<br/>  justify-content: space-between;<br/>  align-items: center;<br/>  position: sticky;<br/>  top: 0;<br/>}<br/>nav i {<br/>  padding: 10px 20px;<br/>  color: #2b2b2b;<br/>  font-size: 20px;<br/>  margin-left: 10px;<br/>}<br/>nav i:active {<br/>  background: #0000002b;<br/>  border-radius: 10px;<br/>}<br/>nav img {<br/>  height: 35px;<br/>  width: 35px;<br/>  background: #57bdf2;<br/>  margin-right: 10px;<br/>  border-radius: 100px;<br/>}<br/>#nav_container {<br/>  height: 100vh;<br/>  width: 100%;<br/>  background: none;<br/>  position: fixed;<br/>  top: 0;<br/>  z-index: 123;<br/>  display: flex;<br/>  transition: .2s ease-out;<br/>  left: -100%;<br/>}<br/>.nav_content {<br/>  height: 100vh;<br/>  width: 70%;<br/>  background: white;<br/>  box-shadow: 0 0 10px 1px gray;<br/>  display: flex;<br/>  flex-direction: column;<br/>}<br/>.nav_content button {<br/>  padding: 20px 20px;<br/>  transform: scale(0.9);<br/>  background: linear-gradient(120deg, #0d90d4,#0db2b4);<br/>  color: white;<br/>  border: none;<br/>  border-radius: 10px;<br/>  outline: none;<br/>  font-weight: bold;<br/>  font-size: 20px;<br/>}<br/>.nav_content button:active {<br/>  background: linear-gradient(120deg,#0db2b4,#0d90d4);<br/>  transform: scale(0.88);<br/>}<br/>.nav_closer {<br/>  height: 100vh;<br/>  width: 30%;<br/>  background: #00000000;<br/>  transition: .2s ease-in;<br/>}<br/>#page_container {<br/>  height: 100%;<br/>  width: 100%;<br/>  background: none;<br/>  display: flex;<br/>  justify-content: space-around;<br/>  align-items: center;<br/>  color: white;<br/>  font-size: 20px;<br/>  font-weight: bold;<br/>  position: fixed;<br/>  top: 50px;<br/>}<br/><br/>/*media query applying for desktop  view */<br/><br/>@media only screen and (min-width: 600px) {<br/>  nav img {<br/>    margin-left: 10px;<br/>  }<br/>  #bars {<br/>    display: none;<br/>  }<br/>  #nav_container {<br/>    left: 0;<br/>    top: 50px;<br/>  }<br/>  .nav_closer {<br/>    display: none;<br/>  }<br/>.nav_content{<br/>  width: 30%;<br/>  box-shadow: none;<br/>}<br/>#page_container{<br/>  width: 70%;<br/>  right: 0;<br/>}<br/>}
+     </code>
+   </pre>
+   
+   <p><b>Copy Following Javascript code and paste in your environment Navigation.js File.</b></p> 
+   
+   <pre>
+     <code>
+//All variable declaration
+const nav_container = document.getElementById('nav_container');
+const page_container = document.getElementById('page_container');
+const x = window.matchMedia("(max-width: 700px)")
+//open navigation or sidebar
+function nav_opener() {
+  nav_container.style.left = '0%';
+}
+//close navigation or sidebar
+function nav_closer() {
+  nav_container.style.left = '-100%';
+}
+//media query script
+function myFunction(x) {
+  if (x.matches) {
+    nav_container.style.left = '-100%';
+  } else {
+    nav_container.style.left = '0';
+  }
+}
+//page controller
+function page1() {
+  page_container.style.backgroundColor = "#00b5b5";
+  page_container.innerHTML = "Page 01";
+
+  myFunction(x);
+
+}
+function page2() {
+  page_container.style.backgroundColor = "#29c29d";
+  page_container.innerHTML = "Page 02";
+  myFunction(x);
+}
+function page3() {
+  page_container.style.backgroundColor = "#db3391";
+  page_container.innerHTML = "Page 03";
+  myFunction(x);
+
+}
+function page4() {
+  page_container.style.backgroundColor = "#e79d45";
+  page_container.innerHTML = "Page 04";
+  myFunction(x);
+}
+function page5() {
+  page_container.style.backgroundColor = "#1b4ad8";
+  page_container.innerHTML = "Page 05";
+  myFunction(x);
+
+}
+page1();
+     </code>
+   </pre>
+   <p>That all for this post. I hope you love this project. please share your thoughts and  suggestions in comment below. <br> <br><b>Thank you  For Visiting. By see You soon.</b></p> 
+  </div>
+  <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+  </div>
+  <div id="page2">
+  <!--post suggestions-->
+  <div id="postSuggestionContainer">
+  </div>
+  <!--expand more-->
+  <div class="showMore" onclick="showMoreSugg()">
+    <b>Show More Suggestions</b>
+  </div>
+  
+  <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+    <b>Show Less Suggestions</b>
+  </div>
+  
+  <!--comment input-->
+  <div id="comment_input_container">
+    <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+      <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+  <!--comment output-->
+  <div id="comment_output_container">
+  </div>
+  
+  <div class="showMore" onclick="showMoreComment()">
+    <b>Show More Comments</b>
+  </div>
+  <div class="showLess" onclick="showLessComment()" id="showLessComment">
+    <b>Show Less Comments</b>
+  </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+  <li><a href="AboutUs.html">About us</a></li>
+  <li><a href="ContactUs.html">Contact us</a></li>
+  <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+  <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+  <li><a href="Disclaimer.html">Disclaimer</a></li>
+  <li><a href="Sitemap.html">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+    </ul>
+    <p>All Rights reserved by Manoarya</p> 
+    
+  </footer>
+    <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+
+</body>
