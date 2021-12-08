@@ -34,7 +34,7 @@ nav {
 #logo_container img {
   height: 50px;
   width: 50px;
-  border-radius: 100px;
+  background: #4ac8ed;
   object-fit: fill;
 }
 #logo_container b {
