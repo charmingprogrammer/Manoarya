@@ -1,7 +1,7 @@
 const AllPost = [
     {
       category: "HTM",
-      Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript",
+      Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript?",
       Paragraph:
         "Learn How to make a awesome sidebar with multiple Pages for free source code.",
       ImageUrl:
