@@ -6,7 +6,7 @@ const AllPost = [
         "Learn How to make a awesome sidebar with multiple Pages for free source code.",
       ImageUrl:
         "https://charmingprogrammer.github.io/All-Manoarya-Images/Navigation.png",
-      PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/manoaryaPost.html",
+      PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-Sidebar-with-multiple-Pages-using-HTML-CSS-and-Javascript.html",
       alt: "Navigation by Manoarya",
       trending: "true",
     },
