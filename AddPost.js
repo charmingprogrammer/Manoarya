@@ -21,6 +21,17 @@ const AllPost = [
       alt: "Modal Box by Manoarya",
       trending: "true",
     },
+            {
+      category: "HTM",
+      Title: "How to make Information opener using HTML, CSS and Js? for free.",
+      Paragraph:
+        "Learn How to make a awesome Information opener with free source code.",
+      ImageUrl:
+        "https://i.ibb.co/Hn2wVnv/Pics-Art-12-09-08-14-16.png",
+      PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How_to_make_info_opener_using_html_css_and_js.html",
+      alt: "Information opener by Manoarya",
+      trending: "true",
+    },
    
   
   ];
