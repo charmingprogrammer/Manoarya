@@ -31,6 +31,17 @@ const AllPost = [{
 		alt: "Information opener by Manoarya",
 		trending: "true",
 	},
+		{
+		category: "HTM",
+		Title: "How to make Sign Up and Login from using HTML, CSS and Js? for free.",
+		Paragraph:
+		"Learn How to make Sign Up and Login from using HTML, CSS and Js? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/86Xtq9w/Pics-Art-12-11-07-22-32.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How_to_make_sign_up_from_using_html_css_and_js.html",
+		alt: "SignUp and Login from Manoarya",
+		trending: "true",
+	},
 
 
 ];
