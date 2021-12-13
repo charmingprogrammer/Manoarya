@@ -31,7 +31,7 @@ const AllPost = [{
 		alt: "Information opener by Manoarya",
 		trending: "true",
 	},
-		{
+	{
 		category: "HTM",
 		Title: "How to make Sign Up and Login from using HTML, CSS and Js? for free.",
 		Paragraph:
@@ -40,6 +40,84 @@ const AllPost = [{
 		"https://i.ibb.co/86Xtq9w/Pics-Art-12-11-07-22-32.png",
 		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How_to_make_sign_up_from_using_html_css_and_js.html",
 		alt: "SignUp and Login from Manoarya",
+		trending: "true",
+	},
+	
+	{
+		category: "HTM",
+		Title: "How to make image preview using html css and javascript?",
+		Paragraph:
+		"Learn How to make image preview using html css and javascript? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/vV17WF2/Pics-Art-12-12-07-21-29.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-image-preview-using-html-css-and-javascript.html",
+		alt: "Image preview by Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to add text on image using html and css?",
+		Paragraph:
+		"Learn How to add text on image using html and css? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/qnP3BrW/Pics-Art-12-12-07-39-39.jpg",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-add-text-on-image-using-html-css-and-js.html",
+		alt: "Add text on image by Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to make a image gallery using html css and js?",
+		Paragraph:
+		"Learn How to make a image gallery using html css and js? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/f4qj2Nh/Pics-Art-12-12-08-48-15.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-a-image-gallery-using-html-css-and-js.html",
+		alt: "Image gallery by Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to create a responsive layout using html css and js?",
+		Paragraph:
+		"Learn How to create a responsive layout using html css and js? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/C1JSCnS/Pics-Art-12-12-08-51-45.png ",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-create-a-responsive-layout-using-html-css-and-js.html",
+		alt: "Responsive layout by Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to create a search ui like a browser window using html and css? ",
+		Paragraph:
+		"Learn How to create a search ui like a browser window using html and css?  with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/KhZnT9j/Pics-Art-12-12-08-55-12.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-create-a-search-ui-like-a-browser-window-using-html-css-and-js.html",
+		alt: "browser window ui by Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to create a horizontal slider using html and css?",
+		Paragraph:
+		"Learn How to create a horizontal slider using html and css? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/qkV4gBL/Pics-Art-12-12-08-59-01.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-create-a-horizontal-slider-using-html-css-and-js.html",
+		alt: "Horizontal slider by Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to create a profile ui using html and css?",
+		Paragraph:
+		"Learn How to create a profile ui using html and css? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/qRCDMgW/Pics-Art-12-12-09-00-24.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-create-a-profile-ui-using-html-css-and-js.html",
+		alt: "Prifile UI by Manoarya",
 		trending: "true",
 	},
 
