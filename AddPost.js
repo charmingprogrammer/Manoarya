@@ -120,6 +120,15 @@ const AllPost = [{
 		alt: "Prifile UI by Manoarya",
 		trending: "true",
 	},
-
-
+	{
+		category: "HTM",
+		Title: "How to make full page navigation using 3 steps?",
+		Paragraph:
+		"Learn How to make full page navigation using 3 steps? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/HVPs5Th/Pics-Art-12-14-07-14-52.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-full-page-navigation-using-3-steps.html",
+		alt: "full page navigationby Manoarya",
+		trending: "true",
+	},
 ];
