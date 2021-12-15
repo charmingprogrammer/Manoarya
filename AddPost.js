@@ -131,4 +131,26 @@ const AllPost = [{
 		alt: "full page navigationby Manoarya",
 		trending: "true",
 	},
+	{
+		category: "HTM",
+		Title: "Sportify UI Clone  Using HTML and CSS.",
+		Paragraph:
+		"Learn Sportify UI Clone  Using HTML and CSS. with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/b7K2M4t/Pics-Art-12-14-10-32-12.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/Sportify_UI_clone_by_manoarya.html",
+		alt: "Sportify Ui Clone Manoarya",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "Google Play Store UI Clone using HTML and CSS.",
+		Paragraph:
+		"Learn Google Play Store UI Clone using HTML and CSS. with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/Q63YMyL/Pics-Art-12-15-11-16-35.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/Play_store_UI_clone_by_manoarya.html",
+		alt: "Google Play Clone Manoarya",
+		trending: "true",
+	},
 ];
