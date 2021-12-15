@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Sportify UI Clone  Using HTML and CSS.</title>
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <!--code highlighter links-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="index.html" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+    </div>
+    <ul id="myUL">
+    </ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="https://i.ibb.co/b7K2M4t/Pics-Art-12-14-10-32-12.png" alt="Sportify Clone" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">Sportify UI Clone  Using HTML and CSS</h1>
+        <p>
+          <b>Category : </b>  <span id="category">HTM</span>
+        </p>
+        <p>
+          Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going to assist you with Sportify UI Clone  Using HTML and CSS. for free. <br><br> Are you Guys exited? Let me know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a href="https://charmingprogrammer.github.io/Demo/Sportify_UI_clone_by_manoarya.html">See Demo</a> <br> <br> Fist of all you need to create a file and name it whatever you want. <br><br> Now Copy the following  codes
+        </p>
+        <h2>Add HTML Code</h2>
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;<br/>&lt;head&gt;<br/>  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br/>  &lt;meta name=&quot;viewport&quot;<br/>  content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot;&gt;<br/>  &lt;title&gt;Sportify UI Clone&lt;/title&gt;<br/>  &lt;!--font awesome  for icons--&gt; <br/>  &lt;script src=&quot;https://kit.fontawesome.com/9e0ab445c3.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;<br/>  &lt;!--linked css file--&gt; <br/>  &lt;link rel=&quot;stylesheet&quot; href=&quot;Sportify_ui_clone.css&quot; type=&quot;text/css&quot; /&gt;<br/>  <br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>  &lt;div class=&quot;container&quot;&gt;<br/>    &lt;!--navigation--&gt; <br/>    &lt;nav&gt;<br/>      &lt;h1&gt;Good evening &lt;/h1&gt;<br/>      &lt;div class=&quot;icons&quot;&gt;<br/>        &lt;i class=&quot;far fa-bell&quot;&gt;&lt;/i&gt;<br/>        &lt;i class=&quot;fas fa-history&quot;&gt;&lt;/i&gt;<br/>        &lt;i class=&quot;fas fa-cog&quot;&gt;&lt;/i&gt;<br/>      &lt;/div&gt;<br/>    &lt;/nav&gt;<br/>    &lt;!--Your music--&gt; <br/>    &lt;div class=&quot;your_music&quot;&gt;<br/>      &lt;div class=&quot;your_music_items&quot;&gt;<br/>        &lt;div class=&quot;your_music_items_img&quot;&gt;<br/>          &lt;img src=&quot;https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png&quot; alt=&quot;Liked&quot; /&gt;<br/>        &lt;/div&gt;<br/>        &lt;b&gt;Liked Song&lt;/b&gt;<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;your_music_items&quot;&gt;<br/>        &lt;div class=&quot;your_music_items_img&quot;&gt;<br/>          &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178339fc4fb0bf1ddd5cd420d60&quot; alt=&quot;Liked&quot; /&gt;<br/>        &lt;/div&gt;<br/>        &lt;b&gt;Yo Yo Honey Singh&lt;/b&gt;<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;your_music_items&quot;&gt;<br/>        &lt;div class=&quot;your_music_items_img&quot;&gt;<br/>          &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178b2b70762d89a9d76c772b3b6&quot; alt=&quot;Liked&quot; /&gt;<br/>        &lt;/div&gt;<br/>        &lt;b&gt;Arijit Sing&lt;/b&gt;<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;your_music_items&quot;&gt;<br/>        &lt;div class=&quot;your_music_items_img&quot;&gt;<br/>          &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178609177b911352232113b7fcc&quot; alt=&quot;Liked&quot; /&gt;<br/>        &lt;/div&gt;<br/>        &lt;b&gt;Guru Randhawa &lt;/b&gt;<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;your_music_items&quot;&gt;<br/>        &lt;div class=&quot;your_music_items_img&quot;&gt;<br/>          &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178c40600e02356cc86f0debe84&quot; alt=&quot;Liked&quot; /&gt;<br/>        &lt;/div&gt;<br/>        &lt;b&gt;Atif Mix&lt;/b&gt;<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;your_music_items&quot;&gt;<br/>        &lt;div class=&quot;your_music_items_img&quot;&gt;<br/>          &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f1781a9d9cfc59b01338c0786953&quot; alt=&quot;Liked&quot; /&gt;<br/>        &lt;/div&gt;<br/>        &lt;b&gt;Jubin Nautiyal&lt;/b&gt;<br/>      &lt;/div&gt;<br/>    &lt;/div&gt; &lt;br&gt; <br/>    &lt;!--horizontal slider--&gt; <br/>    &lt;h2&gt;Your Show&lt;/h2&gt;<br/>    &lt;div class=&quot;slider_container&quot;&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178609177b911352232113b7fcc&quot;/&gt;<br/>        &lt;p&gt;Guru Randhawa&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178339fc4fb0bf1ddd5cd420d60&quot;/&gt;<br/>        &lt;p&gt;Yo Yo Honey Sing&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f1781a9d9cfc59b01338c0786953&quot;/&gt;<br/>        &lt;p&gt;Jubin Nautiyal&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178c40600e02356cc86f0debe84&quot;/&gt;<br/>        &lt;p&gt;Atif Asalam&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png&quot;/&gt;<br/>        &lt;p&gt;Your Liked&lt;/p&gt; <br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>        &lt;h2&gt;Recently Played&lt;/h2&gt;<br/>    &lt;div class=&quot;slider_container&quot;&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178609177b911352232113b7fcc&quot;/&gt;<br/>        &lt;p&gt;Guru Randhawa&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178339fc4fb0bf1ddd5cd420d60&quot;/&gt;<br/>        &lt;p&gt;Yo Yo Honey Sing&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f1781a9d9cfc59b01338c0786953&quot;/&gt;<br/>        &lt;p&gt;Jubin Nautiyal&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://i.scdn.co/image/ab6761610000f178c40600e02356cc86f0debe84&quot;/&gt;<br/>        &lt;p&gt;Atif Asalam&lt;/p&gt; <br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;slider_box&quot;&gt;<br/>        &lt;img src=&quot;https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png&quot;/&gt;<br/>        &lt;p&gt;Your Liked&lt;/p&gt; <br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/body&gt;<br/>
+          </code>
+        </pre>
+        <h2>Add CSS Code</h2>
+        <pre>
+          <code>
+            * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(140deg,#1d70e4,black , black, black);
+}
+nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  color: white;
+  margin-left: 10px;
+}
+.icons {
+  height: 100%;
+  width: 100px;
+  display: grid;
+  place-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ margin-right: 10px;
+}
+.icons i {
+  color: white;
+  font-size: 20px;
+}
+ i:active{
+   transform: scale(0.9);
+}
+.your_music{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.your_music_items{
+  height: 60px;
+  width: 50%;
+  background: #4b4b4b50;
+  transform: scale(0.9);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+}
+.your_music_items:active{
+  transform: scale(0.88);
+}
+.your_music_items_img{
+  height: 100%;
+  min-width: 60px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.your_music_items b{
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+.your_music_items_img img{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+h2{
+  font-size: 23px;
+  color: white;
+  padding: 5px 10px;
+}
+.slider_container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+}
+.slider_box{
+  height: 300px;
+  width: 200px;
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+.slider_box:active{
+  transform: scale(0.88);
+}
+.slider_box img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  object-fit: fill;
+}
+.slider_box p{
+  height: 100px;
+  color: white ;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+          </code>
+        </pre>
+        <p>
+          That all for this post. I hope you love this project. please share your thoughts and  suggestions in comment below. <br> <br><b>Thank you  For Visiting. By see You soon.</b>
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer">
+      </div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!--comment output-->
+      <div id="comment_output_container">
+      </div>
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.html">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+    </ul>
+    <p>
+      All Rights reserved by Manoarya
+    </p>
+  </footer>
+  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+</body>
