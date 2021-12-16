@@ -153,4 +153,15 @@ const AllPost = [{
 		alt: "Google Play Clone Manoarya",
 		trending: "true",
 	},
+	{
+		category: "HTM",
+		Title: "Color Tic tac to using html css and js.",
+		Paragraph:
+		"Learn Color Tic tac to using html css and js. with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/TqvVRrB/Pics-Art-12-16-08-05-18.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/Color_tic_tac_to_using_html_css_and_js.html",
+		alt: "color tic tac to",
+		trending: "true",
+	},
 ];
