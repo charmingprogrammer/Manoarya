@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Color Tic tac to using html css and js.</title>
+  
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+
+  <!--code highlighter links-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+</head>
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="index.html" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+    </div>
+    <ul id="myUL">
+
+    </ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="https://i.ibb.co/TqvVRrB/Pics-Art-12-16-08-05-18.png" alt="Color tic tac to" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">Color Tic tac to using html css and js.</h1>
+        <p>
+          <b>Category : </b>  <span id="category">HTM</span>
+        </p>
+
+        <p>
+          Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going to assist you with Color Tic tac to using html css and js. <br><br> Are you Guys exited. Let me know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a href="https://charmingprogrammer.github.io/Demo/Color_tic_tac_to_using_html_css_and_js.html">See Demo</a> <br> <br> Fist of all you need to create a file and name it whatever you want. <br><br> Now Copy the following  codes
+        </p>
+        <h2>Add HTML Code</h2>
+<pre>
+  <code>
+    &lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>  &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>  &lt;title&gt;This is a color tic tac to Game for everyone&lt;/title&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>  &lt;h1&gt;COLOR &lt;span id=&quot;span1&quot;&gt; TIC TAC TO&lt;/span&gt;&lt;/h1&gt;<br/>  &lt;div class=&quot;container1&quot;&gt;<br/>    &lt;div id=&quot;user1&quot;&gt;<br/>      &lt;div class=&quot;red&quot;&gt;<br/>        &lt;form name=&quot;redForm&quot;&gt;<br/>          &lt;input type=&quot;text&quot; placeholder=&quot;Red Player Name..&quot; name=&quot;player1&quot; id=&quot;input1&quot;&gt;<br/>        &lt;/form&gt;<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;user2&quot;&gt;<br/>      &lt;div class=&quot;green&quot;&gt;<br/>        &lt;form name=&quot;greenForm&quot;&gt;<br/>          &lt;input type=&quot;text&quot; placeholder=&quot;Green Player Name ...&quot; name=&quot;player2&quot; id=&quot;input2&quot;&gt;<br/>        &lt;/form&gt;<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;a href=&quot;#div9&quot;&gt;<br/>      &lt;div id=&quot;play&quot; onclick=&quot;return(showName())&quot;&gt;<br/>        &lt;h2&gt;PLAY&lt;/h2&gt;<br/>      &lt;/div&gt;<br/>    &lt;/a&gt;<br/>  &lt;/div&gt;<br/>  &lt;br&gt;&lt;br&gt;&lt;br&gt;<br/>  &lt;div class=&quot;user-info&quot;&gt;<br/>    &lt;h2 class=&quot;player1name&quot;&gt;&lt;span id=&quot;redPlayer&quot;&gt;&lt;/span&gt;&lt;/h2&gt;<br/>    &lt;h2 class=&quot;player2name&quot;&gt;&lt;span id=&quot;greenPlayer&quot;&gt;&lt;/span&gt;&lt;/h2&gt;<br/>  &lt;/div&gt;<br/>  &lt;br&gt;&lt;br&gt;<br/>  &lt;div class=&quot;container2&quot;&gt;<br/>    &lt;div id=&quot;div1&quot;&gt;<br/>      &lt;div id=&quot;clicker1green&quot; onclick=&quot;block1a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker1red&quot; onclick=&quot;block1b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div2&quot;&gt;<br/>      &lt;div id=&quot;clicker2green&quot; onclick=&quot;block2a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker2red&quot; onclick=&quot;block2b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div3&quot;&gt;<br/>      &lt;div id=&quot;clicker3green&quot; onclick=&quot;block3a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker3red&quot; onclick=&quot;block3b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div4&quot;&gt;<br/>      &lt;div id=&quot;clicker4green&quot; onclick=&quot;block4a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker4red&quot; onclick=&quot;block4b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div5&quot;&gt;<br/>      &lt;div id=&quot;clicker5green&quot; onclick=&quot;block5a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker5red&quot; onclick=&quot;block5b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div6&quot;&gt;<br/>      &lt;div id=&quot;clicker6green&quot; onclick=&quot;block6a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker6red&quot; onclick=&quot;block6b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div7&quot;&gt;<br/>      &lt;div id=&quot;clicker7green&quot; onclick=&quot;block7a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker7red&quot; onclick=&quot;block7b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div8&quot;&gt;<br/>      &lt;div id=&quot;clicker8green&quot; onclick=&quot;block8a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker8red&quot; onclick=&quot;block8b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div id=&quot;div9&quot;&gt;<br/>      &lt;div id=&quot;clicker9green&quot; onclick=&quot;block9a()&quot;&gt;&lt;/div&gt;<br/>      &lt;div id=&quot;clicker9red&quot; onclick=&quot;block9b()&quot;&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>  &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt;
+  </code>
+</pre>
+
+        <h2>Add CSS Code</h2>
+        <pre>
+          <code>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background: rgb(18, 70, 77);
+    }
+    a {
+      text-decoration: none;
+      cursor: normal;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(238, 108, 34);
+    }
+    #span1 {
+      color: rgb(255, 0, 221);
+    }
+    .container1 {
+      height: 500px;
+      width: 100%;
+      background: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+    }
+    #user1 {
+      height: 100px;
+      width: 300px;
+      border: solid 1px red;
+      display: flex;
+      background: red;
+    }
+    #user2 {
+      height: 100px;
+      width: 300px;
+      display: flex;
+      background: rgb(20, 228, 20);
+    }
+    #play {
+      height: 100px;
+      width: 300px;
+      border: solid 1px #d435ba;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    #play h2 {
+      background: none;
+      text-align: center;
+      font-family: sans-serif;
+      color: #d435ba;
+      padding: 35px 20px;
+    }
+    #play:hover {
+      background: #d435ba;
+    }
+    #play h2:hover {
+      color: #ffffff;
+    }
+
+    #input1 {
+      height: 99px;
+      border: red 1px solid;
+      width: 200px;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
+    .green {
+      height: 100px;
+      width: 100px;
+      background: rgb(20, 228, 20);
+      float: right;
+    }
+    #input2 {
+      height: 99px;
+      border: rgb(20, 228, 20) 1px solid;
+      width: 200px;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .user-info {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #redPlayer,
+    #greenPlayer {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 20px;
+      text-shadow: 0 10px 10px black;
+    }
+    .player1name {
+      height: 100px;
+      width: 45%;
+      color: red;
+      border-radius: 30px;
+      text-decoration: underline red;
+    }
+    .player2name {
+      height: 100px;
+      width: 45%;
+      text-decoration: underline #67ff67;
+      color: #67ff67;
+    }
+    .container2 {
+      height: 475px;
+      width: 90%;
+      margin-left: 5%;
+      box-shadow: 0 0 10px 10px #082831;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-radius: 10px;
+    }
+    #div1,
+    #div2,
+    #div3,
+    #div4,
+    #div5,
+    #div6,
+    #div7,
+    #div8,
+    #div9 {
+      height: 150px;
+      width: 30%;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+    #clicker1red,
+    #clicker2red,
+    #clicker3red,
+    #clicker4red,
+    #clicker5red,
+    #clicker6red,
+    #clicker7red,
+    #clicker8red,
+    #clicker9red {
+      height: 75px;
+      width: 100%;
+      border-radius: 10px;
+      background: rgba(255, 0, 0, 0);
+      cursor: pointer;
+    }
+    #clicker1green,
+    #clicker2green,
+    #clicker3green,
+    #clicker4green,
+    #clicker5green,
+    #clicker6green,
+    #clicker7green,
+    #clicker8green,
+    #clicker9green {
+      height: 75px;
+      width: 100%;
+      border-radius: 10px;
+      background: #33ff0000;
+      cursor: pointer;
+    }
+          </code>
+        </pre>
+
+        <h2>Add Javascript Code</h2>
+        <pre>
+          <code>
+  //show name using these code
+  function showName() {
+    const player1name = document.redForm.player1.value;
+    const player2name = document.greenForm.player2.value;
+    document.getElementById('redPlayer').innerHTML = player1name;
+    document.getElementById('greenPlayer').innerHTML = player2name;
+  }
+  //define function
+  function block1a() {
+    document.getElementById('div1').style.background = "red";
+  }
+  function block1b() {
+    document.getElementById('div1').style.background = "#33ff00";
+  }
+  function block2a() {
+    document.getElementById('div2').style.background = "red";
+  }
+  function block2b() {
+    document.getElementById('div2').style.background = "#33ff00";
+  }
+  function block3a() {
+    document.getElementById('div3').style.background = "red";
+  }
+  function block3b() {
+    document.getElementById('div3').style.background = "#33ff00";
+  }
+  function block4a() {
+    document.getElementById('div4').style.background = "red";
+  }
+  function block4b() {
+    document.getElementById('div4').style.background = "#33ff00";
+  }
+  function block5a() {
+    document.getElementById('div5').style.background = "red";
+  }
+  function block5b() {
+    document.getElementById('div5').style.background = "#33ff00";
+  }
+  function block6a() {
+    document.getElementById('div6').style.background = "red";
+  }
+  function block6b() {
+    document.getElementById('div6').style.background = "#33ff00";
+  }
+  function block7a() {
+    document.getElementById('div7').style.background = "red";
+  }
+  function block7b() {
+    document.getElementById('div7').style.background = "#33ff00";
+  }
+  function block8a() {
+    document.getElementById('div8').style.background = "red";
+  }
+  function block8b() {
+    document.getElementById('div8').style.background = "#33ff00";
+  }
+  function block9a() {
+    document.getElementById('div9').style.background = "red";
+  }
+  function block9b() {
+    document.getElementById('div9').style.background = "#33ff00";
+  }
+          </code>
+        </pre>
+        <p>
+          That all for this post. I hope you love this project. please share your thoughts and  suggestions in comment below. <br> <br><b>Thank you  For Visiting. By see You soon.</b>
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer">
+      </div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
+
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
+
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!--comment output-->
+      <div id="comment_output_container">
+      </div>
+
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.html">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+    </ul>
+    <p>
+      All Rights reserved by Manoarya
+    </p>
+
+  </footer>
+  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+
+</body>
