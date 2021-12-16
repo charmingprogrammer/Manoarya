@@ -331,6 +331,10 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
+footer a{
+  text-decoration: none;
+  color: #404040;
+}
 footer ul{
   padding: 10px 20px;
 }
