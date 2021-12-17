@@ -164,4 +164,15 @@ const AllPost = [{
 		alt: "color tic tac to",
 		trending: "true",
 	},
+	{
+		category: "HTM",
+		Title: "How to make Paytm UI Clone using html and css?",
+		Paragraph:
+		"Learn How to make Paytm UI Clone using html and css? with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/Vx3mcXT/Pics-Art-12-17-06-57-19.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How_to_make_paytm_ui_clone_using_html_and_css.html",
+		alt: "Paytm UI Clone ",
+		trending: "true",
+	},
 ];
