@@ -182,7 +182,7 @@ const AllPost = [
 		"Learn How to make snap scrolling effects using html and css. with free source code.",
 		ImageUrl:
 		"https://i.ibb.co/R9J5K6R/Pics-Art-12-18-07-05-31.png",
-		PostUrl: "Manoarya/Manoarya%20All%20Post/How-to-make-snap-scrolling-effects-using-html-and-css.html",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-snap-scrolling-effects-using-html-and-css.html",
 		alt: "snap scrolling Effect",
 		trending: "true",
 	},
