@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>How to make Paytm UI Clone using html and css?</title>
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <!--code highlighter links-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="index.html" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+    </div>
+    <ul id="myUL">
+    </ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="https://i.ibb.co/Vx3mcXT/Pics-Art-12-17-06-57-19.png" alt="Paytm UI Clone " />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">How to make Paytm UI Clone using html and css?</h1>
+        <p>
+          <b>Category : </b>  <span id="category">HTM</span>
+        </p>
+        <p>
+          Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going to assist you with How to make Paytm UI Clone using html and css? for free. <br><br> Are you Guys exited? Let me know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a href="https://charmingprogrammer.github.io/Demo/Paytm_ui_clone.html">See Demo</a> <br> <br> Fist of all you need to create a file and name it whatever you want. <br><br> Now Copy the following  codes
+        </p>
+        <h2>Add HTML Code</h2>
+        <pre>
+          <code>
+          &lt;!DOCTYPE html&gt;<br/>&lt;head&gt;<br/>  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br/>  &lt;meta name=&quot;viewport&quot;<br/>  content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot;&gt;<br/>  &lt;title&gt;Paytm UI clone by manoa&lt;/title&gt;<br/>  &lt;!--font awesome  for icons--&gt;<br/>  &lt;script src=&quot;https://kit.fontawesome.com/9e0ab445c3.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;<br/>  &lt;!--style sheet--&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>  &lt;!--top navigation--&gt;<br/>  &lt;nav&gt;<br/>    &lt;div class=&quot;nav_left&quot;&gt;<br/>      &lt;i class=&quot;fas fa-align-justify&quot;&gt;&lt;/i&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class=&quot;nav_center&quot;&gt;<br/>      &lt;img src=&quot;https://assetscdn1.paytm.com/commonmweb/cc3bba88.svg&quot; alt=&quot;Paytm Logo&quot; /&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class=&quot;nav_right&quot;&gt;<br/>      &lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt;<br/>      &lt;i class=&quot;far fa-comment-alt&quot;&gt;&lt;/i&gt;<br/>    &lt;/div&gt;<br/>  &lt;/nav&gt;<br/>  &lt;!--poster--&gt;<br/>  &lt;div class=&quot;poster_container&quot;&gt;<br/>    &lt;img src=&quot;https://assetscdn1.paytm.com/commonmweb/59341da8.svg&quot; alt=&quot;Poster&quot; /&gt;<br/>  &lt;/div&gt;<br/>  &lt;!--main_container--&gt;<br/>  &lt;div class=&quot;main_container&quot;&gt;<br/>  &lt;/div&gt;<br/>  &lt;!--qr code --&gt;<br/>  &lt;div id=&quot;QRCode&quot;&gt;<br/>    &lt;div id=&quot;QRCodeBox&quot;&gt;<br/>      &lt;img src=&quot;https://i.ibb.co/CHLyKwV/qr-6834147-1280-removebg-preview.png&quot; /&gt;<br/>      &lt;b&gt;Scan Any QR&lt;/b&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/body&gt;
+          </code>
+        </pre>
+        <h2>Add CSS Code</h2>
+        <pre>
+          <code>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    nav {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 129993;
+      position: sticky;
+      top: 0;
+    }
+    .nav_left {
+      width: 100px;
+      padding: 10px 20px;
+    }
+    .nav_center {
+      padding: 10px 20px;
+    }
+    .nav_center img {
+      height: 100%;
+      width: 100%;
+    }
+    .nav_right {
+      width: 100px;
+      padding: 10px 20px;
+    }
+    .nav_right i {
+      margin-left: 10px;
+    }
+    i:active {
+      transform: scale(0.9);
+    }
+    .poster_container {
+      height: 100%;
+      width: 100%;
+      margin-top: -50px;
+      position: sticky;
+      top: 0;
+    }
+    .poster_container img {
+      height: 100%;
+      width: 100%;
+    }
+    .main_container {
+      height: 700px;
+      width: 100%;
+      position: sticky;
+      top: 60px;
+      background: white;
+      border-radius: 15px;
+      z-index: 1234;
+      border-top: 1px solid gray;
+    }
+    #QRCode {
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      bottom: -100px;
+      z-index: 12345;
+      display: flex;
+      justify-content: center;
+      transition: .2s ease-in;
+    }
+    #QRCodeBox {
+      height: 50px;
+      width: 150px;
+      background: #2a96e6;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #QRCodeBox img {
+      height: 30px;
+      width: 30px;
+      border-radius: 4px;
+    }
+    #QRCodeBox b {
+      font-family: Sans-Serif;
+      color: white;
+    }
+
+          </code>
+        </pre>
+        <h2>Add javascript Code</h2>
+        <pre>
+          <code>
+    //hide and show qr code btn using onscroll event
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("QRCode").style.bottom = "-100%";
+      } else {
+        document.getElementById("QRCode").style.bottom = "10px";
+      }
+
+      prevScrollpos = currentScrollPos;
+    }
+          </code>
+        </pre>
+        <p>
+          That all for this post. I hope you love this project. please share your thoughts and  suggestions in comment below. <br> <br><b>Thank you  For Visiting. By see You soon.</b>
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer">
+      </div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!--comment output-->
+      <div id="comment_output_container">
+      </div>
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.html">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+    </ul>
+    <p>
+      All Rights reserved by Manoarya
+    </p>
+  </footer>
+  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+</body>
