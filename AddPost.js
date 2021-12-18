@@ -175,4 +175,37 @@ const AllPost = [{
 		alt: "Paytm UI Clone ",
 		trending: "true",
 	},
+	{
+		category: "HTM",
+		Title: "How to make snap scrolling effects using html and css.",
+		Paragraph:
+		"Learn How to make snap scrolling effects using html and css. with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/R9J5K6R/Pics-Art-12-18-07-05-31.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-snap-scrolling-effects-using-html-and-css.html",
+		alt: "snap scrolling Effect",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to make search bar and suggestion using only html.html",
+		Paragraph:
+		"Learn How to make search bar and suggestion using only html.html with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/wzFT4NC/Pics-Art-12-18-07-37-53.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html",
+		alt: "search suggestions",
+		trending: "true",
+	},
+	{
+		category: "HTM",
+		Title: "How to create details opener and closer using only html.",
+		Paragraph:
+		"Learn How to create details opener and closer using only html. with free source code.",
+		ImageUrl:
+		"https://i.ibb.co/JKcN9FM/Pics-Art-12-18-07-42-37.png",
+		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html",
+		alt: "details opener closed",
+		trending: "true",
+	},
 ];
