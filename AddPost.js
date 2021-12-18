@@ -193,7 +193,7 @@ const AllPost = [
 		"Learn How to make search bar and suggestion using only html.html with free source code.",
 		ImageUrl:
 		"https://i.ibb.co/wzFT4NC/Pics-Art-12-18-07-37-53.png",
-		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html",
+		PostUrl: "Manoarya/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html",
 		alt: "search suggestions",
 		trending: "true",
 	},
