@@ -1,4 +1,5 @@
-const AllPost = [{
+const AllPost = [
+  {
 	category: "HTM",
 	Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript?",
 	Paragraph:
@@ -42,7 +43,6 @@ const AllPost = [{
 		alt: "SignUp and Login from Manoarya",
 		trending: "true",
 	},
-	
 	{
 		category: "HTM",
 		Title: "How to make image preview using html css and javascript?",
@@ -128,7 +128,7 @@ const AllPost = [{
 		ImageUrl:
 		"https://i.ibb.co/HVPs5Th/Pics-Art-12-14-07-14-52.png",
 		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-make-full-page-navigation-using-3-steps.html",
-		alt: "full page navigationby Manoarya",
+		alt: "full page navigation by Manoarya",
 		trending: "true",
 	},
 	{
@@ -204,7 +204,7 @@ const AllPost = [{
 		"Learn How to create details opener and closer using only html. with free source code.",
 		ImageUrl:
 		"https://i.ibb.co/JKcN9FM/Pics-Art-12-18-07-42-37.png",
-		PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html",
+		PostUrl: "https://manoarya.com/Manoarya/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html",
 		alt: "details opener closed",
 		trending: "true",
 	},
