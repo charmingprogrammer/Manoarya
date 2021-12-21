@@ -193,7 +193,7 @@ const AllPost = [
 		"Learn How to make search bar and suggestion using only html.html with free source code.",
 		ImageUrl:
 		"https://i.ibb.co/wzFT4NC/Pics-Art-12-18-07-37-53.png",
-		PostUrl: "https://manoarya.com/Manoarya/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html",
+		PostUrl: "https://manoarya.com/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html",
 		alt: "search suggestions",
 		trending: "true",
 	},
@@ -204,7 +204,7 @@ const AllPost = [
 		"Learn How to create details opener and closer using only html. with free source code.",
 		ImageUrl:
 		"https://i.ibb.co/JKcN9FM/Pics-Art-12-18-07-42-37.png",
-		PostUrl: "https://manoarya.com/Manoary/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html",
+		PostUrl: "https://manoarya.com/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html",
 		alt: "details opener closed",
 		trending: "true",
 	},
