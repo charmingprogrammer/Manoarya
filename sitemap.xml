@@ -1,34 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <loc>https://manoarya.com/</loc>
-  <lastmod>2021-12-21T03:05:46+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://manoarya.com/Manoarya%20All%20Post/AboutUs.html</loc>
-  <lastmod>2021-12-21T03:05:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://manoarya.com/Manoarya%20All%20Post/ContactUs.html</loc>
-  <lastmod>2021-12-21T03:05:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://manoarya.com/Manoarya%20All%20Post/privacyPrivacy.html</loc>
-  <lastmod>2021-12-21T03:05:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://manoarya.com/Manoarya%20All%20Post/TermsAndConditions.html</loc>
-  <lastmod>2021-12-21T03:05:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://manoarya.com/Manoarya%20All%20Post/Disclaimer.html</loc>
-  <lastmod>2021-12-21T03:05:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
 
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://manoarya.com/</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-make-Sidebar-with-multiple-Pages-using-HTML-CSS-and-Javascript.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How_to_make_modal_box_using_html_css_and_js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How_to_make_info_opener_using_html_css_and_js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How_to_make_sign_up_from_using_html_css_and_js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-make-image-preview-using-html-css-and-javascript.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-add-text-on-image-using-html-css-and-js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-make-a-image-gallery-using-html-css-and-js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-responsive-layout-using-html-css-and-js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-search-ui-like-a-browser-window-using-html-css-and-js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-horizontal-slider-using-html-css-and-js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-profile-ui-using-html-css-and-js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-make-full-page-navigation-using-3-steps.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/Sportify_UI_clone_by_manoarya.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/Play_store_UI_clone_by_manoarya.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/Color_tic_tac_to_using_html_css_and_js.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How_to_make_paytm_ui_clone_using_html_and_css.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-make-snap-scrolling-effects-using-html-and-css.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/AboutUs.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/ContactUs.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/privacyPrivacy.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/TermsAndConditions.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://manoarya.com/Manoarya%20All%20Post/Disclaimer.html</loc>
+<lastmod>2021-12-22T03:31:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
