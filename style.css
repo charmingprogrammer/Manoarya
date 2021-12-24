@@ -10,7 +10,7 @@ html{
   scroll-snap-type: Y mandatory;
 }
 body {
-  background: #dfdfdf;
+  background: #f1f1f1;
 }
 nav {
   height: 50px;
@@ -22,7 +22,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: scale(0.9);
 }
 
 #logo_container {
