@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
   <meta name="viewport"
   content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <!--Favicons links-->
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -21,155 +19,107 @@
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
   <title>Manoarya</title>
-  <meta name="description" content="Manoarya is a site for learning Maths,Science and coding with awesome UI.">
-</head>
+  <meta name="description" content="Manoarya is a sea of education. hare you can find educationl content with awesome UI.">
+  </head>
 
-<body>
+  <body>
   <!-- top navigation  -->
   <nav>
-    <!-- logo  container  -->
-    <div id="logo_container">
-      <img src="https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/ManoaryaLogo.png" alt="Manoarya logo">
-    </div>
-    <!-- search input -->
-    <input type="search" id="searchInput" placeholder="Search" onclick="searchInput()" onkeyup="searchNow()" />
-    <!-- user googel sign in -->
-    <div id="user_container" onclick="user()">
-      <img src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_960_720.png" alt="userPic"
-      id="googleuserPic">
-    </div>
+  <!-- logo  container  -->
+  <div id="logo_container">
+  <img src="https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/ManoaryaLogo.png" alt="Manoarya logo" >
+  </div>
+  <!-- search input -->
+  <input type="search" id="searchInput" placeholder="Search" onclick="searchInput()" onkeyup="searchNow()" />
+  <!-- user googel sign in -->
+  <div id="user_container" onclick="user()">
+  <img src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_960_720.png" alt="userPic"
+  id="googleuserPic">
+  </div>
   </nav>
-  <!--bottom navigation-->
+
   <div id="bottom_nav">
-    <div class="bottom_box" onclick="home()">
-      <i class="fas fa-home"></i>
-    </div>
-    <div class="bottom_box" onclick="explore()">
-      <i class="far fa-compass"></i>
-    </div>
-    <div class="bottom_box" onclick="add()">
-      <i class="fas fa-plus"></i>
-    </div>
-    <div class="bottom_box" id="Quotes">
-      <i class="fas fa-quote-right"></i>
-    </div>
-    <div class="bottom_box" onclick="tool()">
-      <i class="fas fa-tools"></i></i>
+  <div class="bottom_box" onclick="home()">
+  <i class="fas fa-home"></i>
   </div>
-</div>
-<!--js data pulled hare means all post add below -->
-<div id="container" onclick="userClose()">
-</div>
+  <div class="bottom_box" onclick="explore()">
+  <i class="far fa-compass"></i>
+  </div>
+  <div class="bottom_box" onclick="add()">
+  <i class="fas fa-plus"></i>
+  </div>
+  <div class="bottom_box" id="Quotes" >
+  <i class="fas fa-quote-right"></i>
+  </div>
+  <div class="bottom_box" onclick="tool()">
+  <i class="fas fa-tools"></i></i>
+  </div>
+  </div>
 
-<!--search suggestion container -->
-<div id="search_container" onclick="searchCloser()">
+  <!--js data pulled hare  -->
+  <div id="container" onclick="userClose()">
+  </div>
+
+  <!-- search suggestion container -->
+
+  <div id="search_container" onclick="searchCloser()">
   <div id="search_Suggestion">
-    <ul id="myUL">
-    </ul>
+  <ul id="myUL">
+  </ul>
   </div>
-</div>
+  </div>
 
-<!-- user auth by google -->
-<div id="user_login_con">
+  <!-- user auth by google -->
+  <div id="user_login_con">
   <button onclick="userClose()"><i class="fas fa-times"></i></button>
   <button id="googleAuthBtn"><img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"
-    alt="googel image">Login with Googel</button>
-</div>
+  alt="googel image">Login with Googel</button>
+  </div>
 
-<!-- add input page stucture -->
-<div id="add_input_container">
+  <!-- add input page stucture -->
+  <div id="add_input_container">
   <div id='input_Con_Closer' onClick='closeAdd()'>
-    <i class="fas fa-times"></i>
+  <i class="fas fa-times"></i>
   </div>
   <form onSubmit='return false' id='QuotesAdded'>
-    <textarea id="addInput" placeholder="Add Quotes" cols="30" rows="10" required></textarea>
-    <button type="submit">Add Quotes</button>
+  <textarea id="addInput" placeholder="Add Quotes" cols="30" rows="10" required></textarea>
+  <button type="submit">Add Quotes</button>
   </form>
-</div>
-<!--All Posts Link-->
-<ul id="linkUl">
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-make-Sidebar-with-multiple-Pages-using-HTML-CSS-and-Javascript.html">How to make Sidebar with multiple Pages using HTML, CSS and Javascript</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How_to_make_modal_box_using_html_css_and_js.html">How to make Modal Box using HTML,CSS and Javascript?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How_to_make_info_opener_using_html_css_and_js.html">How to make Information opener using HTML, CSS and Js? for free.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How_to_make_sign_up_from_using_html_css_and_js.html">How to make Sign Up and Login from using HTML, CSS and Js? for free.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-make-image-preview-using-html-css-and-javascript.html">How to make image preview using html css and javascript?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-add-text-on-image-using-html-css-and-js.html">How to add text on image using html and css?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-make-a-image-gallery-using-html-css-and-js.html">How to make a image gallery using html css and js?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-responsive-layout-using-html-css-and-js.html">How to create a responsive layout using html css and js?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-search-ui-like-a-browser-window-using-html-css-and-js.html">How to create a search ui like a browser window using html and css?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-horizontal-slider-using-html-css-and-js.html">How to create a horizontal slider using html and css?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-create-a-profile-ui-using-html-css-and-js.html">How to create a profile ui using html and css?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-make-full-page-navigation-using-3-steps.html">How to make full page navigation using 3 steps?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/Sportify_UI_clone_by_manoarya.html">Sportify UI Clone Using HTML and CSS.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/Play_store_UI_clone_by_manoarya.html">Google Play Store UI Clone using HTML and CSS.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/Color_tic_tac_to_using_html_css_and_js.html">Color Tic tac to using html css and js.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How_to_make_paytm_ui_clone_using_html_and_css.html">How to make Paytm UI Clone using html and css?</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-make-snap-scrolling-effects-using-html-and-css.html">How to make snap scrolling effects using html and css.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-make-search-bar-and-suggestion-using-only-html.html">How to make search bar and suggestion using only html.</a>
-  <a href="https://manoarya.com/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html">How to create details opener and closer using only html.</a>
-</ul>
-<!--all links style -->
-<style type="text/css" media="all">
-
-
-
-  #linkUl {
-    background: none;
-    transform: scale(0.95);
-  }
-
-
-  #linkUl a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 5px;
-  }
-  
-</style>
-<!--script for links tag-->
-<script type="text/javascript" charset="utf-8">
-  function opener() {
-    const nav = document.getElementById('links_con'); nav.classList.toggle('nav');
-  }
-</script>
-<!--footer-->
-<footer>
+  </div>
+  <!--footer-->
+  <footer>
   <ul>
-    <li><a href="https://manoarya.com/Manoarya%20All%20Post/AboutUs.html">About us</a></li>
-    <li><a href="https://manoarya.com/Manoarya%20All%20Post/ContactUs.html">Contact us</a></li>
-    <li><a href="https://manoarya.com/Manoarya%20All%20Post/privacyPrivacy.html">Privacy Policy</a></li>
-    <li><a href="https://manoarya.com/Manoarya%20All%20Post/TermsAndConditions.html">Terms and conditions</a></li>
-    <li><a href="https://manoarya.com/Manoarya%20All%20Post/Disclaimer.html">Disclaimer</a></li>
-    <li><a href="sitemap.xml">Sitemap</a></li>
+  <li><a href="https://manoarya.com/Manoarya%20All%20Post/AboutUs.html">About us</a></li>
+  <li><a href="https://manoarya.com/Manoarya%20All%20Post/ContactUs.html">Contact us</a></li>
+  <li><a href="https://manoarya.com/Manoarya%20All%20Post/privacyPrivacy.html">Privacy Policy</a></li>
+  <li><a href="https://manoarya.com/Manoarya%20All%20Post/TermsAndConditions.html">Terms and conditions</a></li>
+  <li><a href="https://manoarya.com/Manoarya%20All%20Post/Disclaimer.html">Disclaimer</a></li>
+  <li><a href="https://manoarya.com/Manoarya%20All%20Post/Sitemap.html">Sitemap</a></li>
   </ul>
   <ul>
-    <b>Follow Me</b>
-    <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-    <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
-    <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-    <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+  <b>Follow Me</b>
+  <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+  <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+  <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+  <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+  <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+  <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
   </ul>
   <p>
-    All Rights reserved by Manoarya
+  All Rights reserved by Manoarya
   </p>
 
-</footer>
-<script src="AddPost.js" type="text/javascript" charset="utf-8"></script>
-<script src="index.js" type="text/javascript" charset="utf-8"></script>
-<script src="add.js" type="text/javascript" charset="utf-8"></script>
-<script src="explore.js" type="text/javascript" charset="utf-8"></script>
-<script src="Quotes.js" type="text/javascript" charset="utf-8"></script>
-<script src="home.js" type="text/javascript" charset="utf-8"></script>
-<script src="firebase.js" type="module" charset="utf-8"></script>
+  </footer>
+  <script src="AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="add.js" type="text/javascript" charset="utf-8"></script>
+  <script src="explore.js" type="text/javascript" charset="utf-8"></script>
+  <script src="Quotes.js" type="text/javascript" charset="utf-8"></script>
+  <script src="home.js" type="text/javascript" charset="utf-8"></script>
+  <script src="firebase.js" type="module" charset="utf-8"></script>
 
 
-</body>
+  </body>
