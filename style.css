@@ -10,7 +10,7 @@ html{
   scroll-snap-type: Y mandatory;
 }
 body {
-  background: red;
+  background: #e2e2e2;
 }
 nav {
   height: 50px;
