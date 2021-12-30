@@ -208,4 +208,15 @@ const AllPost = [
 		alt: "details opener closed",
 		trending: "true",
 	},
+	{
+		category: "Tools",
+		Title: "Mono Dictionary | The word meaning words.",
+		Paragraph:
+		"Explore unlimited word meanings with awesome UI and accessibility. ",
+		ImageUrl:
+		"https://i.ibb.co/9WKH5X9/20211230-080635-0000.png",
+		PostUrl: "https://charmingprogrammer.github.io/ManoDictionary/",
+		alt: "Mono Dictionary",
+		trending: "true",
+	},
 ];
