@@ -225,7 +225,7 @@ const AllPost = [
 		Paragraph:
 		"Explore High Quality Easy Notes for Class 11th Physics Both CBSE and NCERT.  ",
 		ImageUrl:
-		"https://i.ibb.co/R62TgQx/png-20220103-203850-0000.png",
+		"https://i.ibb.co/Xk59F5K/20220103-212618-0000.png",
 		PostUrl: "https://manoarya.com/Class_11th_Physics_Easy_Notes_by_manoarya.html",
 		alt: "Class 11th physics notes by Manoarya",
 		trending: "true",
