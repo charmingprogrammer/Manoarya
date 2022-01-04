@@ -263,6 +263,7 @@ const AllPost = [
 		alt: "English Grammer",
 		trending: "true",
 	},
+	/*
 	{
 		category: "Tools",
 		Title: "Mono Trans | An interactive way to learn translation. ",
@@ -274,6 +275,7 @@ const AllPost = [
 		alt: "English translation",
 		trending: "true",
 	},
+	*/
 	{
 		category: "Notes",
 		Title: "Computer Fundamentals",
