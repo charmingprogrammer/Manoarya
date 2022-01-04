@@ -252,4 +252,15 @@ const AllPost = [
 		alt: "Class 11th Mathematics notes by Manoarya",
 		trending: "true",
 	},
+	{
+		category: "Notes",
+		Title: "English Grammer| Beginners to Advance",
+		Paragraph:
+		"Explore High Quality English Grammer Content For All.",
+		ImageUrl:
+		"https://i.ibb.co/KDJmfpT/20220104-084114-0000.png",
+		PostUrl: "https://manoarya.com/English_Grammer.html",
+		alt: "English Grammer",
+		trending: "true",
+	},
 ];
