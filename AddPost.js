@@ -241,4 +241,15 @@ const AllPost = [
 		alt: "Class 11th Chemistry notes by Manoarya",
 		trending: "true",
 	},
+	{
+		category: "Notes",
+		Title: "Class 11th Mathematics Easy Notes. CBSE and NCERT Notes ",
+		Paragraph:
+		"Explore High Quality Easy Notes for Class 11th Mathematics Both CBSE and NCERT.  ",
+		ImageUrl:
+		"https://i.ibb.co/BgQZTsn/20220104-081456-0000.png",
+		PostUrl: "https://manoarya.com/Class_11th_maths_Easy_Notes_by_manoarya.html",
+		alt: "Class 11th Mathematics notes by Manoarya",
+		trending: "true",
+	},
 ];
