@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Page title-->
+  <title>Class 11th Maths  Easy Notes By Manoarya.</title>
+  <!--meta description-->
+<meta name="description" content="Explore class 11th Maths  notes with highly customized UI. All Chapter found in single page. Dark Mode features enable">
+  <!--css link-->
+  <link rel="stylesheet" href="Course.css" type="text/css" />
+  <!--font awesome for icons-->
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--main container-->
+  <div id="main_container">
+  </div>
+  <!--bottom navigation-->
+  <div id="bottom_nav">
+    <div id="bar" onclick="sidebarOpener()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div id="darkMode">
+      <i class="fas fa-cog" onclick="setting()" id="setting"></i>
+    </div>
+    <div id="home">
+      <i class="fas fa-home" onclick="home()"></i>
+    </div>
+  </div>
+  <!--sidebar-->
+  <div id="Sidebar_container">
+    <div class="Sidebar_content" id="Sidebar_content">
+      <ul id="index">
+      </ul>
+      <ul style="flex-direction: column; ">
+          <li><a href="https://manoarya.com/Manoarya%20All%20Post/AboutUs.html">About us</a></li>   
+          <li><a href="https://manoarya.com/Manoarya%20All%20Post/ContactUs.html">Contact us</a></li>   
+          <li><a href="https://manoarya.com/Manoarya%20All%20Post/privacyPrivacy.html">Privacy Policy</a></li>   
+          <li><a href="https://manoarya.com/Manoarya%20All%20Post/TermsAndConditions.html">Terms and conditions</a></li>   
+          <li><a href="https://manoarya.com/Manoarya%20All%20Post/Disclaimer.html">Disclaimer</a></li>   
+          <li><a href="https://manoarya.com/sitemap.xml">Sitemap</a></li>   
+      </ul>
+    </div>
+    <div class="Sidebar_closer" onclick="Sidebar_closer()"></div>
+  </div>
+  <!--Setting Pages structure-->
+  <div id="setting_page">
+    <div id="setting_nav">
+      <i class="fas fa-arrow-left" onclick="setting_closer()"></i><span>Settings</span>
+    </div>
+    <b id="darkModeCon">
+    <span>Dark Mode</span>
+    <span><button onclick="DarkOn()">ON</button>
+    <button onclick="DarkOff()">OFF</button>
+    </span>
+    </b>
+  </div>
+  <!--Javascript file link-->
+  <script src="Class_11th_Maths_Easy_Notes_by_manoarya.js" type="text/javascript" charset="utf-8"></script>
+  <script src="Course.js" type="text/javascript" charset="utf-8"></script>
+</body>
