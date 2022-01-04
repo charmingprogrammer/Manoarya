@@ -263,4 +263,15 @@ const AllPost = [
 		alt: "English Grammer",
 		trending: "true",
 	},
+	{
+		category: "Tools",
+		Title: "Mono Trans | An interactive way to learn translation. ",
+		Paragraph:
+		"An interactive way to learn translation.",
+		ImageUrl:
+		"https://i.ibb.co/GsVm1VJ/20220104-090540-0000.png",
+		PostUrl: "https://manoarya.com/English_Translation.html",
+		alt: "English translation",
+		trending: "true",
+	},
 ];
