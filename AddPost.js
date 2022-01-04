@@ -274,4 +274,15 @@ const AllPost = [
 		alt: "English translation",
 		trending: "true",
 	},
+	{
+		category: "Notes",
+		Title: "Computer Fundamentals",
+		Paragraph:
+		"Easy and interactive way to learn Computer Fundamentals with monoarya.",
+		ImageUrl:
+		"https://i.ibb.co/23QWL6G/20220104-091839-0000.png",
+		PostUrl: "https://manoarya.com/Computer_Fundamentals.html",
+		alt: "computer Fundamentals",
+		trending: "true",
+	},
 ];
