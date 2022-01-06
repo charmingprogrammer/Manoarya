@@ -41,7 +41,7 @@ for (var i = 0; i < AllNotes.length; i++) {
     <div class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
     </div>`);
-  index.insertAdjacentHTML('afterbegin', `<a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a>`)
+  index.insertAdjacentHTML('afterbegin', `<li><a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a></li>`)
 }
 //get All H2 tags for quick search
 const topic_explaning = document.getElementById('topic_explaning');
@@ -50,7 +50,7 @@ const H2 = topic_explaning.getElementsByTagName('h2');
 //looping  all h2 inside of nav
 for (var i = 0; i < H2.length; i++) {
   document.getElementById('PageOverview').insertAdjacentHTML('afterbegin', `
-    <li><a href="#${H2[i].innerHTML}">${H2[i].innerHTML}</a></li>`);
+  <a href="#${H2[i].innerHTML}">${H2[i].innerHTML}</a>`);
   H2[i].id = H2[i].innerHTML
 }
 
@@ -67,6 +67,7 @@ const homeIcon = document.getElementById('home');
 const Sidebar = document.getElementById('Sidebar_content');
 
 const aTag = document.getElementsByTagName('a');
+
 
 function DarkOn() {
   fullDom.style.background = 'black';
