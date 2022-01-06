@@ -41,7 +41,7 @@ for (var i = 0; i < AllNotes.length; i++) {
     <div class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
     </div>`);
-  index.insertAdjacentHTML('afterbegin', `<li><a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a></li>`)
+  index.insertAdjacentHTML('afterbegin', `<a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a>`)
 }
 //get All H2 tags for quick search
 const topic_explaning = document.getElementById('topic_explaning');
