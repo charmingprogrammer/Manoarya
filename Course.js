@@ -30,10 +30,28 @@ for (var i = 0; i < AllNotes.length; i++) {
     <div id="img_container">
     <img src="${AllNotes[i].ImgUrl}" alt="${AllNotes[i].ImgAlt}" />
     </div>
-    <div class="topic_explaning">
+    <nav id="nav">
+    <div class="top_items">
+    <b>Page overview</b>
+    <i class="fas fa-align-right" onclick="opener()"></i>
+    </div>
+    <ul id="PageOverview">
+    </ul>
+    </nav>
+    <div class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
     </div>`);
   index.insertAdjacentHTML('afterbegin', `<li><a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a></li>`)
+}
+//get All H2 tags for quick search
+const topic_explaning = document.getElementById('topic_explaning');
+const H2 = topic_explaning.getElementsByTagName('h2');
+
+//looping  all h2 inside of nav
+for (var i = 0; i < H2.length; i++) {
+  document.getElementById('PageOverview').insertAdjacentHTML('afterbegin', `
+    <li><a href="#${H2[i].innerHTML}">${H2[i].innerHTML}</a></li>`);
+  H2[i].id = H2[i].innerHTML
 }
 
 //Dark Mode ON OFF
@@ -48,7 +66,7 @@ const settingIcon = document.getElementById('setting');
 const homeIcon = document.getElementById('home');
 const Sidebar = document.getElementById('Sidebar_content');
 
-const aTag = Sidebar.getElementsByTagName('a');
+const aTag = document.getElementsByTagName('a');
 
 function DarkOn() {
   fullDom.style.background = 'black';
@@ -62,19 +80,19 @@ function DarkOn() {
   darkModeCon.style.background = 'black';
   bar.style.background = 'black';
   bar.style.color = '#bababa';
-  
+
   darkMode.style.background = 'black';
   darkMode.style.color = '#bababa';
-  
+
   settingIcon.style.background = 'black';
   settingIcon.style.color = '#bababa';
-  
-  
+
+
   homeIcon.style.background = 'black';
   homeIcon.style.color = '#bababa';
   Sidebar.style.background = 'black';
   Sidebar.style.color = '#bababa';
-  
+
   for (var i = 0; i < aTag.length; i++) {
     aTag[i].style.color = '#bababa';
   }
@@ -87,18 +105,18 @@ function DarkOff() {
     pageTitle[i].style.color = '';
   }
   settingPage.style.background = 'white';
-   setting_nav.style.background = 'white';
+  setting_nav.style.background = 'white';
   darkModeCon.style.background = 'white';
   bar.style.background = 'white';
   bar.style.color = '';
-  
+
   darkMode.style.background = 'white';
   darkMode.style.color = '';
-  
-settingIcon.style.background = 'white';
+
+  settingIcon.style.background = 'white';
   settingIcon.style.color = '';
-  
-  
+
+
   homeIcon.style.background = 'white';
   homeIcon.style.color = '';
   Sidebar.style.background = 'white';
@@ -106,4 +124,9 @@ settingIcon.style.background = 'white';
   for (var i = 0; i < aTag.length; i++) {
     aTag[i].style.color = '';
   }
+}
+//open content suggestion
+function opener() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('nav');
 }
