@@ -1,10 +1,8 @@
 const AllNotes = [
   {
-  Title: "1. Characteristics of Computer.",
-  ImgUrl: "https://i.ibb.co/CQjVBJY/20220104-123904-0000.png",
-  ImgAlt: "Physical world",
-  Topic: `<h2></h2>
-  <p>
-  </p>`
+  Title: "1. Computer Introduction",
+  ImgUrl: "https://i.ibb.co/YPWB7FX/20220107-121951-0000.png",
+  ImgAlt: "Computer Introduction",
+  Topic: `<div class="infos"><h2>Heading 01</h2><p>Paragraphs</p></div>`
 },
 ]
