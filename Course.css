@@ -49,15 +49,26 @@ i:active {
   transform: scale(0.9);
 }
 .topic_explaning {
-  padding: 10px 20px;
+  
 }
+.infos{
+  padding: 10px 20px;
+  transform: scale(0.91);
+  border: 1px solid #bababa;
+  border-radius: 5px;
+}
+.infos:hover{
+  background: #ebeb95;
+  color: black;
+}
+
 .topic_explaning h2 {
   font-weight: 400;
   padding: 5px 0px;
   font-size: 19px;
   color: #00beff;
 }
-.topic_explaning p {
+.infos p {
   font-size: 18px;
   padding: 5px 0px;
   font-weight: 400;
