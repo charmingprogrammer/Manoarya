@@ -9,7 +9,7 @@ const AllNotes = [
   <h2>Scientific methods<h2> 
   <p>Method or rules of scientific research is called scientific method. <br><br> <b>some scientific method are following. </b><br>1. Systematic observations <br>2. Controlled experiments. <br> 3. Qualitative and quantitative reasoning <br>4. Mathematics modeling <br>5. Predictions <br>6. Verificationof theory <br><br> To apply one science theory or formula. First check that this theory of formula is complete all the steps of scientific method and also philosophical debate by many scientists and philosophers. </p>
   <h2>Natural Science<h2>
-  <p><b>Two principles of physics.</b> <br>1. Unification <br>2. Reduction</p>
+  <p>What we study in physics chemistry and biology all the stuff known as natural science. <br><br> <b>Physics</b>: Physics  is the study of nature and its law. <br><br> Word physics comes from Greek Word which meaning is natural. <b>Two principles of physics.</b> <br>1. Unification <br>2. Reduction</p>
   <h2>Unification<h2>
   <p>Try to explain and understand natural phenomena in same theory or formula. </p> 
   <h2>Reduction<h2>
