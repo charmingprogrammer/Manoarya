@@ -252,6 +252,7 @@ const AllPost = [
 		alt: "Class 11th Mathematics notes by Manoarya",
 		trending: "true",
 	},
+		/*
 	{
 		category: "Notes",
 		Title: "English Grammer| Beginners to Advance",
@@ -263,7 +264,6 @@ const AllPost = [
 		alt: "English Grammer",
 		trending: "true",
 	},
-	/*
 	{
 		category: "Tools",
 		Title: "Mono Trans | An interactive way to learn translation. ",
