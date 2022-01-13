@@ -49,11 +49,16 @@ i:active {
   transform: scale(0.9);
 }
 .topic_explaning {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .infos{
   padding: 10px 20px;
-  transform: scale(0.91);
+  width: 91%;
+  height: 100%;
+  margin-top: 10px;
   border: 1px solid #bababa;
   border-radius: 5px;
 }
@@ -65,7 +70,7 @@ i:active {
 .topic_explaning h2 {
   font-weight: 400;
   padding: 5px 0px;
-  font-size: 19px;
+  font-size: 20px;
   color: #00beff;
 }
 .infos p {
