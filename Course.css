@@ -1,12 +1,10 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Comic Sans MS;
   scroll-behavior: smooth;
-}
-html {
-  scroll-snap-type: X mandatory;
 }
 i:active {
   transform: scale(0.95);
@@ -40,13 +38,15 @@ i:active {
   border-bottom: 1px solid gray;
 }
 #img_container {
-  height: 250px;
+  height:100%;
   width: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 #img_container img {
   height: 100%;
   width: 100%;
-  transform: scale(0.9);
+  border-radius: 10px;
 }
 .topic_explaning {
   display: flex;
@@ -55,28 +55,34 @@ i:active {
   align-items: center;
 }
 .infos{
-  padding: 10px 20px;
-  width: 91%;
+  width: 95%;
   height: 100%;
   margin-top: 10px;
   border: 1px solid #bababa;
   border-radius: 5px;
+  user-select: none;
+  transition: .2s ease-in;
 }
 .infos:hover{
-  background: #ebeb95;
-  color: black;
+background: #f9f9a6;
+  color:black;
 }
 
 .topic_explaning h2 {
-  font-weight: 400;
-  padding: 5px 0px;
-  font-size: 20px;
-  color: #00beff;
+ padding: 10px 20px;
+ color: #21b1e6;
+ text-transform: capitalize;
 }
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
 .infos p {
-  font-size: 18px;
-  padding: 5px 0px;
-  font-weight: 400;
+  padding: 10px 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+}
+.infos b{
+  color: #21b1e6;
+  text-transform: capitalize;
 }
 .topic_explaning img {
   width: 100%;
@@ -153,7 +159,7 @@ i:active {
   height: 100vh;
   width: 70%;
   background: white;
-  box-shadow: 0 0 100px 1px #525252;
+  box-shadow: 0 0 10px 1px black;
   overflow: scroll;
 }
 .Sidebar_content ul {
@@ -224,7 +230,7 @@ nav{
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
-  transform: scale(0.91);
+  transform: scale(0.95);
   border: 1px solid #acacac;
   transition: .2s ease-out;
 }
