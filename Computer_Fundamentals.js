@@ -33,8 +33,25 @@ Mainframe computers used by banks and business to update inventery.
 Mainframe process millions of instructions pre second. 
 <br> <br> 
 (iii) Minicomputers : <br> minicomputers are smaller than mainframe computers. 
-<br> <br> 
+<br><br> 
 minicomputers are general purpos computer used for accounting, word processing, numerical analysis etc.
+</p></div> <div class="infos"><h2>2. Small computer system</h2><p>
+(i) Microcomputers <br> 
+(ii) Laptops  and notebooks <br> 
+(iii) Hand-held computers <br> 
+(iv) Pen-Based computer  <br> <br> 
+
+(i) Microcomputers : <br> Microcomputers are called personal computers which is smallest in size, least expensive and best for personal used. <br> <br> 
+
+(ii) Laptops and Notebooks : <br> Laptops and notebooks are provides mobile computing technology.
+<br> <br> 
+Laptops and notebooks are battery operated used anywhere anytime. 
+<br> <br> 
+Notebook are smallest as compair to laptops.
+<br> <br> 
+(iii) Hand-Held computers : <br> Hand-held computers are more smaller as compair to notebook used for collecting some data. 
+<br> <br> 
+(iv) Pen-Based computers : <br> Pen-besed computers used to write somthing on the digital pads of  digital boards  to give as an input.
 </p></div> `
 },
 ]
