@@ -38,9 +38,9 @@ for (var i = 0; i < AllNotes.length; i++) {
     <ul id="PageOverview">
     </ul>
     </nav>
-    <div class="topic_explaning" id='topic_explaning'>
+    <pre class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
-    </div>`);
+    </pre>`);
   index.insertAdjacentHTML('afterbegin', `<li><a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a></li>`)
 }
 //get All H2 tags for quick search
