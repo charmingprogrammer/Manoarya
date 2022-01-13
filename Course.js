@@ -68,30 +68,30 @@ const Sidebar = document.getElementById('Sidebar_content');
 
 const aTag = document.getElementsByTagName('a');
 
-
+DarkOn();
 function DarkOn() {
-  fullDom.style.background = 'black';
+  fullDom.style.background = '#191919';
   fullDom.style.color = '#e9e9e9';
   for (var i = 0; i < pageTitle.length; i++) {
-    pageTitle[i].style.background = 'black';
+    pageTitle[i].style.background = '#191919';
     pageTitle[i].style.color = '#e9e9e9';
   }
-  settingPage.style.background = 'black';
-  setting_nav.style.background = 'black';
-  darkModeCon.style.background = 'black';
-  bar.style.background = 'black';
+  settingPage.style.background = '#191919';
+  setting_nav.style.background = '#191919';
+  darkModeCon.style.background = '#191919';
+  bar.style.background = '#191919';
   bar.style.color = '#bababa';
 
-  darkMode.style.background = 'black';
+  darkMode.style.background = '#191919';
   darkMode.style.color = '#bababa';
 
-  settingIcon.style.background = 'black';
+  settingIcon.style.background = '#191919';
   settingIcon.style.color = '#bababa';
 
 
-  homeIcon.style.background = 'black';
+  homeIcon.style.background = '#191919';
   homeIcon.style.color = '#bababa';
-  Sidebar.style.background = 'black';
+  Sidebar.style.background = '#191919';
   Sidebar.style.color = '#bababa';
 
   for (var i = 0; i < aTag.length; i++) {
