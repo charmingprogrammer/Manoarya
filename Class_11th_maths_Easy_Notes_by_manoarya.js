@@ -11,6 +11,6 @@ const AllNotes = [{
   <b>R : </b>For the set of all real numbers. <br>
   <b>R+ : </b>For the set of all positive real numbers. <br>
   <b>C : </b>For the set of all complex numbers.
-  </p></div> <div class="infos"><h2>Descriptions of sets</h2><p>Set described in 2 terms. <br><br>1. Roster Form or tabular from <br>2. Set-builder form <br><br></p></div><br>  `
+  </p></div> <div class="infos"><h2>Descriptions of sets</h2><p>Set described in 2 terms. <br><br>1. Roster Form or tabular from <br>2. Set-builder form <br><br></p></div><div class="infos"><h2>1. Roster Form | tabular Form</h2><p>In this form a set is describe by listing elements, separated  with commas(,) within bracket{}.</p></div><br>  `
 },
 ]
