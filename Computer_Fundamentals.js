@@ -51,6 +51,69 @@ const AllNotes = [{
   (iii) Hand-Held computers : <br> Hand-held computers are more smaller as compair to notebook used for collecting some data.
   <br> <br>
   (iv) Pen-Based computers : <br> Pen-besed computers used to write somthing on the digital pads of  digital boards  to give as an input.
-  </p></div> <div class="infos"><h2>FAQ</h2><p><details><summary>which generation of computer is covered by the period 1964-77 ?</summary>Third generation of computer is covered by the period 1964-77.</details></p></div> `
+  </p></div> <div class="infos"><h2>FAQ</h2><p><details><summary>which generation of computer is covered by the period 1964-77 ?</summary>Third generation of computer is covered by the period 1964-77.</details>
+  <details>
+  <summary>
+  Which computers called first generation of computer ? 
+  </summary>
+  UNIVAC computers are called first generation of computer.
+  </details> 
+  
+  <details>
+  <summary>
+  What hardware was used by first generation computers?
+  </summary>
+  Valves hardware was used by first gerneration of computers.
+  </details> 
+  
+  <details>
+  <summary>
+  A collection of eight bits is called 
+  </summary>
+  A collection of eight bits is called Byte.
+  </details> 
+  
+  <details>
+  <summary>
+  Which is the most powerful type of computers ?
+  </summary>
+  Supercomputer is most powerful type of computers.
+  </details> 
+  
+  <details>
+  <summary>
+  Who is called the grandfather of the computer ?
+  </summary>
+  Charles Babbage is called grandfather of the computer.
+  </details> 
+  
+  <details>
+  <summary>
+  The first mechinical computer designed by Charles Babbage was called 
+  </summary>
+  A first mechinical computer designed by Charles Babbage was called Anayltical Engine.
+  </details> 
+  
+  <details>
+  <summary>
+  The fift generation  digital computer will be
+  </summary>
+  The fift generation digital computer will be Artificially intellient.
+  </details> 
+  
+  <details>
+  <summary>
+  Who was the father of Punched Card  Processing ?
+  </summary>
+  Dr. Herman Hollerith was the father of Punched Card Processing.
+  </details> 
+  
+  <details>
+  <summary>
+  The first mechine to successfully perform long servies of arithmetic and logical operations was 
+  </summary>
+  Mark-I was the first mechine to successfully perform long servies of arithmetic and logical operations.  
+</details> 
+  </p></div> `
 },
 ]
