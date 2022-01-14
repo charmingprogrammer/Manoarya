@@ -1,4 +1,5 @@
-const AllNotes = [{
+const AllNotes = [
+  {
   Title: "1. Computer Introduction",
   ImgUrl: "https://i.ibb.co/7rHRxW3/20220107-125220-0000.png",
   ImgAlt: "Computer Introduction",
@@ -54,66 +55,67 @@ const AllNotes = [{
   </p></div> <div class="infos"><h2>FAQ</h2><p><details><summary>which generation of computer is covered by the period 1964-77 ?</summary>Third generation of computer is covered by the period 1964-77.</details>
   <details>
   <summary>
-  Which computers called first generation of computer ? 
+  Which computers called first generation of computer ?
   </summary>
   UNIVAC computers are called first generation of computer.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
   What hardware was used by first generation computers?
   </summary>
   Valves hardware was used by first gerneration of computers.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
-  A collection of eight bits is called 
+  A collection of eight bits is called
   </summary>
   A collection of eight bits is called Byte.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
   Which is the most powerful type of computers ?
   </summary>
   Supercomputer is most powerful type of computers.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
   Who is called the grandfather of the computer ?
   </summary>
   Charles Babbage is called grandfather of the computer.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
-  The first mechinical computer designed by Charles Babbage was called 
+  The first mechinical computer designed by Charles Babbage was called
   </summary>
   A first mechinical computer designed by Charles Babbage was called Anayltical Engine.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
   The fift generation  digital computer will be
   </summary>
   The fift generation digital computer will be Artificially intellient.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
   Who was the father of Punched Card  Processing ?
   </summary>
   Dr. Herman Hollerith was the father of Punched Card Processing.
-  </details> 
-  
+  </details>
+
   <details>
   <summary>
-  The first mechine to successfully perform long servies of arithmetic and logical operations was 
+  The first mechine to successfully perform long servies of arithmetic and logical operations was
   </summary>
-  Mark-I was the first mechine to successfully perform long servies of arithmetic and logical operations.  
-</details> 
-  </p></div> `
+  Mark-I was the first mechine to successfully perform long servies of arithmetic and logical operations.
+  </details>
+  </p></div> <br> `
 },
+
 ]
