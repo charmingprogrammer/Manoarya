@@ -51,6 +51,6 @@ const AllNotes = [{
   (iii) Hand-Held computers : <br> Hand-held computers are more smaller as compair to notebook used for collecting some data.
   <br> <br>
   (iv) Pen-Based computers : <br> Pen-besed computers used to write somthing on the digital pads of  digital boards  to give as an input.
-  </p></div> <div class="infos"><h2>FAQ</h2><p>Paragraphs</p></div> `
+  </p></div> <div class="infos"><h2>FAQ</h2><p><details><summary>which generation of computer is covered by the period 1964-77 ?</summary>Third generation of computer is covered by the period 1964-77.</details></p></div> `
 },
 ]
