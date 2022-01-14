@@ -11,6 +11,6 @@ const AllNotes = [{
   <b>R : </b>For the set of all real numbers. <br>
   <b>R+ : </b>For the set of all positive real numbers. <br>
   <b>C : </b>For the set of all complex numbers.
-  </p></div> <div class="infos"><h2>Descriptions of sets</h2><p>Set described in 2 terms. <br><br>1. Roster Form or tabular from <br>2. Set-builder form <br><br></p></div><div class="infos"><h2>1. Roster Form or tabular Form</h2><p>In this form a set is describe by listing elements, separated  with commas(,) within bracket{}. <br><br> <b>Example : </b>The set of vowels in english alphabet. <br><b>In Roster from  : </b>{a, e, i, o, u}</p></div><br>  `
+  </p></div> <div class="infos"><h2>Descriptions of sets</h2><p>Set described in 2 terms. <br><br>1. Roster Form or tabular from <br>2. Set-builder form <br><br></p></div><div class="infos"><h2>1. Roster Form or tabular Form</h2><p>In this form a set is describe by listing elements, separated  with commas(,) within bracket{}. <br><br> <b>Example : </b>The set of vowels in english alphabet. <br><b>In Roster from  : </b>{a, e, i, o, u}</p></div> <div class="infos"><h2>Set-Builder form</h2><p>In  this form a set is described by characterizing property p(x) of  its elements x. <br> <br> <b>Simple structure  of Set-builder  form </b> <br> <br> {x:P(x)holds} <br> {x|P(x)holds} <br> <br> <b> '|' or ':'</b> symbol read as <b>'Such that'</b> <br> <br> <b>Example : </b>The set E of all even natural numbers. <br> <b> In Set-builder form : </b>E = {x:x is a natural numbers and x = 2n for n∈N}</p></div><br>  `
 },
 ]
