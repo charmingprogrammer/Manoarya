@@ -9,7 +9,7 @@ Chemistry is called the science of atom and molecules.
 
 <div class="infos"><h2>Importance of chemistry</h2><p>Chemistry is very important in our life because we live our daily life with chemistry.
 <br> <br> 
-<b>Let's see how ?</b>
+<b>Let's see how ?</b><br> <br> 
 In Computer world : Silicon chip <br> 
 In Agriculture : Fertilizers and insecticides <br> 
 
