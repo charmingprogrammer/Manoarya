@@ -118,7 +118,7 @@ const AllNotes = [
   </p></div> <br> `
 },
   {
-    Title: "2. CPU ",
+    Title: "2. CPU",
     ImgUrl: "https://i.ibb.co/ZMjQ9mb/20220120-195314-0000.png",
     ImgAlt: "CPU",
     Topic: `
