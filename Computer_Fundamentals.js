@@ -117,5 +117,78 @@ const AllNotes = [
   </details>
   </p></div> <br> `
 },
+  {
+  Title: "2. CPU ",
+  ImgUrl: "https://i.ibb.co/ZMjQ9mb/20220120-195314-0000.png",
+  ImgAlt: "CPU",
+  Topic: `
+  <div class="infos"><h2>Central Processing Unit (CPU) :</h2><p>CPU is the component of a computer system with the circuitry to control the interpretation and execution of instructions. <br> <br> 
+
+CPU work on <b>Input-Process-Output cycle.</b> <br> <br> 
+
+In a microprocessor CPU mounted on the main circuit board called <b>motherboard.</b> <br> <br> 
+
+
+A microprocessor contains the circuits and special storage location called <b>registers.</b> <br> <br> 
+Registers perform the arithmetic, logic and control functions. <br> <br> 
+
+<b>The Processing capabilities of microprocessor system depends upon : </b> <br> <br> 
+1. Microprocessor Used <br> 
+2. Clock Speed <br> 
+3. Primary Storage Capacity <br> 
+4. Instructions Set 
+</p></div> 
+
+<div class="infos"><h2>1. Microprocessor Used : </h2><p>A microprocessor chip can be of : <br> <br> 
+1. 8 bit <br> 
+2. 16 bit <br> 
+3. 8/16 bit <br> 
+4. 16/32 bit <br> 
+5. 32/32 bit  <br> 
+</p></div> 
+
+<div class="infos"><h2>2. Clock - Speed : </h2><p>There are two cycles that occur during the processing of each program instruction. <br> <br> 
+
+
+<b>1. Instruction Cycle <br> 
+2. Execution Cycle </b> <br> <br> 
+There cycles are synchronized by a specific number of electrical pulses produced by an electronic clock that build into the processor. <br> <br> 
+The Speed with which an instruction is executed is also directly related to the chip's clock speed.
+</p></div> 
+
+<div class="infos"><h2>3. Primary Storage Capacity :</h2><p>The more the data and program can be kept in primary storage then processor processing time is fewer and boosts processing power.
+</p></div> 
+
+<div class="infos"><h2>4. Instruction Sets : </h2><p>Every microprocessor has the built- in ability to respond to a particular set of machine instructions.</p></div> 
+
+<div class="infos"><h2>Main Component of CPU</h2><p>1. Arithmetic and Logic Unit (ALU) <br> 
+2. Control Unit <br> 
+3. Primary Storage Unit <br> 
+</p></div> 
+
+<div class="infos"><h2>1. Arithmetic and Logic Unit (ALU) :</h2><p>
+Actually all data processing occurs hare <br> <br> 
+This is the place where mathematical and logical functions works. <br> <br> 
+Every Arithmetic step requires at least two numbers and then it produces a result. <br> <br> 
+
+<b>For Example : </b> In multiplication(x) we need two things to get the final product. <br> 1. Multiplicand <br> 2. Multiplier <br> 
+when we inter those two inputs then we got the final product. 
+</p></div> 
+
+<div class="infos"><h2>2. Control Unit (CU) :</h2><p>Control Unit is a component of the CPU that directs the operation of the processor. <br> <br> 
+
+Control unit directs the flow of data between the CPU and other devices. <br> <br> 
+
+<b>for more info :</b><a href = "https://en.m.wikipedia.org/wiki/Control_unit">visit</a>
+</p></div> 
+
+<div class="infos"><h2>3. Primary Storage Unit :</h2><p>Primary Storage used mainly for four things. <br> <br> 
+
+1. Input/Output operations <br> 
+2. Manipulation of text and calculation operations <br> 
+3. Logic/comparison operations <br> 
+4. Storage and retrieval operations</p></div> 
+<br> `
+},
 
 ]
