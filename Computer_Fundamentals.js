@@ -179,7 +179,7 @@ when we inter those two inputs then we got the final product.
 
 Control unit directs the flow of data between the CPU and other devices. <br> <br> 
 
-<b>for more info :</b><a href = "https://en.m.wikipedia.org/wiki/Control_unit">visit</a>
+<b>for more info : <a href = "https://en.m.wikipedia.org/wiki/Control_unit">visit</a></b>
 </p></div> 
 
 <div class="infos"><h2>3. Primary Storage Unit :</h2><p>Primary Storage used mainly for four things. <br> <br> 
