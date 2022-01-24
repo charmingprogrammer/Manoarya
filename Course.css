@@ -60,14 +60,14 @@ i:active {
   margin-top: 10px;
   border: 1px solid #bababa;
   border-radius: 5px;
-  user-select: none;
   transition: .2s ease-in;
 }
+/*
 .infos:hover{
 background: #f9f9a6;
   color:black;
 }
-
+*/
 .topic_explaning h2 {
  padding: 10px 20px;
  color: #21b1e6;
