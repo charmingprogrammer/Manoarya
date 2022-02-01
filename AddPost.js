@@ -294,7 +294,7 @@ const AllPost = [
 		"Explore and learn how to create websites like this.",
 		ImageUrl:
 		"https://i.ibb.co/BGfVDkv/Picsart-22-02-01-23-20-47-454.png",
-		PostUrl: "https://manoarya.com/Web_theme_1_by_manoarya.html",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Web_theme_1_by_manoarya.html",
 		alt: "Web_theme_1_by_manoarya",
 		trending: "true",
 	},
