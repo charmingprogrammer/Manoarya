@@ -287,4 +287,15 @@ const AllPost = [
 		alt: "computer Fundamentals",
 		trending: "true",
 	},
+	{
+		category: "Theme Design",
+		Title: "Theme Design 01 by Manoarya",
+		Paragraph:
+		"Explore and learn how to create websites like this.",
+		ImageUrl:
+		"https://i.ibb.co/BGfVDkv/Picsart-22-02-01-23-20-47-454.png",
+		PostUrl: "https://manoarya.com/Web_theme_1_by_manoarya.html",
+		alt: "Web_theme_1_by_manoarya",
+		trending: "true",
+	},
 ];
