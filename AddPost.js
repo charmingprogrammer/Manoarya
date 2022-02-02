@@ -293,7 +293,7 @@ const AllPost = [
 		Paragraph:
 		"Explore and learn how to create websites like this.",
 		ImageUrl:
-		"https://i.ibb.co/BGfVDkv/Picsart-22-02-01-23-20-47-454.png",
+		"https://i.ibb.co/27X0XQH/Picsart-22-02-02-13-33-34-247.png",
 		PostUrl: "https://manoarya.com/Manoarya All Post/Web_theme_1_by_manoarya.html",
 		alt: "Web_theme_1_by_manoarya",
 		trending: "true",
