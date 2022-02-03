@@ -309,4 +309,15 @@ const AllPost = [
 		alt: "Web_theme_2_by_manoarya",
 		trending: "true",
 	},
+	{
+		category: "Theme Design",
+		Title: "Theme Design 03 by Manoarya",
+		Paragraph:
+		"Explore and learn how to create websites like this.",
+		ImageUrl:
+		"https://i.ibb.co/3pCvFrq/png-20220203-125048-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Web_theme_3_by_manoarya.html",
+		alt: "Web_theme_3_by_manoarya",
+		trending: "true",
+	},
 ];
