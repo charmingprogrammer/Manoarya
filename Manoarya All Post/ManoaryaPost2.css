@@ -129,7 +129,7 @@ nav{
   font-size: 17px;
 }
 .post_Img_Con {
-  height: 250px;
+  height: 100%;
   width: 100%;
   border-radius: 10px;
 }
