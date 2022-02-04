@@ -320,4 +320,15 @@ const AllPost = [
 		alt: "Web_theme_3_by_manoarya",
 		trending: "true",
 	},
+	{
+		category: "Explanation",
+		Title: "Tips For New Developers By Manoarya.",
+		Paragraph:
+		"In this post Manoarya gives some tips for new developers to succeed in your coding journey.",
+		ImageUrl:
+		"https://i.ibb.co/m5s3JQX/20220203-220051-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Tips-for-new-developers-by-manoarya.html#",
+		alt: "Tips For New Developers By Manoarya.",
+		trending: "true",
+	},
 ];
