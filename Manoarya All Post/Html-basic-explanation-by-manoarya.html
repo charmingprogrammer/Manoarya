@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>HTML basic explanation by Manoarya.</title>
+
+  <meta name="description" content="Explanation about basic html that you use almost every html project." />
+
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+
+  <!--code highlighter links-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SRT0FM6SCD');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="https://manoarya.com/Manoarya%20All%20Post/ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+    </div>
+    <ul id="myUL">
+    </ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="https://i.ibb.co/JyTRSns/20220205-101420-0000.png" alt="Html basic explanation by Manoarya" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">HTML basic explanation by Manoarya.</h1>
+        <p>
+          <b>Category : </b>  <span id="category">Explanation</span>
+          <br> <br>
+        </p>
+        <p>
+          Hi, what's up how is going in this Manoarya explanation article  we are going to discover  some basic html which you use almost every html website. <br> <br>
+          <b>We discover following topics in this post.</b>
+          <br> <br>
+          <a href="#starter">Html starter code</a> <br> <br>
+
+          <img src="https://i.ibb.co/pL7HZHt/Picsart-22-02-05-10-35-14-867.jpg" alt="doctype html by Manoarya" style="height: 100%; width:100%; border-radius:10px;" /><br> <br>
+          <b>&lt;!DOCTYPE html&gt; </b>  is the  first line of any html document. <br> <br> <b>DOCTYPE</b> gives ideas to web browsers that which type of document used to create this document.
+          <br> <br>               <b>&lt;!DOCTYPE html&gt;</b> means the whole document we write is type of html. <br> <br>
+          By the way <b>&lt;!DOCTYPE html&gt;</b> is the latest version  of html which is called <b>Html 5</b>. <br> <br>
+          previous version of html look like following code. that type we don't use   <b>&lt;!DOCTYPE html&gt;</b>.
+          <br> <br>
+          See version 4.01 called HTML 4.01 👇
+        </p>
+        <pre>
+          <code>
+            &lt;DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+          </code>
+        </pre>
+        <p>
+          See version 1.1 called XHTML 👇
+        </p>
+        <pre>
+          <code>
+            &lt;DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+          </code>
+        </pre>
+        <p>
+          <b>&lt;!DOCTYPE html&gt;</b> is not case sensitive so we can write with any case like  <b>&lt;!doctype html&gt;</b>
+          <b>&lt;!DoCtYpe Html&gt;</b>
+          it is not affect on the final result. but I suggest you to write like this<b>&lt;!DOCTYPE html&gt;</b> because it's look nicer .
+          <br> <br>
+        </p>
+
+        <p>
+          <img src="https://i.ibb.co/C2cZcR2/Picsart-22-02-05-15-12-18-394.jpg" alt="head tag" style="height: 100%; width:100%; border-radius:10px;" />
+          <br> <br>
+          All the information related to document includes inside of head tag. <br> <br>
+          All the following tags put inside of head tag.
+          <br> <br>
+          <img src="https://i.ibb.co/dKN17r1/Picsart-22-02-05-10-37-15-505.jpg" alt="meta 01 by Manoarya" style="height: 100%; width:100%; border-radius:10px;" />
+          <br> <br>
+          <b>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br /> </b>  <br><br>
+          Almost we are ignore this line of code in early coding stage. <br> <br> but now we need to know what is the work of this line of code in html document. <br> <br>
+          So in this code line we have first attribute <b>http-equiv. </b> <br> <br> Which response https information or values according to what gives inside of content attribute. <br> <br>
+
+          <b>Http-equiv attribute values</b> <br> <br>
+          <b>1. Content-security-policy </b> <br> <br>
+          <b>Works :</b> Show All the content policies of document. <br> <br>
+          <b>Uses :</b>  &lt;meta http-equiv="content-security-policy" content="default-src 'self'"&gt;
+          <br> <br>
+          <b> 2. Content type </b> <br> <br>
+          <b>Work : </b> Content type attribute value show which types of character encoding for the document. <br> <br>
+          <b>Uses : </b>  &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt; <br> <br>
+          <a href="https://en.m.wikipedia.org/wiki/UTF-8">Learn More about UTF-8</a> <br> <br>
+
+          <b>3. Default Style</b> <br> <br>
+          <b>Works : </b>Used when you want to use preferred stylesheet. <br> <br>
+          <b>Uses: </b> &lt;meta http-equiv="default-style" content="the document's preferred stylesheet"&gt; <br> <br>
+          <b>Focus : </b> The value of content attribute is match with stylesheet title. <br> <br>
+          <b>4. Refresh</b><br> <br>
+          <b>Work: </b> auto refresh documents with given time interval. you can give interval time as a content attribute value. <br> <br>
+          <b>Uses : </b>&lt;meta http-equiv="refresh" content="300"&gt; <br> <br>
+          <b>Focus :</b> Refresh value used carefully because it affects guidelines of <br><br><a href="https://www.w3.org/WAI/standards-guidelines/wcag/"> https://www.w3.org/WAI/...</a><br> <br>
+          <img src="https://i.ibb.co/ZLRWgyq/Picsart-22-02-05-10-37-49-034.jpg" alt="responsive meta tag explain by Manoarya" style="height: 100%; width:100%; border-radius:10px;" /><br> <br>
+          The value of name attribute which is viewport is show how documents look. <br> <br> It is responsible for responsive design that's the reason why we called it responsive meta tags. it's important Mata tag of any html document. <br> <br>
+          <b>Code snippet</b>
+          <br> <br> If you don't  want to  zoom document then used this Code snippet <br> <br>
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"&gt;
+          <br> <br>
+          Or, if you want to user zoom the page then use it <br><br>&lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0,"&gt; <br> <br>
+          <img src="https://i.ibb.co/2ZCRMfp/Picsart-22-02-05-10-38-20-117.jpg" alt="comment img by Manoarya" style="height: 100%; width:100%; border-radius:10px;" />
+          <br> <br>
+          &lt;!--comment--&gt; this line of code know as a <b>Comment</b><br> <br> Comment helps developers to read and understand what code say. <br> <br>
+          So you want to write bug free and beautiful code then you must use comment in your code. <br> <br>
+          <img src="https://i.ibb.co/7QXx8TW/Picsart-22-02-05-10-39-06-461.jpg" alt="links tag explain by Manoarya" style="height: 100%; width:100%; border-radius:10px;" />
+          <br> <br>
+          Link Tage basically  attached your external css files for applying beautiful styles on the current document. <br> <br>
+          Link Tage have following attributes <br> <br>
+          <b>rel : </b> which value is stylesheet. <br> <br>
+          <b>href : </b> which value is your css file name. <br> <br>
+          For example I have a css file name as manoarya.css and I want to use this to my Manoarya.html document. <br> <br> Then my link Tage look like this <br> <br>&lt;link rel="stylesheet" href="Manoarya.css"/&gt; <br> <br>
+          Now my css file code applied on this document. <br> <br>
+
+          <img src="https://i.ibb.co/ySgdfC0/Picsart-22-02-05-10-42-25-225.jpg" alt="Title explain by Manoarya" style="height: 100%; width:100%; border-radius:10px;" />
+          <br> <br>
+          The title Tage is very important of any html document because it is highly important for SEO prescriptive. <br> <br>
+          The title Tag is helps browsers as well as users to understand what types of information provides by this page. <br><br>
+
+          Title show on the top of the browsers window as well as on  Google search result. see 👇
+          <br> <br>
+
+          <img src="https://i.ibb.co/8Pm93qQ/Picsart-22-02-05-14-40-04-995.jpg" alt="Title example" style="height: 100%; width:100%; border-radius:10px;" />
+          <img src="https://i.ibb.co/Sf7Dkgc/Picsart-22-02-05-14-42-48-910.jpg" alt="Title example" style="height: 100%; width:100%; border-radius:10px;" />
+
+          <br> <br>
+          <img src="https://i.ibb.co/v1mbJhc/Picsart-22-02-05-10-42-50-772.jpg" alt="description explains by Manoarya" style="height: 100%; width:100%; border-radius:10px;" />
+          <br> <br>
+          The Meta description is the very important Tag for defining what information contained to this document.
+          <br> <br>  It is a short information of whole document.
+          <br> <br>
+          Description also helps to ranks on google. <br> <br>
+
+          Description looks on google like this 👇
+          <br> <br>
+          <img src="https://i.ibb.co/zb2mBnT/Picsart-22-02-05-14-43-13-245.jpg" alt="Description example" style="height: 100%; width:100%; border-radius:10px;" /> <br> <br>
+          <img src="https://i.ibb.co/9ntMVBX/Picsart-22-02-05-15-10-13-986.jpg" alt="body Tage explained by Manoarya" style="height: 100%; width:100%; border-radius:10px;" /> <br> <br>
+          Body  Tage is most important part of the html document. <br> <br> Without Body tag nothing show on the browser. <br> <br>
+          Whatever things you see on the browser Coded inside of body tag.
+          <br> <br>
+        </p>
+        <pre id="starter">
+          <code>
+            &lt;!DOCTYPE&nbsp;html&gt;<br />&lt;head&gt;<br />&nbsp;&nbsp;&lt;meta&nbsp;http-equiv=&quot;content-type&quot;&nbsp;content=&quot;text/html;&nbsp;charset=utf-8&quot;&nbsp;/&gt;<br />&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;viewport&quot;<br />&nbsp;&nbsp;content=&quot;width=device-width,&nbsp;initial-scale=1.0,&nbsp;maximum-scale=1.0,&nbsp;user-scalable=0&quot;&gt;<br />&nbsp;&nbsp;&lt;!--your&nbsp;css&nbsp;file&nbsp;links--&gt;<br />&nbsp;&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;your&nbsp;file&nbsp;name.css&quot;&nbsp;/&gt;<br />&nbsp;&nbsp;&lt;!--title&nbsp;of&nbsp;your&nbsp;website--&gt;<br />&nbsp;&nbsp;&lt;title&gt;Add&nbsp;your&nbsp;title&lt;/title&gt;<br />&nbsp;&nbsp;&lt;!--description&nbsp;of&nbsp;your&nbsp;website--&gt;<br />&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;description&quot;&nbsp;content=&quot;Add&nbsp;your&nbsp;description.&quot;&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />&nbsp;&nbsp;&lt;!--your&nbsp;javascript&nbsp;file&nbsp;attached--&gt;<br />&nbsp;&nbsp;&lt;script&nbsp;src=&quot;your&nbsp;javascript&nbsp;file&nbsp;name.js&quot;&nbsp;type=&quot;text/javascript&quot;&nbsp;charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br />&lt;/body&gt;&nbsp;
+          </code>
+        </pre>
+   <p>
+     That's all for this article. I hope you like and enjoy this post. <br> <br> Please share you suggestions and give some advice.  <br> <br> 
+     <b>Thank you show much.</b> 
+     
+     
+    </p> 
+
+    
+      </div>
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer">
+      </div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!--comment output-->
+      <div id="comment_output_container">
+      </div>
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.html">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+    </ul>
+    <p>
+      All Rights reserved by Manoarya
+    </p>
+  </footer>
+  <script src="https://manoarya.com/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+</body>
