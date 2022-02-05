@@ -1,5 +1,16 @@
 const AllPost = [
   {
+	category: "Explanation",
+	Title: "HTML basic explanation by Manoarya",
+	Paragraph:
+	"Explanation about basic html that you use almost every html project.",
+	ImageUrl:
+	"https://i.ibb.co/JyTRSns/20220205-101420-0000.png",
+	PostUrl: "https://charmingprogrammer.github.io/Manoarya/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html",
+	alt: "html basic explanation by Manoarya",
+	trending: "true",
+},
+  {
 	category: "HTM",
 	Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript?",
 	Paragraph:
