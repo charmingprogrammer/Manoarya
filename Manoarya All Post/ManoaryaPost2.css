@@ -17,18 +17,30 @@ padding: 10px 10px;
   border-radius: 10px;
 }
 #topics{
-  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
 }
 #topics li{
-  padding: 10px 20px;
-  list-style-type: decimal;
+  list-style-type: none;
+  padding: 10px  20px;
 }
 #topics li a{
-  margin-top: 10px;
+  text-transform: capitalize;
+  background: none;
+  color: black;
+  border-left: 2px solid #00a0ff;
 }
+#topics li a:hover{
+  background:#00a0ff78;
+}
+
 code {
   border-radius: 10px;
   font-size: 17px;
+  border: 2px solid #4bcbea;
 }
 a{
   text-decoration: none;
@@ -111,7 +123,7 @@ nav{
 .search_header{
   height: 50px ;
   width: 100%;
-  background:white;
+  background: #ffffff;
   box-shadow: 0 1px 2px  #969696;
   display: flex;
   justify-content: space-between;
@@ -158,8 +170,12 @@ nav{
 }
 .postContainer h2 {
   padding: 10px 20px;
-  font-size: 15px;
-  color: #434343;
+  color:#3c3c3c;
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  z-index: 123456789;
+  background: white;
 }
 .postContainer p {
   padding: 10px 20px;
@@ -176,6 +192,11 @@ nav{
 .postContainer a:hover{
   background:#f4f4f4;
   color:#42c1e3;
+}
+.postContainer img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 #postSuggestionContainer{
   height: 100%;
@@ -298,6 +319,26 @@ nav{
 .commentBox p{
   margin-left: 10px;
 }
+#gotoTop{ 
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background: #7bd3e9;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 0 100px 1px #5c5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center ; 
+  z-index: 13344568999;
+  transition: .2s ease-out;
+  bottom: -100%;
+}
+#gotoTop:active{
+  transform: scale(0.9);
+}
+
 footer {
   height:300px;
   width: 100%;
