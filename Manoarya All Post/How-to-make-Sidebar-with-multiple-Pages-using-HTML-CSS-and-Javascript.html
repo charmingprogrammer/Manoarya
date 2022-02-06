@@ -74,12 +74,330 @@
           And are you guys ready to make this awesome Sidebar with multiple Pages. Look at the demo bro. <br> <br> <a href="https://charmingprogrammer.github.io/Demo/Navigation.html">Live Demo</a><br> <br> it's amazing. right! <br><br>
 
           So first of all I want to show the
-          all step covered in this project so that you can jumb from there directly. <br> <br> 
+          all step covered in this project so that you can jumb from there directly. <br> <br>
         </p>
-<ul id="topics">
-           <li><a href="#">Hello world</a></li>
-           <li><a href="#">Hello world</a></li> 
-          </ul>
+        <ul id="topics">
+        </ul>
+        <br>
+        <h2 id="filestructur">Project Files  Structure</h2>
+
+        <p>
+          So guys first of all open your code editor (vs code , sublime...etc ) and make three files.
+          <br><br><b>1. HTML File |  2. CSS File | 3. JS File</b>
+        </p>
+        <p>
+          You can name it whatever you want. In this particular project I am giving name like following <br><br>
+          <b>HTML File Name :</b> Navigation.html | <b>CSS File Name : </b> Navigation.css | <b>JS File Name : </b> Navigation.js <br> <br>
+          <img src="https://i.ibb.co/ccXJMYQ/Picsart-22-02-06-11-10-04-182.jpg" alt="file structure" />
+
+        </p>
+
+        <h2 id="Working On Html File">Working On Html File.</h2>
+        <p>
+          Now open your html file I am opening my Navigation. html file inside of visual studio code. and press <b>ctrl + !</b>  to add html starter code. <br>You can Learn about HTML starter code hare 👇<br> <br><a href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html#starter">Learn Now</a>
+        </p>
+        <br> <br>
+        <p>
+          Now link you css file with html document to apply style on it. for that you can use this code snippet 👇
+        </p>
+        <pre>
+          <code>
+            &lt;link rel="stylesheet" href="css file name" /&gt;
+          </code>
+        </pre>
+
+        <p>
+          And of course we are using some beautiful fonts. we use fontawesome for beautiful fonts you can go to fontawesome and create your account and start using beautiful fonts for free. 👇 <br><br> <a href="https://fontawesome.com/">Fontawesome</a> <br> <br>
+          <img src="https://i.ibb.co/PTTC3kL/Picsart-22-02-06-11-06-21-829.jpg" alt="link css and Fontawesome" />
+        </p>
+        <h2 id="Now_add_Basic_CSS">Now add Basic CSS</h2>
+        <p>
+          Go to your css file and write your universal style using following code snippet
+        </p>
+        <pre>
+          <code>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+            background: #f1f1f1;
+            }
+          </code>
+        </pre>
+        <p>
+          * is know as universal identifier. means inside of this we have margin , padding,  box-sizing  font-family and background all properties applied on the whole document.
+        </p>
+        <p>
+          In this main time our page looks like a blank page with some transparent gray background.
+        </p>
+        <h2>Create Top navbar</h2>
+        <p>
+          For creating top navbar we need to add a nav tag and inside of that we put Fontawesome bars icon and a logo image.
+        </p>
+        <pre>
+          <code>
+            &nbsp;&nbsp;&lt;!--Navigation&nbsp;bar&nbsp;(header)--&gt;<br />&nbsp;&nbsp;&lt;nav&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fas&nbsp;fa-bars&quot;&nbsp;onclick=&quot;nav_opener()&quot;&nbsp;id=&quot;bars&quot;&gt;&lt;/i&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;src=&quot;https://manoarya.com/Manoarya%20All%20Post/ManoaryaLogo.png&quot;&nbsp;alt=&quot;Logo&quot;&nbsp;/&gt;<br />&nbsp;&nbsp;&lt;/nav&gt;<br />
+          </code>
+        </pre>
+        <p>
+          Hare we have a bars icon which id is  bars and also applied onclick event on it which we can used for opening and closing the sidebar using javascript.
+        </p>
+
+        <p>
+          Now apply style on it. for that we use following properties on nav tag.
+        </p>
+        <pre>
+          <code>
+            nav {
+            height: 50px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 0 1px 1px gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            }
+          </code>
+        </pre>
+        <p>
+          Height 50px because I want to the total size of navbar is 50px. width 100% to cover whole width for both desktop and mobile and even on the tablet. background color white  you can choose whatever color you like. box-shadow because it's look amazing and show up to the main page and display flex for horizontal alignment, justify-content space-between for align two items inside of nav tag which is bars icon and logo image. align-items center for vertically  center the items and last position sticky so that navbar sick on the top of the page.
+        </p>
+
+        <p>
+          Style bars icons and logo img <br><br><b>Style for bars Icon</b><br><br>
+        </p>
+        <pre>
+          <code>
+            nav i {
+            padding: 10px 20px;
+            color: #2b2b2b;
+            font-size: 20px;
+            margin-left: 10px;
+            }
+            nav i:active {
+            background: #0000002b;
+            border-radius: 10px;
+            }
+          </code>
+        </pre>
+        <p>
+          We use  padding for vertical and horizontal spared and font-size for show little bit bigger and margin-left for little bit left from the left side. <br><br>Active class for clicking effect. when  click on bars quickly change background and border-radius. <br><br><b>Style for logo image</b>
+        </p>
+
+        <pre>
+          <code>
+            nav img {
+            height: 35px;
+            width: 35px;
+            background: #57bdf2;
+            margin-right: 10px;
+            border-radius: 100px;
+            }
+          </code>
+        </pre>
+        <p>
+          We add nav before img because I want to style only that image which is present inside of nav tag. Image that exists outside of the  nav tag then these properties aren't applied. <br><br>We use height and width same for square shapes and background because if image is not load than show that background and margin-right for little bit right alignment  and border-radius 100px for round shape. <br> <br> <b> In this time our page looks like this 👇</b>
+        </p>
+        <img src="https://i.ibb.co/p302dGG/Picsart-22-02-06-12-40-10-910.jpg" alt="navbar preview" />
+
+        <h2>Create Sidebar</h2>
+        <p>
+          For creating the sidebar which present in the left side we are used below code snippet.
+        </p>
+        <pre>
+          <code>
+            &nbsp;&nbsp;&lt;!--Navigation&nbsp;menu&nbsp;container--&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;id=&quot;nav_container&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;nav_content&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;page1()&quot;&gt;Page&nbsp;01&lt;/button&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;page2()&quot;&gt;Page&nbsp;02&lt;/button&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;page3()&quot;&gt;Page&nbsp;03&lt;/button&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;page4()&quot;&gt;Page&nbsp;04&lt;/button&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;page5()&quot;&gt;Page&nbsp;05&lt;/button&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;nav_closer&quot;&nbsp;onclick=&quot;nav_closer()&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;
+          </code>
+        </pre>
+        <p>
+          Hare we have a container which id is nav_container and inside of that we have another container which class is nav_container and nav closer respectively. <br> <br>
+          nav_container div contains the all buttons which is present is the left side and button works is to open different pages. that's why on the button tag we used onclick to change pages according to button types using javascript. <br><br> nav_ closer div is present in right side of the page which works to close the Sidebar. using onclick  events using js. <br><br>Now time to style this elements. For that we used  following code. <br> <br>  <b> Style for main Container 👇 </b>
+        </p>
+        <pre>
+          <code>
+            #nav_container {
+            height: 100vh;
+            width: 100%;
+            background: none;
+            position: fixed;
+            top: 0;
+            z-index: 123;
+            display: flex;
+            transition: .2s ease-out;
+            left: -100%;
+            }
+          </code>
+        </pre>
+        <p>
+          <b>For style nav container 👇</b>
+        </p>
+        <pre>
+          <code>
+            .nav_content {
+            height: 100vh;
+            width: 70%;
+            background: white;
+            box-shadow: 0 0 10px 1px gray;
+            display: flex;
+            flex-direction: column;
+            }
+          </code>
+        </pre>
+        <p>
+          <b>For style buttons which is present  inside  of nav_content 👇</b>
+        </p>
+        <pre>
+          <code>
+            .nav_content button {
+            padding: 20px 20px;
+            transform: scale(0.9);
+            background: linear-gradient(120deg, #0d90d4,#0db2b4);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            font-weight: bold;
+            font-size: 20px;
+            }
+            .nav_content button:active {
+            background: linear-gradient(120deg,#0db2b4,#0d90d4);
+            transform: scale(0.88);
+            }
+          </code>
+        </pre>
+        <p>
+          <b>For style nav closer 👇</b>
+        </p>
+
+        <pre>
+          <code>
+            .nav_closer {
+            height: 100vh;
+            width: 30%;
+            background: #00000000;
+            transition: .2s ease-in;
+            }
+          </code>
+        </pre>
+
+        <p>
+          Now our page looks like this 👇
+        </p>
+        <br>
+        <img src="https://i.ibb.co/tPV0N0v/Picsart-22-02-06-13-22-13-555.jpg" alt="Sidebar preview" />
+        <h2>Create multiple Pages</h2>  <p>
+          Now time to create pages structure for that we have a container known as a page container.
+        </p>
+        <pre>
+          <code>
+            &nbsp;&nbsp;&lt;!--All&nbsp;Pages&nbsp;container--&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;id=&quot;page_container&quot;&gt;<br />&nbsp;&nbsp;&lt;/div&gt;
+          </code>
+        </pre>
+
+        <h2>Javascript implication</h2>
+        <p>
+          Now switch to javascript file and inside of that we are going to write following script. <br> <br> For functionality like when anyone click on the bars icon then open sidebar, when click in front of the sidebar then close sidebar and when click on the buttons then change pages. <br><br><b>Access all necessary things from html file and stored it inside a variable. 👇</b>
+        </p>
+        <pre>
+          <code>
+            //All variable declaration
+            const nav_container = document.getElementById('nav_container');
+            const page_container = document.getElementById('page_container');
+            const x = window.matchMedia("(max-width: 700px)")
+          </code>
+        </pre>
+
+        <p>
+          <b>Script for open sidebar when click on the bars icon.</b>
+        </p>
+
+        <pre>
+          <code>
+            //open navigation or sidebar
+            function nav_opener() {
+            nav_container.style.left = '0%';
+            }
+
+            //close navigation or sidebar
+            function nav_closer() {
+            nav_container.style.left = '-100%';
+            }
+          </code>
+        </pre>
+
+        <p>
+          <b>Script for responsive design for both desktop and mobile.</b> Basically hide the side bar in mobile screens and show sidebar in desktop screens
+        </p>
+        <pre>
+          <code>
+            //media query script
+            function myFunction(x) {
+            if(x.matches) {
+            nav_container.style.left = '-100%';
+            }
+            else{
+            nav_container.style.left = '0';
+            }
+            }
+          </code>
+        </pre>
+
+        <p>
+          <b>Script to change pages when click on buttons</b>
+        </p>
+
+        <pre>
+          <code>
+            //page controller
+            function page1() {
+            page_container.style.backgroundColor = "#00b5b5";
+            page_container.innerHTML = "Page 01";
+
+            myFunction(x);
+
+            }
+            function page2() {
+            page_container.style.backgroundColor = "#29c29d";
+            page_container.innerHTML = "Page 02";
+            myFunction(x);
+            }
+            function page3() {
+            page_container.style.backgroundColor = "#db3391";
+            page_container.innerHTML = "Page 03";
+            myFunction(x);
+
+            }
+            function page4() {
+            page_container.style.backgroundColor = "#e79d45";
+            page_container.innerHTML = "Page 04";
+            myFunction(x);
+            }
+            function page5() {
+            page_container.style.backgroundColor = "#1b4ad8";
+            page_container.innerHTML = "Page 05";
+            myFunction(x);
+
+            }
+            page1();
+
+          </code>
+        </pre>
+        <p>
+          All buttons or we say all pages connect in single div called page_container using innerHTML we implement data inside of page_container div. <br> <br>
+
+          page1() for called without button clicked for show default page.
+
+          also we changed the background color of the page so that we see difference between pages. <br> <br>
+          I hope you like this project please subscribe and comment your thoughts and suggestions.
+          <br> <br>
+          That's all for today. <b>Thanks for reading</b> <br> <br>
+          <b>Happy Coding and love you 3000, By</b>
+
+        </p>
+
       </div>
       <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
     </div>
@@ -116,6 +434,10 @@
       </div>
     </div>
   </div>
+  <!--top scrolling-->
+  <div id="gotoTop">
+    <i class="fas fa-chevron-up" onclick="GoTop()"></i>
+  </div>
   <!--footer-->
   <footer>
     <ul>
@@ -144,4 +466,34 @@
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 
+  <script type="text/javascript" charset="utf-8">
+
+    //script for quick access
+
+    const container = document.querySelector('.postContainer');
+
+    const h2 = container.getElementsByTagName('h2');
+
+    console.log(h2);
+
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].id = h2[i].innerHTML
+      document.getElementById('topics').insertAdjacentHTML('afterbegin', `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`)
+      console.log(h2[i].id = h2[i].innerHTML);
+
+    }
+
+    const gotoTop = document.getElementById('gotoTop');
+
+    function GoTop() {
+      window.scrollTo(0, 0);
+    }
+
+    //hide and show qr code btn using onscroll event 
+    var prevScrollpos = window.pageYOffset; window.onscroll = function() { var currentScrollPos = window.pageYOffset; if (prevScrollpos < currentScrollPos) { document.getElementById("gotoTop").style.bottom = "-100%"; } else { document.getElementById("gotoTop").style.bottom = "10px"; } prevScrollpos = currentScrollPos; }
+
+
+
+
+  </script>
 </body>
