@@ -16,6 +16,16 @@ padding: 10px 10px;
   white-space: -o-pre-wrap; word-wrap: break-word;
   border-radius: 10px;
 }
+#topics{
+  padding: 10px 20px;
+}
+#topics li{
+  padding: 10px 20px;
+  list-style-type: decimal;
+}
+#topics li a{
+  margin-top: 10px;
+}
 code {
   border-radius: 10px;
   font-size: 17px;
