@@ -342,4 +342,15 @@ const AllPost = [
 		alt: "Tips For New Developers By Manoarya.",
 		trending: "true",
 	},
+	{
+		category: "Explanation",
+		Title: "What is an API? Simply Explain with project.",
+		Paragraph:
+		"In this article manoarya explain you about API with a awesome project that clear your all doubts.",
+		ImageUrl:
+		"https://i.ibb.co/dgJq0Rm/20220207-081830-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/What-is-API-simply-explain-with-project.html",
+		alt: "What is an API? Simply Explain with project.",
+		trending: "true",
+	},
 ];
