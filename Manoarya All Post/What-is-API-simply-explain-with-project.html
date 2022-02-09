@@ -414,40 +414,34 @@ getData();
 <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
 <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 
-<script type="text/javascript" charset="utf-8">
+  <script type="text/javascript" charset="utf-8">
 
-	//script for quick access
+    //script for quick access
 
-	const container = document.querySelector('.postContainer');
+    const container = document.querySelector('.postContainer');
 
-	const h2 = container.getElementsByTagName('h2');
+    const h2 = container.getElementsByTagName('h2');
 
-	console.log(h2);
+    console.log(h2);
 
-	for (var i = 0; i < h2.length; i++) {
-		h2[i].id = h2[i].innerHTML
-		document.getElementById('topics').insertAdjacentHTML('afterbegin', `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`)
-		console.log(h2[i].id = h2[i].innerHTML);
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].id = h2[i].innerHTML
+      document.getElementById('topics').insertAdjacentHTML('afterbegin', `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`)
+      console.log(h2[i].id = h2[i].innerHTML);
 
-	}
+    }
 
-	const gotoTop = document.getElementById('gotoTop');
+    const gotoTop = document.getElementById('gotoTop');
 
-	function GoTop() {
-		window.scrollTo(0, 0);
-	}
+    function GoTop() {
+      window.scrollTo(0, 0);
+    }
 
-	//hide and show qr code btn using onscroll event
-	var prevScrollpos = window.pageYOffset; window.onscroll = function() {
-		var currentScrollPos = window.pageYOffset; if (prevScrollpos currentScrollPos) {
-			document.getElementById("gotoTop").style.bottom = "-100%";
-		} else {
-			document.getElementById("gotoTop").style.bottom = "10px";
-		} prevScrollpos = currentScrollPos;
-	}
+    //hide and show qr code btn using onscroll event 
+    var prevScrollpos = window.pageYOffset; window.onscroll = function() { var currentScrollPos = window.pageYOffset; if (prevScrollpos < currentScrollPos) { document.getElementById("gotoTop").style.bottom = "-100%"; } else { document.getElementById("gotoTop").style.bottom = "10px"; } prevScrollpos = currentScrollPos; }
 
 
 
 
-</script>
+  </script>
 </body>
