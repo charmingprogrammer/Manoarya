@@ -353,4 +353,15 @@ const AllPost = [
 		alt: "What is an API? Simply Explain with project.",
 		trending: "true",
 	},
+	{
+		category: "Explanation",
+		Title: "What is the Web development? Simply Explain",
+		Paragraph:
+		"Simple explanation about web development and some FAQ. let's go",
+		ImageUrl:
+		"https://i.ibb.co/rxjN0vG/png-20220209-120259-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Who-is-Web-developer.html",
+		alt: "Who-is-Web-developer.html",
+		trending: "true",
+	},
 ];
