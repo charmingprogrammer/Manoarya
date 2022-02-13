@@ -387,4 +387,15 @@ const AllPost = [
 		alt: "Computer Introduction by Manoarya",
 		trending: "true",
 	},
+	{
+		category: "Notes",
+		Title: "CPU easy explained by Manoarya.",
+		Paragraph:
+		"CPU(central processing unit ) easily explained by Manoarya",
+		ImageUrl:
+		"https://i.ibb.co/ZMjQ9mb/20220120-195314-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/CPU-easy-explained-by-Manoarya.html",
+		alt: "CPU-easy-explained-by-Manoarya",
+		trending: "true",
+	},
 ];
