@@ -398,4 +398,15 @@ const AllPost = [
 		alt: "CPU-easy-explained-by-Manoarya",
 		trending: "true",
 	},
+	{
+		category: "Notes",
+		Title: "Sets class 11th maths chapter 01 easy notes by Manoarya",
+		Paragraph:
+		"chapter 01 class 11th maths easy notes which name is sets.",
+		ImageUrl:
+		"https://i.ibb.co/jbMJbhS/20220107-112239-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Sets_class_11th_maths_chapter_01_notes.html",
+		alt: "Sets_class_11th_maths_chapter_01_notes",
+		trending: "true",
+	},
 ];
