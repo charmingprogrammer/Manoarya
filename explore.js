@@ -50,7 +50,7 @@ function HTM() {
 	document.querySelector('*').scrollTo(0,0);
   container.innerHTML = "";
 	//filter according to category name
-const category  = HTM;
+const category  = document.getElementById('category').textContent;
 const filteredData = AllPost.filter(filter => filter.category === category);
 
 for (let i = 0; i < filteredData.length; i++) {
