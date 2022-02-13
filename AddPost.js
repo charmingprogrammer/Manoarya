@@ -372,7 +372,7 @@ const AllPost = [
 		"Explor Physical world  | Physics class 11th Chapter 01 Easy Notes. Brought to you by Manoarya",
 		ImageUrl:
 		"https://i.ibb.co/CQjVBJY/20220104-123904-0000.png",
-		PostUrl: "https://manoarya.com/Notes/Physical-world-class-11th-chapter-01-notes-by-manoarya.html",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Physical-world-class-11th-chapter-01-notes-by-manoarya.html",
 		alt: "Physical world by Manoarya",
 		trending: "true",
 	},
