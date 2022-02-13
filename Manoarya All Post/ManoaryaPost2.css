@@ -174,7 +174,7 @@ nav{
   text-transform: capitalize;
   position: sticky;
   top: 0;
-  z-index: 123456789;
+  z-index: 1234;
   background: white;
 }
 .postContainer p {
