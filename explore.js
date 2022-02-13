@@ -25,8 +25,8 @@ function explore() {
   container.insertAdjacentHTML(
     "afterbegin",
     `<div id="category_container">
-           <div class='category_box'>
-
+           <div class='category_box' onclick="HTM()">
+             HTM
            </div>
            <div class='category_box'>
            
@@ -42,4 +42,26 @@ function explore() {
            </div>
         </div>`
   );
+}
+
+//Browse all Category
+function HTM() {
+	//clear all container post
+	document.querySelector('*').scrollTo(0,0);
+  container.innerHTML = "";
+	//filter according to category name
+const category  = HTM;
+const filteredData = AllPost.filter(filter => filter.category === category);
+
+for (let i = 0; i < filteredData.length; i++) {
+    //   inject data from hare
+    container.insertAdjacentHTML(
+      "afterbegin",
+      `
+   <a href="${filteredData[i].PostUrl}" class="box"><img src="${filteredData[i].ImageUrl}" alt="${filteredData[i].alt}" />
+    <h2>${filteredData[i].Title}</h2>
+    <p>${filteredData[i].Paragraph}</p></a>
+      `
+    );
+}
 }
