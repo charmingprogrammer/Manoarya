@@ -376,4 +376,15 @@ const AllPost = [
 		alt: "Physical world by Manoarya",
 		trending: "true",
 	},
+	{
+		category: "Notes",
+		Title: "Computer Introduction by Manoarya",
+		Paragraph:
+		"Introduction of fundamental computer | Easy Explanation by manoarya",
+		ImageUrl:
+		"https://i.ibb.co/7rHRxW3/20220107-125220-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Computer-Introduction-by-Manoarya.html",
+		alt: "Computer Introduction by Manoarya",
+		trending: "true",
+	},
 ];
