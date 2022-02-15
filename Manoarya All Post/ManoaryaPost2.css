@@ -26,6 +26,7 @@ padding: 10px 10px;
 #topics li{
   list-style-type: none;
   padding: 10px  20px;
+  display: flex;
 }
 #topics li a{
   text-transform: capitalize;
