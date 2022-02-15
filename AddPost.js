@@ -400,13 +400,13 @@ const AllPost = [
 	},
 	{
 		category: "Notes",
-		Title: "Sets class 11th maths chapter 01 easy notes by Manoarya",
+		Title: "Code A Gallery web application using Pixabay API.",
 		Paragraph:
-		"chapter 01 class 11th maths easy notes which name is sets.",
+		"In this post we are going to create a web gallery  application using Pixabay api. step by step guide.",
 		ImageUrl:
-		"https://i.ibb.co/jbMJbhS/20220107-112239-0000.png",
-		PostUrl: "https://manoarya.com/Manoarya All Post/Sets_class_11th_maths_chapter_01_notes.html",
-		alt: "Sets_class_11th_maths_chapter_01_notes",
+		"https://i.ibb.co/8Ywd4JD/png-20220215-113300-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Create_a_web_gallery_using_pixabay_api_by_Manoarya.html",
+		alt: "Create_a_web_gallery_using_pixabay_api_by_Manoarya.html",
 		trending: "true",
 	},
 ];
