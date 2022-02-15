@@ -174,7 +174,6 @@ nav{
   color:#3c3c3c;
   text-transform: capitalize;
   position: sticky;
-  top: 0;
   z-index: 1234;
   background: white;
 }
