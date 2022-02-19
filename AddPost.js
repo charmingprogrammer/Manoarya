@@ -409,4 +409,15 @@ const AllPost = [
 		alt: "Create_a_web_gallery_using_pixabay_api_by_Manoarya.html",
 		trending: "true",
 	},
+	{
+		category: "Explanation",
+		Title: "Javascript Array Demo Using A Projects.|By Manoarya",
+		Paragraph:
+		"Learn about Javascript Array with a simple Projects. by Manoarya",
+		ImageUrl:
+		"https://i.ibb.co/sj3SJNn/20220218-212721-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Javascript-Array-Demo-Using-A-Projects.html",
+		alt: "Javascript-Array-Demo-Using-A-Projects",
+		trending: "true",
+	},
 ];
