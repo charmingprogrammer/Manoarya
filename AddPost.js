@@ -420,4 +420,15 @@ const AllPost = [
 		alt: "Javascript-Array-Demo-Using-A-Projects",
 		trending: "true",
 	},
+	{
+		category: "Explanation",
+		Title: "How To Get Random Data From An Array Using Js.| by Manoarya",
+		Paragraph:
+		"Hi, in this post you learn  how to show Random data from an array using JavaScript",
+		ImageUrl:
+		"https://i.ibb.co/ZmjcWFc/20220224-192953-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/how_to_get_random_data_from_an_array_using_js.html",
+		alt: "How To Get Random Data From An Array Using Js.| by Manoarya",
+		trending: "true",
+	},
 ];
