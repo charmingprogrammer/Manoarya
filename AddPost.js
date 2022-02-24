@@ -286,7 +286,7 @@ const AllPost = [
 		alt: "English translation",
 		trending: "true",
 	},
-*/
+  */
 	{
 		category: "Notes",
 		Title: "Computer Fundamentals",
