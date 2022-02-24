@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>How To Get Random Data From An Array Using Js.| by Manoarya</title>
+
+	<meta name="description" content="Hi, in this post you learn  how to show Random data from an array using JavaScript" />
+
+	<script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+
+	<!--code highlighter links-->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-SRT0FM6SCD');
+	</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+		crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--navigation bar top-->
+	<nav>
+		<a href="https://manoarya.com/" class="navLeft">
+			<img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+		</a>
+		<div class="navRight">
+			<i class="fas fa-search" id="search_opener"></i>
+			<img src="" alt="" id="userPic" />
+			<button id="subBtn">Subscribe</button>
+		</div>
+	</nav>
+	<!--search-->
+	<div id="searchContainer">
+		<div class="search_header">
+			<i class="fas fa-arrow-left" id="search_closer"></i>
+			<input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+		</div>
+		<ul id="myUL">
+
+		</ul>
+	</div>
+	<div id="container">
+		<div id="page1">
+			<!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+			<!--post image -->
+			<div class="post_Img_Con">
+				<img src="https://i.ibb.co/ZmjcWFc/20220224-192953-0000.png" alt="Random data get from and array by Manoarya" />
+			</div>
+			<!--Main Post-->
+			<div class="postContainer">
+				<h1 id="postTitle">How To Get Random Data From An Array Using Js.| By Manoarya</h1>
+				<p>
+					<b>Category : </b>  <span id="category">Explanation</span>
+				</p>
+			<p>
+			  what's up geeks, <br><br> 
+			  In this article we are going to learn how to show data from an array randomly.
+<br><br> 
+
+Let's Started <br><br> 
+
+
+			</p> 
+				<!--all content-->
+				<ul id="topics">
+
+				</ul>
+				<br>
+				
+				<h2>Learn about math.floor and math.random</h2>
+				<p>
+In this section we learn how to use <b>math.floor and math.random. </b><br><br> 
+<b>Math.random()</b> returns a value less than 1. That's why we used <b>Math.floor()</b> with <b>math.random()</b>. <br><br> So our final syntax is
+</p>
+<pre>
+  <code>
+   // Returns a random number from 0 to 9: 
+   Math.floor(Math.random() * 10);
+  </code>
+</pre>
+<p>
+ <a href="https://www.w3schools.com/js/js_random.asp"> Know more about Math.random()</a> 
+</p> <br><br> 
+<h2>Create an array of an object </h2>
+<p>I hope you know how to create an array of an object so hare are our array which we used in this section.
+<br><br> 
+Our Array of an object  you can see Hare <br><br> <a href="https://charmingprogrammer.github.io/Manoarya/AddPost.js">See Data</a>
+</p> 
+<br><br> 
+
+<h2>Loop this array randomly.     </h2>
+<p>For looping this array I used <b>for loop</b>  and inside of that add our <b>Math.floor(Math.random() * 10);</b> code and instead of <b>10</b> we used <b>array length</b> so that gives results according to that length. Now store this in a variable called <b>random</b>. <br><br> 
+After that let's print the output on the Dom. <br><br> 
+Using following lines of code.
+</p>
+<pre>
+  <code>
+for (let i = 0; i < OurData.length; i++) {
+  //script for random behavior 
+  const random = Math.floor(Math.random() * OurData.length);
+  
+ //script for show results on the DOM
+  document.getElementById("output").insertAdjacentHTML('beforebegin',  &lt;h1&gt;${OurData[random].Title}&lt;/h1&gt;<br/>`);
+}
+  </code>
+</pre>
+<p><a href="https://charmingprogrammer.github.io/Demo/random.html">See Demo</a></p> 
+			<!--outro-->
+			<p>
+				I hope you like this project please subscribe and comment your thoughts and suggestions.
+				<br> <br>
+				That's all for today. <b>Thanks for reading</b> <br> <br>
+				<b>Happy Coding and love you 3000, By</b>
+
+			</p>
+
+		</div>
+		<!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+	</div>
+	<div id="page2">
+		<!--post suggestions-->
+		<div id="postSuggestionContainer">
+		</div>
+		<!--expand more-->
+		<div class="showMore" onclick="showMoreSugg()">
+			<b>Show More Suggestions</b>
+		</div>
+
+		<div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+			<b>Show Less Suggestions</b>
+		</div>
+
+		<!--comment input-->
+		<div id="comment_input_container">
+			<form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+				<textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<!--comment output-->
+		<div id="comment_output_container">
+		</div>
+
+		<div class="showMore" onclick="showMoreComment()">
+			<b>Show More Comments</b>
+		</div>
+		<div class="showLess" onclick="showLessComment()" id="showLessComment">
+			<b>Show Less Comments</b>
+		</div>
+	</div>
+</div>
+<!--top scrolling-->
+<div id="gotoTop">
+	<i class="fas fa-chevron-up" onclick="GoTop()"></i>
+</div>
+<!--footer-->
+<footer>
+	<ul>
+		<li><a href="AboutUs.html">About us</a></li>
+		<li><a href="ContactUs.html">Contact us</a></li>
+		<li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+		<li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+		<li><a href="Disclaimer.html">Disclaimer</a></li>
+		<li><a href="Sitemap.html">Sitemap</a></li>
+	</ul>
+	<ul>
+		<b>Follow Me</b>
+		<li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
+		<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+		<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+		<li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
+		<li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+		<li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+	</ul>
+	<p>
+		All Rights reserved by Manoarya
+	</p>
+
+</footer>
+<script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+<script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+<script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+
+  <script type="text/javascript" charset="utf-8">
+
+    //script for quick access
+
+    const container = document.querySelector('.postContainer');
+
+    const h2 = container.getElementsByTagName('h2');
+
+    console.log(h2);
+
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].id = h2[i].innerHTML
+      document.getElementById('topics').insertAdjacentHTML('afterbegin', `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`)
+      console.log(h2[i].id = h2[i].innerHTML);
+
+    }
+
+    const gotoTop = document.getElementById('gotoTop');
+
+    function GoTop() {
+      window.scrollTo(0, 0);
+    }
+
+    //hide and show qr code btn using onscroll event 
+    var prevScrollpos = window.pageYOffset; window.onscroll = function() { var currentScrollPos = window.pageYOffset; if (prevScrollpos < currentScrollPos) { document.getElementById("gotoTop").style.bottom = "-100%"; } else { document.getElementById("gotoTop").style.bottom = "10px"; } prevScrollpos = currentScrollPos; }
+
+
+
+
+  </script>
+</body>
