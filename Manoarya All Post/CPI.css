@@ -1,0 +1,37 @@
+#access{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#access li{
+  width: 50%;
+  list-style-type: none;
+}
+#access li a{
+  display: flex;
+  padding: 10px 20px;
+  transform: scale(0.9);
+}
+h3{
+  padding: 10px 20px ;
+  color: #313131;
+}
+h3 b{
+  background: #4dbfe8;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
+.btns{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start ;
+  align-items: center;
+  transform: scale(0.93);
+}
+.btns a{
+padding: 10px 20px;
+margin-left: 5px;
+}
