@@ -431,4 +431,15 @@ const AllPost = [
 		alt: "How To Get Random Data From An Array Using Js.| by Manoarya",
 		trending: "true",
 	},
+	{
+		category: "Explanation",
+		Title: "CODING PROJECT IDEA: This Is What Professionals Do",
+		Paragraph:
+		"In this article we are going to assist you with CODING PROJECT IDEA with free source code and live preview",
+		ImageUrl:
+		"https://i.ibb.co/f4HDCLN/Pics-Art-12-17-07-10-57.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/CODING-PROJECT-IDEA-This-Is-What-Professionals-Do.html",
+		alt: "CODING-PROJECT-IDEA-This-Is-What-Professionals-Do.html",
+		trending: "true",
+	},
 ];
