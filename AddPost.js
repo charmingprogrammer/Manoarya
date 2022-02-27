@@ -10,6 +10,7 @@ const AllPost = [
 	alt: "html basic explanation by Manoarya",
 	trending: "true",
 },
+/*
   {
 	category: "HTM",
 	Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript?",
@@ -263,7 +264,7 @@ const AllPost = [
 		alt: "Class 11th Mathematics notes by Manoarya",
 		trending: "true",
 	},
-	/*
+	
 	{
 		category: "Notes",
 		Title: "English Grammer| Beginners to Advance",
@@ -286,7 +287,7 @@ const AllPost = [
 		alt: "English translation",
 		trending: "true",
 	},
-  */
+
 	{
 		category: "Notes",
 		Title: "Computer Fundamentals",
@@ -333,39 +334,6 @@ const AllPost = [
 		trending: "true",
 	},
 	{
-		category: "Explanation",
-		Title: "Tips For New Developers By Manoarya.",
-		Paragraph:
-		"In this post Manoarya gives some tips for new developers to succeed in your coding journey.",
-		ImageUrl:
-		"https://i.ibb.co/m5s3JQX/20220203-220051-0000.png",
-		PostUrl: "https://manoarya.com/Manoarya All Post/Tips-for-new-developers-by-manoarya.html#",
-		alt: "Tips For New Developers By Manoarya.",
-		trending: "true",
-	},
-	{
-		category: "Explanation",
-		Title: "What is an API? Simply Explain with project.",
-		Paragraph:
-		"In this article manoarya explain you about API with a awesome project that clear your all doubts.",
-		ImageUrl:
-		"https://i.ibb.co/dgJq0Rm/20220207-081830-0000.png",
-		PostUrl: "https://manoarya.com/Manoarya All Post/What-is-API-simply-explain-with-project.html",
-		alt: "What is an API? Simply Explain with project.",
-		trending: "true",
-	},
-	{
-		category: "Explanation",
-		Title: "What is the Web development? Simply Explain",
-		Paragraph:
-		"Simple explanation about web development and some FAQ. let's go",
-		ImageUrl:
-		"https://i.ibb.co/rxjN0vG/png-20220209-120259-0000.png",
-		PostUrl: "https://manoarya.com/Manoarya All Post/Who-is-Web-developer.html",
-		alt: "Who-is-Web-developer.html",
-		trending: "true",
-	},
-	{
 		category: "Notes",
 		Title: "Physical World | Physics class 11th Chapter 01 Easy Notes",
 		Paragraph:
@@ -398,6 +366,8 @@ const AllPost = [
 		alt: "CPU-easy-explained-by-Manoarya",
 		trending: "true",
 	},
+	*/
+	
 	{
 		category: "Notes",
 		Title: "Code A Gallery web application using Pixabay API.",
@@ -440,6 +410,39 @@ const AllPost = [
 		"https://i.ibb.co/f4HDCLN/Pics-Art-12-17-07-10-57.png",
 		PostUrl: "https://manoarya.com/Manoarya All Post/CODING-PROJECT-IDEA-This-Is-What-Professionals-Do.html",
 		alt: "CODING-PROJECT-IDEA-This-Is-What-Professionals-Do.html",
+		trending: "true",
+	},
+		{
+		category: "Explanation",
+		Title: "Tips For New Developers By Manoarya.",
+		Paragraph:
+		"In this post Manoarya gives some tips for new developers to succeed in your coding journey.",
+		ImageUrl:
+		"https://i.ibb.co/m5s3JQX/20220203-220051-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Tips-for-new-developers-by-manoarya.html#",
+		alt: "Tips For New Developers By Manoarya.",
+		trending: "true",
+	},
+	{
+		category: "Explanation",
+		Title: "What is an API? Simply Explain with project.",
+		Paragraph:
+		"In this article manoarya explain you about API with a awesome project that clear your all doubts.",
+		ImageUrl:
+		"https://i.ibb.co/dgJq0Rm/20220207-081830-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/What-is-API-simply-explain-with-project.html",
+		alt: "What is an API? Simply Explain with project.",
+		trending: "true",
+	},
+	{
+		category: "Explanation",
+		Title: "What is the Web development? Simply Explain",
+		Paragraph:
+		"Simple explanation about web development and some FAQ. let's go",
+		ImageUrl:
+		"https://i.ibb.co/rxjN0vG/png-20220209-120259-0000.png",
+		PostUrl: "https://manoarya.com/Manoarya All Post/Who-is-Web-developer.html",
+		alt: "Who-is-Web-developer.html",
 		trending: "true",
 	},
 ];
