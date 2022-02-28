@@ -10,7 +10,7 @@ const AllPost = [
 	alt: "html basic explanation by Manoarya",
 	trending: "true",
 },
-/*
+
   {
 	category: "HTM",
 	Title: "How to make Sidebar with multiple Pages using HTML, CSS and Javascript?",
@@ -22,6 +22,7 @@ const AllPost = [
 	alt: "Navigation by Manoarya",
 	trending: "true",
 },
+/*
 	{
 		category: "HTM",
 		Title: "How to make Modal Box using HTML,CSS and Javascript?",
