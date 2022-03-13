@@ -220,7 +220,7 @@ nav{
   background: #c6c6c6;
 }
 .box img{
-  height: 220px;
+  height: auto;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -229,6 +229,7 @@ nav{
   font-size: 20px;
   text-transform:capitalize ;
   margin-left:10px;
+  font-weight: lighter;
 }
 .showMore{
   height:50px;
@@ -391,7 +392,7 @@ display:block;
   }
   #page1{
     width: 68%;
-    margin-top: 2%;
+    margin-top: 10px;
     margin-left: 2%;
     border-radius: 10px;
   }
@@ -409,7 +410,8 @@ display:block;
 }
   #postSuggestionContainer{
   width: 100%;
-  transform: scale(0.9);
+  margin-top: 11px;
+border-left: 1px solid darkgray;
   }
 
 #comment_input_container{
