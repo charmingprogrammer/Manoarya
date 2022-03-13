@@ -8,6 +8,9 @@
   body{
     background: #edecec;
   }
+  b{
+    color: #42c1e3;
+  }
   pre{
   padding: 10px 10px;
     width: 100%;
@@ -156,7 +159,6 @@
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    margin-top: 10px;
   }
   .post_Img_Con img {
     height: 100%;
@@ -173,7 +175,7 @@
   }
   .postContainer h2 {
     padding: 10px 20px;
-    color:#3c3c3c;
+    color: #42c1e3;
     text-transform: capitalize;
     position: sticky;
     z-index: 1234;
@@ -217,7 +219,6 @@
     background: white;
     transform: scale(0.97);  
     border-radius: 10px;
-    margin-top: 10px;
   }
   .box:active {
     background: #c6c6c6;
@@ -228,9 +229,9 @@
     border-radius: 5px;
   }
   .box h3 {
-    font-size: 20px;
+    font-size: medium;
     text-transform:capitalize ;
-    margin-left:10px;
+    padding: 10px 5px;
     font-weight: lighter;
   }
   .showMore{
@@ -398,6 +399,7 @@
     #page2{
     width:20%;
     position: sticky;
+    margin-left: 3px;
 
     }
     .post_Img_Con {
@@ -409,8 +411,7 @@
   }
     #postSuggestionContainer{
     width: 100%;
-    margin-top: 11px;
-  border-left: 1px solid darkgray;
+
     }
   
   #comment_input_container{
