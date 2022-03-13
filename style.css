@@ -26,7 +26,6 @@ nav {
 
 #logo_container {
   height: 50px;
-  width: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -155,7 +154,7 @@ nav {
   background: #24242409;
 }
 .box img {
-  height: 230px;
+  height: auto;
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -355,7 +354,7 @@ footer p{
   nav {
     position: fixed;
     top: 0;
-    border: none;
+    border-bottom: 1px solid darkgray;
   }
   #bottom_nav {
     height: 100vh;
@@ -367,7 +366,7 @@ footer p{
     justify-content: flex-start;
     align-items: center;
     box-shadow: none;
-    border-right: 1px  solid black;
+    border-right: 1px solid darkgray;
   }
 
   .bottom_box {
