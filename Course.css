@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Comic Sans MS;
+  font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 i:active {
@@ -47,6 +47,8 @@ i:active {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  transform: scale(0.97);
+
 }
 .topic_explaning {
   display: flex;
@@ -78,7 +80,7 @@ background: #f9f9a6;
 .infos p {
   padding: 10px 20px;
   font-family: 'Exo 2', sans-serif;
-  font-size: 1rem;
+  font-size: large;
 }
 .infos b{
   color: #21b1e6;
@@ -135,15 +137,15 @@ background: #f9f9a6;
   place-items: center;
 }
 #darkMode i {
-  height: 100%;
-  width: 100%;
+  height: 60px;
+  width: 60px;
   border-radius: 100px;
-  background: white;
   display: grid;
   place-items: center;
   z-index: 1234;
   margin-top: -20px;
   border: 1px solid #bababa;
+  margin-left: -7px;
 }
 
 #home {
@@ -154,6 +156,7 @@ background: #f9f9a6;
   display: grid;
   place-items: center;
   border-top: 1px solid #bababa;
+  border-right: 1px solid #bababa;
 }
 
 #Sidebar_container {
@@ -167,12 +170,17 @@ background: #f9f9a6;
   transition: .2s ease-out;
   z-index: 1234;
 }
+
 .Sidebar_content {
   height: 100vh;
   width: 70%;
   background: white;
   box-shadow: 0 0 10px 1px black;
-  overflow: scroll;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.Sidebar_content::-webkit-scrollbar {
+  display: none;
 }
 .Sidebar_content ul {
   display: flex;
@@ -290,13 +298,13 @@ nav ul  a {
 
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1200px) {
   #main_container {
-    width: 60%;
+    width: 100%;
     float: right;
   }
   #bottom_nav {
-    width: 40%;
+    width: 20%;
     z-index: 12345;
     position: fixed;
     bottom: 0;
@@ -305,12 +313,11 @@ nav ul  a {
     width: 40%;
     background: none;
     left: 0%;
+    border-right: 1px solid;
   }
   .Sidebar_content {
     height: 90%;
-    width: 100%;
-    box-shadow: none;
-    border-right: 1px solid #bababa;
+    width: 20%;
 
   }
 
