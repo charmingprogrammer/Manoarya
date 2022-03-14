@@ -300,11 +300,11 @@ nav ul  a {
 
 @media only screen and (min-width: 700px) {
   #main_container {
-    width: 100%;
+    width: 60%;
     float: right;
   }
   #bottom_nav {
-    width: 20%;
+    width: 40%;
     z-index: 12345;
     position: fixed;
     bottom: 0;
@@ -317,7 +317,7 @@ nav ul  a {
   }
   .Sidebar_content {
     height: 90%;
-    width: 20%;
+    width: 100%;
 
   }
 
@@ -326,10 +326,8 @@ nav ul  a {
   }
   #setting_page {
     height: 100%;
-    width: 40%;
-    background: #bababa;
-    position: fixed;
-    top: -100%;
-    transition: .2s ease-out;
+    width: 100%;
+    box-shadow: none;
+    border-right: 1px solid #bababa;
   }
 }
