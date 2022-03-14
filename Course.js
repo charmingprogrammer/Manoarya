@@ -33,7 +33,7 @@ for (var i = 0; i < AllNotes.length; i++) {
     <nav id="nav">
     <div class="top_items">
     <b>Page overview</b>
-    <i class="fas fa-align-right" onclick="opener()"></i>
+    <i class="fas fa-align-right" onclick="opener()" class="topicsOpener"></i>
     </div>
     <ul id="PageOverview">
     </ul>
@@ -126,8 +126,14 @@ function DarkOff() {
     aTag[i].style.color = '';
   }
 }
+
+
+
 //open content suggestion
 function opener() {
   const nav = document.getElementById('nav');
   nav.classList.toggle('nav');
 }
+
+const topicsOpener =  document.getElementsByClassName('topicsOpener');
+console.log(topicsOpener);
