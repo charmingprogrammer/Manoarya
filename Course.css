@@ -302,7 +302,7 @@ nav ul  a {
     float: right;
   }
   #bottom_nav {
-    width: 40%;
+    width: 20%;
     z-index: 12345;
     position: fixed;
     bottom: 0;
