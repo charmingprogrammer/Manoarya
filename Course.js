@@ -30,14 +30,14 @@ for (var i = 0; i < AllNotes.length; i++) {
     <div id="img_container">
     <img src="${AllNotes[i].ImgUrl}" alt="${AllNotes[i].ImgAlt}" />
     </div>
-    <nav id="nav">
-    <div class="top_items">
-    <b>Page overview</b>
-    <i class="fas fa-align-right" onclick="opener()" class="topicsOpener"></i>
-    </div>
-    <ul id="PageOverview">
-    </ul>
-    </nav>
+    // <nav id="nav">
+    // <div class="top_items">
+    // <b>Page overview</b>
+    // <i class="fas fa-align-right" onclick="opener()" class="topicsOpener"></i>
+    // </div>
+    // <ul id="PageOverview">
+    // </ul>
+    // </nav>
     <div class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
     </div>`);
