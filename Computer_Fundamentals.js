@@ -117,6 +117,7 @@ const AllNotes = [
   </details>
   </p></div> <br> `
 },
+/*
   {
     Title: "2. CPU",
     ImgUrl: "https://i.ibb.co/ZMjQ9mb/20220120-195314-0000.png",
@@ -190,5 +191,5 @@ const AllNotes = [
     4. Storage and retrieval operations</p></div>
     <br> `
   },
-
+*/
 ]
