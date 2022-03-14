@@ -33,7 +33,7 @@ for (var i = 0; i < AllNotes.length; i++) {
     <nav id="nav">
     <div class="top_items">
     <b>Page overview</b>
-    <i class="fas fa-align-right" onclick="opener()" class="topicsOpener"></i>
+    <i class="fas fa-align-right"  class="topicsOpener"></i>
     </div>
     <ul id="PageOverview">
     </ul>
@@ -130,10 +130,11 @@ function DarkOff() {
 
 
 //open content suggestion
-function opener() {
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('nav');
-}
+const top_items = document.getElementsByClassName("top_items");
 
-const topicsOpener =  document.getElementsByClassName('topicsOpener');
-console.log(topicsOpener);
+for (let i = 0; i < top_items.length; i++) {
+  top_items[i].addEventListener("click", function () {
+    const nav = document.getElementsByTagName('nav');
+    nav[i].classList.toggle('nav');
+  })
+}
