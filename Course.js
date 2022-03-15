@@ -30,29 +30,12 @@ for (var i = 0; i < AllNotes.length; i++) {
     <div id="img_container">
     <img src="${AllNotes[i].ImgUrl}" alt="${AllNotes[i].ImgAlt}" />
     </div>
-    <nav id="nav">
-    <div class="top_items">
-    <b>Page overview</b>
-    <i class="fas fa-align-right"  class="topicsOpener"></i>
-    </div>
-    <ul id="PageOverview">
-    </ul>
-    </nav>
     <div class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
     </div>`);
   index.insertAdjacentHTML('afterbegin', `<li><a href="#${AllNotes[i].Title}">${AllNotes[i].Title}</a></li>`)
 }
-//get All H2 tags for quick search
-const topic_explaning = document.getElementById('topic_explaning');
-const H2 = topic_explaning.getElementsByTagName('h2');
 
-//looping  all h2 inside of nav
-for (var i = 0; i < H2.length; i++) {
-  document.getElementById('PageOverview').insertAdjacentHTML('afterbegin', `
-  <a href="#${H2[i].innerHTML}">${H2[i].innerHTML}</a>`);
-  H2[i].id = H2[i].innerHTML
-}
 
 //Dark Mode ON OFF
 const fullDom = document.querySelector('*');
@@ -125,16 +108,4 @@ function DarkOff() {
   for (var i = 0; i < aTag.length; i++) {
     aTag[i].style.color = '';
   }
-}
-
-
-
-//open content suggestion
-const top_items = document.getElementsByClassName("top_items");
-
-for (let i = 0; i < top_items.length; i++) {
-  top_items[i].addEventListener("click", function () {
-    const nav = document.getElementsByTagName('nav');
-    nav[i].classList.toggle('nav');
-  })
 }
