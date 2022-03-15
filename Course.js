@@ -51,7 +51,6 @@ const Sidebar = document.getElementById('Sidebar_content');
 
 const aTag = document.getElementsByTagName('a');
 
-DarkOn();
 function DarkOn() {
   fullDom.style.background = '#191919';
   fullDom.style.color = '#e9e9e9';
