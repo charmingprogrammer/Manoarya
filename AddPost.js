@@ -221,6 +221,7 @@ const AllPost = [
           alt: "details opener closed",
           trending: "true",
       },
+      /*
       {
           category: "Tools",
           Title: "Mono Dictionary | The word meaning words.",
@@ -288,6 +289,7 @@ const AllPost = [
           alt: "English translation",
           trending: "true",
       },
+
   
       {
           category: "Notes",
@@ -300,7 +302,7 @@ const AllPost = [
           alt: "computer Fundamentals",
           trending: "true",
       },
-      
+                  */
       {
           category: "Theme Design",
           Title: "Theme Design 01 by Manoarya",
