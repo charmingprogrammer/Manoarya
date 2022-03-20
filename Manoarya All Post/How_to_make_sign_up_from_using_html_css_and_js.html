@@ -1,30 +1,50 @@
 <!DOCTYPE html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>How to make Sign Up and Login from using HTML, CSS and Js? for free.</title>
-  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>
+    How to make Sign Up and Login from using HTML, CSS and Js? for free.
+  </title>
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
   <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
   <!--code highlighter links-->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-SRT0FM6SCD');
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-     crossorigin="anonymous"></script>
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
 </head>
+
 <body>
   <!--navigation bar top-->
   <nav>
@@ -41,82 +61,213 @@
   <div id="searchContainer">
     <div class="search_header">
       <i class="fas fa-arrow-left" id="search_closer"></i>
-      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
     </div>
-    <ul id="myUL">
-    </ul>
+    <ul id="myUL"></ul>
   </div>
   <div id="container">
     <div id="page1">
       <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
       <!--post image -->
       <div class="post_Img_Con">
-        <img src="https://i.ibb.co/86Xtq9w/Pics-Art-12-11-07-22-32.png" alt="SignUp From" />
+        <img
+          src="https://i.ibb.co/86Xtq9w/Pics-Art-12-11-07-22-32.png"
+          alt="SignUp From"
+        />
       </div>
       <!--Main Post-->
       <div class="postContainer">
-        <h1 id="postTitle">How to make Sign Up and Login from using HTML, CSS and Js? for free.</h1>
+        <h1 id="postTitle">
+          How to make Sign Up and Login from using HTML, CSS and Js? for free.
+        </h1>
+        <p><b>Category : </b> <span id="category">HTM</span></p>
         <p>
-          <b>Category : </b>  <span id="category">HTM</span>
+          Hi folks in this post we are going to build an awesome looking sign-up
+          and login form using html, css and js.
+          <br />
+          The best part of this build is you can easily toggle between sign from
+          and login from. <br /><br />
+
+          A step by step guide to create a signup and login form using html, css
+          and javascript. <br />
+
+          You can jump to the specific section using the following list. <br />
+          <a href="https://charmingprogrammer.github.io/Demo/Sign_Up_From.html"
+            >See Demo</a
+          >
         </p>
+        <ul id="topics"></ul>
+        <br />
+        <h2>Introduction</h2>
         <p>
-          Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going to assist you with How to make Sign Up and Login from using HTML, CSS and Js? for free. <br><br> Are you Guys exited? Let me know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a href="https://charmingprogrammer.github.io/Demo/Sign_Up_From.html">See Demo</a> <br> <br> Fist of all you need to create a file and name it whatever you want. <br><br> Now Copy the following  codes
+          Sign-up allows us to collect user information and store it into a
+          database for better marketing and best services. And login allows us
+          to inter on these services and use these services. Login is also known
+          as sign-in. <br /><br />
+
+          Several websites are integrated with sign-up and login forms on the
+          Internet. <br /><br />
+
+          So, I hope you are excited to build this amazing sign-up and login
+          form step by step. <br /><br />
+
+          So first set-up the development environment .
         </p>
-        <h2>Add HTML Code</h2>
+        <h2>Set-Up Environment.</h2>
+        <p>
+          Let's open our visual studio code and create three files first
+          index.html, second style.css and third script.js.
+        </p>
+        <h2>Opening index.html file</h2>
+        <p>
+          Open index.html file on the current window and start implementing code
+          step by step.
+        </p>
+        <h2>Insert html boilerplate</h2>
+        <p>
+          Press shift + ! for inserting html starter code our starter
+          boilerplate looks like below code.
+        </p>
         <pre>
           <code>
-            &lt;!DOCTYPE html&gt;<br />&lt;head&gt;<br />	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;<br />	&lt;meta name=&quot;viewport&quot;<br />	content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot;&gt;<br />	&lt;!--Add title that show on the browser header--&gt;<br />	&lt;title&gt;Sign Up From&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />	&lt;div class=&quot;container&quot;&gt;<br />		&lt;div id=&quot;fromBtns&quot;&gt;<br />			&lt;button id=&quot;signUpBtn&quot;&gt;Sign Up&lt;/button&gt;<br />			&lt;button id=&quot;loginBtns&quot;&gt;Login&lt;/button&gt;<br />		&lt;/div&gt;<br />		&lt;!--Insert login From using js--&gt;<br />		&lt;div id=&quot;FormContainer&quot;&gt;<br />		&lt;/div&gt;<br />	&lt;/div&gt;<br />&lt;/body&gt;
+          &lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>   &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>   &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;<br/>   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>   &lt;title&gt;Document&lt;/title&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>  <br/>&lt;/body&gt;<br/>&lt;/html&gt;<br/>
+        </code>
+      </pre>
+        <p>
+          Change the title of this boilerplate. Instead of Document add Signup
+          Form or whatever you want to add as a title. Title is the very
+          important part of any html document. It appears at the top of any
+          browser.
+        </p>
+        <h2>Add Main Code</h2>
+        <p>
+          Add a div with the id container inside the body tag. This div acts as
+          a container. Inside of this container add one more div which acts as a
+          container of two buttons. Now inside of this container add two buttons
+          which helps to toggle between sign-up and login. <br /><br />
+
+          <b>Our body code looks like the code below.</b>
+        </p>
+        <pre>
+            <code>
+              &lt;body&gt;<br/>   &lt;div class=&quot;container&quot;&gt;<br/>       &lt;div id=&quot;fromBtns&quot;&gt;<br/>           &lt;button id=&quot;signUpBtn&quot;&gt;Sign Up&lt;/button&gt;<br/>           &lt;button id=&quot;loginBtns&quot;&gt;Login&lt;/button&gt;<br/>       &lt;/div&gt;<br/>       &lt;!--Insert login From using js--&gt;<br/>       &lt;div id=&quot;FormContainer&quot;&gt;<br/>       &lt;/div&gt;<br/>   &lt;/div&gt;<br/>&lt;/body&gt;<br/>
+            </code>
+          </pre>
+        <p>
+          Now in this meantime our page looks like this image.
+          <img
+            src="https://i.ibb.co/2WbyrtB/Screenshot-from-2022-03-20-09-45-10.png"
+            alt="login and sign from by manoarya "
+          />
+          <br />
+          <br />
+          Now time to style all the elements to get a satisfactory result.
+        </p>
+        <h2>Open style.css file</h2>
+        <p>
+          Let's open the style.css file to style all the elements to look
+          awesome. And add style code step by step.
+        </p>
+        <h2>Adding a universal style. </h2>
+        <pre>
+          <code>
+                        
+         * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Roman;
+          }
+
           </code>
         </pre>
-        <h2>Add CSS Code</h2>
+        <h2>Adding a container style</h2>
         <pre>
           <code>
-            * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Roman;
-            }
             .container {
-            height: 100%;
-            width: 100%;
-            background: #e5e5e5;
-            position: fixed;
-            top: 0;
-            }
+              height: 100%;
+              width: 100%;
+              background: #e5e5e5;
+              position: fixed;
+              top: 0;
+              }
+   
+          </code>
+        </pre>
+        <h2>Adding a button container style </h2>
+        <pre>
+          <code>
             #fromBtns {
-            height: 50px;
-            width: 100%;
-            background: white;
-            margin-top: 70px;
-            display: flex;
-            border-radius: 100px;
-            transform: scale(0.9);
-            }
+              height: 50px;
+              width: 100%;
+              background: white;
+              margin-top: 70px;
+              display: flex;
+              border-radius: 100px;
+              transform: scale(0.9);
+              }
+   
+          </code>
+        </pre>
+        <h2>Adding a button style </h2>
+        <pre>
+          <code>
             #fromBtns button {
-            padding: 10px 20px;
-            border: none;
-            width: 50%;
-            font-size: 17px;
-            border-radius: 100px;
-            }
+              padding: 10px 20px;
+              border: none;
+              width: 50%;
+              font-size: 17px;
+              border-radius: 100px;
+              }
+   
+          </code>
+        </pre>
+        <h2>Adding a clickable effect on button </h2>
+        <pre>
+          <code>
             #fromBtns button:active {
-            background: #00b3ef;
-            }
+              background: #00b3ef;
+              }   
+          </code>
+        </pre>
+        <h2>Adding sign up button style</h2>
+        <pre>
+          <code>
             #signUpBtn {
-            background: #00b3ef;
-            }
+              background: #00b3ef;
+              }
+          </code>
+          </code>
+        </pre>
+        <h2>Adding login button style</h2>
+        <pre>
+          <code>
             #loginBtns {
-            background: none;
-            }
+              background: none;
+              }   
+          </code>
+        </pre>
+        <h2>Adding style on form container </h2>
+        <pre>
+          <code>
             #FormContainer {
-            height: 350px;
-            width: 100%;
-            background: white;
-            transform: scale(0.95);
-            border-radius: 20px;
-            }
-            #FormContainer input {
+              height: 100%;
+              width: 100%;
+              background: white;
+              position: fixed;
+              top: 0;
+              }
+          </code>
+          </code>
+        </pre>
+        <h2>Adding style on the input tags</h2>
+        <pre><code>
+          #FormContainer input {
             padding: 10px 20px;
             margin-left: 30px;
             margin-top: 5px;
@@ -125,8 +276,11 @@
             background: white;
             border-radius: 5px;
             font-size: 17px;
-            }
-            #FormContainer button {
+            } 
+        </code></pre>
+        <h2>Adding style on the submit button</h2>
+        <pre><code>
+          #FormContainer button {
             padding: 10px 20px;
             margin-left: 30px;
             margin-top: 5px;
@@ -136,53 +290,115 @@
             border-radius: 5px;
             font-size: 17px;
             box-shadow: 0 0 10px 1px gray;
-            }
-            #FormContainer button:active {
-            transform: scale(0.97);
-            }
-          </code>
-        </pre>
-        <h2>Add Javascript Code</h2>
+            } 
+        </code></pre>
+        <h2>Adding a clickable effect on button</h2>
         <pre>
-          <code class="Javascript">
-            //access necessary elements
-            const signUpBtn = document.getElementById('signUpBtn');
-            const loginBtns = document.getElementById('loginBtns');
-            const FormContainer = document.getElementById('FormContainer');
-            //function for both SignUp from and login from
-            function SignUp() {
-            FormContainer.innerHTML = `
-            &lt;form method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;<br />			&lt;br&gt; &lt;br&gt;<br />			&lt;input type=&quot;text&quot; placeholder=&quot;Name&quot; required=&quot;required&quot; /&gt;<br />			&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; /&gt;<br />			&lt;input type=&quot;number&quot; placeholder=&quot;Mobile&quot; required=&quot;required&quot; /&gt;<br />			&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;required&quot; /&gt;<br />			&lt;input type=&quot;password&quot; placeholder=&quot;Confirm Password&quot; required=&quot;required&quot; /&gt;<br />			&lt;br&gt;<br />			&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br />			&lt;/form&gt;
-            `;
-            FormContainer.style.background = '#00b3ef';
-            signUpBtn.style.background = '#00b3ef';
-            loginBtns.style.background = 'white';
-            }
-            function Login() {
-            FormContainer.innerHTML = `
-            &lt;form method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;<br />			&lt;br&gt; &lt;br&gt;<br />			&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; /&gt;<br />			&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;required&quot; /&gt;<br />			&lt;br&gt;<br />			&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br />			&lt;/form&gt;
-            `;
-            FormContainer.style.background = '#00b3ef';
-            signUpBtn.style.background = 'white';
-            loginBtns.style.background = '#00b3ef';
-            }
-            // call both function with Button click
-            signUpBtn.addEventListener('click', SignUp);
-            loginBtns.addEventListener('click', Login);
-            //default SignUp function call for default SignUp from
-            SignUp();
+          <code>
+            #FormContainer button:active {
+              transform: scale(0.97);
+              }   
           </code>
         </pre>
+        <P>Now our page looks like below image. <br>
+             <b>Desktop Views </b> <br><br>
+             <img src="https://i.ibb.co/P4B0sYM/Screenshot-from-2022-03-20-10-33-48.png" alt="login and  sign up page preview desktop">
+             
+            <br><br> <b>Mobile Views </b> <br><br>
+            <img src="https://i.ibb.co/sQs2zv2/Screenshot-from-2022-03-20-10-37-17.png" alt="login and  sign up page preview Mobile">
+          </P>
+        <h2>Open script.js file</h2>
+        <p>Now open script.js file into the current window and start implementing scripts step by step.</p>
+        <h2>Get All Elements from Dom</h2>
+        <p>Let’s access all the elements from the index.html file and store it into a variable. <br>
+          We access three elements from dom. <br><br>
+          1. Sign up Button <br>
+          2. Login Button <br>
+          3. Form Container <br>
+          </p>
+          <pre>
+            <code>
+              //access necessary elements
+              const signUpBtn = document.getElementById('signUpBtn');
+              const loginBtns = document.getElementById('loginBtns');
+              const FormContainer = document.getElementById('FormContainer');
+            </code>
+          </pre>
+          <h2>Create Functions</h2>
+          <p>Now create two functions which help us to tell what happens when someone clicks on the buttons. <br><br>
+
+            First function is called signUp() which is triggered when someone clicks on the sign up button. <br><br>
+            </p>
+            <pre>
+              <code>
+                function SignUp() {
+                }     
+              </code>
+            </pre>
+            <p>Now inside of this function add a form structure which includes five input tags and one submit button. <br><br>
+
+              This structure exists inside of a container div called FormContainer. <br>
+              Now after that add some style which is fired when the sign up button is clicked. <br>
+              </p>
+              <pre>
+                <code>
+                  function SignUp() {<br/>           FormContainer.innerHTML = `<br/>           &lt;form method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;<br/>           &lt;br&gt; &lt;br&gt;<br/>           &lt;input type=&quot;text&quot; placeholder=&quot;Name&quot; required=&quot;required&quot; /&gt;<br/>           &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; /&gt;<br/>           &lt;input type=&quot;number&quot; placeholder=&quot;Mobile&quot; required=&quot;required&quot;                               /&gt;<br/>           &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;required&quot; /&gt;<br/>           &lt;input type=&quot;password&quot; placeholder=&quot;Confirm Password&quot; required=&quot;required&quot; /&gt;<br/>           &lt;br&gt;<br/>           &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br/>           &lt;/form&gt;<br/>           `;<br/>           FormContainer.style.background = '#00b3ef';<br/>           signUpBtn.style.background = '#00b3ef';<br/>           loginBtns.style.background = 'white';<br/>           }<br/><br/>
+                </code>
+              </pre>
+              <p>
+                Second function is called Login() which is triggered when someone clicks on the Login button.
+              </p>
+              <pre>
+                <code>
+                  function Login() {
+                  }
+                </code>
+              </pre>
+              <p>
+                Now inside of this function add a form structure which includes two input tags and one submit button. <br><br>
+
+                
+                This structure exists inside of a container div called FormContainer. <br>
+                Now after that add some style which is fired when the Login button is clicked.
+                </p>
+                <pre>
+                  <code>
+                    function Login() {<br/>           FormContainer.innerHTML = `<br/>           &lt;form method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;<br/>           &lt;br&gt; &lt;br&gt;<br/>           &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; /&gt;<br/>           &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;required&quot; /&gt;<br/>           &lt;br&gt;<br/>           &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br/>           &lt;/form&gt;<br/>           `;<br/>           FormContainer.style.background = '#00b3ef';<br/>           signUpBtn.style.background = 'white';<br/>           loginBtns.style.background = '#00b3ef';<br/>           }<br/>
+                  </code>
+                </pre>
+                <h2>
+                  Add click event on buttons 
+                </h2>
+                <p>After completing all the stuff the final step is to create a script which enables the button for action. Means add click events on the button tags. And called the two functions first SignUp() function and second Login() function.</p>
+                <pre>
+                  <code>
+                    signUpBtn.addEventListener('click', SignUp);
+                    loginBtns.addEventListener('click', Login);
+                  </code>
+                </pre>
+                <p>Now called the SignUp() function by default when the page is loaded.</p>
+                <pre><code>SignUp();</code></pre>
+                <h2>
+                  Our Final code  looks like following code.
+                </h2>
+                <pre>
+                  <code>
+                    &lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/><br/>&lt;head&gt;<br/>	&lt;meta charset=&quot;UTF-8&quot;&gt;<br/>	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;<br/>	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>	&lt;title&gt;Document&lt;/title&gt;<br/>	&lt;style&gt;<br/>		* {<br/>			margin: 0;<br/>			padding: 0;<br/>			box-sizing: border-box;<br/>			font-family: Roman;<br/>		}<br/><br/>		.container {<br/>			height: 100%;<br/>			width: 100%;<br/>			background: #e5e5e5;<br/>			position: fixed;<br/>			top: 0;<br/>		}<br/><br/>		#fromBtns {<br/>			height: 50px;<br/>			width: 100%;<br/>			background: white;<br/>			margin-top: 70px;<br/>			display: flex;<br/>			border-radius: 100px;<br/>			transform: scale(0.9);<br/>		}<br/><br/>		#fromBtns button {<br/>			padding: 10px 20px;<br/>			border: none;<br/>			width: 50%;<br/>			font-size: 17px;<br/>			border-radius: 100px;<br/>		}<br/><br/>		#fromBtns button:active {<br/>			background: #00b3ef;<br/>		}<br/><br/>		#signUpBtn {<br/>			background: #00b3ef;<br/>		}<br/><br/>		#loginBtns {<br/>			background: none;<br/>		}<br/><br/>		#FormContainer {<br/>			height: 350px;<br/>			width: 100%;<br/>			background: white;<br/>			transform: scale(0.95);<br/>			border-radius: 20px;<br/>		}<br/><br/>		#FormContainer input {<br/>			padding: 10px 20px;<br/>			margin-left: 30px;<br/>			margin-top: 5px;<br/>			border: none;<br/>			outline: none;<br/>			background: white;<br/>			border-radius: 5px;<br/>			font-size: 17px;<br/>		}<br/><br/>		#FormContainer button {<br/>			padding: 10px 20px;<br/>			margin-left: 30px;<br/>			margin-top: 5px;<br/>			border: none;<br/>			outline: none;<br/>			background: #00b3ef;<br/>			border-radius: 5px;<br/>			font-size: 17px;<br/>			box-shadow: 0 0 10px 1px gray;<br/>		}<br/><br/>		#FormContainer button:active {<br/>			transform: scale(0.97);<br/>		}<br/>	&lt;/style&gt;<br/>&lt;/head&gt;<br/><br/>&lt;body&gt;<br/>	&lt;div class=&quot;container&quot;&gt;<br/>		&lt;div id=&quot;fromBtns&quot;&gt;<br/>			&lt;button id=&quot;signUpBtn&quot;&gt;Sign Up&lt;/button&gt;<br/>			&lt;button id=&quot;loginBtns&quot;&gt;Login&lt;/button&gt;<br/>		&lt;/div&gt;<br/>		&lt;!--Insert login From using js--&gt;<br/>		&lt;div id=&quot;FormContainer&quot;&gt;<br/>		&lt;/div&gt;<br/>	&lt;/div&gt;<br/>	&lt;script&gt;<br/>            //access necessary elements<br/>            const signUpBtn = document.getElementById('signUpBtn');<br/>            const loginBtns = document.getElementById('loginBtns');<br/>            const FormContainer = document.getElementById('FormContainer');<br/><br/>			//function for both SignUp from and login from<br/>            function SignUp() {<br/>            FormContainer.innerHTML = `<br/>            &lt;form method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;<br/>			&lt;br&gt; &lt;br&gt;<br/>			&lt;input type=&quot;text&quot; placeholder=&quot;Name&quot; required=&quot;required&quot; /&gt;<br/>			&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; /&gt;<br/>			&lt;input type=&quot;number&quot; placeholder=&quot;Mobile&quot; required=&quot;required&quot; /&gt;<br/>			&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;required&quot; /&gt;<br/>			&lt;input type=&quot;password&quot; placeholder=&quot;Confirm Password&quot; required=&quot;required&quot; /&gt;<br/>			&lt;br&gt;<br/>			&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br/>			&lt;/form&gt;<br/>            `;<br/>            FormContainer.style.background = '#00b3ef';<br/>            signUpBtn.style.background = '#00b3ef';<br/>            loginBtns.style.background = 'white';<br/>            }<br/>			function Login() {<br/>            FormContainer.innerHTML = `<br/>            &lt;form method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;<br/>			&lt;br&gt; &lt;br&gt;<br/>			&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; /&gt;<br/>			&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;required&quot; /&gt;<br/>			&lt;br&gt;<br/>			&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;<br/>			&lt;/form&gt;<br/>            `;<br/>            FormContainer.style.background = '#00b3ef';<br/>            signUpBtn.style.background = 'white';<br/>            loginBtns.style.background = '#00b3ef';<br/>            }<br/>			      // call both function with Button click<br/>		    signUpBtn.addEventListener('click', SignUp);<br/>            loginBtns.addEventListener('click', Login);<br/>			            //default SignUp function call for default SignUp from<br/>						SignUp();<br/>          <br/>	&lt;/script&gt;<br/>&lt;/body&gt;<br/><br/>&lt;/html&gt;
+                  </code>
+                </pre>
+
+
         <p>
-          That all for this post. I hope you love this project. please share your thoughts and  suggestions in comment below. <br> <br><b>Thank you  For Visiting. By see You soon.</b>
+          That all for this post. I hope you love this project. please share
+          your thoughts and suggestions in comment below. <br />
+          <br /><b>Thank you For Visiting. By see You soon.</b>
         </p>
       </div>
       <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
     </div>
     <div id="page2">
       <!--post suggestions-->
-      <div id="postSuggestionContainer">
-      </div>
+      <div id="postSuggestionContainer"></div>
       <!--expand more-->
       <div class="showMore" onclick="showMoreSugg()">
         <b>Show More Suggestions</b>
@@ -193,13 +409,18 @@
       <!--comment input-->
       <div id="comment_input_container">
         <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
+          <textarea
+            id="comment_input"
+            rows="8"
+            cols="40"
+            placeholder="Write Your Comment..."
+            required
+          ></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
       <!--comment output-->
-      <div id="comment_output_container">
-      </div>
+      <div id="comment_output_container"></div>
       <div class="showMore" onclick="showMoreComment()">
         <b>Show More Comments</b>
       </div>
@@ -220,18 +441,78 @@
     </ul>
     <ul>
       <b>Follow Me</b>
-      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
-      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
+      <li>
+        <a href="https://www.facebook.com/manohar.anamd"
+          ><i class="fab fa-facebook"></i> Facebook</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
+          ><i class="fab fa-youtube"></i> YouTube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/charmingprogrammer"
+          ><i class="fab fa-github"></i> Guthub</a
+        >
+      </li>
     </ul>
-    <p>
-      All Rights reserved by Manoarya
-    </p>
+    <p>All Rights reserved by Manoarya</p>
   </footer>
-  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script
+    src="https://charmingprogrammer.github.io/Manoarya/AddPost.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    //script for quick access
+
+    const container = document.querySelector(".postContainer");
+
+    const h2 = container.getElementsByTagName("h2");
+
+    console.log(h2);
+
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].id = h2[i].innerHTML;
+      document
+        .getElementById("topics")
+        .insertAdjacentHTML(
+          "afterbegin",
+          `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`
+        );
+      console.log((h2[i].id = h2[i].innerHTML));
+    }
+
+    const gotoTop = document.getElementById("gotoTop");
+
+    function GoTop() {
+      window.scrollTo(0, 0);
+    }
+
+    //hide and show qr code btn using onscroll event
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos < currentScrollPos) {
+        document.getElementById("gotoTop").style.bottom = "-100%";
+      } else {
+        document.getElementById("gotoTop").style.bottom = "10px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
 </body>
