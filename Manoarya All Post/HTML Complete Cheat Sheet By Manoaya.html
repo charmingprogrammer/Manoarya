@@ -1,272 +1,474 @@
 <!DOCTYPE html>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>HTML Complete Cheat Sheet By Manoaya.</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Complete Cheat Sheet By Manoaya.</title>
 
-	<meta name="description"
-		content="In this post you found all the main element of html with there explaination and examples. Inshort this is the cheat sheet of HTML." />
+  <meta
+    name="description"
+    content="In this post you found all the main element of html with there explaination and examples. Inshort this is the cheat sheet of HTML."
+  />
 
-	<script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
 
-	<link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
 
-	<!--code highlighter links-->
-	<link rel="stylesheet"
-		href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
-	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
-	<script>
-		hljs.initHighlightingOnLoad();
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-		gtag("config", "G-SRT0FM6SCD");
-	</script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-		crossorigin="anonymous"></script>
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
 </head>
 
 <body>
-	<!--navigation bar top-->
-	<nav>
-		<a href="https://manoarya.com/" class="navLeft">
-			<img src="ManoaryaLogo.png" alt="Manoarya Logo" />
-		</a>
-		<div class="navRight">
-			<i class="fas fa-search" id="search_opener"></i>
-			<img src="" alt="" id="userPic" />
-			<button id="subBtn">Subscribe</button>
-		</div>
-	</nav>
-	<!--search-->
-	<div id="searchContainer">
-		<div class="search_header">
-			<i class="fas fa-arrow-left" id="search_closer"></i>
-			<input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
-		</div>
-		<ul id="myUL"></ul>
-	</div>
-	<div id="container">
-		<div id="page1">
-			<!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
-			<!--post image -->
-			<div class="post_Img_Con">
-				<img src="https://i.ibb.co/rxjN0vG/png-20220209-120259-0000.png" alt="Navigation" />
-			</div>
-			<!--Main Post-->
-			<div class="postContainer">
-				<h1 id="postTitle">HTML Complete Cheat Sheet By Manoaya.</h1>
-				<p><b>Category : </b> <span id="category">CheatSheet</span></p>
-				<p>
-					Hi folks, in this cheat sheet post we are going to cover all the
-					important terms that help you to master HTML Faster. <br /><br />
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img
+          src="https://i.ibb.co/rxjN0vG/png-20220209-120259-0000.png"
+          alt="Navigation"
+        />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">HTML Complete Cheat Sheet By Manoaya.</h1>
+        <p><b>Category : </b> <span id="category">CheatSheet</span></p>
+        <p>
+          Hi folks, in this cheat sheet post we are going to cover all the
+          important terms that help you to master HTML Faster. <br /><br />
 
-					Let me introduce you to our accessibility features which help to
-					access faster as possible. <br /><br />
+          Let me introduce you to our accessibility features which help to
+          access faster as possible. <br /><br />
 
-					So the first features I have for you is our index features. It helps
-					you to access all the sections of this page easily. <br /><br />
+          So the first features I have for you is our index features. It helps
+          you to access all the sections of this page easily. <br /><br />
 
-					And the second features is the accessibility button which exists on
-					the bottom right of this page. It helps you to access any sections
-					from anywhere on this page. <br /><br />
+          And the second features is the accessibility button which exists on
+          the bottom right of this page. It helps you to access any sections
+          from anywhere on this page. <br /><br />
 
-					<b>So let's get started </b> <br /><br />
-				</p>
-				<ul id="topics"></ul>
-				<br />
-				<h2>HTML Starter Code</h2>
-				<pre>
+          <b>So let's get started </b> <br /><br />
+        </p>
+        <ul id="topics"></ul>
+        <br />
+        <h2>HTML Starter Code</h2>
+        <pre>
 					<code>
 						&lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>    &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;<br/>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>    &lt;title&gt;Document&lt;/title&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>    <br/>&lt;/body&gt;<br/>&lt;/html&gt;<br/>
 					</code>
 				</pre>
-				<h2>Starter Code Explained</h2>
-				<p>
-					I have already explained the starter code in this post. so you can
-					check out hare <br /><br />
-					<a href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html">HTML
-						Starter Code Explanation</a>
-					<br />
-				</p>
-				<h2>HTML Headings</h2>
-				<pre>
+        <h2>Starter Code Explained</h2>
+        <p>
+          I have already explained the starter code in this post. so you can
+          check out hare <br /><br />
+          <a
+            href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html"
+            >HTML Starter Code Explanation</a
+          >
+          <br />
+        </p>
+        <h2>HTML Headings</h2>
+        <pre>
 			<code>
-				&lt;h1&gt;&lt;/h1&gt;
-				&lt;h2&gt;&lt;/h2&gt;
-				&lt;h2&gt;&lt;/h3&gt;
-				&lt;h4&gt;&lt;/h4&gt;
-				&lt;h5&gt;&lt;/h5&gt;
-				&lt;h6&gt;&lt;/h6&gt;
+                &lt;h1&gt;Heading 1&lt;/h1&gt;<br/>                &lt;h2&gt;Heading 2&lt;/h2&gt;<br/>                &lt;h3&gt;Heading 3&lt;/h3&gt;<br/>                &lt;h4&gt;Heading 4&lt;/h4&gt;<br/>                &lt;h5&gt;Heading 5&lt;/h5&gt;<br/>                &lt;h6&gt;Heading 6&lt;/h6&gt;
 			</code>
+
 		</pre>
+        <p>
+          All the heading tags used to create a heading on the html document.
+          the first heading which is h1 is the biggest one and the last heading
+          which is h6 is the smallest one.
+          <br /><br />
+          <b>All the heading output result are shown below.</b>
+        </p>
+        <p>
+          <img
+            src="https://i.ibb.co/Kq7BgyS/Screenshot-from-2022-03-22-14-48-42.png"
+            alt="Headings output by manoarya"
+          />
+        </p>
 
-			<p><img src="https://i.ibb.co/Kq7BgyS/Screenshot-from-2022-03-22-14-48-42.png" alt="Headings output by manoarya"></p>
-
-			<h2>Paragraph</h2>
-			<pre>
+        <h2>Paragraph</h2>
+        <p>
+          Paragraph helps us to give the some kinds of information about
+          somthing. You know this part that you see on this screen is accutally
+          build into <b>p</b> tag
+        </p>
+        <pre>
 				<code>
-					&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;This is  the paragraph&lt;/p&gt;
 				</code>
 			</pre>
 
-				<p>
-					The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a
-					short paragraph that contains all the letters of the alphabet.
-				</p>
-
-				<h2>Section Divider</h2>
-				<pre>
+        <h2>Section Divider</h2>
+        <pre>
 					<code>
-						&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;This is the div tag&lt;/div&gt;
 					</code>
 				</pre>
-				<p>
-					&lt;div&gt; tag helps us to divde the sections of the page. <br> Following is the output of the div
-					tag.
-					<div>This is the output of div tag</div>
-					<div>This is the output of div tag</div>
-				</p>
-       <!-- Span tage  -->
-	   <pre>
+        <p>
+          The <b>&lt;div&gt;</b> tag divide the whole page into sections. it is
+          the most important tag in html. it is helps us to the project
+          structure. <br /><br />
+          <b>Following are some example of &lt;div&gt; tag.</b>
+        </p>
+        <!-- Span tage  -->
+        <pre>
 		<code>
-			&lt;span&gt;&lt;/span&gt;
+&lt;span&gt;I am span tag&lt;/span&gt;
 		</code>
 	</pre>
-	<p>	&lt;span&gt; tag is just like a div tag but span tag is fomate text inline.</p>
+        <p>
+          <b> &lt;span&gt;</b>tags used to add something in the same line
+          without line break. <br /><br />
 
-				<p>
-					I hope you like this Cheat Sheet Post please subscribe and comment
-					your thoughts and suggestions.
-					<br />
-					<br />
-					That's all for today. <b>Thanks for reading</b> <br />
-					<br />
-					<b>Happy Coding and love you 3000, By</b>
-				</p>
-			</div>
-			<!--👆👆👆👆👆👆👆👆👆👆👆-->
-		</div>
-		<div id="page2">
-			<!--post suggestions-->
-			<div id="postSuggestionContainer"></div>
-			<!--expand more-->
-			<div class="showMore" onclick="showMoreSugg()">
-				<b>Show More Suggestions</b>
-			</div>
+          Let's take an example, let's assume we need to add a text which is red
+          in the following heading.
+        </p>
+        <h1>This is the heading for show span tag</h1>
 
-			<div class="showLess" onclick="showLessSugg()" id="showLessSugg">
-				<b>Show Less Suggestions</b>
-			</div>
+        <p>
+          If we used other headings like h2, h3, etc then our line breaks but I
+          don't want to break the line of the sentences. <br /><br />
+          In that case, we used the &lt;span&gt; tag. <br /><br />
+          Let's compare the results with and without the span tag. <br /><br />
+          <b>Output without span tag</b>
+          <img
+            src="https://i.ibb.co/jHhn1hn/Screenshot-from-2022-03-22-18-45-07.png"
+            alt="without span tag output by manoarya."
+          />
+          <b>Output with span tag</b>
 
-			<!--comment input-->
-			<div id="comment_input_container">
-				<form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-					<textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..."
-						required></textarea>
-					<button type="submit">Submit</button>
-				</form>
-			</div>
+          <img
+            src="https://i.ibb.co/GCcGPfq/Screenshot-from-2022-03-22-18-44-25.png"
+            alt="with span tag output by manoarya."
+          />
+        </p>
+        <p>
+          Two more tags we have in html to help us to give the html batter
+          structure. <br /><br />
+          First tag is <b>&lt;br&gt;</b> this tag helps us to break the line of
+          any text. <br /><br />
 
-			<!--comment output-->
-			<div id="comment_output_container"></div>
+          See the result with and without &lt;br&gt; tag. <br />
+          <br />
+        </p>
+        <pre>
+            <code>
+&lt;h1&gt;Hello my name is Manohar Anand.Founder of manoarya&lt;/h1&gt;
+            </code>
+        </pre>
+        <p><b>Output of the upper code :</b></p>
+        <h1>Hello my name is Manohar Anand.Founder of manoarya</h1>
+        <pre>
+            <code>
+&lt;h1&gt;Hello my name is Manohar Anand.&lt;br&gt;Founder of manoarya &lt;/h1&gt;
+            </code>
+        </pre>
+        <p>
+          <b>Output of the upper code :</b>
+        </p>
+        <h1>Hello my name is Manohar Anand.<br />Founder of manoarya</h1>
 
-			<div class="showMore" onclick="showMoreComment()">
-				<b>Show More Comments</b>
-			</div>
-			<div class="showLess" onclick="showLessComment()" id="showLessComment">
-				<b>Show Less Comments</b>
-			</div>
-		</div>
-	</div>
-	<!--top scrolling-->
-	<div id="gotoTop">
-		<i class="fas fa-chevron-up" onclick="GoTop()"></i>
-	</div>
-	<!--footer-->
-	<footer>
-		<ul>
-			<li><a href="AboutUs.html">About us</a></li>
-			<li><a href="ContactUs.html">Contact us</a></li>
-			<li><a href="privacyPrivacy.html">Privacy Policy</a></li>
-			<li><a href="TermsAndConditions.html">Terms and conditions</a></li>
-			<li><a href="Disclaimer.html">Disclaimer</a></li>
-			<li><a href="Sitemap.xml">Sitemap</a></li>
-		</ul>
-		<ul>
-			<b>Follow Me</b>
-			<li>
-				<a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a>
-			</li>
-			<li>
-				<a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-			</li>
-			<li>
-				<a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-			</li>
-			<li>
-				<a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i>
-					YouTube</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i>
-					LinkedIn</a>
-			</li>
-			<li>
-				<a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a>
-			</li>
-		</ul>
-		<p>All Rights reserved by Manoarya</p>
-	</footer>
-	<script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
-	<script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+        <p>
+          <b>&lt;br&gt; tag has no closing tag.</b> <br /><br />
 
-	<script type="text/javascript" charset="utf-8">
-		//script for quick access
+          The second tag is &lt;hr&gt; tag if you want to create a horizontal
+          line then used &lt;hr&gt; tag. <br /><br />
+          <b>Result of the &lt;hr&gt; tag :</b>
+          <img
+            src="https://i.ibb.co/Y8wMsjc/Screenshot-from-2022-03-22-19-05-40.png"
+            alt="hr tag output by manoarya"
+          />
+        </p>
+        <h2>HTML images</h2>
+        <p>
+          The <b>&lt;img /&gt;</b> tag helps us to display the image on the web.
+          These are some of the attributes used in the <b>&lt;img /&gt;</b> tag.
+          <br /><br />
+          <b>Attributes of &lt;img /&gt; tag</b> <br /><br />
+          <b> src :</b> src attribute helps us to give the source of image.
+        </p>
+        <pre>
+            <code>
+&lt;img src=&quot;https://cdn.pixabay.com/photo/2019/01/31/20/52/web-3967926_960_720.jpg&quot;&gt;
+            </code>
+        </pre>
+        <p>
+          <b>alt : </b> alt tag is shown when the source of the image is not
+          available. <br /><br />
+          alt is very important for SEO(Search Engine Optimization). <br />
+          alt also helps the screen reader to read images. <br />
+          It is the alternative text of this image.
+        </p>
+        <pre>
+            <code>
+&lt;img src=&quot;&quot; alt=&quot;HTML image&quot;&gt;
+            </code>
+        </pre>
+        <p>
+          <b>Height :</b> Height attribute used to define the height of the
+          image. <br /><br />
+          <b>width :</b> Width attribute used to define the width of the image.
+          <br /><br />
+          <b>Border :</b> Border attribute used to give the border from all
+          sides. By default the border length is 0 in the img tag. <br />
+          And by default the color of the border is black. <br /><br />
+          <b>The final code of the img tag and its output.</b>
+        </p>
+        <pre>
+            <code>
+&lt;img src=&quot;https://cdn.pixabay.com/photo/2019/01/31/20/52/web-3967926_960_720.jpg&quot;  alt=&quot;HTML image&quot; height=&quot;100%&quot; width=&quot;700px&quot; border=&quot;10px&quot;&gt;
+            </code>
+        </pre>
+        <p>
+          <b>Output </b><br /><br />
+          <img
+            src="https://i.ibb.co/VHbKPK5/Screenshot-from-2022-03-22-19-51-03.png"
+            alt="Img output by manoarya"
+          />
+        </p>
+        <h2>Formatted text in HTML</h2>
+        <p>
+          <b> &lt;i&gt; :</b> used to display italic text in web browsers.
+          <br /><br />
+          <b> &lt;b&gt; : </b> Displays bold text on web browsers.
 
-		const container = document.querySelector(".postContainer");
+          <b> &lt;strong&gt; :</b> Displays bold text to emphasize it.
+          <br /><br />
+          <b>&lt;em&gt; :</b> display an italic text and emphasize it.
+          <br /><br />
+          <b> &lt;Sub&gt; :</b> Define the text on the bottom of the main text.
+          Like Co2. <br /><br />
+          <b> &lt;Sup&gt; : </b> Define the text on the top of the main text.
+          Like 1002. <br /><br />
+          <b>&lt;small&gt; :</b> Display the small size text on the web browser.
+          <br /><br />
+          <b> &lt;del&gt; :</b> Display the text which looks like deleted text.
+          Means a line appears through the text. <br /><br />
+          <b>&lt;ins&gt; :</b> Display the text which looks like inserted text.
+          Usually these types of text are underlined. <br /><br />
+          <b>&lt;blockquote&gt;:</b> This tag specifies that one section of text
+          must be enclosed within a blockquote. <br /><br />
+          <b>&lt;q&gt; :</b> This tag is used when you want to add quotes inside
+          of a line. <b> &lt;cite&gt; : </b> used to cite the author of a quote.
+          <br /><br />
+          <b> &lt;address&gt;</b> shows the author's contact information.
+          <br /><br />
+          <b> &lt;abbr&gt; :</b> denotes an abbreviation meaning the shortcut of
+          something. <br /><br />
+          <b>&lt;code&gt; : </b> This tag is used when you want to show some
+          code on the web browser. <br /><br />
+          <b> &lt;mark&gt; : </b> Display highlighted text. <br /><br />
+        </p>
+        <pre>
+            <code>
+&lt;i&gt;Italic Text&lt;/i&gt;<br/>&lt;b&gt;Bold Text&lt;/b&gt;<br/>&lt;strong&gt;Strong Text&lt;/strong&gt;<br/>&lt;em&gt;Emphasize Italic Text&lt;/em&gt;<br/>&lt;sub&gt;Sub Text&lt;/sub&gt;<br/>&lt;sup&gt;Sup Text&lt;/sup&gt;<br/>&lt;small&gt;Small Text&lt;/small&gt;<br/>&lt;del&gt;Deleted Text&lt;/del&gt;<br/>&lt;ins&gt;Inserted Text&lt;/ins&gt;<br/>&lt;blockquote&gt;Blockquote Text&lt;/blockquote&gt;<br/>&lt;q&gt;Inline Quote &lt;/q&gt;<br/>&lt;cite&gt;Citing Text&lt;/cite&gt;<br/>&lt;address&gt;Address Text&lt;/address&gt;<br/>&lt;abbr&gt;Abbreviation Text&lt;/abbr&gt;<br/>&lt;code&gt;console.log(&quot;hello world&quot;);&lt;/code&gt;<br/>&lt;mark&gt;Highlighted text&lt;/mark&gt;<br/>
+            </code>
+        </pre>
 
-		const h2 = container.getElementsByTagName("h2");
+        <p>
+          <b>Output of the upper code :</b> <br /><br />
+          <img
+            src="https://i.ibb.co/sjPYLQL/Screenshot-from-2022-03-22-21-28-26.png"
+            alt="text formater output by manoarya"
+          />
+        </p>
+        <!-- final end section -->
+        <p>
+          I hope you like this Cheat Sheet Post please subscribe and comment
+          your thoughts and suggestions.
+          <br />
+          <br />
+          That's all for today. <b>Thanks for reading</b> <br />
+          <br />
+          <b>Happy Coding and love you 3000, By</b>
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
 
-		console.log(h2);
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
 
-		for (var i = 0; i < h2.length; i++) {
-			h2[i].id = h2[i].innerHTML;
-			document
-				.getElementById("topics")
-				.insertAdjacentHTML(
-					"afterbegin",
-					`<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`
-				);
-			console.log((h2[i].id = h2[i].innerHTML));
-		}
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea
+            id="comment_input"
+            rows="8"
+            cols="40"
+            placeholder="Write Your Comment..."
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
-		const gotoTop = document.getElementById("gotoTop");
+      <!--comment output-->
+      <div id="comment_output_container"></div>
 
-		function GoTop() {
-			window.scrollTo(0, 0);
-		}
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--top scrolling-->
+  <div id="gotoTop">
+    <i class="fas fa-chevron-up" onclick="GoTop()"></i>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.xml">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li>
+        <a href="https://www.facebook.com/manohar.anamd"
+          ><i class="fab fa-facebook"></i> Facebook</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
+          ><i class="fab fa-youtube"></i> YouTube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/charmingprogrammer"
+          ><i class="fab fa-github"></i> Guthub</a
+        >
+      </li>
+    </ul>
+    <p>All Rights reserved by Manoarya</p>
+  </footer>
+  <script
+    src="https://charmingprogrammer.github.io/Manoarya/AddPost.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 
-		//hide and show qr code btn using onscroll event
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function () {
-			var currentScrollPos = window.pageYOffset;
-			if (prevScrollpos < currentScrollPos) {
-				document.getElementById("gotoTop").style.bottom = "-100%";
-			} else {
-				document.getElementById("gotoTop").style.bottom = "10px";
-			}
-			prevScrollpos = currentScrollPos;
-		};
-	</script>
+  <script type="text/javascript" charset="utf-8">
+    //script for quick access
+
+    const container = document.querySelector(".postContainer");
+
+    const h2 = container.getElementsByTagName("h2");
+
+    console.log(h2);
+
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].id = h2[i].innerHTML;
+      document
+        .getElementById("topics")
+        .insertAdjacentHTML(
+          "afterbegin",
+          `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`
+        );
+      console.log((h2[i].id = h2[i].innerHTML));
+    }
+
+    const gotoTop = document.getElementById("gotoTop");
+
+    function GoTop() {
+      window.scrollTo(0, 0);
+    }
+
+    //hide and show qr code btn using onscroll event
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos < currentScrollPos) {
+        document.getElementById("gotoTop").style.bottom = "-100%";
+      } else {
+        document.getElementById("gotoTop").style.bottom = "10px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
 </body>
