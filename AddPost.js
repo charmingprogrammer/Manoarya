@@ -448,4 +448,15 @@ const AllPost = [
           alt: "Who-is-Web-developer.html",
           trending: "true",
       },
+      {
+        category: "CheatSheet",
+        Title: "HTML Complete Cheat Sheet By Manoaya.",
+        Paragraph:
+        "A step by step guide to learn HTML with our best Cheat Sheet",
+        ImageUrl:
+        "https://i.ibb.co/BLNjByQ/html.png",
+        PostUrl: "https://manoarya.com/Manoarya%20All%20Post/HTML%20Complete%20Cheat%20Sheet%20By%20Manoaya.html",
+        alt: "html cheatsheet",
+        trending: "true",
+    },
   ];
