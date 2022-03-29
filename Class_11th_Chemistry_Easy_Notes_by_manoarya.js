@@ -1,9 +1,9 @@
 const AllNotes = [
   {
-  Title: "1. Basic Concept Of Chemistry",
-  ImgUrl: "https://i.ibb.co/b5Pmsp9/png-20220107-110241-0000.png",
-  ImgAlt: "Basic concept of Chemistry",
-  Topic: `<div class="infos"><h2>What is Chemistry ?</h2><p>Chemistry is the study of the materials that make up the universe and the changes which these materials make. <br> <br> 
+    Title: "1. Basic Concept Of Chemistry",
+    ImgUrl: "https://i.ibb.co/b5Pmsp9/png-20220107-110241-0000.png",
+    ImgAlt: "Basic concept of Chemistry",
+    Topic: `<div class="infos"><h2>What is Chemistry ?</h2><p>Chemistry is the study of the materials that make up the universe and the changes which these materials make. <br> <br> 
 Chemistry is called the science of atom and molecules. 
 </p></div> 
 
@@ -67,6 +67,6 @@ Gas also takes the container's shape.
 
 <img src="https://i.ibb.co/MGL4rXK/20220119-212640-0000.png" alt="Matter state change ">
 </p></div> 
-<br> `
-},
-]
+<br> `,
+  },
+];

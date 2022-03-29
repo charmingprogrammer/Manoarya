@@ -75,11 +75,9 @@ background: #f9f9a6;
  color: #21b1e6;
  text-transform: capitalize;
 }
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
 
 .infos p {
   padding: 10px 20px;
-  font-family: 'Exo 2', sans-serif;
   font-size: large;
 }
 .infos b{

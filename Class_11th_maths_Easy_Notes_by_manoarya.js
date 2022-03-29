@@ -1,8 +1,9 @@
-const AllNotes = [{
-  Title: "1. Sets",
-  ImgUrl: "https://i.ibb.co/jbMJbhS/20220107-112239-0000.png",
-  ImgAlt: "Sets",
-  Topic: `<div class="infos"><h2>What is sets ?</h2><p>Set is a well defined collection of objects. <br><br><b>Other meaning of sets : </b>Collection, Aggregate, class etc. <br> <br> Sets denotes by capital letters like A, B, C, D etc. <br><br>Elements denotes by small letters like a, b, c, d etc. <br><br><b>Example : </b>The collection of vowel in english alphabet. <br> <b>Answer : </b>This sets contains five elements a, e, i, o, u. </p></div><div class="infos"><h2>Reserve letters for sets</h2><p>
+const AllNotes = [
+  {
+    Title: "1. Sets",
+    ImgUrl: "https://i.ibb.co/jbMJbhS/20220107-112239-0000.png",
+    ImgAlt: "Sets",
+    Topic: `<div class="infos"><h2>What is sets ?</h2><p>Set is a well defined collection of objects. <br><br><b>Other meaning of sets : </b>Collection, Aggregate, class etc. <br> <br> Sets denotes by capital letters like A, B, C, D etc. <br><br>Elements denotes by small letters like a, b, c, d etc. <br><br><b>Example : </b>The collection of vowel in english alphabet. <br> <b>Answer : </b>This sets contains five elements a, e, i, o, u. </p></div><div class="infos"><h2>Reserve letters for sets</h2><p>
   <b>N : </b>For the set of natural numbers.  <br>
   <b>Z : </b> For the set of integers. <br>
   <b>Z+ : </b> For the set of positive integers. <br>
@@ -107,6 +108,6 @@ const AllNotes = [{
   <div class="infos"><h2>Venn Diagrams : </h2><p>In venn diagrams the universal set(U) is represented by points within a rectangle and its subsets are represented by points in closed curves (usually circle) within the rectangle. <br>
   <img src = "" alt = "Venn diagram by manoarya">
   </p></div>
-  <br>`
-},
-]
+  <br>`,
+  },
+];
