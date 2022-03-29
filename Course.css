@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   scroll-behavior: smooth;
 }
 i:active {
@@ -64,12 +64,12 @@ i:active {
   border-radius: 5px;
   transition: .2s ease-in;
 }
-/*
+
 .infos:hover{
 background: #f9f9a6;
   color:black;
 }
-*/
+
 .topic_explaning h2 {
  padding: 10px 20px;
  color: #21b1e6;
@@ -145,6 +145,7 @@ background: #f9f9a6;
   z-index: 1234;
   margin-top: -20px;
   border: 1px solid #bababa;
+  background-color: white;
 }
 
 #home {
@@ -316,7 +317,6 @@ nav ul  a {
   .Sidebar_content {
     height: 100%;
     width: 100%;
-    box-shadow: 0 0 10px 1px black;
   }
 
   .Sidebar_closer {
