@@ -185,6 +185,22 @@ nav {
   transform: scale(0.95);
   transition: 0.2s ease-in-out;
   background-color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  user-select: none;
+  flex-wrap: wrap;
+}
+.category_box i {
+  font-size: 30px;
+  color: #353535;
+}
+
+.category_box h2 {
+  font-size: 20px;
+  padding: 10px 10px;
+  font-weight: 200;
+
 }
 .category_box:active {
   background-color: #18181821;
@@ -350,12 +366,25 @@ footer p{
   text-align: center;
   color: #535353;
 }
+#Message{
+  height:50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 123456789;
+  background-color: #4ac7ed;
+  display: grid;
+  place-items: center;
+  transition: .2s ease-in-out;
+  top:-100%;
+}
 @media only screen and (min-width: 600px) {
   nav {
     position: fixed;
     top: 0;
     border-bottom: 1px solid darkgray;
   }
+
   #bottom_nav {
     height: 100vh;
     width: 50px;
@@ -377,9 +406,10 @@ footer p{
   }
   #container {
     height: 100%;
-    width: 96%;
+    width: 100%;
     float: right;
     margin-top: 50px;
+    background: #e2e2e2;
   }
   .box {
     height: 400px;
@@ -392,18 +422,23 @@ footer p{
     background: #ececec;
   }
   #search_container {
-    width: 96%;
     right: 0;
+    width:100%;
   }
+  #search_Suggestion{
+    width:50%;
+
+   }
   #myUL li a:hover {
     background: #dbdada;
   }
   .category_box{
-  background-color: whtie;
+  background-color: white;
   width: 20%;
   }
   .category_box:hover {
-    background-color: #dfdede;
+    background-color: #6ab6e980;
+    
   }
   #category_container {
     transform: scale(0.87);
