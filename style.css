@@ -177,6 +177,7 @@ nav {
   justify-content: flex-start;
   align-content: center;
   transform: scale(0.97);
+  position: sticky;
 }
 .category_box {
   height: 100px;
@@ -185,9 +186,9 @@ nav {
   transform: scale(0.95);
   transition: 0.2s ease-in-out;
   background-color: white;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+  display: grid;
+  place-content: center;
+  place-items: center;
   user-select: none;
   flex-wrap: wrap;
 }
@@ -199,7 +200,7 @@ nav {
 .category_box h2 {
   font-size: 20px;
   padding: 10px 10px;
-  font-weight: 200;
+  font-weight: 400;
 
 }
 .category_box:active {
