@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Snap scrolling Effect</title>
+  <!--style sheet-->
+  <style type="text/css" media="all">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+      scroll-snap-type:y mandatory;
+    }
+    .container{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #d3d3d3;
+    }
+    .snaps{
+      height: 600px;
+      width: 100%;
+      background: #ffffff;
+      transform: scale(0.9);
+      border-radius: 10px;
+      scroll-snap-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="snaps">
+    </div>
+    <div class="snaps">
+    </div>
+    <div class="snaps">
+    </div>
+    <div class="snaps">
+    </div>
+    <div class="snaps">
+    </div>
+  </div>
+</body>

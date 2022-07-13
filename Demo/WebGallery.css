@@ -1,0 +1,80 @@
+/* Universal style*/ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+  background: #e8e8e8;
+} 
+/*style for navigation*/ 
+nav{
+	height: 60px;
+	width: 100%;
+	background: white;
+	box-shadow: 0 0  100px 1px #b6b6b6;
+	display: flex;
+  justify-content: space-between;
+  align-items: center ; 
+  position: sticky;
+}
+nav span {
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bolder;
+   background: #00afff;
+   padding: 10px 20px;
+   color: white;
+   margin-left: 10px;
+}
+nav input{
+	padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* style for big image */ 
+#img_changer {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	background: none;
+	transform: scale(0.95);
+	
+}
+/* default style for all dom image*/ 
+img{
+	height:100%;
+	width:100%; 
+	border-radius: 5px;
+}
+/* style for all small image*/ 
+#allImg {
+	height:100%; 
+	width:100%; 
+	display: flex;
+  justify-content: space-between;
+  align-items: center ; 
+  flex-wrap: wrap;
+}
+#allImg li{
+	padding: 10px;
+	height: 100%;
+	width: 200px;
+	border-radius: 10px;
+	list-style-type: none;
+}
+#allImg li a{
+	cursor: default;
+	text-decoration: none;
+}
+#allImg li a img:active{
+	transform: scale(0.95);
+}
+##allImg li a img:hover{
+	transform: scale(0.95);
+}
+#tags{
+display: none;
+}

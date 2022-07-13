@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is a color tic tac to Game for everyone</title>
+  <style type="text/css" media="all">
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background: rgb(18, 70, 77);
+    }
+    a {
+      text-decoration: none;
+      cursor: normal;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(238, 108, 34);
+    }
+    #span1 {
+      color: rgb(255, 0, 221);
+    }
+    .container1 {
+      height: 500px;
+      width: 100%;
+      background: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+    }
+    #user1 {
+      height: 100px;
+      width: 300px;
+      border: solid 1px red;
+      display: flex;
+      background: red;
+    }
+    #user2 {
+      height: 100px;
+      width: 300px;
+      display: flex;
+      background: rgb(20, 228, 20);
+    }
+    #play {
+      height: 100px;
+      width: 300px;
+      border: solid 1px #d435ba;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    #play h2 {
+      background: none;
+      text-align: center;
+      font-family: sans-serif;
+      color: #d435ba;
+      padding: 35px 20px;
+    }
+    #play:hover {
+      background: #d435ba;
+    }
+    #play h2:hover {
+      color: #ffffff;
+    }
+
+    #input1 {
+      height: 99px;
+      border: red 1px solid;
+      width: 200px;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
+    .green {
+      height: 100px;
+      width: 100px;
+      background: rgb(20, 228, 20);
+      float: right;
+    }
+    #input2 {
+      height: 99px;
+      border: rgb(20, 228, 20) 1px solid;
+      width: 200px;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .user-info {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #redPlayer,
+    #greenPlayer {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 20px;
+      text-shadow: 0 10px 10px black;
+    }
+    .player1name {
+      height: 100px;
+      width: 45%;
+      color: red;
+      border-radius: 30px;
+      text-decoration: underline red;
+    }
+    .player2name {
+      height: 100px;
+      width: 45%;
+      text-decoration: underline #67ff67;
+      color: #67ff67;
+    }
+
+    .container2 {
+      height: 475px;
+      width: 90%;
+      margin-left: 5%;
+      box-shadow: 0 0 10px 10px #082831;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-radius: 10px;
+    }
+    #div1,
+    #div2,
+    #div3,
+    #div4,
+    #div5,
+    #div6,
+    #div7,
+    #div8,
+    #div9 {
+      height: 150px;
+      width: 30%;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+
+    }
+    #clicker1red,
+    #clicker2red,
+    #clicker3red,
+    #clicker4red,
+    #clicker5red,
+    #clicker6red,
+    #clicker7red,
+    #clicker8red,
+    #clicker9red {
+      height: 75px;
+      width: 100%;
+      border-radius: 10px;
+      background: rgba(255, 0, 0, 0);
+      cursor: pointer;
+    }
+    #clicker1green,
+    #clicker2green,
+    #clicker3green,
+    #clicker4green,
+    #clicker5green,
+    #clicker6green,
+    #clicker7green,
+    #clicker8green,
+    #clicker9green {
+      height: 75px;
+      width: 100%;
+      border-radius: 10px;
+      background: #33ff0000;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>COLOR <span id="span1"> TIC TAC TO</span></h1>
+  <div class="container1">
+    <div id="user1">
+      <div class="red">
+        <form name="redForm">
+          <input type="text" placeholder="Red Player Name.." name="player1" id="input1">
+        </form>
+      </div>
+    </div>
+    <div id="user2">
+      <div class="green">
+        <form name="greenForm">
+          <input type="text" placeholder="Green Player Name ..." name="player2" id="input2">
+        </form>
+      </div>
+    </div>
+    <a href="#div9">
+      <div id="play" onclick="return(showName())">
+        <h2>PLAY</h2>
+      </div>
+    </a>
+  </div>
+  <br><br><br>
+  <div class="user-info">
+    <h2 class="player1name"><span id="redPlayer"></span></h2>
+    <h2 class="player2name"><span id="greenPlayer"></span></h2>
+  </div>
+  <br><br>
+  <div class="container2">
+    <div id="div1">
+      <div id="clicker1green" onclick="block1a()"></div>
+      <div id="clicker1red" onclick="block1b()"></div>
+    </div>
+    <div id="div2">
+      <div id="clicker2green" onclick="block2a()"></div>
+      <div id="clicker2red" onclick="block2b()"></div>
+    </div>
+    <div id="div3">
+      <div id="clicker3green" onclick="block3a()"></div>
+      <div id="clicker3red" onclick="block3b()"></div>
+    </div>
+    <div id="div4">
+      <div id="clicker4green" onclick="block4a()"></div>
+      <div id="clicker4red" onclick="block4b()"></div>
+    </div>
+    <div id="div5">
+      <div id="clicker5green" onclick="block5a()"></div>
+      <div id="clicker5red" onclick="block5b()"></div>
+    </div>
+    <div id="div6">
+      <div id="clicker6green" onclick="block6a()"></div>
+      <div id="clicker6red" onclick="block6b()"></div>
+    </div>
+    <div id="div7">
+      <div id="clicker7green" onclick="block7a()"></div>
+      <div id="clicker7red" onclick="block7b()"></div>
+    </div>
+    <div id="div8">
+      <div id="clicker8green" onclick="block8a()"></div>
+      <div id="clicker8red" onclick="block8b()"></div>
+    </div>
+    <div id="div9">
+      <div id="clicker9green" onclick="block9a()"></div>
+      <div id="clicker9red" onclick="block9b()"></div>
+    </div>
+  </div>
+  <br><br><br><br>
+</body>
+<script type="text/javascript" charset="utf-8">
+  //show name using these code
+  function showName() {
+    const player1name = document.redForm.player1.value;
+    const player2name = document.greenForm.player2.value;
+    document.getElementById('redPlayer').innerHTML = player1name;
+    document.getElementById('greenPlayer').innerHTML = player2name;
+
+  }
+  //define function
+  function block1a() {
+    document.getElementById('div1').style.background = "red";
+  }
+
+  function block1b() {
+    document.getElementById('div1').style.background = "#33ff00";
+  }
+  function block2a() {
+    document.getElementById('div2').style.background = "red";
+  }
+
+  function block2b() {
+    document.getElementById('div2').style.background = "#33ff00";
+  }
+  function block3a() {
+    document.getElementById('div3').style.background = "red";
+  }
+
+  function block3b() {
+    document.getElementById('div3').style.background = "#33ff00";
+  }
+  function block4a() {
+    document.getElementById('div4').style.background = "red";
+  }
+
+  function block4b() {
+    document.getElementById('div4').style.background = "#33ff00";
+  }
+  function block5a() {
+    document.getElementById('div5').style.background = "red";
+  }
+
+  function block5b() {
+    document.getElementById('div5').style.background = "#33ff00";
+  }
+  function block6a() {
+    document.getElementById('div6').style.background = "red";
+  }
+
+  function block6b() {
+    document.getElementById('div6').style.background = "#33ff00";
+  }
+  function block7a() {
+    document.getElementById('div7').style.background = "red";
+  }
+
+  function block7b() {
+    document.getElementById('div7').style.background = "#33ff00";
+  }
+  function block8a() {
+    document.getElementById('div8').style.background = "red";
+  }
+
+  function block8b() {
+    document.getElementById('div8').style.background = "#33ff00";
+  }
+  function block9a() {
+    document.getElementById('div9').style.background = "red";
+  }
+
+  function block9b() {
+    document.getElementById('div9').style.background = "#33ff00";
+
+  }
+</script>
+</html>

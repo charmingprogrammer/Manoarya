@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title> Text on Image Using HtMl Css.</title>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roman;
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      background: #eaeaea;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    .small_img {
+      height: 140px;
+      width: 137px;
+      transform: scale(0.98);
+      transition: .2s ease-out;
+    }
+    .small_img:hover {
+      height: 100%;
+      width: 100%;
+      z-index: 1234;
+      border-radius: 5px;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+  </div>
+  <!--preview img in full screen-->
+  <div id="big_image" onclick="hide()">
+  </div>
+<script src="Img_gallery.js" type="text/javascript" charset="utf-8"></script>
+</body>

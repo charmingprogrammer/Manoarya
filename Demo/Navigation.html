@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title>Navigation Made by Manoarya</title>
+  <!--Add Css file link inside of href= "Add css file name "-->
+  <link rel="stylesheet" href="Navigation.css" type="text/css" />
+
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!--Navigation bar (header)--> 
+<nav>
+<i class="fas fa-bars" onclick="nav_opener()" id="bars"></i>
+<img src="https://cdn.pixabay.com/photo/2021/12/03/14/28/logo-6842903_1280.png" alt="Logo" />
+</nav>
+
+<!--Navigation menu container--> 
+<div id="nav_container">
+  <div class="nav_content">
+  <button onclick="page1()">Page 01</button>
+  <button onclick="page2()">Page 02</button>
+  <button onclick="page3()">Page 03</button>
+  <button onclick="page4()">Page 04</button>
+  <button onclick="page5()">Page 05</button>
+  </div>
+  <div class="nav_closer" onclick="nav_closer()">
+  </div>
+</div>
+
+<!--All Pages container-->
+<div id="page_container">
+  
+</div>
+
+<script src="Navigation.js" type="text/javascript" charset="utf-8"></script>
+</body>

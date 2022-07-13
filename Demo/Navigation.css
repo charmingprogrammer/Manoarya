@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body {
+  background: #f1f1f1;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 1px 1px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+nav i {
+  padding: 10px 20px;
+  color: #2b2b2b;
+  font-size: 20px;
+  margin-left: 10px;
+}
+nav i:active {
+  background: #0000002b;
+  border-radius: 10px;
+}
+nav img {
+  height: 35px;
+  width: 35px;
+  background: #57bdf2;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+#nav_container {
+  height: 100vh;
+  width: 100%;
+  background: none;
+  position: fixed;
+  top: 0;
+  z-index: 123;
+  display: flex;
+  transition: .2s ease-out;
+  left: -100%;
+}
+.nav_content {
+  height: 100vh;
+  width: 70%;
+  background: white;
+  box-shadow: 0 0 10px 1px gray;
+  display: flex;
+  flex-direction: column;
+}
+.nav_content button {
+  padding: 20px 20px;
+  transform: scale(0.9);
+  background: linear-gradient(120deg, #0d90d4,#0db2b4);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav_content button:active {
+  background: linear-gradient(120deg,#0db2b4,#0d90d4);
+  transform: scale(0.88);
+}
+.nav_closer {
+  height: 100vh;
+  width: 30%;
+  background: #00000000;
+  transition: .2s ease-in;
+}
+#page_container {
+  height: 100%;
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 50px;
+}
+
+/*media query applying for desktop  view */
+
+@media only screen and (min-width: 600px) {
+  nav img {
+    margin-left: 10px;
+  }
+  #bars {
+    display: none;
+  }
+  #nav_container {
+    left: 0;
+    top: 50px;
+  }
+  .nav_closer {
+    display: none;
+  }
+.nav_content{
+  width: 30%;
+  box-shadow: none;
+}
+#page_container{
+  width: 70%;
+  right: 0;
+}
+}

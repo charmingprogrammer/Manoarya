@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title> Text on Image Using HtMl Css.</title>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roman;
+      background: #dedede;
+    }
+    .container {
+      height: 260px;
+      width: 100%;
+      transform: scale(0.9);
+      border-radius: 10px;
+    }
+    #big_Image {
+      height: 82%;
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    #big_Image p {
+      height: 50px;
+      width: 100%;
+      background: linear-gradient(transparent,#000000b0);
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 20px;
+      position: absolute;
+      bottom: 0px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      transition: .2s ease-in;
+    }
+    #big_Image img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="big_Image">
+      <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg" alt="dasy" />
+      <p>
+        Welcome to Manoarya
+      </p>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+  user-select: none;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+nav{
+  height: 50px;
+  width: 100%;
+  background: white;
+  transform: scale(0.9);
+  box-shadow: 0 0 2px 1px #b7b7b7;
+  margin-top: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav i{
+  color: #444444;
+  padding: 10px 20px;
+}
+nav input{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  font-size: 20px;
+  margin-left: 10px;
+  background: white;
+  
+}
+nav img{
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+ margin-right: 10px;
+}
+.slider_container{
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1234;
+}
+.slider_container::-webkit-scrollbar{
+  display: none;
+}
+.slider_container b{
+  color: #434343;
+  font-size: 17px;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+.slider_container b:active{
+  color: #2ec9a5;
+}
+#forYou{
+  color: #2ec9a5;
+  font-weight: bolder;
+}
+h1{
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #454545;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+h1 i{
+  margin-right: 10px;
+}
+h1:active{
+  background: #e4e4e4;
+}
+.category_container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x:scroll;
+}
+.category_container::-webkit-scrollbar{
+  display: none;
+}
+.category_container_box{
+  height: 100%;
+  width: 350px;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+.category_container_box:active{
+  background: #e9e9e9;
+}
+.category_container_box img{
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
+.short_info{
+  height: 50px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.short_info img{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.short_info p{
+  padding: 10px 20px;
+  color: #4c4c4c;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Snap scrolling Effect</title>
+  <!--style sheet-->
+  <style type="text/css" media="all">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #d3d3d3;
+    }
+    .container input {
+      padding: 10px 20px;
+      background: white;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" list="suggestions" placeholder="Search course"/>
+    <datalist id="suggestions">
+         <option>Manoarya</option>
+         <option>React native course</option>
+         <option>React course</option>
+         <option>Javascript course</option>
+         <option>CSS course</option>
+         <option>HTML course</option>
+       </optgroup>
+    </datalist>
+
+  </div>
+</body>

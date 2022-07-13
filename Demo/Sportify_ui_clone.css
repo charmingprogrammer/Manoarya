@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(140deg,#1d70e4,black , black, black);
+}
+nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  color: white;
+  margin-left: 10px;
+}
+.icons {
+  height: 100%;
+  width: 100px;
+  display: grid;
+  place-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ margin-right: 10px;
+}
+.icons i {
+  color: white;
+  font-size: 20px;
+}
+ i:active{
+   transform: scale(0.9);
+}
+.your_music{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.your_music_items{
+  height: 60px;
+  width: 50%;
+  background: #4b4b4b50;
+  transform: scale(0.9);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+}
+.your_music_items:active{
+  transform: scale(0.88);
+}
+.your_music_items_img{
+  height: 100%;
+  min-width: 60px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.your_music_items b{
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+.your_music_items_img img{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+h2{
+  font-size: 23px;
+  color: white;
+  padding: 5px 10px;
+}
+.slider_container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+}
+.slider_box{
+  height: 300px;
+  width: 200px;
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+.slider_box:active{
+  transform: scale(0.88);
+}
+.slider_box img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  object-fit: fill;
+}
+.slider_box p{
+  height: 100px;
+  color: white ;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+}

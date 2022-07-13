@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!--Add title that show on the browser header-->
+	<title>Sign Up From</title>
+	<style type="text/css" media="all">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Roman;
+		}
+		.container {
+			height: 100%;
+			width: 100%;
+			background: #e5e5e5;
+			position: fixed;
+			top: 0;
+		}
+		#fromBtns {
+			height: 50px;
+			width: 100%;
+			background: white;
+			margin-top: 70px;
+			display: flex;
+			border-radius: 100px;
+			transform: scale(0.9);
+		}
+		#fromBtns button {
+			padding: 10px 20px;
+			border: none;
+			width: 50%;
+			font-size: 17px;
+			border-radius: 100px;
+		}
+		#fromBtns button:active {
+			background: #00b3ef;
+		}
+		#signUpBtn {
+			background: #00b3ef;
+		}
+		#loginBtns {
+			background: none;
+		}
+		#FormContainer {
+			height: 350px;
+			width: 100%;
+			background: white;
+			transform: scale(0.95);
+			border-radius: 20px;
+		}
+		#FormContainer input {
+			padding: 10px 20px;
+			margin-left: 30px;
+			margin-top: 5px;
+			border: none;
+			outline: none;
+			background: white;
+			border-radius: 5px;
+			font-size: 17px;
+		}
+		#FormContainer button {
+			padding: 10px 20px;
+			margin-left: 30px;
+			margin-top: 5px;
+			border: none;
+			outline: none;
+			background: #00b3ef;
+			border-radius: 5px;
+			font-size: 17px;
+			box-shadow: 0 0 10px 1px gray;
+		}
+		#FormContainer button:active {
+			transform: scale(0.97);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="fromBtns">
+			<button id="signUpBtn">Sign Up</button>
+			<button id="loginBtns">Login</button>
+		</div>
+		<!--Insert login From using js-->
+		<div id="FormContainer">
+		</div>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		//access necessary elements
+		const signUpBtn = document.getElementById('signUpBtn');
+		const loginBtns = document.getElementById('loginBtns');
+		const FormContainer = document.getElementById('FormContainer');
+		//function for both SignUp from and login from
+		function SignUp() {
+			FormContainer.innerHTML = `
+			<form method="get" accept-charset="utf-8">
+			<br> <br>
+			<input type="text" placeholder="Name" required="required" />
+			<input type="email" placeholder="Email" required="required" />
+			<input type="number" placeholder="Mobile" required="required" />
+			<input type="password" placeholder="Password" required="required" />
+			<input type="password" placeholder="Confirm Password" required="required" />
+			<br>
+			<button type="submit">Submit</button>
+			</form>
+			`;
+			FormContainer.style.background = '#00b3ef';
+			signUpBtn.style.background = '#00b3ef';
+			loginBtns.style.background = 'white';
+		}
+		function Login() {
+			FormContainer.innerHTML = `
+			<form method="get" accept-charset="utf-8">
+			<br> <br>
+			<input type="email" placeholder="Email" required="required" />
+			<input type="password" placeholder="Password" required="required" />
+			<br>
+			<button type="submit">Submit</button>
+			</form>
+			`;
+			FormContainer.style.background = '#00b3ef';
+			signUpBtn.style.background = 'white';
+			loginBtns.style.background = '#00b3ef';
+		}
+		// call both function with Button click
+		signUpBtn.addEventListener('click', SignUp);
+		loginBtns.addEventListener('click', Login);
+		//default SignUp function call for default SignUp from
+		SignUp();
+	</script>
+</body>

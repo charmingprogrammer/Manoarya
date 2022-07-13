@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title>Information Openear and closer using simple html css and js</title>
+
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roman;
+    }
+    h1 {
+      color: #3b3b3b;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: 400;
+      font-family: Times New Roman;
+    }
+    button {
+      padding: 15px 20px;
+      margin-top: 20px;
+      width: 100%;
+      transform: scale(0.95);
+      box-shadow: 0 0 10px 1px gray;
+      border-radius: 5px;
+      background: white;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    button:active {
+      background: #0000002e;
+    }
+    p {
+      padding: 10px 20px;
+      width: 100%;
+      background: white;
+      margin-top: 10px;
+      transform: scale(0.95);
+      box-shadow: 0 0 10px 1px gray;
+      border-radius: 5px;
+      display: none;
+    }
+    span {
+      padding: 10px;
+      background: #727272;
+      border-radius: 100px;
+    }
+    /* for toggle between info1 and open */
+    .open {
+      display: block;
+      background: #00a0ff4a;
+    }
+    .icons {
+      background: #00a0ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>We Have following Information</h1>
+  <button onclick="info1btn()">Information 01 <span id="icons1"></span></button>
+  <p id="info1">
+    Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish <br> <br>
+    Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish
+  </p>
+  <button onclick="info2btn()">Information 02 <span id="icons2"></span></button>
+  <p id="info2">
+    Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish <br> <br>
+    Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish
+  </p>
+  <button onclick="info3btn()">Information 03 <span id="icons3"></span></button>
+  <p id="info3">
+    Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish <br> <br>
+    Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a Latin text, but to today's reader, it's seen as gibberish
+  </p>
+
+  <!--Internal javascript-->
+  <script type="text/javascript" charset="utf-8">
+    //get info
+    const info1 = document.getElementById('info1');
+    const info2 = document.getElementById('info2');
+    const info3 = document.getElementById('info3');
+    //get span + -
+    const icons1 = document.getElementById('icons1');
+    const icons2 = document.getElementById('icons2');
+    const icons3 = document.getElementById('icons3');
+    //onclick function
+    function info1btn() {
+      info1.classList.toggle('open');
+      icons1.classList.toggle('icons');
+    }
+    function info2btn() {
+      info2.classList.toggle('open');
+      icons2.classList.toggle('icons');
+    }
+    function info3btn() {
+      info3.classList.toggle('open');
+      icons3.classList.toggle('icons');
+    }
+  </script>
+</body>

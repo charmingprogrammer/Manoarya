@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title>Horizontal Slider</title>
+  <!--font awesome for icons-->
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roman;
+      background: #e1e1e1;
+    }
+    .container {
+      height: 150px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-self: center;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+    .container2 {
+      height: 400px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-self: center;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+    .container3 {
+      height: 500px;
+      width: 100%;
+    }
+    
+    .container::-webkit-scrollbar{
+      display: none;
+    }
+    .container2::-webkit-scrollbar{
+      display: none;
+    }
+    .slider_box {
+      height: 100%;
+      min-width: 100%;
+      background: #4779e4;
+      transform: scale(0.95);
+      border-radius: 10px;
+      scroll-snap-align: center;
+      box-shadow: 0 0 5px 1px #000000;
+      display: grid;
+      place-items: center;
+    }
+    h1 {
+      background: none;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="slider_box">
+      <h1>Page 01</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 02</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 03</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 04</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 05</h1>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="slider_box">
+      <h1>Page 01</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 02</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 03</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 04</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 05</h1>
+    </div>
+  </div>
+  <div class="container3">
+    <div class="slider_box">
+      <h1>Page 01</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 02</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 03</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 04</h1>
+    </div>
+    <div class="slider_box">
+      <h1>Page 05</h1>
+    </div>
+  </div>
+</body>

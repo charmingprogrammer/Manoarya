@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Paytm UI clone by manoa</title>
+  <!--font awesome  for icons-->
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <!--style sheet-->
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    nav {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 129993;
+      position: sticky;
+      top: 0;
+    }
+    .nav_left {
+      width: 100px;
+      padding: 10px 20px;
+    }
+    .nav_center {
+      padding: 10px 20px;
+    }
+    .nav_center img {
+      height: 100%;
+      width: 100%;
+    }
+    .nav_right {
+      width: 100px;
+      padding: 10px 20px;
+    }
+    .nav_right i {
+      margin-left: 10px;
+    }
+    i:active {
+      transform: scale(0.9);
+    }
+    .poster_container {
+      height: 100%;
+      width: 100%;
+      margin-top: -50px;
+      position: sticky;
+      top: 0;
+    }
+    .poster_container img {
+      height: 100%;
+      width: 100%;
+    }
+    .main_container {
+      height: 700px;
+      width: 100%;
+      position: sticky;
+      top: 60px;
+      background: white;
+      border-radius: 15px;
+      z-index: 1234;
+      border-top: 1px solid gray;
+    }
+    #QRCode {
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      bottom: -100px;
+      z-index: 12345;
+      display: flex;
+      justify-content: center;
+      transition: .2s ease-in;
+    }
+    #QRCodeBox {
+      height: 50px;
+      width: 150px;
+      background: #2a96e6;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #QRCodeBox img {
+      height: 30px;
+      width: 30px;
+      border-radius: 4px;
+    }
+    #QRCodeBox b {
+      font-family: Sans-Serif;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!--top navigation-->
+  <nav>
+    <div class="nav_left">
+      <i class="fas fa-align-justify"></i>
+    </div>
+    <div class="nav_center">
+      <img src="https://assetscdn1.paytm.com/commonmweb/cc3bba88.svg" alt="Paytm Logo" />
+    </div>
+    <div class="nav_right">
+      <i class="fas fa-search"></i>
+      <i class="far fa-comment-alt"></i>
+    </div>
+  </nav>
+  <!--poster-->
+  <div class="poster_container">
+    <img src="https://assetscdn1.paytm.com/commonmweb/59341da8.svg" alt="Poster" />
+  </div>
+  <!--main_container-->
+  <div class="main_container">
+  </div>
+  <!--qr code -->
+  <div id="QRCode">
+    <div id="QRCodeBox">
+      <img src="https://i.ibb.co/CHLyKwV/qr-6834147-1280-removebg-preview.png" />
+      <b>Scan Any QR</b>
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    //hide and show qr code btn using onscroll event 
+    var prevScrollpos = window.pageYOffset; window.onscroll = function() { var currentScrollPos = window.pageYOffset; if (prevScrollpos > currentScrollPos) { document.getElementById("QRCode").style.bottom = "-100%"; } else { document.getElementById("QRCode").style.bottom = "10px"; } prevScrollpos = currentScrollPos; }
+  </script>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <title>Modal box</title>
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <!-- Link Css internally -->
+  <style type="text/css" media="all">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Sans-Serif;
+      background: #e4e4e4;
+    }
+    .container{
+      height: 100vh;
+      width: 100%;
+      background: #3d4443;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+    }
+    button{
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      background: linear-gradient(120deg, #00afff,pink);
+      border-radius: 5px;
+      box-shadow: 0 0 10px 1px #0000007a;
+    }
+    button:active{
+      transform: scale(0.95);
+    }
+    #modalPage{
+      height: 100vh;
+      width: 100%;
+      background:#0f0c0c00;
+      position:fixed;
+      top: -100%;
+      transition: .2s ease-in;
+    }
+    .information{
+      height: 70%;
+      width: 100%;
+      background: #181818;
+      box-shadow: 0 0 10px 1px #0000007a;
+      transform: scale(0.95);
+    }
+    .information i{
+      padding: 15px 20px;
+      position:absolute;
+      right: 0;
+      top: 0;
+      background:#2b313768;
+      color:#dad9d9;
+    }
+    .information i:active{
+      background: #02030455;
+    }
+    .information h1{
+      padding: 10px 20px;
+      background: none;
+      color: #d4d4d4;
+    }
+      .information p{
+      padding: 10px 20px;
+      background: none;
+      color: #d4d4d4;
+    }
+  .information a{
+      padding: 10px 20px;
+      background: none;
+      color: #d4d4d4;
+      cursor: default;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <!--Main container--> 
+ <div class="container">
+   <button onclick="OpenModal()">Open Modal</button>
+ </div>
+ 
+ <!--Modal Page-->
+ <div id="modalPage" onclick="closePage()">
+   <div class="information">
+     <i class="fas fa-times" onclick="closePage()"></i>
+     <h1>Modal Box</h1>
+     <p>Hi! this is Manohar Anand From the house of Manoarya. </p> 
+     <a href="index.html">Back to Home</a>
+   </div>
+ </div>
+ <!--Internal js-->
+ <script type="text/javascript" charset="utf-8">
+     //get Modal page
+     const ModalPgae =  document.getElementById('modalPage');
+     
+  function OpenModal() {
+    modalPage.style.top = '0';
+  }
+  function closePage() {
+    modalPage.style.top = '-100%';
+  }
+ </script>
+</body>

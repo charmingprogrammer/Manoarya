@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title>Full page navigation</title>
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roman;
+      background: #ededed;
+    }
+    body{
+      display: grid;
+      place-items: center;
+    }
+    nav {
+      height: 60px;
+      width: 90%;
+      margin-top: 10px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .2s ease-out;
+      box-shadow: 0 0 100px 1px #a1a1a1;
+    }
+    .nav{
+      height: 300px;
+      background: #50cef6;
+    }
+    .top_items {
+      height: 60px;
+      background: none;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top_items i {
+      padding: 10px 20px;
+      background: none;
+    }
+    .top_items i:active {
+      transform: scale(0.9);
+    }
+    .top_items b {
+      padding: 10px 20px;
+      background: none;
+    }
+    ul {
+      padding: 10px 20px;
+      background: none;
+    }
+    ul li {
+      background: none;
+      list-style-type: none;
+    }
+    ul li a {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: black;
+      display: flex;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <div class="top_items">
+      <b>Manoarya</b>
+      <i class="fas fa-bars" onclick="opener()"></i>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">About us </a></li>
+      <li><a href="#">Terms and conditions</a></li>
+
+    </ul>
+  </nav>
+
+  <script type="text/javascript" charset="utf-8">
+    function opener() {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('nav');
+
+
+    }
+  </script>
+</body>

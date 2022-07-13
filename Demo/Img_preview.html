@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--Add title that show on the browser header-->
+  <title>Image Preview Using HtMl Css and basic js.</title>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Roman;
+      background: #dedede;
+    }
+    .container {
+      height: 300px;
+      width: 100%;
+      transform: scale(0.9);
+      border-radius: 10px;
+    }
+    #big_Image {
+      height: 82%;
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      overflow: hidden;
+    }
+    .small_Image {
+      height: 18%;
+      width: 100%;
+      background: none;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      display: flex;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .small_Image_box {
+      height: 100%;
+      width: 20%;
+      background: yellow;
+      transform: scale(0.9);
+      border-radius: 10px;
+    }
+    .small_Image_box:active {
+      transform: scale(0.88);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="big_Image">
+      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Pic 1" />
+    </div>
+    <div class="small_Image">
+      <div class="small_Image_box" id="pic1">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="pic 1" />
+      </div>
+      <div class="small_Image_box" id="pic2">
+        <img src="https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528_1280.jpg" alt="pic 1" />
+      </div>
+      <div class="small_Image_box" id="pic3">
+        <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg" alt="pic 3" />
+      </div>
+      <div class="small_Image_box" id="pic4">
+        <img src="https://cdn.pixabay.com/photo/2016/08/09/21/54/lake-1581879_1280.jpg" alt="pic 4" />
+      </div>
+      <div class="small_Image_box" id="pic5">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/01/mountains-736886_1280.jpg" alt="pic 5" />
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" charset="utf-8">
+    //Access All Necessary  items
+    const big_Image = document.getElementById('big_Image');
+    const pic1 = document.getElementById('pic1');
+    const pic2 = document.getElementById('pic2');
+    const pic3 = document.getElementById('pic3');
+    const pic4 = document.getElementById('pic4');
+    const pic5 = document.getElementById('pic5');
+
+
+    // All functions
+    function p1() {
+      big_Image.innerHTML = pic1.innerHTML;
+    }
+    function p2() {
+      big_Image.innerHTML = pic2.innerHTML;
+    }
+    function p3() {
+      big_Image.innerHTML = pic3.innerHTML;
+    }
+    function p4() {
+      big_Image.innerHTML = pic4.innerHTML;
+    }
+    function p5() {
+      big_Image.innerHTML = pic5.innerHTML;
+    }
+
+    //Onclick event on all small image.
+    pic1.addEventListener('click', p1);
+    pic2.addEventListener('click', p2);
+    pic3.addEventListener('click', p3);
+    pic4.addEventListener('click', p4);
+    pic5.addEventListener('click', p5);
+  </script>
+</body>
