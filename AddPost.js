@@ -312,7 +312,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Side bar with multiple pages by manoarya.",
+      Title: "Demo | Side bar with multiple pages by manoarya.",
       ImageUrl: "https://charmingprogrammer.github.io/All-Manoarya-Images/Navigation.png",
       PostUrl:
         "https://manoarya.com/Demo/Navigation.html",
@@ -320,7 +320,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Modal Box",
+      Title: "Demo | Modal Box",
       ImageUrl: "https://cdn.pixabay.com/photo/2021/12/08/17/04/modalbox-6856321_1280.jpg",
       PostUrl:
         "https://manoarya.com/Demo/ModalBox.html",
@@ -328,7 +328,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Sign Up and Login",
+      Title: "Demo | Sign Up and Login",
       ImageUrl: "https://i.ibb.co/86Xtq9w/Pics-Art-12-11-07-22-32.png",
       PostUrl:
         "https://manoarya.com/Demo/Sign_Up_From.html",
@@ -336,7 +336,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Information opener",
+      Title: "Demo | Information opener",
       ImageUrl: "https://i.ibb.co/Hn2wVnv/Pics-Art-12-09-08-14-16.png",
       PostUrl:
         "https://manoarya.com/Demo/InfoOpen.html",
@@ -344,7 +344,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Image preview ",
+      Title: "Demo | Image preview ",
       ImageUrl: "https://i.ibb.co/vV17WF2/Pics-Art-12-12-07-21-29.png",
       PostUrl:
         "https://manoarya.com/Demo/Img_preview.html",
@@ -352,7 +352,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Add text on image",
+      Title: "Demo | Add text on image",
       ImageUrl: "https://i.ibb.co/qnP3BrW/Pics-Art-12-12-07-39-39.jpg",
       PostUrl:
         "https://manoarya.com/Demo/Text_on_img.html",
@@ -360,7 +360,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Image gallery",
+      Title: "Demo | Image gallery",
       ImageUrl: "https://i.ibb.co/f4qj2Nh/Pics-Art-12-12-08-48-15.png",
       PostUrl:
         "https://manoarya.com/Demo/Img_gallery.html",
@@ -368,7 +368,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> |Responsive layout",
+      Title: "Demo |Responsive layout",
       ImageUrl: "https://i.ibb.co/C1JSCnS/Pics-Art-12-12-08-51-45.png",
       PostUrl:
         "https://manoarya.com/Demo/layout.html",
@@ -376,7 +376,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Create a search ui like a browser window",
+      Title: "Demo | Create a search ui like a browser window",
       ImageUrl: "https://i.ibb.co/KhZnT9j/Pics-Art-12-12-08-55-12.png",
       PostUrl:
         "https://manoarya.com/Demo/Browser_window.html",
@@ -384,7 +384,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Horizontal slider ",
+      Title: "Demo | Horizontal slider ",
       ImageUrl: "https://i.ibb.co/qkV4gBL/Pics-Art-12-12-08-59-01.png",
       PostUrl:
         "https://manoarya.com/Demo/Img_preview.html",
@@ -393,7 +393,7 @@ const AllPost = [
     // 
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Create a profile ui",
+      Title: "Demo | Create a profile ui",
       ImageUrl: "https://i.ibb.co/qRCDMgW/Pics-Art-12-12-09-00-24.png",
       PostUrl:
         "https://manoarya.com/Demo/Profile.html",
@@ -401,7 +401,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Full page navigation",
+      Title: "Demo | Full page navigation",
       ImageUrl: "https://i.ibb.co/HVPs5Th/Pics-Art-12-14-07-14-52.png",
       PostUrl:
         "https://manoarya.com/Demo/Page_navigation.html",
@@ -409,7 +409,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Sportify UI Clone",
+      Title: "Demo | Sportify UI Clone",
       ImageUrl: "https://i.ibb.co/b7K2M4t/Pics-Art-12-14-10-32-12.png",
       PostUrl:
         "https://manoarya.com/Demo/Sportify_ui_clone.html",
@@ -417,7 +417,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Google Play Store UI Clone",
+      Title: "Demo | Google Play Store UI Clone",
       ImageUrl: "https://i.ibb.co/Q63YMyL/Pics-Art-12-15-11-16-35.png",
       PostUrl:
         "https://manoarya.com/Demo/Play_store_ui_clone.html",
@@ -425,7 +425,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Color Tic tac to",
+      Title: "Demo | Color Tic tac to",
       ImageUrl: "https://i.ibb.co/TqvVRrB/Pics-Art-12-16-08-05-18.png",
       PostUrl:
         "https://manoarya.com/Demo/Color_tic_tac_to.html",
@@ -433,7 +433,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Paytm UI Clone",
+      Title: "Demo | Paytm UI Clone",
       ImageUrl: "https://i.ibb.co/Vx3mcXT/Pics-Art-12-17-06-57-19.png",
       PostUrl:
         "https://manoarya.com/Demo/Paytm_ui_clone.html",
@@ -441,7 +441,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Snap scrolling effects",
+      Title: "Demo | Snap scrolling effects",
       ImageUrl: "https://i.ibb.co/R9J5K6R/Pics-Art-12-18-07-05-31.png",
       PostUrl:
         "https://manoarya.com/Demo/Snap_Scrolling.html",
@@ -449,7 +449,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Make search bar and suggestion",
+      Title: "Demo | Make search bar and suggestion",
       ImageUrl: "https://i.ibb.co/wzFT4NC/Pics-Art-12-18-07-37-53.png",
       PostUrl:
         "https://manoarya.com/Demo/Search_Input.html",
@@ -457,7 +457,7 @@ const AllPost = [
     },
     {
       category: "Demo",
-      Title: "<mark>Demo</mark> | Create details opener and closer using only html.",
+      Title: "Demo | Create details opener and closer using only html.",
       ImageUrl: "https://i.ibb.co/JKcN9FM/Pics-Art-12-18-07-42-37.png",
       PostUrl:
         "https://manoarya.com/Demo/Details_tag.html",
