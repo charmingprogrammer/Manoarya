@@ -28,7 +28,7 @@ function explore() {
       `
    <a href="${data.PostUrl}" class="box"><img src="${data.ImageUrl}" alt="${data.alt}" />
     <h2>${data.Title}</h2>
-    <p>${data.Paragraph}</p></a>
+    </a>
       `
     );
   }
@@ -83,7 +83,7 @@ function Cources() {
         "afterbegin",
         ` <a href="${Cources_data[i].PostUrl}" class="box"><img src="${Cources_data[i].ImageUrl}" alt="${Cources_data[i].alt}" />
       <h2>${Cources_data[i].Title}</h2>
-      <p>${Cources_data[i].Paragraph}</p></a>`
+      </a>`
       );
     }
   }
@@ -136,7 +136,7 @@ function Demo() {
         "afterbegin",
         ` <a href="${Demo_data[i].PostUrl}" class="box"><img src="${Demo_data[i].ImageUrl}" alt="${Demo_data[i].alt}" />
     <h2>${Demo_data[i].Title}</h2>
-    <p>${Demo_data[i].Paragraph}</p></a>`
+    </a>`
       );
     }
   }
@@ -189,7 +189,7 @@ function HTM() {
         "afterbegin",
         ` <a href="${HTM_data[i].PostUrl}" class="box"><img src="${HTM_data[i].ImageUrl}" alt="${HTM_data[i].alt}" />
     <h2>${HTM_data[i].Title}</h2>
-    <p>${HTM_data[i].Paragraph}</p></a>`
+    </a>`
       );
     }
   }
@@ -243,7 +243,7 @@ function Explanation() {
         "afterbegin",
         ` <a href="${Explanation_data[i].PostUrl}" class="box"><img src="${Explanation_data[i].ImageUrl}" alt="${Explanation_data[i].alt}" />
     <h2>${Explanation_data[i].Title}</h2>
-    <p>${Explanation_data[i].Paragraph}</p></a>`
+   </a>`
       );
     }
   }
@@ -296,7 +296,7 @@ function QandA() {
         "afterbegin",
         ` <a href="${QandA_data[i].PostUrl}" class="box"><img src="${QandA_data[i].ImageUrl}" alt="${QandA_data[i].alt}" />
      <h2>${QandA_data[i].Title}</h2>
-     <p>${QandA_data[i].Paragraph}</p></a>`
+    </a>`
       );
     }
   }
@@ -333,4 +333,3 @@ function QandA() {
 setInterval(() => {
   document.getElementById("Message").style.top = "-100%";
 }, 2000);
-explore();
