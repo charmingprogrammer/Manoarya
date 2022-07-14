@@ -139,7 +139,7 @@ nav {
 }
 .box {
   height: auto;
-  width: 300px;
+  width: 100%;
   transition: 0.4s ease;
   color: black;
   text-decoration: none;
