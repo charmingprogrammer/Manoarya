@@ -463,5 +463,13 @@ const AllPost = [
         "https://manoarya.com/Demo/Details_tag.html",
       alt: "create details opener and closer using only html.",
     },
+    {
+      category: "HTM",
+      Title: "Deploy the react web app on the github using 4 steps by manoarya.",
+      ImageUrl: "https://manoarya.com/Images/Deploy%20React%20website.png",
+      PostUrl:
+        "https://manoarya.com/Manoarya%20All%20Post/Deploy_React_Web_App_On_The_Github_Using_3_Steps.html",
+      alt: "Deploy the react web app on the github using 4 steps by manoarya.",
+    },
   ];
   
