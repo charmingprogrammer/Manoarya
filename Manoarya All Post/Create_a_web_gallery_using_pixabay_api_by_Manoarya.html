@@ -1,111 +1,211 @@
 <!DOCTYPE html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>Code A Gallery web application using Pixabay API.</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>Code A Gallery web application using Pixabay API.</title>
 
-	<meta name="description" content="In this post we are going to create a web gallery  application using Pixabay api. step by step guide." />
+  <meta
+    name="description"
+    content="In this post we are going to create a web gallery  application using Pixabay api. step by step guide."
+  />
 
-	<script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
 
-	<link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
 
-	<!--code highlighter links-->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
-	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
-	<script>
-		hljs.initHighlightingOnLoad();
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-		gtag('config', 'G-SRT0FM6SCD');
-	</script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-		crossorigin="anonymous"></script>
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
-	<!--navigation bar top-->
-	<nav>
-		<a href="https://manoarya.com/" class="navLeft">
-			<img src="ManoaryaLogo.png" alt="Manoarya Logo" />
-		</a>
-		<div class="navRight">
-			<i class="fas fa-search" id="search_opener"></i>
-			<img src="" alt="" id="userPic" />
-			<button id="subBtn">Subscribe</button>
-		</div>
-	</nav>
-	<!--search-->
-	<div id="searchContainer">
-		<div class="search_header">
-			<i class="fas fa-arrow-left" id="search_closer"></i>
-			<input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
-		</div>
-		<ul id="myUL">
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img
+          src="https://i.ibb.co/8Ywd4JD/png-20220215-113300-0000.png"
+          alt="Navigation"
+        />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">
+          How to create a web gallery using pixabay API | A step by step Guide.
+        </h1>
+        <p><b>Category : </b> <span id="category">Explanation</span></p>
+        <p>
+          Hi folks, In this post we are going to make a gallery using pixaby
+          API. <br /><br />
+          And yes you don't worry the whole process describe in step by step
+          order. <br />
+          <br />
+          So, open you laptop or desktop and start coding with me. let's go
+          <br />
+          <br />
+          You want to see how our project looks <br />
+          <br />
+          <a href="https://charmingprogrammer.github.io/Demo/Webgallery.html"
+            >See Demo</a
+          >
+        </p>
+        <ul id="topics"></ul>
+        <br />
+        <p>
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+            crossorigin="anonymous"
+          ></script>
+          <!-- Manoarya -->
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4365651039511906"
+            data-ad-slot="8200871068"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </p>
 
-		</ul>
-	</div>
-	<div id="container">
-		<div id="page1">
-			<!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
-			<!--post image -->
-			<div class="post_Img_Con">
-				<img src="https://i.ibb.co/8Ywd4JD/png-20220215-113300-0000.png" alt="Navigation" />
-			</div>
-			<!--Main Post-->
-			<div class="postContainer">
-				<h1 id="postTitle">How to create a web gallery using pixabay API | A step by step Guide.</h1>
-				<p>
-					<b>Category : </b>  <span id="category">Explanation</span>
-				</p>
-				<p>
-					Hi folks, In this post we are going to make a gallery using pixaby API. <br><br> And yes you don't worry the whole process describe in step by step order. <br> <br> So, open you laptop or desktop and start coding with me.
-					let's go <br> <br>
-					You want to see how our project  looks <br> <br>
-					<a href="https://charmingprogrammer.github.io/Demo/Webgallery.html">See Demo</a>
-				</p>
-				<ul id="topics">
-				</ul>
-				<br>
-				<p>
+        <h2>What topics and techniques you learn in this post.</h2>
+        <p>
+          1. You learn how to create a layout using html and style it with css.
+          <br />
+          <br />
+          2. Learn about flex property and more. <br />
+          <br />
+          3. Learn about responsive design. <br />
+          <br />
+          4. Learn how to use fetch methods in Javascript to fetch any data from
+          any API. <br />
+          <br />
+          5. Explore lots of more css properties and js function.
+        </p>
+        <h2>1. Set the coding environment.</h2>
+        <p>
+          In this section we see how to set up your environment and start
+          creating an image gallery. <br />
+          <br />Open any text editors I recommend you to go with visual studio
+          code if you haven't feel free to go and
+          <a
+            style="padding: 0; background: none; color: #0099ff"
+            href="https://code.visualstudio.com/"
+            >Download</a
+          >. <br />
+          <br />
+          If you want to learn how to install visual studio code and use it
+          visit Hare. <br />
+          <br />
+          Now create three files like index.html , style.css and index.js.
+          <br />
+          <br />
+          Now open the index.html file into your code editor and add the HTML
+          starter code. <br />
+          <br />If you want to learn about html starter code feel free to
+          <a
+            style="padding: 0; background: none; color: #0099ff"
+            href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html"
+            >Jump</a
+          >.
+        </p>
+        <h2>2. Let's create a UI for a web image gallery.</h2>
 
-					<h2>What topics and techniques you learn in this post.</h2>
-					<p>
-						1. You learn how to create a layout using  html and style it with css. <br> <br>
-						2. Learn about flex  property and more. <br> <br>
-						3. Learn about responsive design. <br> <br>
-						4. Learn how to use fetch methods in Javascript to fetch any data from any API.  <br> <br>
-						5. Explore lots of more css properties and js function.
-					</p>
-					<h2>1. Set the coding environment.</h2>
-					<p>
-						In this section we see how to set up your environment and start creating an image gallery. <br> <br>Open any text editors I recommend you to go with visual studio code if you haven't feel free to go and <a style="padding:0; background:none; color:#0099ff;" href="https://code.visualstudio.com/">Download</a>. <br> <br> If you want to learn how to install visual studio code and use it visit Hare.  <br> <br> Now create three files like index.html , style.css and index.js. <br> <br> Now open the index.html file into your code editor and add the HTML starter code. <br> <br>If you want to learn about html starter code feel free to <a style="padding:0; background:none; color:#0099ff;" href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html">Jump</a>.
+        <p>
+          Our raw design looks like the image below. <br />
+          <br />
+          <img
+            src="https://i.ibb.co/233tkxQ/20220207-192857-0000.png"
+            alt="Raw image for pixabay api "
+          />
+          <br />
+          <br />
+        </p>
 
-					</p>
-					<h2>
-						2. Let's create a UI for a web image gallery.
-					</h2>
-
-					<p>
-						Our raw design looks like the image below. <br> <br> <img src="https://i.ibb.co/233tkxQ/20220207-192857-0000.png" alt="Raw image for pixabay api ">
-						<br> <br> 
-						<h2>Create Navigation Bar</h2> 
-						<p>Now let's add below code which is explained just below of this code.
-						</p> 
-						<p>
-						<img src="https://i.ibb.co/d0D0Tw0/Picsart-22-02-14-19-20-36-718.jpg" alt="code snippet by Manoarya" /> <br> <br>Add a nav tag for creating a top navigation bar which contains a logo and search inputs. <br> <br>In the upper image you can see a yellow rectangle which represents the whole nav tag and inside of that an orange color rectangle represents a logo which is wrapped inside of the span tag and the last component is the input which is inside the green rectangle. <br> <br>Search Input elements have an onkeyup event which is fired when anyone types on this search input. <br> <br> We used this for searching various images just typing their names.
-						<br> <br> 
-					 </p> 
-						<h2>Style the navigation bar.</h2>
-						<pre>
+        <h2>Create Navigation Bar</h2>
+        <p>
+          Now let's add below code which is explained just below of this code.
+        </p>
+        <p>
+          <img
+            src="https://i.ibb.co/d0D0Tw0/Picsart-22-02-14-19-20-36-718.jpg"
+            alt="code snippet by Manoarya"
+          />
+          <br />
+          <br />Add a nav tag for creating a top navigation bar which contains a
+          logo and search inputs. <br />
+          <br />In the upper image you can see a yellow rectangle which
+          represents the whole nav tag and inside of that an orange color
+          rectangle represents a logo which is wrapped inside of the span tag
+          and the last component is the input which is inside the green
+          rectangle. <br />
+          <br />Search Input elements have an onkeyup event which is fired when
+          anyone types on this search input. <br />
+          <br />
+          We used this for searching various images just typing their names.
+          <br />
+          <br />
+        </p>
+        <h2>Style the navigation bar.</h2>
+        <pre>
 							<code>
 /*style for navigation*/ 
 nav{
@@ -136,14 +236,47 @@ outline: none;
 }
 							</code>
 						</pre>
-						<h2>Create a div for big image.</h2>
-						<p> 
-												<img src="https://i.ibb.co/c8WdRCy/Picsart-22-02-14-20-47-38-945.jpg" alt="code snippet"> <br> <br> 
-Now we add a div which is represented on the upper image using a red rectangle. <br> <br> This div is used for big image previews and inside of this div we pull an image using javascript. <br> <br> Which we can see in the javascript section. <br> <br> 
-Now we take a ul for a small image container which is represented using a blue rectangle. <br> <br>   And we pulled li tag, a tag and image using Javascript. <br> <br> 
-	</p> 
-	<h2>Style div, ul, li, a tags</h2>
-     <pre>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Manoarya -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4365651039511906"
+          data-ad-slot="8200871068"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <h2>Create a div for big image.</h2>
+        <p>
+          <img
+            src="https://i.ibb.co/c8WdRCy/Picsart-22-02-14-20-47-38-945.jpg"
+            alt="code snippet"
+          />
+          <br />
+          <br />
+          Now we add a div which is represented on the upper image using a red
+          rectangle. <br />
+          <br />
+          This div is used for big image previews and inside of this div we pull
+          an image using javascript. <br />
+          <br />
+          Which we can see in the javascript section. <br />
+          <br />
+          Now we take a ul for a small image container which is represented
+          using a blue rectangle. <br />
+          <br />
+          And we pulled li tag, a tag and image using Javascript. <br />
+          <br />
+        </p>
+        <h2>Style div, ul, li, a tags</h2>
+        <pre>
      <code>
 /* style for big image */ 
 #img_changer{
@@ -188,21 +321,24 @@ transform: scale(0.95);
 }
      </code>
      </pre>
-			
 
-					<h2>3.Now time for Javascript Code which creates all functionality enabled.</h2>
+        <h2>
+          3.Now time for Javascript Code which creates all functionality
+          enabled.
+        </h2>
 
-					<p>
-						First of all we access all necessary elements from Dom and store it in a variable. 
-			</p>		
-						<pre>
+        <p>
+          First of all we access all necessary elements from Dom and store it in
+          a variable.
+        </p>
+        <pre>
 							<code>
 // fetch small image container
 const allImg = document.getElementById('allImg');
 							</code>
 						</pre>
-						<p>Now we create an async and await function for fetching API data.</p> 
-						<pre>
+        <p>Now we create an async and await function for fetching API data.</p>
+        <pre>
 							<code>
 async function getData() { 
 const responseData = await fetch('https://pixabay.com/api/?key=21480493-5c466af89bb6c5ee2417d3e5b&q='+topic+'&image_type=photo&pretty=true'); 
@@ -220,180 +356,282 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
 }
 							</code>
 						</pre>
-						<p> 
-						For API you need to go to pixabay.com and make a API key and then you can use it.
-						<br> <br>
+        <p>
+          For API you need to go to pixabay.com and make a API key and then you
+          can use it.
+          <br />
+          <br />
 
-						<a href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html
-							">Learn About API</a> <br> <br>
+          <a
+            href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html
+							"
+            >Learn About API</a
+          >
+          <br />
+          <br />
 
+          Now you copy your own API key from pixabay and pasted it inside of
+          <b> await fetch('Past API Hare');</b> <br />
+          <br />
+          In the topic section you can choose any topic like nature,
+          football...etc.
+          <br />
+          <br />
+          Now we create a const and store all data which we fetch early and
+          convert this data into json format.
+          <br />
+          <br />
+          Console result for API response
+          <br />
+          <br />
+          <img
+            src="https://i.ibb.co/PhGRdQk/Picsart-22-02-15-07-11-38-667.jpg"
+            alt="console result"
+          />
 
-						Now you copy your own API key from pixabay and pasted it inside of <b> await fetch('Past API Hare');</b> <br> <br>
-						In the topic section you can choose any topic like nature, football...etc.
-						<br> <br>
-						Now we create a const and store all data which we fetch early and convert this data into json format.
-						<br> <br>
-						Console result for API response
-						<br> <br>
-<img src="https://i.ibb.co/PhGRdQk/Picsart-22-02-15-07-11-38-667.jpg" alt="console result" />
+          Now we need an array to show all data on the Dom which we created
+          earlier.
 
-						Now we need an array to show all data on the Dom which we created earlier.
+          <br />
+          <br />
+          For that create a new const and store array like this
+          <b>Const myArray = MainData.hits; </b> <br />
+          <br />
+          Now our console result is look like this. <br />
+          <br />
+          <img
+            src="https://i.ibb.co/sys1JBz/Picsart-22-02-15-07-12-44-942.jpg"
+            alt="console result"
+            border="0"
+          />
 
-						<br> <br> For that create a new const and store array like this <b>Const myArray = MainData.hits; </b>
-						<br> <br>
-						Now our console result is look like this. <br> <br>
-<img src="https://i.ibb.co/sys1JBz/Picsart-22-02-15-07-12-44-942.jpg" alt="console result" border="0">
+          Now add a 1 index of hits array which is shown inside of the yellow
+          box in the image below. <br />
+          <br />
+          Now let's loop all array data using a for loop and insert necessary
+          information using InsertAdjacentHTML(Not remove any data from Dom and
+          we can use a lot of content using this.) like shown inside of the blue
+          box in the image below .
+          <br />
+          <br />
+          After that we called the async function.
+          <br />
+          <br />
+          <img
+            src="https://i.ibb.co/gDmmGpx/Picsart-22-02-15-07-25-01-476.jpg"
+            alt="code snippet img"
+            border="0"
+          />
+          <br />
+          <br />
 
-						Now add a 1 index of hits array which is shown inside of the yellow box in the image below. <br> <br>
-						Now let's loop all array data using a for loop and insert necessary information using InsertAdjacentHTML(Not remove any data from Dom and we can use a lot of content using this.) like shown inside of the blue box in the image below .
-						<br> <br>
-						After that we called the async function.
-						<br> <br>
-		<img src="https://i.ibb.co/gDmmGpx/Picsart-22-02-15-07-25-01-476.jpg" alt="code snippet img" border="0"> <br> <br> 				
-						
+          Now call an onkeyup event which we created inside of the search input
+          tag into the html section.
+          <br />
+          <br />
+          Inside of this function we create a const and store our search input.
 
+          <br />
+          <br />
 
-						Now call an onkeyup event which we created inside of the search input tag into the html section.
-						<br> <br>
-						Inside of this function we create a const and store our search input.
+          And now match the topic value with the search input value. <br />
+          <br />
 
-						<br> <br>
+          So that API knows what topic the user is searching and shows results
+          according to that topic. <br />
+          <br />
 
-						And now match the topic value with the search input value. <br> <br>
+          And very important we call an async function every time when a user
+          searches for anything.
+          <br />
+          <br />
+          And update the async function to show content according to user
+          search.
+          <br />
+          <br />
+          You can see this image for better understanding.
+          <br />
+          <br />
 
-						So that API knows what topic the user is searching and shows results according to that topic. <br> <br>
+          Now for better user experience we add a loader until data fetching.
+          <br />
+          <br />
+          For that we add a loader gif before async function. And after that we
+          clear that loader when the async function is called.
+          <br />
+          <br />
+          See below image.
+          <br />
+          <br />
+          <img
+            src="https://i.ibb.co/9p09B1g/Picsart-22-02-15-07-45-43-829.jpg"
+            alt="Picsart-22-02-15-07-45-43-829"
+            border="0"
+          />
+          <br />
+          b For full source code you can jump to my API explanation post. <br />
+          <br />
+          <a
+            href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html#Let's%20Create%20Project"
+            >Hare</a
+          >
+        </p>
 
-						And very important we call an async function every time when a user searches for anything.
-						<br> <br>
-						And update the async function to show content according to user search.
-						<br> <br>
-						You can see this image for better understanding.
-						<br> <br>
+        <p>
+          I hope you like this project please subscribe and comment your
+          thoughts and suggestions.
+          <br />
+          <br />
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+            crossorigin="anonymous"
+          ></script>
+          <!-- Manoarya -->
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4365651039511906"
+            data-ad-slot="8200871068"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          That's all for today. <b>Thanks for reading</b> <br />
+          <br />
+          <b>Happy Coding and love you 3000, By</b>
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
 
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
 
-						Now for better user experience we add a loader until data fetching.
-						<br> <br>
-						For that we add a loader gif before async function. And after that we clear that loader when the async function is called.
-						<br> <br>
-						See below image.
-						<br> <br>
-						<img src="https://i.ibb.co/9p09B1g/Picsart-22-02-15-07-45-43-829.jpg" alt="Picsart-22-02-15-07-45-43-829" border="0"> <br> b
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea
+            id="comment_input"
+            rows="8"
+            cols="40"
+            placeholder="Write Your Comment..."
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
-						For full source code you can jump to my API explanation post. <br> <br>
-						<a href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html#Let's%20Create%20Project">Hare</a>
+      <!--comment output-->
+      <div id="comment_output_container"></div>
 
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--top scrolling-->
+  <div id="gotoTop">
+    <i class="fas fa-chevron-up" onclick="GoTop()"></i>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.xml">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li>
+        <a href="https://www.facebook.com/manohar.anamd"
+          ><i class="fab fa-facebook"></i> Facebook</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
+          ><i class="fab fa-youtube"></i> YouTube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/charmingprogrammer"
+          ><i class="fab fa-github"></i> Guthub</a
+        >
+      </li>
+    </ul>
+    <p>All Rights reserved by Manoarya</p>
+  </footer>
+  <script
+    src="https://charmingprogrammer.github.io/Manoarya/AddPost.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 
-					</p>
+  <script type="text/javascript" charset="utf-8">
+    //script for quick access
 
-					<p>
-						I hope you like this project please subscribe and comment your thoughts and suggestions.
-						<br> <br>
-						That's all for today. <b>Thanks for reading</b> <br> <br>
-						<b>Happy Coding and love you 3000, By</b>
-					</p>
+    const container = document.querySelector(".postContainer");
 
-				</div>
-				<!--👆👆👆👆👆👆👆👆👆👆👆->
-													</div>
-													<div id="page2">
-														<!--post suggestions-->
-				<div id="postSuggestionContainer">
-				</div>
-				<!--expand more-->
-				<div class="showMore" onclick="showMoreSugg()">
-					<b>Show More Suggestions</b>
-				</div>
+    const h2 = container.getElementsByTagName("h2");
 
-				<div class="showLess" onclick="showLessSugg()" id="showLessSugg">
-					<b>Show Less Suggestions</b>
-				</div>
+    console.log(h2);
 
-				<!--comment input-->
-				<div id="comment_input_container">
-					<form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-						<textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
-						<button type="submit">Submit</button>
-					</form>
-				</div>
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].id = h2[i].innerHTML;
+      document
+        .getElementById("topics")
+        .insertAdjacentHTML(
+          "afterbegin",
+          `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`
+        );
+      console.log((h2[i].id = h2[i].innerHTML));
+    }
 
-				<!--comment output-->
-				<div id="comment_output_container">
-				</div>
+    const gotoTop = document.getElementById("gotoTop");
 
-				<div class="showMore" onclick="showMoreComment()">
-					<b>Show More Comments</b>
-				</div>
-				<div class="showLess" onclick="showLessComment()" id="showLessComment">
-					<b>Show Less Comments</b>
-				</div>
-			</div>
-		</div>
-		<!--top scrolling-->
-		<div id="gotoTop">
-			<i class="fas fa-chevron-up" onclick="GoTop()"></i>
-		</div>
-		<!--footer-->
-		<footer>
-			<ul>
-				<li><a href="AboutUs.html">About us</a></li>
-				<li><a href="ContactUs.html">Contact us</a></li>
-				<li><a href="privacyPrivacy.html">Privacy Policy</a></li>
-				<li><a href="TermsAndConditions.html">Terms and conditions</a></li>
-				<li><a href="Disclaimer.html">Disclaimer</a></li>
-				<li><a href="Sitemap.xml">Sitemap</a></li>
-			</ul>
-			<ul>
-				<b>Follow Me</b>
-				<li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
-				<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-				<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-				<li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
-				<li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-				<li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
-			</ul>
-			<p>
-				All Rights reserved by Manoarya
-			</p>
+    function GoTop() {
+      window.scrollTo(0, 0);
+    }
 
-		</footer>
-		<script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
-		<script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
-		<script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
-
-		<script type="text/javascript" charset="utf-8">
-
-			//script for quick access
-
-			const container = document.querySelector('.postContainer');
-
-			const h2 = container.getElementsByTagName('h2');
-
-			console.log(h2);
-
-			for (var i = 0; i < h2.length; i++) {
-				h2[i].id = h2[i].innerHTML
-				document.getElementById('topics').insertAdjacentHTML('afterbegin', `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`)
-				console.log(h2[i].id = h2[i].innerHTML);
-
-			}
-
-			const gotoTop = document.getElementById('gotoTop');
-
-			function GoTop() {
-				window.scrollTo(0, 0);
-			}
-
-			//hide and show qr code btn using onscroll event
-			var prevScrollpos = window.pageYOffset; window.onscroll = function() {
-				var currentScrollPos = window.pageYOffset; if (prevScrollpos < currentScrollPos) {
-					document.getElementById("gotoTop").style.bottom = "-100%";
-				} else {
-					document.getElementById("gotoTop").style.bottom = "10px";
-				} prevScrollpos = currentScrollPos;
-			}
-
-
-
-
-		</script>
-	</body>
+    //hide and show qr code btn using onscroll event
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos < currentScrollPos) {
+        document.getElementById("gotoTop").style.bottom = "-100%";
+      } else {
+        document.getElementById("gotoTop").style.bottom = "10px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+</body>
