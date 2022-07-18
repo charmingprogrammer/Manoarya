@@ -471,5 +471,13 @@ const AllPost = [
         "https://manoarya.com/Manoarya%20All%20Post/Deploy_React_Web_App_On_The_Github_Using_3_Steps.html",
       alt: "Deploy the react web app on the github using 4 steps by manoarya.",
     },
+    {
+      category: "Cources",
+      Title: "Class 2 Science All chapters personalized notes by manoarya.",
+      ImageUrl: "https://manoarya.com/Class2Science/Class%202%20science%20notes%20(1).png",
+      PostUrl:
+        "https://manoarya.com/Class2Science/Living_and_non_living_things.html",
+      alt: "Class 2 Science All chapters personalized notes by manoarya",
+    },
   ];
   
