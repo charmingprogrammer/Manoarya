@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>
+    How to make Html search bar with suggestions using html,css and javascript.
+  </title>
+  <meta
+    name="description"
+    content="In this post we gonna build the html search bar with  suggestions form  scratch. A step by step code explanation with graphics. see live demo now."
+  />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <img src="" alt="" id="userPic" />
+      <button id="subBtn">Subscribe</button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img
+          src="https://manoarya.com/Images/html.png"
+          alt="html search bar with suggestions poster"
+        />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">
+          How to make Html search bar with suggestions using html,css and javascript.
+        </h1>
+        <p><b>Category : </b> <span id="category">HTM</span></p>
+        <p>
+          Hi folks! I am so excited to build this amazing search bar with suggestions using simple HTML, CSS and Javascript. <br> <br>
+
+I hope you are excited. So friends Let's get started.  <br><br>
+
+First thing First <a href="#" style="background-color:white; cursor:pointer; color:dodgerblue">let's see the demo. </a> <br><br>
+
+I write this post step by step So don't worry. After doing this project you got lots of things to know. <br><br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+     crossorigin="anonymous"></script>
+<!-- Manoarya -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="8200871068"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h2>Step 1 : Design Using HTML & CSS.</h2>
+<p>
+  The first step is about how to build a ui for the html search and suggestions page. <br><br>
+  <b>(i) Add html starter code.</b> <br>
+  <pre>
+    <code>
+      &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+    </code>
+  </pre>
+  <p> Learn More about html starter template <a href="https://manoarya.com/Manoarya%20All%20Post/HTML%20Complete%20Cheat%20Sheet%20By%20Manoaya.html#HTML%20Starter%20Code" style="background-color:white; cursor:pointer; color:dodgerblue">hare</a>. <br> <br>
+    <b>(ii) Attached CSS file.</b> <br><br>
+    Using the below code to attached your CSS file so that our html page looks attractive and beautiful. 
+  </p>
+  <pre>
+    <code>
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;SearchBar.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
+    </code>
+  </pre>
+  <p>
+    <b>Make sure you change the href="{with your css file name without curly bracket.}"</b>. <br><br>
+    <b>(iii) Implement Input tag.</b>  <br><br>
+    Input tag is html inbuild tag that helps us to inter any data. 
+  </p>
+  <pre>
+    <code>
+      &lt;div id=&quot;main_container&quot;&gt;
+    &lt;input type=&quot;search&quot; id=&quot;search_input&quot; autofocus=&quot;autofocus&quot; placeholder=&quot;Search&quot; onkeyup=&quot;SearchNow()&quot;/&gt;
+&lt;/div&gt;
+    </code>
+  </pre>
+  <p>
+    Before adding the input tag we take a div with id of main_container and wrap the input tag inside this container. <br><br>
+    <b>Input attribute Explain</b> <br><br>
+    We take a search type of input and give it a placeholder for showing text inside of the input tag after that we take another attribute onkeyup. <br><br> Actually onkeyup is an event that triggerd when someone press any keyboard key. <br><br>
+    <b>(iv) Add the suggestions area</b> 
+  </p>
+  <pre>
+    <code>
+      &lt;div id=&quot;suggestions_container&quot;&gt;
+      &lt;ul id=&quot;ultag&quot;&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    </code>
+  </pre>
+  <p>
+    I take a div as a suggestions container and inside of it i also take a ul tag with id ultag and inside of this ul tag i pulled li and a tags diyanamically using javascript so wait for it. <br><br>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+     crossorigin="anonymous"></script>
+<!-- Manoarya -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="8200871068"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <b>Now our final HTML code looks like following code</b> <br><br>
+    <pre>
+      <code>
+        &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Search bar with suggestions&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body onclick=&quot;hide_sugg()&quot;&gt;
+    &lt;div id=&quot;main_container&quot;&gt;
+      &lt;input
+        type=&quot;search&quot;
+        id=&quot;search_input&quot;
+        autofocus=&quot;autofocus&quot;
+        placeholder=&quot;Search&quot;
+        onkeyup=&quot;SearchNow()&quot;
+      /&gt;
+      &lt;div id=&quot;suggestions_container&quot;&gt;
+        &lt;ul id=&quot;ultag&quot;&gt;&lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;SearchBar.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+    <p>
+      <b>Add the CSS to look more clean</b> <br><br>
+      Create a css file and Implement following style. make sure you attached this file with html file using link tag.
+      <pre>
+        <code>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Sans-Serif;
+          }
+          #main_container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+          }
+          #search_input{
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 90%;
+            height: 50px;
+            outline: none;
+            font-size: 20px;
+            transition: .2s ease-out;
+            position: sticky;
+            top: 5px;
+            z-index: 123;
+          }
+          #search_input:hover{
+            border: 2px solid dodgerblue;
+          }
+          #suggestions_container{
+            width:100%;
+            height: 300px;
+            border-radius: 10px;
+            border-bottom: 2px solid gray;
+            position: fixed;
+            top: -100%;
+            background: white;
+            overflow: scroll;
+            transition:.2s ease-out;
+          }
+          ul{
+            list-style-type: none;
+          }
+          ul li a{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+            display: flex;
+            padding: 10px 20px;
+            cursor: default;
+            
+          }
+          
+        </code>
+      </pre>
+    </p>
+
+    <h2>
+      Step 2 : Add Functionality (Javascript). 
+    </h2>
+    <pre>
+      <code>
+        function SearchNow() {
+          document.getElementById('suggestions_container').style.top = &quot;60px&quot;;
+         // Declare variables
+       var input, filter, ul, li, a, i, txtValue;
+       input = document.getElementById('search_input');
+       filter = input.value.toUpperCase();
+       ul = document.getElementById(&quot;ultag&quot;);
+       li = ul.getElementsByTagName('li');
+       
+       for (i = 0; i &lt; li.length; i++) {
+         a = li[i].getElementsByTagName(&quot;a&quot;)[0];
+         txtValue = a.textContent || a.innerText;
+         if (txtValue.toUpperCase().indexOf(filter) &gt; -1) {
+           li[i].style.display = &quot;&quot;;
+         } else {
+           li[i].style.display = &quot;none&quot;;
+         }
+       }
+     }
+     
+     //pull data into ultag container
+     const suggestions = [
+       'how to make a slidebar', 
+       'how to make this website',
+       'html explore ', 
+       'css explore',
+       'dom explore',
+       'more items add hare that you want to suggest',
+        'how to make a slidebar', 
+       'how to make this website',
+       'html explore ', 
+       'css explore',
+       'dom explore',
+       'more items add hare that you want to suggest',
+      'how to make a slidebar', 
+       'how to make this website',
+       'html explore ', 
+       'css explore',
+       'dom explore',
+       'more items add hare that you want to suggest'
+       ]
+       
+       //loop upper array
+       for (var i = 0; i &lt; suggestions.length; i++) {
+         const ultag = document.getElementById('ultag');
+         ultag.insertAdjacentHTML('afterbegin', `
+         &lt;li&gt;&lt;a href='#'&gt;${suggestions[i]}&lt;/a&gt;&lt;/li&gt;
+         `);
+       }
+       
+       
+       //hide suggestions 
+       function hide_sugg() {
+         document.getElementById('suggestions_container').style.top = &quot;-100%&quot;;
+       }
+      </code>
+    </pre>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+     crossorigin="anonymous"></script>
+<!-- Manoarya -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="8200871068"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <p>
+      <b>Thanks You</b>
+    </p>
+  </p>
+</p>
+
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+      <!--expand more-->
+      <div class="showMore" onclick="showMoreSugg()">
+        <b>Show More Suggestions</b>
+      </div>
+      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
+        <b>Show Less Suggestions</b>
+      </div>
+      <!--comment input-->
+      <div id="comment_input_container">
+        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
+          <textarea
+            id="comment_input"
+            rows="8"
+            cols="40"
+            placeholder="Write Your Comment..."
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!--comment output-->
+      <div id="comment_output_container"></div>
+      <div class="showMore" onclick="showMoreComment()">
+        <b>Show More Comments</b>
+      </div>
+      <div class="showLess" onclick="showLessComment()" id="showLessComment">
+        <b>Show Less Comments</b>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
+      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Sitemap.xml">Sitemap</a></li>
+    </ul>
+    <ul>
+      <b>Follow Me</b>
+      <li>
+        <a href="https://www.facebook.com/manohar.anamd"
+          ><i class="fab fa-facebook"></i> Facebook</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
+          ><i class="fab fa-youtube"></i> YouTube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/charmingprogrammer"
+          ><i class="fab fa-github"></i> Guthub</a
+        >
+      </li>
+    </ul>
+    <p>All Rights reserved by Manoarya</p>
+  </footer>
+  <script
+    src="https://manoarya.com/AddPost.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
+</body>
