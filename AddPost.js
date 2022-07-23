@@ -464,7 +464,7 @@ const AllPost = [
       alt: "create details opener and closer using only html.",
     },
     {
-      category: "HTM",
+      category: "Explanation",
       Title: "Deploy the react web app on the github using 4 steps by manoarya.",
       ImageUrl: "https://manoarya.com/Images/Deploy%20React%20website.png",
       PostUrl:
