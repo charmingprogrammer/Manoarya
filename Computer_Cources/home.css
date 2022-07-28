@@ -53,7 +53,7 @@ img{
     width: 100%;
     background: #ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
