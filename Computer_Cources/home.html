@@ -10,6 +10,20 @@
       content="Welcome to the computer cources provided by manoarya hare you find lots of computer science realeted stuff. so if you are interested in computer field welcome to community."
     />
     <link rel="stylesheet" href="home.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SRT0FM6SCD");
+    </script>
   </head>
   <body>
     <!-- top navbar -->
@@ -22,15 +36,16 @@
             alt="LOGO"
         /></a>
         <!-- student's data -->
-        <h3 onclick="Students()" id="Students" style="background:white;">Students</h3>
+        <h3 onclick="Students()" id="Students" style="background: white">
+          Students
+        </h3>
         <!-- learn -->
         <h3 onclick="Learn()" id="Learn">Learn</h3>
       </div>
     </div>
 
     <!-- main dom -->
-    <div id="main_dom">
-    </div>
+    <div id="main_dom"></div>
     <!-- script file -->
     <script src="Students.js"></script>
     <script src="home.js"></script>
