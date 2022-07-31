@@ -6,6 +6,6 @@ const Students_Data = [
     {Image:'Images/5.png'},
     {Image:'Images/6.png'},
     {Image:'Images/7.png'},
-    {Image:'Images/8.png'},
+    {Image:'Images/20220731_130426_0007.png'},
     {Image:'Images/9.png'},
 ]
