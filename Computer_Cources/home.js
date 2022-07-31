@@ -22,5 +22,14 @@ function Learn() {
   main_dom.innerHTML = "";
   Learn_btn.style.backgroundColor = "#ffffff";
   students_btn.style.backgroundColor = "";
-  main_dom.insertAdjacentHTML("beforeend", `<h1>Comming Soon....</h1>`);
+
+  // get array of post form the PostData.js file
+
+  for (let i = 0; i < PostData.length; i++) {
+    console.log(PostData[i]);
+    main_dom.insertAdjacentHTML(
+      "beforeend",
+      `<a href="${PostData[i].PostUrl}" id="post_container"><h1>${PostData[i].Day}</h1><h2>${PostData[i].Date}</h2></a>`
+    );
+  }
 }
