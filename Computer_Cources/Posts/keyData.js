@@ -31,5 +31,30 @@ const keyData = [
         key: 'A',
         title : 'AAAA',
     },
+    {
+        key: 'j',
+        title : 'jjjj',
+    },
+    {
+        key: 'J',
+        title : 'JJJJ',
+    },
+    {
+        key: 'k',
+        title : 'kkkk',
+    },
+    {
+        key: 'l',
+        title : 'llll',
+    },
+    {
+        key: 'L',
+        title : 'LLLL',
+    },
+    {
+        key: ';',
+        title : ';;;;',
+    },
+    
 
 ]
