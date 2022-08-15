@@ -487,4 +487,12 @@ const AllPost = [
         "https://manoarya.com/Manoarya%20All%20Post/How_to_make_Html_search_bar_with_suggestions_using_html_css_and_javascript.html",
       alt: "How to make Html search bar with suggestions using html,css and javascript.",
     },
+      {
+      category: "Cources",
+      Title: "Computer Cource [Fundamentals]",
+      ImageUrl: "https://manoarya.com/Images/html.png",
+      PostUrl:
+        "https://manoarya.com/Manoarya%20All%20Post/How_to_make_Html_search_bar_with_suggestions_using_html_css_and_javascript.html",
+      alt: "How to make Html search bar with suggestions using html,css and javascript.",
+    },
   ];
