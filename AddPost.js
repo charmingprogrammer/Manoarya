@@ -490,9 +490,10 @@ const AllPost = [
       {
       category: "Cources",
       Title: "Computer Cource [Fundamentals]",
-      ImageUrl: "https://manoarya.com/Images/html.png",
+      ImageUrl: "https://manoarya.com/Computer_Cources/Images/computerPosterIndia.png",
       PostUrl:
-        "https://manoarya.com/Manoarya%20All%20Post/How_to_make_Html_search_bar_with_suggestions_using_html_css_and_javascript.html",
-      alt: "How to make Html search bar with suggestions using html,css and javascript.",
+        "https://manoarya.com/Computer_Cources/home.html",
+      alt: "Computer Cources Poster Manohar Anand",
     },
   ];
+  
