@@ -168,38 +168,6 @@ const AllPost = [
     },
     {
       category: "Cources",
-      Title: "Class 11th Physics Easy Notes. CBSE and NCERT Notes ",
-      ImageUrl: "https://i.ibb.co/Xk59F5K/20220103-212618-0000.png",
-      PostUrl:
-        "https://manoarya.com/Class_11th_Physics_Easy_Notes_by_manoarya.html",
-      alt: "Class 11th physics notes by Manoarya",
-    },
-    {
-      category: "Cources",
-      Title: "Class 11th Chemistry Easy Notes. CBSE and NCERT Notes ",
-      ImageUrl: "https://i.ibb.co/zVp4YdH/20220104-075709-0000.png",
-      PostUrl:
-        "https://manoarya.com/Class_11th_Chemistry_Easy_Notes_by_manoarya.html",
-      alt: "Class 11th Chemistry notes by Manoarya",
-    },
-    {
-      category: "Cources",
-      Title: "Class 11th Mathematics Easy Notes. CBSE and NCERT Notes ",
-      ImageUrl: "https://i.ibb.co/BgQZTsn/20220104-081456-0000.png",
-      PostUrl:
-        "https://manoarya.com/Class_11th_maths_Easy_Notes_by_manoarya.html",
-      alt: "Class 11th Mathematics notes by Manoarya",
-    },
-  
-    {
-      category: "Cources",
-      Title: "English Grammer| Beginners to Advance",
-      ImageUrl: "https://i.ibb.co/KDJmfpT/20220104-084114-0000.png",
-      PostUrl: "https://manoarya.com/English_Grammer.html",
-      alt: "English Grammer",
-    },
-    {
-      category: "Cources",
       Title: "Computer Fundamentals",
       ImageUrl: "https://i.ibb.co/7rHRxW3/20220107-125220-0000.png",
       PostUrl: "https://manoarya.com/Computer_Fundamentals.html",
@@ -470,14 +438,6 @@ const AllPost = [
       PostUrl:
         "https://manoarya.com/Manoarya%20All%20Post/Deploy_React_Web_App_On_The_Github_Using_3_Steps.html",
       alt: "Deploy the react web app on the github using 4 steps by manoarya.",
-    },
-    {
-      category: "Cources",
-      Title: "Class 2 Science All chapters personalized notes by manoarya.",
-      ImageUrl: "https://manoarya.com/Class2Science/Class%202%20science%20notes%20(1).png",
-      PostUrl:
-        "https://manoarya.com/Class2Science/Living_and_non_living_things.html",
-      alt: "Class 2 Science All chapters personalized notes by manoarya",
     },
     {
       category: "HTM",
