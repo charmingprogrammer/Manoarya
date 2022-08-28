@@ -12,3 +12,7 @@ function CloseNav() {
 function sub_Topic_Opener() {
     subTopics.style.right = '0';
 }
+
+// you need to delete this folder for batter user experiance see manoarya is a plateform where you can learn coding not science.
+
+// you need to delete  full folder.
