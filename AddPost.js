@@ -199,24 +199,7 @@ const AllPost = [
       alt: "Web_theme_3_by_manoarya",
     },
     {
-      category: "Notes",
-      Title: "Computer Introduction by Manoarya",
-      ImageUrl: "https://i.ibb.co/7rHRxW3/20220107-125220-0000.png",
-      PostUrl:
-        "https://manoarya.com/Manoarya All Post/Computer-Introduction-by-Manoarya.html",
-      alt: "Computer Introduction by Manoarya",
-    },
-    {
-      category: "Notes",
-      Title: "CPU easy explained by Manoarya.",
-      ImageUrl: "https://i.ibb.co/ZMjQ9mb/20220120-195314-0000.png",
-      PostUrl:
-        "https://manoarya.com/Manoarya All Post/CPU-easy-explained-by-Manoarya.html",
-      alt: "CPU-easy-explained-by-Manoarya",
-    },
-  
-    {
-      category: "Notes",
+      category: "Explanation",
       Title: "Code A Gallery web application using Pixabay API.",
       ImageUrl: "https://i.ibb.co/8Ywd4JD/png-20220215-113300-0000.png",
       PostUrl:
@@ -447,13 +430,13 @@ const AllPost = [
         "https://manoarya.com/Manoarya%20All%20Post/How_to_make_Html_search_bar_with_suggestions_using_html_css_and_javascript.html",
       alt: "How to make Html search bar with suggestions using html,css and javascript.",
     },
-      {
-      category: "Cources",
-      Title: "Computer Cource [Fundamentals]",
-      ImageUrl: "https://manoarya.com/Computer_Cources/Images/computerPosterIndia.png",
-      PostUrl:
-        "https://manoarya.com/Computer_Cources/home.html",
-      alt: "Computer Cources Poster Manohar Anand",
-    },
+    //   {
+    //   category: "Cources",
+    //   Title: "Computer Cource [Fundamentals]",
+    //   ImageUrl: "https://manoarya.com/Computer_Cources/Images/computerPosterIndia.png",
+    //   PostUrl:
+    //     "https://manoarya.com/Computer_Cources/home.html",
+    //   alt: "Computer Cources Poster Manohar Anand",
+    // },
   ];
   
