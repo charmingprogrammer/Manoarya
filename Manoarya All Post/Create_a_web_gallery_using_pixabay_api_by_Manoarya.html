@@ -1,38 +1,26 @@
 <!DOCTYPE html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>Code A Gallery web application using Pixabay API.</title>
 
-  <meta
-    name="description"
-    content="In this post we are going to create a web gallery  application using Pixabay api. step by step guide."
-  />
+  <meta name="description"
+    content="In this post we are going to create a web gallery  application using Pixabay api. step by step guide." />
 
-  <script
-    src="https://kit.fontawesome.com/9e0ab445c3.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
 
   <!--code highlighter links-->
-  <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
-  />
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -42,12 +30,8 @@
 
     gtag("config", "G-SRT0FM6SCD");
   </script>
-  <script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-    crossorigin="anonymous"
-  ></script>
 </head>
+
 <body>
   <!--navigation bar top-->
   <nav>
@@ -64,12 +48,7 @@
   <div id="searchContainer">
     <div class="search_header">
       <i class="fas fa-arrow-left" id="search_closer"></i>
-      <input
-        type="search"
-        placeholder="Search"
-        id="searchInput"
-        onkeyup="keyPress()"
-      />
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
     </div>
     <ul id="myUL"></ul>
   </div>
@@ -78,10 +57,7 @@
       <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
       <!--post image -->
       <div class="post_Img_Con">
-        <img
-          src="https://i.ibb.co/8Ywd4JD/png-20220215-113300-0000.png"
-          alt="Navigation"
-        />
+        <img src="https://i.ibb.co/8Ywd4JD/png-20220215-113300-0000.png" alt="Navigation" />
       </div>
       <!--Main Post-->
       <div class="postContainer">
@@ -100,30 +76,11 @@
           <br />
           You want to see how our project looks <br />
           <br />
-          <a href="https://charmingprogrammer.github.io/Demo/Webgallery.html"
-            >See Demo</a
-          >
+          <a href="https://charmingprogrammer.github.io/Demo/Webgallery.html">See Demo</a>
         </p>
         <ul id="topics"></ul>
         <br />
         <p>
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-            crossorigin="anonymous"
-          ></script>
-          <!-- Manoarya -->
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-4365651039511906"
-            data-ad-slot="8200871068"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
         </p>
 
         <h2>What topics and techniques you learn in this post.</h2>
@@ -146,11 +103,8 @@
           creating an image gallery. <br />
           <br />Open any text editors I recommend you to go with visual studio
           code if you haven't feel free to go and
-          <a
-            style="padding: 0; background: none; color: #0099ff"
-            href="https://code.visualstudio.com/"
-            >Download</a
-          >. <br />
+          <a style="padding: 0; background: none; color: #0099ff" href="https://code.visualstudio.com/">Download</a>.
+          <br />
           <br />
           If you want to learn how to install visual studio code and use it
           visit Hare. <br />
@@ -161,21 +115,15 @@
           Now open the index.html file into your code editor and add the HTML
           starter code. <br />
           <br />If you want to learn about html starter code feel free to
-          <a
-            style="padding: 0; background: none; color: #0099ff"
-            href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html"
-            >Jump</a
-          >.
+          <a style="padding: 0; background: none; color: #0099ff"
+            href="https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html">Jump</a>.
         </p>
         <h2>2. Let's create a UI for a web image gallery.</h2>
 
         <p>
           Our raw design looks like the image below. <br />
           <br />
-          <img
-            src="https://i.ibb.co/233tkxQ/20220207-192857-0000.png"
-            alt="Raw image for pixabay api "
-          />
+          <img src="https://i.ibb.co/233tkxQ/20220207-192857-0000.png" alt="Raw image for pixabay api " />
           <br />
           <br />
         </p>
@@ -185,10 +133,7 @@
           Now let's add below code which is explained just below of this code.
         </p>
         <p>
-          <img
-            src="https://i.ibb.co/d0D0Tw0/Picsart-22-02-14-19-20-36-718.jpg"
-            alt="code snippet by Manoarya"
-          />
+          <img src="https://i.ibb.co/d0D0Tw0/Picsart-22-02-14-19-20-36-718.jpg" alt="code snippet by Manoarya" />
           <br />
           <br />Add a nav tag for creating a top navigation bar which contains a
           logo and search inputs. <br />
@@ -236,29 +181,18 @@ outline: none;
 }
 							</code>
 						</pre>
-        <script
-          async
+        <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-          crossorigin="anonymous"
-        ></script>
+          crossorigin="anonymous"></script>
         <!-- Manoarya -->
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-4365651039511906"
-          data-ad-slot="8200871068"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
+        <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4365651039511906"
+          data-ad-slot="8200871068" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <h2>Create a div for big image.</h2>
         <p>
-          <img
-            src="https://i.ibb.co/c8WdRCy/Picsart-22-02-14-20-47-38-945.jpg"
-            alt="code snippet"
-          />
+          <img src="https://i.ibb.co/c8WdRCy/Picsart-22-02-14-20-47-38-945.jpg" alt="code snippet" />
           <br />
           <br />
           Now we add a div which is represented on the upper image using a red
@@ -362,11 +296,8 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
           <br />
           <br />
 
-          <a
-            href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html
-							"
-            >Learn About API</a
-          >
+          <a href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html
+							">Learn About API</a>
           <br />
           <br />
 
@@ -384,10 +315,7 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
           Console result for API response
           <br />
           <br />
-          <img
-            src="https://i.ibb.co/PhGRdQk/Picsart-22-02-15-07-11-38-667.jpg"
-            alt="console result"
-          />
+          <img src="https://i.ibb.co/PhGRdQk/Picsart-22-02-15-07-11-38-667.jpg" alt="console result" />
 
           Now we need an array to show all data on the Dom which we created
           earlier.
@@ -399,11 +327,7 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
           <br />
           Now our console result is look like this. <br />
           <br />
-          <img
-            src="https://i.ibb.co/sys1JBz/Picsart-22-02-15-07-12-44-942.jpg"
-            alt="console result"
-            border="0"
-          />
+          <img src="https://i.ibb.co/sys1JBz/Picsart-22-02-15-07-12-44-942.jpg" alt="console result" border="0" />
 
           Now add a 1 index of hits array which is shown inside of the yellow
           box in the image below. <br />
@@ -417,11 +341,7 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
           After that we called the async function.
           <br />
           <br />
-          <img
-            src="https://i.ibb.co/gDmmGpx/Picsart-22-02-15-07-25-01-476.jpg"
-            alt="code snippet img"
-            border="0"
-          />
+          <img src="https://i.ibb.co/gDmmGpx/Picsart-22-02-15-07-25-01-476.jpg" alt="code snippet img" border="0" />
           <br />
           <br />
 
@@ -463,18 +383,13 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
           See below image.
           <br />
           <br />
-          <img
-            src="https://i.ibb.co/9p09B1g/Picsart-22-02-15-07-45-43-829.jpg"
-            alt="Picsart-22-02-15-07-45-43-829"
-            border="0"
-          />
+          <img src="https://i.ibb.co/9p09B1g/Picsart-22-02-15-07-45-43-829.jpg" alt="Picsart-22-02-15-07-45-43-829"
+            border="0" />
           <br />
           b For full source code you can jump to my API explanation post. <br />
           <br />
           <a
-            href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html#Let's%20Create%20Project"
-            >Hare</a
-          >
+            href="https://manoarya.com/Manoarya%20All%20Post/What-is-API-simply-explain-with-project.html#Let's%20Create%20Project">Hare</a>
         </p>
 
         <p>
@@ -482,23 +397,7 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
           thoughts and suggestions.
           <br />
           <br />
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-            crossorigin="anonymous"
-          ></script>
-          <!-- Manoarya -->
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-4365651039511906"
-            data-ad-slot="8200871068"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+
           That's all for today. <b>Thanks for reading</b> <br />
           <br />
           <b>Happy Coding and love you 3000, By</b>
@@ -521,13 +420,7 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
       <!--comment input-->
       <div id="comment_input_container">
         <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-          <textarea
-            id="comment_input"
-            rows="8"
-            cols="40"
-            placeholder="Write Your Comment..."
-            required
-          ></textarea>
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -560,9 +453,7 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
     <ul>
       <b>Follow Me</b>
       <li>
-        <a href="https://www.facebook.com/manohar.anamd"
-          ><i class="fab fa-facebook"></i> Facebook</a
-        >
+        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a>
       </li>
       <li>
         <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
@@ -571,28 +462,19 @@ allImg.insertAdjacentHTML('afterbegin',`&lt;li&gt;&lt;a href=&quot;${hits[i].lar
         <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
       </li>
       <li>
-        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
-          ><i class="fab fa-youtube"></i> YouTube</a
-        >
+        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </li>
       <li>
-        <a href="https://github.com/charmingprogrammer"
-          ><i class="fab fa-github"></i> Guthub</a
-        >
+        <a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a>
       </li>
     </ul>
     <p>All Rights reserved by Manoarya</p>
   </footer>
-  <script
-    src="https://charmingprogrammer.github.io/Manoarya/AddPost.js"
-    type="text/javascript"
-    charset="utf-8"
-  ></script>
+  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript"
+    charset="utf-8"></script>
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 
