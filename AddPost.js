@@ -13,7 +13,7 @@ const AllPost = [
       Title:
         "How to make Sidebar with multiple Pages using HTML, CSS and Javascript?",
       ImageUrl:
-        "https://charmingprogrammer.github.io/All-Manoarya-Images/Navigation.png",
+        "https://i.ibb.co/wgXMnPx/full-page-nav-bar.png",
       PostUrl:
         "https://manoarya.com/Manoarya%20All%20Post/How-to-make-Sidebar-with-multiple-Pages-using-HTML-CSS-and-Javascript.html",
       alt: "Navigation by Manoarya",
@@ -281,7 +281,7 @@ const AllPost = [
     {
       category: "Demo",
       Title: "Demo | Side bar with multiple pages by manoarya.",
-      ImageUrl: "https://charmingprogrammer.github.io/All-Manoarya-Images/Navigation.png",
+      ImageUrl: "https://i.ibb.co/wgXMnPx/full-page-nav-bar.png",
       PostUrl:
         "https://manoarya.com/Demo/Navigation.html",
       alt: "Nav bar with multiple pages by manoarya.",
