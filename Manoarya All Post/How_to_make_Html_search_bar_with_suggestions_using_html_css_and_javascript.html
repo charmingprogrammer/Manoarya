@@ -1,36 +1,24 @@
 <!DOCTYPE html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>
     How to make Html search bar with suggestions using html,css and javascript.
   </title>
-  <meta
-    name="description"
-    content="In this post we gonna build the html search bar with  suggestions form  scratch. A step by step code explanation with graphics. see live demo now."
-  />
-  <script
-    src="https://kit.fontawesome.com/9e0ab445c3.js"
-    crossorigin="anonymous"
-  ></script>
+  <meta name="description"
+    content="In this post we gonna build the html search bar with  suggestions form  scratch. A step by step code explanation with graphics. see live demo now." />
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
   <!--code highlighter links-->
-  <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
-  />
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -40,7 +28,10 @@
 
     gtag("config", "G-SRT0FM6SCD");
   </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!--navigation bar top-->
   <nav>
@@ -57,12 +48,7 @@
   <div id="searchContainer">
     <div class="search_header">
       <i class="fas fa-arrow-left" id="search_closer"></i>
-      <input
-        type="search"
-        placeholder="Search"
-        id="searchInput"
-        onkeyup="keyPress()"
-      />
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
     </div>
     <ul id="myUL"></ul>
   </div>
@@ -71,10 +57,7 @@
       <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
       <!--post image -->
       <div class="post_Img_Con">
-        <img
-          src="https://manoarya.com/Images/html.png"
-          alt="html search bar with suggestions poster"
-        />
+        <img src="https://manoarya.com/Images/html.png" alt="html search bar with suggestions poster" />
       </div>
       <!--Main Post-->
       <div class="postContainer">
@@ -83,19 +66,22 @@
         </h1>
         <p><b>Category : </b> <span id="category">HTM</span></p>
         <p>
-          Hi folks! I am so excited to build this amazing search bar with suggestions using simple HTML, CSS and Javascript. <br> <br>
+          Hi folks! I am so excited to build this amazing search bar with suggestions using simple HTML, CSS and
+          Javascript. <br> <br>
 
-I hope you are excited. So friends Let's get started.  <br><br>
+          I hope you are excited. So friends Let's get started. <br><br>
 
-First thing First <a href="#" style="background-color:white; cursor:pointer; color:dodgerblue">let's see the demo. </a> <br><br>
+          First thing First <a href="#" style="background-color:white; cursor:pointer; color:dodgerblue">let's see the
+            demo. </a> <br><br>
 
-I write this post step by step So don't worry. After doing this project you got lots of things to know. <br><br>
+          I write this post step by step So don't worry. After doing this project you got lots of things to know.
+          <br><br>
 
-<h2>Step 1 : Design Using HTML & CSS.</h2>
-<p>
-  The first step is about how to build a ui for the html search and suggestions page. <br><br>
-  <b>(i) Add html starter code.</b> <br>
-  <pre>
+        <h2>Step 1 : Design Using HTML & CSS.</h2>
+        <p>
+          The first step is about how to build a ui for the html search and suggestions page. <br><br>
+          <b>(i) Add html starter code.</b> <br>
+        <pre>
     <code>
       &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -111,34 +97,39 @@ I write this post step by step So don't worry. After doing this project you got 
 &lt;/html&gt;
     </code>
   </pre>
-  <p> Learn More about html starter template <a href="https://manoarya.com/Manoarya%20All%20Post/HTML%20Complete%20Cheat%20Sheet%20By%20Manoaya.html#HTML%20Starter%20Code" style="background-color:white; cursor:pointer; color:dodgerblue">hare</a>. <br> <br>
-    <b>(ii) Attached CSS file.</b> <br><br>
-    Using the below code to attached your CSS file so that our html page looks attractive and beautiful. 
-  </p>
-  <pre>
+        <p> Learn More about html starter template <a
+            href="https://manoarya.com/Manoarya%20All%20Post/HTML%20Complete%20Cheat%20Sheet%20By%20Manoaya.html#HTML%20Starter%20Code"
+            style="background-color:white; cursor:pointer; color:dodgerblue">hare</a>. <br> <br>
+          <b>(ii) Attached CSS file.</b> <br><br>
+          Using the below code to attached your CSS file so that our html page looks attractive and beautiful.
+        </p>
+        <pre>
     <code>
       &lt;link rel=&quot;stylesheet&quot; href=&quot;SearchBar.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
     </code>
   </pre>
-  <p>
-    <b>Make sure you change the href="{with your css file name without curly bracket.}"</b>. <br><br>
-    <b>(iii) Implement Input tag.</b>  <br><br>
-    Input tag is html inbuild tag that helps us to inter any data. 
-  </p>
-  <pre>
+        <p>
+          <b>Make sure you change the href="{with your css file name without curly bracket.}"</b>. <br><br>
+          <b>(iii) Implement Input tag.</b> <br><br>
+          Input tag is html inbuild tag that helps us to inter any data.
+        </p>
+        <pre>
     <code>
       &lt;div id=&quot;main_container&quot;&gt;
     &lt;input type=&quot;search&quot; id=&quot;search_input&quot; autofocus=&quot;autofocus&quot; placeholder=&quot;Search&quot; onkeyup=&quot;SearchNow()&quot;/&gt;
 &lt;/div&gt;
     </code>
   </pre>
-  <p>
-    Before adding the input tag we take a div with id of main_container and wrap the input tag inside this container. <br><br>
-    <b>Input attribute Explain</b> <br><br>
-    We take a search type of input and give it a placeholder for showing text inside of the input tag after that we take another attribute onkeyup. <br><br> Actually onkeyup is an event that triggerd when someone press any keyboard key. <br><br>
-    <b>(iv) Add the suggestions area</b> 
-  </p>
-  <pre>
+        <p>
+          Before adding the input tag we take a div with id of main_container and wrap the input tag inside this
+          container. <br><br>
+          <b>Input attribute Explain</b> <br><br>
+          We take a search type of input and give it a placeholder for showing text inside of the input tag after that
+          we take another attribute onkeyup. <br><br> Actually onkeyup is an event that triggerd when someone press any
+          keyboard key. <br><br>
+          <b>(iv) Add the suggestions area</b>
+        </p>
+        <pre>
     <code>
       &lt;div id=&quot;suggestions_container&quot;&gt;
       &lt;ul id=&quot;ultag&quot;&gt;
@@ -146,11 +137,21 @@ I write this post step by step So don't worry. After doing this project you got 
     &lt;/div&gt;
     </code>
   </pre>
-  <p>
-    I take a div as a suggestions container and inside of it i also take a ul tag with id ultag and inside of this ul tag i pulled li and a tags diyanamically using javascript so wait for it. <br><br>
-    
-    <b>Now our final HTML code looks like following code</b> <br><br>
-    <pre>
+        <p>
+          I take a div as a suggestions container and inside of it i also take a ul tag with id ultag and inside of this
+          ul tag i pulled li and a tags diyanamically using javascript so wait for it. <br><br>
+
+          <b>Now our final HTML code looks like following code</b> <br><br>
+          <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+            crossorigin="anonymous"></script>
+          <!-- Manoarya Ads -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+            data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        <pre>
       <code>
         &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -178,10 +179,11 @@ I write this post step by step So don't worry. After doing this project you got 
 &lt;/html&gt;
       </code>
     </pre>
-    <p>
-      <b>Add the CSS to look more clean</b> <br><br>
-      Create a css file and Implement following style. make sure you attached this file with html file using link tag.
-      <pre>
+        <p>
+          <b>Add the CSS to look more clean</b> <br><br>
+          Create a css file and Implement following style. make sure you attached this file with html file using link
+          tag.
+        <pre>
         <code>
           *{
             margin: 0;
@@ -239,12 +241,12 @@ I write this post step by step So don't worry. After doing this project you got 
           
         </code>
       </pre>
-    </p>
+        </p>
 
-    <h2>
-      Step 2 : Add Functionality (Javascript). 
-    </h2>
-    <pre>
+        <h2>
+          Step 2 : Add Functionality (Javascript).
+        </h2>
+        <pre>
       <code>
         function SearchNow() {
           document.getElementById('suggestions_container').style.top = &quot;60px&quot;;
@@ -303,14 +305,26 @@ I write this post step by step So don't worry. After doing this project you got 
        }
       </code>
     </pre>
-    
-    <p>
-      <b>Thanks You</b>
-    </p>
-  </p>
-</p>
+
+        <p>
+          <b>Thanks You</b>
+        </p>
+        </p>
+        </p>
 
         </p>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+     crossorigin="anonymous"></script>
+<!-- Manoarya Ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="4021494427"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
       </div>
       <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
     </div>
@@ -327,13 +341,7 @@ I write this post step by step So don't worry. After doing this project you got 
       <!--comment input-->
       <div id="comment_input_container">
         <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-          <textarea
-            id="comment_input"
-            rows="8"
-            cols="40"
-            placeholder="Write Your Comment..."
-            required
-          ></textarea>
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -360,9 +368,7 @@ I write this post step by step So don't worry. After doing this project you got 
     <ul>
       <b>Follow Me</b>
       <li>
-        <a href="https://www.facebook.com/manohar.anamd"
-          ><i class="fab fa-facebook"></i> Facebook</a
-        >
+        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a>
       </li>
       <li>
         <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
@@ -371,28 +377,18 @@ I write this post step by step So don't worry. After doing this project you got 
         <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
       </li>
       <li>
-        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
-          ><i class="fab fa-youtube"></i> YouTube</a
-        >
+        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </li>
       <li>
-        <a href="https://github.com/charmingprogrammer"
-          ><i class="fab fa-github"></i> Guthub</a
-        >
+        <a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a>
       </li>
     </ul>
     <p>All Rights reserved by Manoarya</p>
   </footer>
-  <script
-    src="https://manoarya.com/AddPost.js"
-    type="text/javascript"
-    charset="utf-8"
-  ></script>
+  <script src="https://manoarya.com/AddPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 </body>
