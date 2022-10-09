@@ -1,19 +1,19 @@
   // Array for img list
   const ImgSrc = [
     {
-      src: "https://cdn.pixabay.com/photo/2022/10/03/12/03/microphone-7495739__340.jpg",
+      src: "1.png",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/10/03/12/03/microphone-7495739__340.jpg",
+      src: "2.png",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/10/03/12/03/microphone-7495739__340.jpg",
+      src: "3.png",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/10/03/12/03/microphone-7495739__340.jpg",
+      src: "4.png",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/10/03/12/03/microphone-7495739__340.jpg",
+      src: "5.png",
     },
   ];
   export default ImgSrc;
