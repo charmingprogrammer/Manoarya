@@ -1,44 +1,59 @@
 [
   {
-    "Maths" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "English" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "Hindi" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "Science" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "Social" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "PD" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "Spoken" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
-    },
-    "Computer" : {
-      "Basic":"",
-      "Medium":"",
-      "Advanced":""
+    "Maths": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+
+  {
+    "English": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+  {
+    "Hindi": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+  {
+    "Science": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+  {
+    "Social": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+  {
+    "PD": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+  {
+    "Spoken": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
+    }
+  },
+  {
+    "Computer": {
+      "Basic": "",
+      "Medium": "",
+      "Advanced": ""
     }
   }
 ]
