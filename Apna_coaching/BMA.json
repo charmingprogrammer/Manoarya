@@ -1,0 +1,44 @@
+[
+ {
+  "Maths":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "English":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "Hindi":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "Science":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "Social":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "PD":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "Spoken":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  },
+  "Computer":{
+    "Basic": "Manoarya.com",
+    "Medium":"",
+    "Advanced":""
+  }
+ }
+]
