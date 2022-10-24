@@ -1,26 +1,44 @@
 [
   {
-  "Name":"Manohar Anand",
-  "ProfilePic" : "",
-  "Thaughts":"This  is the best coaching classes in katra.",
-  "Proffesion":"Software Developer"
-  },
-  {
-    "Name":"John Anand",
-    "ProfilePic" : "",
-    "Thaughts":"This  is the best coaching classes in katra.",
-    "Proffesion":"Software Developer"
+    "Maths" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
     },
-    {
-      "Name":"Kiyara Anand",
-      "ProfilePic" : "",
-      "Thaughts":"This  is the best coaching classes in katra.",
-      "Proffesion":"Software Developer"
-      },
-      {
-        "Name":"Man Anand",
-        "ProfilePic" : "",
-        "Thaughts":"This  is the best coaching classes in katra.",
-        "Proffesion":"Software Developer"
-        }
+    "English" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    "Hindi" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    "Science" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    "Social" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    "PD" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    "Spoken" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    "Computer" : {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    }
+  }
 ]
