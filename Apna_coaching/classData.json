@@ -1,6 +1,11 @@
 {
   "Maths": [
     {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    {
       "name": "Class 1",
       "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
     },
@@ -50,6 +55,11 @@
     }
   ],
   "English": [
+    {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
     {
       "name": "Class 1",
       "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
@@ -101,6 +111,11 @@
   ],
   "Hindi": [
     {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    {
       "name": "Class 1",
       "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
     },
@@ -150,6 +165,11 @@
     }
   ],
   "Science": [
+    {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
     {
       "name": "Class 1",
       "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
@@ -201,6 +221,11 @@
   ],
   "Social": [
     {
+      "Basic":"",
+      "Medium":"",
+      "Advanced":""
+    },
+    {
       "name": "Class 1",
       "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
     },
@@ -249,54 +274,25 @@
       "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
     }
   ],
-  "PD": [
+  "PD":[
     {
-      "name": "Class 1",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 2",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 3",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 4",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 5",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 6",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 7",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 8",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 9",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 10",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 11",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
-    },
-    {
-      "name": "Class 12",
-      "url": "https://manoarya.com/Apna_coaching/DefaultPage.html"
+     "Basic":"",
+     "Medium":"",
+     "Advanced":""
     }
-  ]
+   ],
+  "Spoken":[
+   {
+    "Basic":"",
+    "Medium":"",
+    "Advanced":""
+   }
+  ],
+  "Computer":[
+    {
+     "Basic":"",
+     "Medium":"",
+     "Advanced":""
+    }
+   ]
 }
