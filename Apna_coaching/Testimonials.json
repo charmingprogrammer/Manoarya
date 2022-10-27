@@ -2,25 +2,7 @@
   {
   "Name":"Manohar Anand",
   "ProfilePic" : "https://avatars.githubusercontent.com/u/71115307?v=4",
-  "Thaughts":"This  is the best coaching classes in katra.",
+  "Thaughts":"The coaching that provide education for your new generation child. A coaching for new generation.",
   "Proffesion":"Software Developer"
-  },
-  {
-    "Name":"John Anand",
-    "ProfilePic" : "https://avatars.githubusercontent.com/u/71115307?v=4",
-    "Thaughts":"This  is the best coaching classes in katra.",
-    "Proffesion":"Software Developer"
-    },
-    {
-      "Name":"Kiyara Anand",
-      "ProfilePic" : "https://avatars.githubusercontent.com/u/71115307?v=4",
-      "Thaughts":"This  is the best coaching classes in katra.",
-      "Proffesion":"Software Developer"
-      },
-      {
-        "Name":"Man Anand",
-        "ProfilePic" : "https://avatars.githubusercontent.com/u/71115307?v=4",
-        "Thaughts":"This  is the best coaching classes in katra.",
-        "Proffesion":"Software Developer"
-        }
+  }
 ]
