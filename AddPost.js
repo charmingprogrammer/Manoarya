@@ -430,13 +430,21 @@ const AllPost = [
         "https://manoarya.com/Manoarya%20All%20Post/How_to_make_Html_search_bar_with_suggestions_using_html_css_and_javascript.html",
       alt: "How to make Html search bar with suggestions using html,css and javascript.",
     },
-    //   {
-    //   category: "Cources",
-    //   Title: "Computer Cource [Fundamentals]",
-    //   ImageUrl: "https://manoarya.com/Computer_Cources/Images/computerPosterIndia.png",
-    //   PostUrl:
-    //     "https://manoarya.com/Computer_Cources/home.html",
-    //   alt: "Computer Cources Poster Manohar Anand",
-    // },
+    {
+      category: "HTM",
+      Title: "Amazon UI clone created by Manoarya using html css and js.",
+      ImageUrl: "../../Images/Amazon UI clone poster.png",
+      PostUrl:
+        "https://manoarya.com/Manoarya%20All%20Post/Amazon_UI_Clone_using_HTML_CSS_JS.html",
+      alt: "Amazon UI clone created by Manoarya using html css and js.",
+    },
+    {
+      category: "Demo",
+      Title: "[Demo] Amazon UI clone created by Manoarya using html css and js.",
+      ImageUrl: "../../Images/Amazon UI clone poster.png",
+      PostUrl:
+        "./Demo/Amazon UI Clone/index.html",
+      alt: "Amazon UI clone created by Manoarya using html css and js.",
+    },
   ];
   
