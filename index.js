@@ -7,7 +7,7 @@ function searchCloser() {
 
 setTimeout(() => {
   document.getElementById('user_login_con').style.top='0';
-}, 10000);
+}, 50000);
 
 function searchNow() {
   // Declare variables
