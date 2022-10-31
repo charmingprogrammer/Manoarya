@@ -26,7 +26,7 @@ function explore() {
     container.insertAdjacentHTML(
       "afterbegin",
       `
-   <a href="${data.PostUrl}" class="box"><img src="${data.ImageUrl}" alt="${data.alt}" />
+   <a target='_blank' href="${data.PostUrl}" class="box"><img src="${data.ImageUrl}" alt="${data.alt}" />
     <h2>${data.Title}</h2>
     </a>
       `
@@ -81,7 +81,7 @@ function Cources() {
     for (let i = 0; i < Cources_data.length; i++) {
       container.insertAdjacentHTML(
         "afterbegin",
-        ` <a href="${Cources_data[i].PostUrl}" class="box"><img src="${Cources_data[i].ImageUrl}" alt="${Cources_data[i].alt}" />
+        ` <a target='_blank' href="${Cources_data[i].PostUrl}" class="box"><img src="${Cources_data[i].ImageUrl}" alt="${Cources_data[i].alt}" />
       <h2>${Cources_data[i].Title}</h2>
       </a>`
       );
@@ -134,7 +134,7 @@ function Demo() {
     for (let i = 0; i < Demo_data.length; i++) {
       container.insertAdjacentHTML(
         "afterbegin",
-        ` <a href="${Demo_data[i].PostUrl}" class="box"><img src="${Demo_data[i].ImageUrl}" alt="${Demo_data[i].alt}" />
+        ` <a target='_blank' href="${Demo_data[i].PostUrl}" class="box"><img src="${Demo_data[i].ImageUrl}" alt="${Demo_data[i].alt}" />
     <h2>${Demo_data[i].Title}</h2>
     </a>`
       );
@@ -187,7 +187,7 @@ function HTM() {
     for (let i = 0; i < HTM_data.length; i++) {
       container.insertAdjacentHTML(
         "afterbegin",
-        ` <a href="${HTM_data[i].PostUrl}" class="box"><img src="${HTM_data[i].ImageUrl}" alt="${HTM_data[i].alt}" />
+        ` <a target='_blank' href="${HTM_data[i].PostUrl}" class="box"><img src="${HTM_data[i].ImageUrl}" alt="${HTM_data[i].alt}" />
     <h2>${HTM_data[i].Title}</h2>
     </a>`
       );
@@ -241,7 +241,7 @@ function Explanation() {
     for (let i = 0; i < Explanation_data.length; i++) {
       container.insertAdjacentHTML(
         "afterbegin",
-        ` <a href="${Explanation_data[i].PostUrl}" class="box"><img src="${Explanation_data[i].ImageUrl}" alt="${Explanation_data[i].alt}" />
+        ` <a target='_blank' href="${Explanation_data[i].PostUrl}" class="box"><img src="${Explanation_data[i].ImageUrl}" alt="${Explanation_data[i].alt}" />
     <h2>${Explanation_data[i].Title}</h2>
    </a>`
       );
@@ -294,7 +294,7 @@ function QandA() {
     for (let i = 0; i < QandA_data.length; i++) {
       container.insertAdjacentHTML(
         "afterbegin",
-        ` <a href="${QandA_data[i].PostUrl}" class="box"><img src="${QandA_data[i].ImageUrl}" alt="${QandA_data[i].alt}" />
+        ` <a  target='_blank' href="${QandA_data[i].PostUrl}" class="box"><img src="${QandA_data[i].ImageUrl}" alt="${QandA_data[i].alt}" />
      <h2>${QandA_data[i].Title}</h2>
     </a>`
       );

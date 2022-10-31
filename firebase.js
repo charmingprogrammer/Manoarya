@@ -1,5 +1,4 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
 import {
   getAuth,
   signInWithPopup,
@@ -24,40 +23,36 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 // firebse auth code
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 const db = getDatabase();
 
-function gooleAuth() {
+function googleAuth() {
   signInWithPopup(auth, provider)
     .then((result) => {
       // This gives you a Google Access Token. You can use it to access the Google API.
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
+      console.log(token)
       // The signed-in user info.
       const user = result.user;
-      // firebase database script
+      console.log(user)
+
+      // add the user information into firebase database.
       set(ref(db, "users/"), {
         userPic: user.photoURL,
       });
       document.getElementById("user_login_con").style.top = "-100%";
     })
     .catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // The email of the user's account used.
-      const email = error.email;
-      // The AuthCredential type that was used.
-      const credential = GoogleAuthProvider.credentialFromError(error);
-      // ...
+      alert(error.code.replace('auth/',''));
     });
 }
 
-document.getElementById("googleAuthBtn").addEventListener("click", gooleAuth);
+document.getElementById("googleAuthBtn").addEventListener("click", googleAuth);
+
 
 // get user data form firebse database
 const starCountRef = ref(db, "users/");

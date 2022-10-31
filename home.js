@@ -16,7 +16,7 @@ function home() {
     //   inject data from hare
     container.insertAdjacentHTML(
       "afterbegin",
-      `<a href="${data.PostUrl}" class="box"><img src="${data.ImageUrl}" alt="${data.alt}" />
+      `<a target='_blank' href="${data.PostUrl}" class="box"><img src="${data.ImageUrl}" alt="${data.alt}" />
     <h2>${data.Title}</h2></a>`
     );
   }
