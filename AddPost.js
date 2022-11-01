@@ -175,27 +175,27 @@ const AllPost = [
     },
   
     {
-      category: "Demo",
-      Title: "Website Design 01 by Manoarya using html,css and js.",
+      category: "HTM",
+      Title: "Theme Design 01 by Manoarya",
       ImageUrl: "https://i.ibb.co/27X0XQH/Picsart-22-02-02-13-33-34-247.png",
       PostUrl:
-        "../../Demo/Theme_Design_01_by_manoarya.html",
+        "https://manoarya.com/Manoarya All Post/Web_theme_1_by_manoarya.html",
       alt: "Web_theme_1_by_manoarya",
     },
     {
-      category: "Demo",
-      Title: "Website Design 02 by Manoarya using html,css and js",
+      category: "HTM",
+      Title: "Theme Design 02 by Manoarya",
       ImageUrl: "https://i.ibb.co/YpfTLSL/Picsart-22-02-02-12-53-12-218.png",
       PostUrl:
-        "../../Demo/Theme_design_2_by_manoarya.html",
+        "https://manoarya.com/Manoarya All Post/Web_theme_2_by_manoarya.html",
       alt: "Web_theme_2_by_manoarya",
     },
     {
-      category: "Demo",
-      Title: "Website Design 03 by Manoarya using html,css and js.",
+      category: "HTM",
+      Title: "Theme Design 03 by Manoarya",
       ImageUrl: "https://i.ibb.co/3pCvFrq/png-20220203-125048-0000.png",
       PostUrl:
-        "../../Demo/Web_theme_3_by_manoarya.html",
+        "https://manoarya.com/Manoarya All Post/Web_theme_3_by_manoarya.html",
       alt: "Web_theme_3_by_manoarya",
     },
     {
