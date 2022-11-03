@@ -166,13 +166,6 @@ const AllPost = [
         "https://manoarya.com/Manoarya%20All%20Post/How-to-create-details-opener-and-closer-using-only-html.html",
       alt: "details opener closed",
     },
-    {
-      category: "Cources",
-      Title: "Computer Fundamentals",
-      ImageUrl: "https://i.ibb.co/7rHRxW3/20220107-125220-0000.png",
-      PostUrl: "https://manoarya.com/Computer_Fundamentals.html",
-      alt: "computer Fundamentals",
-    },
   
     {
       category: "HTM",
