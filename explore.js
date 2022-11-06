@@ -11,6 +11,7 @@ const Message = document.getElementById("Message");
 
 // main explore function 
 function explore() {
+  document.getElementById('recommend_container').style.display="none";
   document.getElementById("add_input_container").style.transform = "scale(0)";
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
