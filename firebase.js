@@ -83,6 +83,7 @@ document.getElementById("Quotes").addEventListener("click", function Quotes() {
   document.querySelector("*").scrollTo(0, 0);
   document.getElementById("add_input_container").style.transform = "scale(0)";
   container.innerHTML = "";
+  document.getElementById('recommend_container').style.display="none";
 
   //   Data page
   const data_container = document.createElement("div");
