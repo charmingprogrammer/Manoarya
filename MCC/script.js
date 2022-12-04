@@ -12,7 +12,7 @@ Sidebar_closer.addEventListener("click" , () => {
 
 // Get the topic form json file
 const fetchData = async () => {
-    const data_fetch = await fetch('./MCC_database.json');
+    const data_fetch = await fetch('MCC/MCC_database.json');
     const data = await data_fetch.json();
     // first months data
     const first_month =  data.first_month;
