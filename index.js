@@ -1,13 +1,13 @@
-function searchInput() {
-  document.getElementById("search_container").style.top = "0%";
-}
-function searchCloser() {
-  document.getElementById("search_container").style.top = "-200%";
-}
+// function searchInput() {
+//   document.getElementById("search_container").style.top = "0%";
+// }
+// function searchCloser() {
+//   document.getElementById("search_container").style.top = "-200%";
+// }
 
-setTimeout(() => {
-  document.getElementById('user_login_con').style.top='0';
-}, 50000);
+// setTimeout(() => {
+//   document.getElementById('user_login_con').style.top='0';
+// }, 50000);
 
 function searchNow() {
   // Declare variables
@@ -30,7 +30,6 @@ function searchNow() {
 
 
 //inject title from array
-
 for (var i = 0; i < AllPost.length; i++) {
 document.getElementById('myUL').insertAdjacentHTML(
       "afterbegin", `
