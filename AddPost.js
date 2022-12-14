@@ -2,7 +2,7 @@ const AllPost = [
   {
     category: "Explanation",
     Title: "HTML basic explanation by Manoarya",
-    ImageUrl:"logo.png",
+    ImageUrl:"https://cdn.pixabay.com/photo/2022/12/07/16/07/palm-7641522_960_720.jpg",
     PostUrl:
       "https://manoarya.com/Manoarya%20All%20Post/Html-basic-explanation-by-manoarya.html",
     alt: "html basic explanation by Manoarya",
