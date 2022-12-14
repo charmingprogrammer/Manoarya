@@ -79,7 +79,7 @@ for (let i = 0; i < filteredData.length; i++) {
    const postSuggestionContainer = document.getElementById('postSuggestionContainer');
    
    postSuggestionContainer.insertAdjacentHTML('afterbegin', `<a href="${filteredData[i].PostUrl}" class="box">
-       <img src="${filteredData[i].ImageUrl}" />
+
        <h3>${filteredData[i].Title}</h3>
     </a>`);
 }
