@@ -37,6 +37,58 @@
 </head>
 
 <body>
+   <!-- for Donate -->
+   <style>
+    #donation_container {
+      height: 100vh;
+      width: 100%;
+      background: #00000000;
+      position: fixed;
+      flex-direction: column;
+      top: -100%;
+      z-index: 1234536;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .23s ease-in-out;
+    }
+
+    #donation_box {
+      height: 60%;
+      width: 60%;
+      background: url("https://img.freepik.com/free-vector/beautiful-christmas-hanging-balls-ornaments-card-background_1035-19952.jpg?w=996&t=st=1671804133~exp=1671804733~hmac=7e4b5475e0b02419c89bde868396e0242b3f6a884010d7f120a91048e71e0aad");
+      background-position: center;
+      background-size: contain;
+      border-radius: 10px;
+      box-shadow: 0 0 100px 1px #0b0909;
+    }
+
+    #donation_container a {
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: -60px;
+      cursor: pointer;
+    }
+  </style>
+  <div id="donation_container" onclick="closeDonation()">
+    <div id="donation_box">
+    </div>
+    <a href="https://rzp.io/l/hMBOBe1OIv">Help us to celebrate batter Christmas.</a>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("donation_container").style.top = "0";
+    }, 10000);
+
+    function closeDonation() {
+      document.getElementById("donation_container").style.top = "-100%";
+    }
+
+  </script>
   <!--navigation bar top-->
   <nav>
     <a href="https://manoarya.com/" class="navLeft">
