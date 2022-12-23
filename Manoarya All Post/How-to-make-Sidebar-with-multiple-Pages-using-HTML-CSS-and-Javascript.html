@@ -37,8 +37,8 @@
 </head>
 
 <body>
-   <!-- for Donate -->
-   <style>
+    <!-- for Donate -->
+  <style>
     #donation_container {
       height: 100vh;
       width: 100%;
@@ -58,19 +58,23 @@
       width: 60%;
       background: url("https://img.freepik.com/free-vector/beautiful-christmas-hanging-balls-ornaments-card-background_1035-19952.jpg?w=996&t=st=1671804133~exp=1671804733~hmac=7e4b5475e0b02419c89bde868396e0242b3f6a884010d7f120a91048e71e0aad");
       background-position: center;
-      background-size: contain;
-      border-radius: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       box-shadow: 0 0 100px 1px #0b0909;
     }
 
     #donation_container a {
       padding: 10px 20px;
-      background: red;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      margin-top: -60px;
-      cursor: pointer;
+    background: red;
+    color: white;
+    font-weight: bold;
+    width: 60%;
+    cursor: pointer;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     }
   </style>
   <div id="donation_container" onclick="closeDonation()">
@@ -89,6 +93,7 @@
     }
 
   </script>
+
   <!--navigation bar top-->
   <nav>
     <a href="https://manoarya.com/" class="navLeft">
