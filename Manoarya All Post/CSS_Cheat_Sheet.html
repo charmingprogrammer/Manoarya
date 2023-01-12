@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>
+        CSS Cheat Sheet 2023
+    </title>
+    <meta name="description" content="Get the latest 2023 CSS Cheat Sheet for free." />
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+    <!--code highlighter links-->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-SRT0FM6SCD");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation bar top-->
+    <nav>
+        <a href="https://manoarya.com/" class="navLeft">
+            <img src="../Main_Logo.png" alt="Manoarya Logo" />
+            <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+                <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+                <i style="font-size: 10px;">A platform for coders.</i>
+            </div>
+        </a>
+        <div class="navRight">
+            <i class="fas fa-search" id="search_opener"></i>
+            <!-- dark mode buttons -->
+            <div id="dark_Mode_box">
+                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+                    id="DarkOn"></button>
+            </div>
+            <button id="subBtn"
+                onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
+        </div>
+    </nav>
+    <!--search-->
+    <div id="searchContainer">
+        <div class="search_header">
+            <i class="fas fa-arrow-left" id="search_closer"></i>
+            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+        </div>
+        <ul id="myUL"></ul>
+    </div>
+    <div id="container">
+        <div id="page1">
+            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+            <!--post image -->
+            <div class="post_Img_Con">
+                <img src="../Manoarya All Post/Images/CSS_Cheat_Sheet.png" alt="CSS_Cheat_Sheet" />
+            </div>
+            <!--Main Post-->
+            <div class="postContainer">
+                <h1 id="postTitle">
+                    CSS Cheat Sheet 2023
+                </h1>
+                <p><b>Category : </b> <span id="category">Explanation</span></p>
+                <h2>Here is a basic CSS cheat sheet that you can use as a reference:</h2>
+                <p>
+                    1. CSS stands for Cascading Style Sheets <br><br>
+                    2. CSS is used to style and layout web pages <br><br>
+                    3. CSS styles are applied to HTML elements <br><br>
+                    4. CSS styles are specified in rules, which consist of a selector and a declaration block <br><br>
+                </p>
+                <!-- Ad spacae -->
+                <h2>Selectors</h2>
+                <p>
+                    Selectors are used to specify which elements a set of styles should be applied to. <br><br> <b>There
+                        are several different types of selectors:</b> <br><br>
+
+                    <b>Type selectors:</b> Select elements based on the element type (e.g., p for paragraphs) <br> <br>
+                    <b>Class selectors:</b> Select elements with a specific class attribute (e.g., .my-class) <br> <br>
+                    <b>ID selectors:</b> Select elements with a specific ID attribute (e.g., #my-id) <br> <br>
+                    <b>Attribute selectors:</b> Select elements with a specific attribute or attribute value (e.g.,
+                    [href] or [type="button"])
+
+                </p>
+                <!-- Ad spacae -->
+                <h2>Declaration block</h2>
+                <p>
+                    A declaration block consists of a set of declarations, each of which has a property and a value. The
+                    property is the styling attribute that you want to set (e.g., color, font-size), and the value is
+                    the style that you want to apply (e.g., red, 16px). <br><br>
+
+                    Declarations are separated by semicolons and written inside curly braces:
+                </p>
+                <pre>
+                    <code>
+                        selector {
+                            property: value;
+                            property: value;
+                          }
+                    </code>
+                </pre>
+                <!-- Ad spacae -->
+
+                <h2>Comments</h2>
+                <p>
+                    You can add comments to your CSS code to explain what the code does or to make it easier to read.
+                    Comments are ignored by the browser and start with /* and end with */.
+                </p>
+                <pre>
+                    <code>
+                        /* This is a comment */
+                    </code>
+                </pre>
+                <h2>Inheritance</h2>
+                <p>In CSS, inheritance refers to the way in which styles are passed from parent elements to child
+                    elements. If a parent element has a certain style applied to it, that style will be inherited by its
+                    child elements unless it is overridden by a more specific rule.</p>
+                <h2>Specificity</h2>
+                <p>
+                    Specificity refers to the weight of a CSS rule. If multiple rules could apply to an element, the
+                    browser will use the one with the highest specificity. Specificity is calculated based on the number
+                    of each type of selector in the rule.
+                </p>
+                <!-- Ad spacae -->
+                <h2>Box model</h2>
+                <p>
+                    In CSS, every element is considered a box, and the box model is used to specify the layout and size
+                    of these boxes. The box model consists of the following elements: <br><br>
+
+                    <b>Margin:</b> The space outside of the border <br><br>
+                    <b>Border:</b> The line around the edge of the element <br><br>
+                    <b>Padding:</b> The space inside the border <br><br>
+                    <b>Content:</b> The actual content of the element <br><br>
+                    The width and height of an element can be set using the <b>width</b> and <b>height</b> properties.
+                    By default, the width and height of an element are determined by the content inside it.
+                </p>
+                <!-- Ad spacae -->
+                <h2>Units of measurement</h2>
+                <p>
+                    <b>CSS supports several different units of measurement, including:</b>
+
+                    <b>px:</b> Pixels (fixed-size units) <br><br>
+                    <b>em:</b> Ems (relative to the font-size of the element) <br><br>
+                    <b>%:</b> Percent (relative to the size of the parent element) <br><br>
+                    <b>rem:</b> Root ems (relative to the font-size of the root element) <br><br>
+                </p>
+                <h2>Some Commonly used CSS properties</h2>
+                <p>
+                    <b>font-size:</b> Sets the size of the font. <br><br>
+                    <b>font-family:</b> Sets the font family. <br><br>
+                    <b>color:</b> Sets the color of the text. <br><br>
+                    <b>background-color:</b> Sets the background color of an element. <br><br>
+                    <b>text-align:</b> Aligns the text within an element. <br><br>
+                    <b>line-height:</b> Sets the space between lines of text. <br><br>
+                    <b>margin:</b> Sets the space around an element. <br><br>
+                    <b>padding:</b> Sets the space within an element. <br><br>
+                    <b>width:</b> Sets the width of an element. <br><br>
+                    <b>height:</b> Sets the height of an element. <br><br>
+                    <b>border: </b> Sets the border around an element. <br><br>
+                    <b>border-radius: </b> Rounds the corners of the border around an element. <br><br>
+                    <b>box-shadow: </b> Adds a shadow effect to an element. <br><br>
+                    <b>opacity: </b> Sets the transparency of an element. <br><br>
+                    <b>overflow: </b> Controls how overflow is handled when the content of an element is too large to
+                    fit within
+                    its boundaries. <br><br>
+                    <b>position: </b> Controls the position of an element relative to its parent element or the
+                    viewport. <br><br>
+                    <b>float: </b> Floats an element to the left or right of its parent element, allowing other elements
+                    to wrap
+                    around it. <br><br>
+                    <b>clear: </b> Clears floated elements, forcing an element to start below any floated elements that
+                    precede
+                    it. <br><br>
+                </p>
+                <!-- Ad Space -->
+                <h2>
+                    Here are some sources you can use to learn CSS:
+                </h2>
+                <p>
+                    <a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;"
+                        href="https://www.w3schools.com/css/">W3Schools:</a> A popular online tutorial and reference
+                    site that provides a wide range of CSS tutorials
+                    and examples. <br><br>
+                    <a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;"
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs:</a> The official
+                    documentation for web technologies, including CSS. This is a
+                    comprehensive resource that covers all aspects of CSS in detail. <br><br>
+                    <a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;"
+                        href="https://css-tricks.com/">CSS Tricks:</a> A blog and reference site that provides tips,
+                    tricks, and tutorials on all aspects of
+                    CSS. <br><br>
+                    <a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;"
+                        href="https://www.codecademy.com/learn/learn-css"> Codecademy:</a> An online platform that
+                    offers interactive courses on a variety of topics, including
+                    CSS. <br><br>
+                    <a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;"
+                        href="https://www.udemy.com/courses/development/css/">Udemy:</a> An online platform that offers
+                    a wide range of paid and free courses on a variety of topics,
+                    including CSS. <br><br>
+                    <a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;"
+                        href="https://www.freecodecamp.org/learn/responsive-web-design/css/">FreeCodeCamp:</a> A
+                    non-profit organization that provides a comprehensive curriculum of interactive
+                    coding challenges and projects, including lessons on CSS. <br><br>
+                </p>
+            </div>
+            <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+        </div>
+        <div id="page2">
+            <!--post suggestions-->
+            <div id="postSuggestionContainer"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+    </footer>
+    <!-- subscribe form -->
+    <div id="subscribe_form_container">
+        <!-- hide the main contianer when click -->
+        <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+        <!-- Sfc content -->
+        <div id="sfc_content">
+            <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- surprise surprise -->
+    <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+    </div>
+    <!--top scrolling-->
+    <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="Footer.js"></script>
+    <script src="Surprise.js"></script>
+    <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+    <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

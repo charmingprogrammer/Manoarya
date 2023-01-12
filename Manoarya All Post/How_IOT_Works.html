@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>
+        How IOT Works? Explained Easily
+    </title>
+    <meta name="description"
+        content="The Internet of Things (IoT) refers to the connection of devices, such as sensors, actuators, and other devices, to the internet, enabling them to send and receive data." />
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+    <!--code highlighter links-->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-SRT0FM6SCD");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation bar top-->
+    <nav>
+        <a href="https://manoarya.com/" class="navLeft">
+            <img src="../Main_Logo.png" alt="Manoarya Logo" />
+            <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+                <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+                <i style="font-size: 10px;">A platform for coders.</i>
+            </div>
+        </a>
+        <div class="navRight">
+            <i class="fas fa-search" id="search_opener"></i>
+            <!-- dark mode buttons -->
+            <div id="dark_Mode_box">
+                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+                    id="DarkOn"></button>
+            </div>
+            <button id="subBtn"
+                onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
+        </div>
+    </nav>
+    <!--search-->
+    <div id="searchContainer">
+        <div class="search_header">
+            <i class="fas fa-arrow-left" id="search_closer"></i>
+            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+        </div>
+        <ul id="myUL"></ul>
+    </div>
+    <div id="container">
+        <div id="page1">
+            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+            <!--post image -->
+            <div class="post_Img_Con">
+                <img src="../Manoarya All Post/Images/IOT.png" alt="IOT (Internet of Things)" />
+            </div>
+            <!--Main Post-->
+            <div class="postContainer">
+                <h1 id="postTitle">
+                    How IOT Works? Explained Easily
+                </h1>
+                <p><b>Category : </b> <span id="category">Explanation</span></p>
+                <p>The Internet of Things (IoT) refers to the network of physical devices, vehicles, buildings, and other objects that are embedded with sensors, software, and network connectivity, enabling them to collect and exchange data.</p>
+                <h2>Here is a simplified explanation of how IoT works:</h2>
+                <p>
+                    1. Sensors and devices: IoT devices are equipped with sensors that collect data from the environment, such as temperature, humidity, and movement. These sensors are connected to the device's processor and other hardware components, such as a radio or cellular module, which allow the device to communicate with other devices and systems. <br><br>
+
+                    2. Network connectivity: IoT devices use various types of wireless and wired connectivity, such as Wi-Fi, Bluetooth, and cellular, to transmit data to other devices and systems. <br><br>
+
+                    3. Data processing and storage: The collected data is processed and stored in a database or cloud storage system, where it can be analyzed and accessed by other devices and systems. <br><br>
+
+                    4. Application and user interfaces: IoT devices and systems often have accompanying applications or user interfaces that allow users to interact with the device, view the data it has collected, and configure its settings. <br><br>
+
+
+                    5. Integration and automation: IoT devices and systems can be integrated with other devices, systems, and services, allowing them to work together and automate various tasks and processes. <br><br>
+
+                    This is just a high-level overview of how IoT works. There are many other components and technologies involved in building and maintaining an IoT system, such as security protocols and middleware platforms.
+                </p>
+                <h2>
+                    Here are a few additional points to consider when thinking about how IoT works:
+                </h2>
+                <p><b>Scalability:</b> IoT systems can range in size from a few devices to millions of devices, and they must be able to handle the volume of data and number of connections that come with such large scale. <br><br>
+                    <b>Interoperability:</b> IoT devices and systems should be able to work with each other, regardless of their manufacturer or platform. This requires standards and protocols for communication and data exchange. <br><br>
+
+                    <b>Security:</b> IoT systems need to be secure to protect against cyber threats and unauthorized access to data. This requires robust security protocols and measures, such as encryption and authentication. <br><br>
+
+                    <b>Analytics:</b> IoT systems generate a large amount of data, and this data can be analyzed to gain insights and inform decision making. This requires tools and techniques for data processing, visualization, and machine learning. <br><br>
+                
+                
+                </p>
+            </div>
+            <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+        </div>
+        <div id="page2">
+            <!--post suggestions-->
+            <div id="postSuggestionContainer"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+    </footer>
+    <!-- subscribe form -->
+    <div id="subscribe_form_container">
+        <!-- hide the main contianer when click -->
+        <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+        <!-- Sfc content -->
+        <div id="sfc_content">
+            <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- surprise surprise -->
+    <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+    </div>
+    <!--top scrolling-->
+    <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="Footer.js"></script>
+    <script src="Surprise.js"></script>
+    <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+    <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

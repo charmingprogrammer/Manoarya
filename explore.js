@@ -5,13 +5,13 @@ const HTM_data = AllPost.filter((filter) => filter.category === "HTM");
 const Explanation_data = AllPost.filter(
   (filter) => filter.category === "Explanation"
 );
-const QandA_data = AllPost.filter((filter) => filter.category === "Q&A");
+const CheatSheet_data = AllPost.filter((filter) => filter.category === "Cheet_sheet");
 // get Massage refarence from Dom
 const Message = document.getElementById("Message");
 
 // main explore function 
 function explore() {
-  document.getElementById('recommend_container').style.display="none";
+  document.getElementById('recommend_container').style.display = "none";
   document.getElementById("add_input_container").style.transform = "scale(0)";
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
@@ -54,9 +54,9 @@ function explore() {
            <i class="fas fa-lightbulb"></i>
            <h2>Explanation</h2>
            </div>
-           <div class='category_box' onclick="QandA()">
-           <i class="fas fa-question"></i>
-           <h2>Q&A</h2>
+           <div class='category_box' onclick="CheatSheet()">
+           <i class="fas fa-book"></i>
+           <h2>CheatSheet</h2>
            </div>
         </div>`
   );
@@ -67,7 +67,7 @@ function Cources() {
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
   // open the message box
-  Message.style.top="0";
+  Message.style.top = "0";
   Message.innerHTML = Cources_data.length + ' Cources Found';
 
   // loop Data
@@ -109,7 +109,7 @@ function Cources() {
            <i class="fas fa-lightbulb"></i>
            <h2>Explanation</h2>
            </div>
-           <div class='category_box' onclick="QandA()">
+           <div class='category_box' onclick="CheatSheet()">
            <i class="fas fa-question"></i>
            <h2>Q&A</h2>
            </div>
@@ -120,9 +120,9 @@ function Demo() {
   //  clear the container
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
-   // open the message box
-   Message.style.top="0";
-   Message.innerHTML = Demo_data.length + ' Demo Found';
+  // open the message box
+  Message.style.top = "0";
+  Message.innerHTML = Demo_data.length + ' Demo Found';
   if (Demo_data.length === 0) {
     container.insertAdjacentHTML(
       "afterbegin",
@@ -162,7 +162,7 @@ function Demo() {
            <i class="fas fa-lightbulb"></i>
            <h2>Explanation</h2>
            </div>
-           <div class='category_box' onclick="QandA()">
+           <div class='category_box' onclick="CheatSheet()">
            <i class="fas fa-question"></i>
            <h2>Q&A</h2>
            </div>
@@ -174,7 +174,7 @@ function HTM() {
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
   // open the message box
-  Message.style.top="0";
+  Message.style.top = "0";
   Message.innerHTML = HTM_data.length + ' HTM Posts Found';
   if (HTM_data.length === 0) {
     container.insertAdjacentHTML(
@@ -215,7 +215,7 @@ function HTM() {
            <i class="fas fa-lightbulb"></i>
            <h2>Explanation</h2>
            </div>
-           <div class='category_box' onclick="QandA()">
+           <div class='category_box' onclick="CheatSheet()">
            <i class="fas fa-question"></i>
            <h2>Q&A</h2>
            </div>
@@ -227,7 +227,7 @@ function Explanation() {
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
   // open the message box
-  Message.style.top="0";
+  Message.style.top = "0";
   Message.innerHTML = Explanation_data.length + ' Cources Found';
 
   if (Explanation_data.length === 0) {
@@ -269,34 +269,34 @@ function Explanation() {
            <i class="fas fa-lightbulb"></i>
            <h2>Explanation</h2>
            </div>
-           <div class='category_box' onclick="QandA()">
+           <div class='category_box' onclick="CheatSheet()">
            <i class="fas fa-question"></i>
            <h2>Q&A</h2>
            </div>
         </div>`
   );
 }
-function QandA() {
+function CheatSheet() {
   //  clear the container
   document.querySelector("*").scrollTo(0, 0);
   container.innerHTML = "";
   // open the message box
-  Message.style.top="0";
-  Message.innerHTML = QandA_data.length + ' Q&A Found';
-  if (QandA_data.length === 0) {
+  Message.style.top = "0";
+  Message.innerHTML = CheatSheet_data.length + ' Cheat Sheet Found';
+  if (CheatSheet_data.length === 0) {
     container.insertAdjacentHTML(
       "afterbegin",
       `
-    <h2 style="padding:200px 50px;">No Q&A Found </h2>
+    <h2 style="padding:200px 50px;">No Cheat Sheet Found </h2>
    `
     );
   } else {
     // loop Data
-    for (let i = 0; i < QandA_data.length; i++) {
+    for (let i = 0; i < CheatSheet_data.length; i++) {
       container.insertAdjacentHTML(
         "afterbegin",
-        ` <a  target='_blank' href="${QandA_data[i].PostUrl}" class="box"><img src="${QandA_data[i].ImageUrl}" alt="${QandA_data[i].alt}" />
-     <h2>${QandA_data[i].Title}</h2>
+        ` <a  target='_blank' href="${CheatSheet_data[i].PostUrl}" class="box"><img src="${CheatSheet_data[i].ImageUrl}" alt="${CheatSheet_data[i].alt}" />
+     <h2>${CheatSheet_data[i].Title}</h2>
     </a>`
       );
     }
@@ -322,9 +322,9 @@ function QandA() {
             <i class="fas fa-lightbulb"></i>
             <h2>Explanation</h2>
             </div>
-            <div class='category_box' onclick="QandA()">
-            <i class="fas fa-question"></i>
-            <h2>Q&A</h2>
+            <div class='category_box' onclick="CheatSheet()">
+            <i class="fas fa-book"></i>
+            <h2>CheatSheet</h2>
             </div>
          </div>`
   );

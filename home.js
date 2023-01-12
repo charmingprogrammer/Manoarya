@@ -5,7 +5,6 @@ function home() {
   container.innerHTML = "";
   document.getElementById("recommend_container").style.display = "block";
 
-  console.log(result);
   for (let i = 0; i < result.length; i++) {
     const data = result[i];
     //   inject data from hare

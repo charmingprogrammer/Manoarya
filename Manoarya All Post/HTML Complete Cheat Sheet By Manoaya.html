@@ -10,7 +10,7 @@
 
   <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
 
   <!--code highlighter links-->
   <link rel="stylesheet"
@@ -36,12 +36,20 @@
   <!--navigation bar top-->
   <nav>
     <a href="https://manoarya.com/" class="navLeft">
-      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+      <img src="../Main_Logo.png" alt="Manoarya Logo" />
+      <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+        <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+        <i style="font-size: 10px;">A platform for coders.</i>
+      </div>
     </a>
     <div class="navRight">
       <i class="fas fa-search" id="search_opener"></i>
-      <img src="" alt="" id="userPic" />
-      <button id="subBtn">Subscribe</button>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <button id="subBtn"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
     </div>
   </nav>
   <!--search-->
@@ -57,7 +65,7 @@
       <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
       <!--post image -->
       <div class="post_Img_Con">
-        <img src="https://i.ibb.co/BLNjByQ/html.png" alt="html CheatSheet" />
+        <img src="../Manoarya All Post/Images/HTML_Cheat_sheet.png" alt="html CheatSheet" />
       </div>
       <!--Main Post-->
       <div class="postContainer">
@@ -77,11 +85,11 @@
           the bottom right of this page. It helps you to access any sections
           from anywhere on this page. <br /><br />
 
-          <b>So let's get started </b> <br /><br />
+          <b>So let's get started </b>
         </p>
         <ul id="topics"></ul>
         <br />
-     
+
         <h2>HTML Starter Code</h2>
         <pre>
 					<code>
@@ -110,10 +118,15 @@
           <br /><br />
           <b>All the heading output result are shown below.</b>
         </p>
-        <p>
-          <img src="https://i.ibb.co/Kq7BgyS/Screenshot-from-2022-03-22-14-48-42.png"
-            alt="Headings output by manoarya" />
-        </p>
+
+        <div style="padding:10px 20px; display: flex; justify-content: center; align-items: center ;">
+          <h1 style="padding: 0;">Heading 1</h1> 
+          <h2 style="padding: 0;">Heading 2</h2> 
+          <h3>Heading 3</h3> 
+          <h4>Heading 4</h4> 
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
 
         <h2>Paragraph</h2>
         <p>
@@ -152,22 +165,13 @@
           Let's take an example, let's assume we need to add a text which is red
           in the following heading.
         </p>
-     
+
         <h1>This is the heading for show span tag</h1>
 
         <p>
           If we used other headings like h2, h3, etc then our line breaks but I
           don't want to break the line of the sentences. <br /><br />
           In that case, we used the &lt;span&gt; tag. <br /><br />
-          Let's compare the results with and without the span tag. <br /><br />
-          <b>Output without span tag</b>
-          <img src="https://i.ibb.co/jHhn1hn/Screenshot-from-2022-03-22-18-45-07.png"
-            alt="without span tag output by manoarya." />
-          <b>Output with span tag</b>
-
-          <img src="https://i.ibb.co/GCcGPfq/Screenshot-from-2022-03-22-18-44-25.png"
-            alt="with span tag output by manoarya." />
-        </p>
         <p>
           Two more tags we have in html to help us to give the html batter
           structure. <br /><br />
@@ -199,8 +203,6 @@
 
           The second tag is &lt;hr&gt; tag if you want to create a horizontal
           line then used &lt;hr&gt; tag. <br /><br />
-          <b>Result of the &lt;hr&gt; tag :</b>
-          <img src="https://i.ibb.co/Y8wMsjc/Screenshot-from-2022-03-22-19-05-40.png" alt="hr tag output by manoarya" />
         </p>
         <h2>HTML images</h2>
         <p>
@@ -244,9 +246,9 @@
         </pre>
         <p>
           <b>Output </b><br /><br />
-          <img src="https://i.ibb.co/VHbKPK5/Screenshot-from-2022-03-22-19-51-03.png" alt="Img output by manoarya" />
+          <img src="https://cdn.pixabay.com/photo/2019/01/31/20/52/web-3967926_960_720.jpg" alt="Img output by manoarya" />
         </p>
-     
+
         <h2>Formatted text in HTML</h2>
         <p>
           <b> &lt;i&gt; :</b> used to display italic text in web browsers.
@@ -289,9 +291,7 @@
 
         <p>
           <b>Output of the upper code :</b> <br /><br />
-          <img src="https://i.ibb.co/sjPYLQL/Screenshot-from-2022-03-22-21-28-26.png"
-            alt="text formater output by manoarya" />
-        </p>
+          <img src="../Manoarya All Post/Images/html_Text_formatter.png" alt="html text Formatted">
         <h2>HTML Links</h2>
         <p>
           <b>&lt;a&gt;</b> tag is also known as anchor tag which helps us to
@@ -319,8 +319,7 @@
 </pre>
         <p>
           <b>Output</b> <br /><br />
-          <img src="https://i.ibb.co/52jRGY9/Screenshot-from-2022-03-22-21-55-00.png"
-            alt="link tag output by manoarya" />
+          <a href="https://manoarya.com" style="background: none; color:blue;text-decoration: underline; cursor: pointer;">Open Manoarya </a>
         </p>
         <h2>List in HTML</h2>
         <p>
@@ -343,10 +342,26 @@
         </pre>
         <p>
           <b>Output</b> <br /><br />
-          <img src="https://i.ibb.co/pnZqmb8/Ordered-list.png" alt="list output by manoarya" />
+          <div style="padding: 10px 50px; display: flex; justify-content: space-around;">
+              <ol>
+               <li>List 01</li>
+               <li>List 02</li>
+               <li>List 03</li>
+               <li>List 04</li>
+               <li>List 05</li>
+           </ol>
+      <ul>
+          <li>List 01</li>
+          <li>List 02</li>
+          <li>List 03</li>
+          <li>List 04</li>
+          <li>List 05</li>
+      </ul>
+          </div>
+       
         </p>
 
-     
+
 
         <h2>Forms in HTML</h2>
         <p>
@@ -392,112 +407,29 @@
     <div id="page2">
       <!--post suggestions-->
       <div id="postSuggestionContainer"></div>
-      <!--expand more-->
-      <div class="showMore" onclick="showMoreSugg()">
-        <b>Show More Suggestions</b>
-      </div>
-
-      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
-        <b>Show Less Suggestions</b>
-      </div>
-
-      <!--comment input-->
-      <div id="comment_input_container">
-        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
-      <!--comment output-->
-      <div id="comment_output_container"></div>
-
-      <div class="showMore" onclick="showMoreComment()">
-        <b>Show More Comments</b>
-      </div>
-      <div class="showLess" onclick="showLessComment()" id="showLessComment">
-        <b>Show Less Comments</b>
-      </div>
     </div>
-  </div>
-  <!--top scrolling-->
-  <div id="gotoTop">
-    <i class="fas fa-chevron-up" onclick="GoTop()"></i>
   </div>
   <!--footer-->
   <footer>
-    <ul>
-      <li><a href="AboutUs.html">About us</a></li>
-      <li><a href="ContactUs.html">Contact us</a></li>
-      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
-      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
-      <li><a href="Disclaimer.html">Disclaimer</a></li>
-      <li><a href="Sitemap.xml">Sitemap</a></li>
-    </ul>
-    <ul>
-      <b>Follow Me</b>
-      <li>
-        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-      </li>
-      <li>
-        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </li>
-      <li>
-        <a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a>
-      </li>
-    </ul>
-    <p>All Rights reserved by Manoarya</p>
   </footer>
-  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript"
-    charset="utf-8"></script>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+  </div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
-  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
-
-  <script type="text/javascript" charset="utf-8">
-    //script for quick access
-
-    const container = document.querySelector(".postContainer");
-
-    const h2 = container.getElementsByTagName("h2");
-
-    console.log(h2);
-
-    for (var i = 0; i < h2.length; i++) {
-      h2[i].id = h2[i].innerHTML;
-      document
-        .getElementById("topics")
-        .insertAdjacentHTML(
-          "afterbegin",
-          `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`
-        );
-      console.log((h2[i].id = h2[i].innerHTML));
-    }
-
-    const gotoTop = document.getElementById("gotoTop");
-
-    function GoTop() {
-      window.scrollTo(0, 0);
-    }
-
-    //hide and show qr code btn using onscroll event
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos < currentScrollPos) {
-        document.getElementById("gotoTop").style.bottom = "-100%";
-      } else {
-        document.getElementById("gotoTop").style.bottom = "10px";
-      }
-      prevScrollpos = currentScrollPos;
-    };
-  </script>
 </body>

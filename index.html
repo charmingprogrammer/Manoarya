@@ -1,42 +1,46 @@
 <!DOCTYPE html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="icon" type="image/png" href="Main_Logo.png" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
-  <title>Manoarya</title>
+  <title>Manoarya : A platform for coders.</title>
   <meta name="description"
-    content="Manoarya is a platform where you can learn about coding and programming with project learning methods.">
+    content="Manoarya is a platform where you can learn about coding and programming with project learning methods." />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-SRT0FM6SCD');
+    gtag("config", "G-SRT0FM6SCD");
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
     crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <!-- top navigation  -->
   <nav>
     <!-- logo  container  -->
     <div id="logo_container">
-      <img src="/logo.png"
-        alt="Manoarya logo">
-       
+      <img src="../Main_Logo.png" alt="Manoarya Logo" />
+      <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+        <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+        <i style="font-size: 10px;">A platform for coders.</i>
+      </div>
     </div>
     <!-- search input -->
     <input type="search" id="searchInput" placeholder="Search" onclick="searchInput()" onkeyup="searchNow()" />
     <!-- user googel sign in -->
     <div id="user_container" onclick="user()">
       <img src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_960_720.png" alt="userPic"
-        id="googleuserPic">
+        id="googleuserPic" />
     </div>
   </nav>
   <!-- bottom nav for mobile and sidebar for destop -->
@@ -54,141 +58,155 @@
       <i class="fas fa-quote-right"></i>
     </div>
     <div class="bottom_box" onclick="tool()">
-      <a href="https://forms.gle/YHkPDK2315Pm6Yke8" style="color: #dadada;"><i class="fas fa-upload"></i></a>
+      <a href="https://forms.gle/YHkPDK2315Pm6Yke8" style="color: #dadada"><i class="fas fa-upload"></i></a>
     </div>
   </div>
- <!-- Manoarya computer classes -->
- <style>
-  #mcc_container {
-    height: 200px;
-    width: 100%;
-    right: 0;
-  }
-
-  #mcc_container img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  #mcc_container img:hover {
-    cursor: pointer;
-  }
-
-  @media only screen and (min-width: 1020px) {
+  <!-- Manoarya computer classes -->
+  <style>
     #mcc_container {
-      height: 100%;
-      width: 95%;
-      float: right;
+      height: 200px;
+      width: 100%;
+      right: 0;
+      transform: scale(0.98);
     }
-  }
-</style>
-<a href="./MCC/index.html" id="mcc_container">
-  <img src="./MCC/assets/MCC_banner.png" alt="Manoarya computer Classes">
-</a>
+
+    #mcc_container img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    #mcc_container img:hover {
+      cursor: pointer;
+    }
+
+    @media only screen and (min-width: 1020px) {
+      #mcc_container {
+        height: 100%;
+        width: 95%;
+        float: right;
+      }
+    }
+  </style>
+  <a href="./MCC/index.html" id="mcc_container">
+    <img src="./MCC/assets/MCC_banner.png" alt="Manoarya computer Classes" />
+  </a>
   <!-- Recommend content for best expirance -->
   <style>
-    #recommend_container{
+    #recommend_container {
       height: 100%;
       width: 100%;
       float: right;
-      border-bottom: 1px solid gray;
     }
-    #recommend_container h1{
+
+    #recommend_container h1 {
       padding: 10px 20px;
       color: gainsboro;
       font-size: 20px;
       text-align: center;
     }
-    #recommend{
+
+    #recommend {
       height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: #1d1f1c;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #1d1f1c;
     }
-    @media only screen and (min-width:1020px) {
-      #recommend_container{
-      height: 100%;
-      width: 95%;
-      float: right;
-      border-bottom: 1px solid gray;
-    }
-    #recommend_container h1{
-      padding: 10px 20px;
-      font-size: 30px;
-      color: gainsboro;
-      text-align: start;
-      font-size: 25px;
-    }
+
+    @media only screen and (min-width: 1020px) {
+      #recommend_container {
+        height: 100%;
+        width: 95%;
+        float: right;
+      }
+
+      #recommend_container h1 {
+        padding: 10px 20px;
+        font-size: 30px;
+        color: gainsboro;
+        text-align: start;
+        font-size: 25px;
+      }
     }
   </style>
   <div id="recommend_container">
     <h1>Recommended for you</h1>
     <!-- pulled all recommend items inside of the recommend div -->
     <div id="recommend"></div>
+    <h1>All Posts</h1>
   </div>
-
   <!--js data pulled hare  -->
-  <div id="container" onclick="userClose()">
-  </div>
+  <div id="container" onclick="userClose()"></div>
 
   <!-- search suggestion container -->
-
   <div id="search_container" onclick="searchCloser()">
     <div id="search_Suggestion">
-      <ul id="myUL">
-      </ul>
+      <ul id="myUL"></ul>
     </div>
   </div>
 
   <!-- user auth by google -->
   <div id="user_login_con">
     <button onclick="userClose()"><i class="fas fa-times"></i></button>
-    <button id="googleAuthBtn"><img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"
-        alt="googel image">Sign in with Google</button>
+    <button id="googleAuthBtn">
+      <img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png" alt="googel image" />Sign in with Google
+    </button>
   </div>
 
   <!-- add input page stucture -->
   <div id="add_input_container">
-    <div id='input_Con_Closer' onClick='closeAdd()'>
+    <div id="input_Con_Closer" onClick="closeAdd()">
       <i class="fas fa-times"></i>
     </div>
-    <form onSubmit='return false' id='QuotesAdded'>
+    <form onSubmit="return false" id="QuotesAdded">
       <textarea id="addInput" placeholder="Add Quotes" cols="30" rows="10" required></textarea>
       <button type="submit">Add Quotes</button>
     </form>
   </div>
 
   <!-- aleart the total post  -->
-  <div id="Message">
+  <div id="Message"></div>
 
-  </div>
   <!--footer-->
   <footer>
-    <ul>
-      <li><a href="https://manoarya.com/Manoarya%20All%20Post/AboutUs.html">About us</a></li>
-      <li><a href="https://manoarya.com/Manoarya%20All%20Post/ContactUs.html">Contact us</a></li>
-      <li><a href="https://manoarya.com/Manoarya%20All%20Post/privacyPrivacy.html">Privacy Policy</a></li>
-      <li><a href="https://manoarya.com/Manoarya%20All%20Post/TermsAndConditions.html">Terms and conditions</a></li>
-      <li><a href="https://manoarya.com/Manoarya%20All%20Post/Disclaimer.html">Disclaimer</a></li>
-      <li><a href="https://manoarya.com/sitemap.xml">Sitemap</a></li>
-    </ul>
-    <ul>
-      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
-      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </li>
-      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
-    </ul>
-    <p>
-      All Rights reserved by Manoarya
-    </p>
-
+    <div id="footer_items">
+      <div class="footer_box">
+        <img src="./Logo.png" alt="Manoarya logo" />
+        <h3>We Are India's Most Loved Tech Community. Join Us!</h3>
+      </div>
+      <div class="footer_box">
+        <h3>HELPFUL LINKS</h3>
+        <a href="./Topics/index.html">Courses</a>
+        <a href="Pages/Privacy_policy.html">Privacy policy</a>
+        <a href="Pages/RefunPolicy.html">Refund & Cancellation Policy</a>
+        <a href="Pages/Terms_and_condition.html">Terms & Condition</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScFuSx8QisX9-lKX7Xf_l_IMptzNa0pGsBsLL3VOwx80HvX8A/viewform">Refer
+          & Earn</a>
+      </div>
+      <div class="footer_box">
+        <h3>GET IN TOUCH</h3>
+        <a href="mailto:manoaryaforyou@gmail.com">manoaryaforyou@manoarya.com</a>
+      </div>
+      <div class="footer_box">
+        <h3>CONNECT WITH US</h3>
+        <a href="https://www.facebook.com/manohar.anamd">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="https://youtu.be/Q1-4Zzfvglk">YouTube</a>
+        <a href="#">Instagram</a>
+        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6">Linkedin</a>
+      </div>
+      <p>Copyright © 2023 All Right Reserved By Manoarya.</p>
+    </div>
   </footer>
+  <!-- Call to action button -->
+  <div id="cta_Container">
+    <a href="#">Themes</a>
+    <a href="#">Hire Me</a>
+    <a href="#">Courses</a>
+  </div>
   <script src="AddPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="index.js" type="text/javascript" charset="utf-8"></script>
   <script src="add.js" type="text/javascript" charset="utf-8"></script>
@@ -196,6 +214,4 @@
   <script src="Quotes.js" type="text/javascript" charset="utf-8"></script>
   <script src="home.js" type="text/javascript" charset="utf-8"></script>
   <script src="firebase.js" type="module" charset="utf-8"></script>
-
-
 </body>

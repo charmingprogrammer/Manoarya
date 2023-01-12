@@ -1,34 +1,24 @@
 <!DOCTYPE html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>Color Tic tac to using html css and js.</title>
 
-  <script
-    src="https://kit.fontawesome.com/9e0ab445c3.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
 
   <!--code highlighter links-->
-  <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
-  />
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -44,28 +34,32 @@
     crossorigin="anonymous"
   ></script> -->
 </head>
+
 <body>
   <!--navigation bar top-->
   <nav>
     <a href="https://manoarya.com/" class="navLeft">
-      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+      <img src="../Main_Logo.png" alt="Manoarya Logo" />
+      <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+        <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+        <i style="font-size: 10px;">A platform for coders.</i>
+      </div>
     </a>
     <div class="navRight">
       <i class="fas fa-search" id="search_opener"></i>
-      <img src="" alt="" id="userPic" />
-      <button id="subBtn">Subscribe</button>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <button id="subBtn"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
     </div>
   </nav>
   <!--search-->
   <div id="searchContainer">
     <div class="search_header">
       <i class="fas fa-arrow-left" id="search_closer"></i>
-      <input
-        type="search"
-        placeholder="Search"
-        id="searchInput"
-        onkeyup="keyPress()"
-      />
+      <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
     </div>
     <ul id="myUL"></ul>
   </div>
@@ -74,10 +68,7 @@
       <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
       <!--post image -->
       <div class="post_Img_Con">
-        <img
-          src="https://i.ibb.co/TqvVRrB/Pics-Art-12-16-08-05-18.png"
-          alt="Color tic tac to"
-        />
+        <img src="../Manoarya All Post/Images/Color_Tic_Tac_To.png" alt="Color tic tac to" />
       </div>
       <!--Main Post-->
       <div class="postContainer">
@@ -91,10 +82,8 @@
           html css and js. <br /><br />
           Are you Guys exited. Let me know in the comment. Ask Questions and
           give suggestions. <br /><br />
-          Let's Started. <br /><br /><a
-            href="https://manoarya.com/Demo/Color_tic_tac_to.html"
-            >See Demo</a
-          >
+          Let's Started. <br /><br /><a href="https://manoarya.com/Demo/Color_tic_tac_to.html">See
+            Demo</a>
           <br />
           <br />
           Fist of all you need to create a file and name it whatever you want.
@@ -280,7 +269,7 @@
     }
           </code>
         </pre>
-   
+
 
         <h2>Add Javascript Code</h2>
         <pre>
@@ -372,13 +361,7 @@
       <!--comment input-->
       <div id="comment_input_container">
         <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-          <textarea
-            id="comment_input"
-            rows="8"
-            cols="40"
-            placeholder="Write Your Comment..."
-            required
-          ></textarea>
+          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -396,50 +379,25 @@
   </div>
   <!--footer-->
   <footer>
-    <ul>
-      <li><a href="AboutUs.html">About us</a></li>
-      <li><a href="ContactUs.html">Contact us</a></li>
-      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
-      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
-      <li><a href="Disclaimer.html">Disclaimer</a></li>
-      <li><a href="Sitemap.xml">Sitemap</a></li>
-    </ul>
-    <ul>
-      <b>Follow Me</b>
-      <li>
-        <a href="https://www.facebook.com/manohar.anamd"
-          ><i class="fab fa-facebook"></i> Facebook</a
-        >
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-      </li>
-      <li>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-      </li>
-      <li>
-        <a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"
-          ><i class="fab fa-youtube"></i> YouTube</a
-        >
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/manohar-anand-4177701b6"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/charmingprogrammer"
-          ><i class="fab fa-github"></i> Guthub</a
-        >
-      </li>
-    </ul>
-    <p>All Rights reserved by Manoarya</p>
   </footer>
-  <script
-    src="https://charmingprogrammer.github.io/Manoarya/AddPost.js"
-    type="text/javascript"
-    charset="utf-8"
-  ></script>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+  </div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
-  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
 </body>

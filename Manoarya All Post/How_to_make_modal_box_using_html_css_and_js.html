@@ -1,40 +1,50 @@
 <!DOCTYPE html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>How to make Modal Box using HTML,CSS and Javascript?</title>
 
   <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
 
   <!--code highlighter links-->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-SRT0FM6SCD');
-</script>
+    gtag('config', 'G-SRT0FM6SCD');
+  </script>
 </head>
+
 <body>
   <!--navigation bar top-->
   <nav>
     <a href="https://manoarya.com/" class="navLeft">
-      <img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+      <img src="../Main_Logo.png" alt="Manoarya Logo" />
+      <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+        <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+        <i style="font-size: 10px;">A platform for coders.</i>
+      </div>
     </a>
     <div class="navRight">
       <i class="fas fa-search" id="search_opener"></i>
-      <img src="" alt="" id="userPic" />
-      <button id="subBtn">Subscribe</button>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <button id="subBtn"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
     </div>
   </nav>
   <!--search-->
@@ -52,20 +62,24 @@
       <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
       <!--post image -->
       <div class="post_Img_Con">
-        <img src="https://cdn.pixabay.com/photo/2021/12/08/17/04/modalbox-6856321_1280.jpg" alt="Modal Box" />
+        <img src="../Manoarya All Post/Images/modalbox.jpg" alt="Modal Box" />
       </div>
       <!--Main Post-->
       <div class="postContainer">
         <h1 id="postTitle">How to make Modal Box using HTML,CSS and Javascript?</h1>
         <p>
-          <b>Category : </b>  <span id="category">HTM</span>
+          <b>Category : </b> <span id="category">HTM</span>
         </p>
 
         <p>
-          Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going to assist you with How to make Modal Box using HTML, CSS and Javascript. <br><br> Are you Guys exited. Let me know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a href="https://manoarya.com/Demo/ModalBox.html">See Demo</a> <br> <br> Fist of all you need to create a file and name it whatever you want. <br><br> Now add the following code inside of this file.
+          Hi! What's up this is your boy Manohar Anand From the house of Manoarya. <br><br> In this article we are going
+          to assist you with How to make Modal Box using HTML, CSS and Javascript. <br><br> Are you Guys exited. Let me
+          know in the comment. Ask Questions and give suggestions. <br><br> Let's Started. <br><br><a
+            href="../Demo/ModalBox.html">See Demo</a> <br> <br> Fist of all you need
+          to create a file and name it whatever you want. <br><br> Now add the following code inside of this file.
         </p>
         <h2>Add HTML Code</h2>
-<pre>
+        <pre>
   <code>
 &lt;!DOCTYPE&nbsp;html&gt;<br/>&lt;head&gt;<br/>&nbsp;&nbsp;&lt;meta&nbsp;http-equiv=&quot;content-type&quot;&nbsp;content=&quot;text/html;&nbsp;charset=utf-8&quot;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;title&gt;Modal&nbsp;box&lt;/title&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;src=&quot;https://kit.fontawesome.com/9e0ab445c3.js&quot;&nbsp;crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;<br/>&nbsp;&nbsp;&lt;!--&nbsp;Link&nbsp;Css&nbsp;internally&nbsp;--&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>&nbsp;&nbsp;&lt;!--Main&nbsp;container--&gt;&nbsp;<br/>&nbsp;&lt;div&nbsp;class=&quot;container&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;OpenModal()&quot;&gt;Open&nbsp;Modal&lt;/button&gt;<br/>&nbsp;&lt;/div&gt;<br/>&nbsp;<br/>&nbsp;&lt;!--Modal&nbsp;Page--&gt;<br/>&nbsp;&lt;div&nbsp;id=&quot;modalPage&quot;&nbsp;onclick=&quot;closePage()&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;information&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fas&nbsp;fa-times&quot;&nbsp;onclick=&quot;closePage()&quot;&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Modal&nbsp;Box&lt;/h1&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Hi!&nbsp;this&nbsp;is&nbsp;Manohar&nbsp;Anand&nbsp;From&nbsp;the&nbsp;house&nbsp;of&nbsp;Manoarya.&nbsp;&lt;/p&gt;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&quot;index.html&quot;&gt;Back&nbsp;to&nbsp;Home&lt;/a&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;<br/>&nbsp;&lt;!--Internal&nbsp;js--&gt;<br/>&lt;/body&gt;
   </code>
@@ -160,89 +174,57 @@
             }
           </code>
         </pre>
-<p>Final code look like this. All Files connected internally. <br><br></p>
-<pre>
+        <p>Final code look like this. All Files connected internally. <br><br></p>
+        <pre>
   <code>
     &lt;!DOCTYPE&nbsp;html&gt;<br/>&lt;head&gt;<br/>&nbsp;&nbsp;&lt;meta&nbsp;http-equiv=&quot;content-type&quot;&nbsp;content=&quot;text/html;&nbsp;charset=utf-8&quot;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;title&gt;Modal&nbsp;box&lt;/title&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;src=&quot;https://kit.fontawesome.com/9e0ab445c3.js&quot;&nbsp;crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;<br/>&nbsp;&nbsp;&lt;!--&nbsp;Link&nbsp;Css&nbsp;internally&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;style&nbsp;type=&quot;text/css&quot;&nbsp;media=&quot;all&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;*{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-sizing:&nbsp;border-box;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family:&nbsp;Sans-Serif;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;#e4e4e4;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;.container{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;100vh;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;#3d4443;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;flex;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;justify-content:&nbsp;center;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;align-items:&nbsp;center;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;fixed;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;button{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px&nbsp;20px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border:&nbsp;none;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outline:&nbsp;none;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;linear-gradient(120deg,&nbsp;#00afff,pink);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;5px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;0&nbsp;10px&nbsp;1px&nbsp;#0000007a;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;button:active{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform:&nbsp;scale(0.95);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;#modalPage{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;100vh;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:#0f0c0c00;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:fixed;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top:&nbsp;-100%;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition:&nbsp;.2s&nbsp;ease-in;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;.information{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;70%;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;#181818;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;0&nbsp;10px&nbsp;1px&nbsp;#0000007a;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform:&nbsp;scale(0.95);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;.information&nbsp;i{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;15px&nbsp;20px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right:&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top:&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:#2b313768;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:#dad9d9;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;.information&nbsp;i:active{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;#02030455;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;.information&nbsp;h1{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px&nbsp;20px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;none;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#d4d4d4;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.information&nbsp;p{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px&nbsp;20px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;none;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#d4d4d4;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;.information&nbsp;a{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px&nbsp;20px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;none;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#d4d4d4;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursor:&nbsp;default;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>&nbsp;&nbsp;&lt;!--Main&nbsp;container--&gt;&nbsp;<br/>&nbsp;&lt;div&nbsp;class=&quot;container&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick=&quot;OpenModal()&quot;&gt;Open&nbsp;Modal&lt;/button&gt;<br/>&nbsp;&lt;/div&gt;<br/>&nbsp;<br/>&nbsp;&lt;!--Modal&nbsp;Page--&gt;<br/>&nbsp;&lt;div&nbsp;id=&quot;modalPage&quot;&nbsp;onclick=&quot;closePage()&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;information&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fas&nbsp;fa-times&quot;&nbsp;onclick=&quot;closePage()&quot;&gt;&lt;/i&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Modal&nbsp;Box&lt;/h1&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Hi!&nbsp;this&nbsp;is&nbsp;Manohar&nbsp;Anand&nbsp;From&nbsp;the&nbsp;house&nbsp;of&nbsp;Manoarya.&nbsp;&lt;/p&gt;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&quot;index.html&quot;&gt;Back&nbsp;to&nbsp;Home&lt;/a&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;<br/>&nbsp;&lt;!--Internal&nbsp;js--&gt;<br/>&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&nbsp;charset=&quot;utf-8&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;ModalPgae&nbsp;=&nbsp;&nbsp;document.getElementById('modalPage');<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;function&nbsp;OpenModal()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;modalPage.style.top&nbsp;=&nbsp;'0';<br/>&nbsp;&nbsp;}<br/>&nbsp;&nbsp;function&nbsp;closePage()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;modalPage.style.top&nbsp;=&nbsp;'-100%';<br/>&nbsp;&nbsp;}<br/>&nbsp;&lt;/script&gt;<br/>&lt;/body&gt;
   </code>
 </pre>
-<p>All CSS code wrapped inside of following code.</p> 
-<pre>
+        <p>All CSS code wrapped inside of following code.</p>
+        <pre>
   <code>
     &nbsp;&lt;style&nbsp;type=&quot;text/css&quot;&nbsp;media=&quot;all&quot;&gt;&lt;/style&gt;
   </code>
 </pre>
-<p>All javascript code wrapped inside of following code.</p> 
-<pre>
+        <p>All javascript code wrapped inside of following code.</p>
+        <pre>
     <code>
 &nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&nbsp;charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
     </code>
 </pre>
         <p>
-          That all for this post. I hope you love this project. please share your thoughts and  suggestions in comment below. <br> <br><b>Thank you  For Visiting. By see You soon.</b>
+          That all for this post. I hope you love this project. please share your thoughts and suggestions in comment
+          below. <br> <br><b>Thank you For Visiting. By see You soon.</b>
         </p>
       </div>
       <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
     </div>
     <div id="page2">
       <!--post suggestions-->
-      <div id="postSuggestionContainer">
-      </div>
-      <!--expand more-->
-      <div class="showMore" onclick="showMoreSugg()">
-        <b>Show More Suggestions</b>
-      </div>
-
-      <div class="showLess" onclick="showLessSugg()" id="showLessSugg">
-        <b>Show Less Suggestions</b>
-      </div>
-
-      <!--comment input-->
-      <div id="comment_input_container">
-        <form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-          <textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..." required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
-      <!--comment output-->
-      <div id="comment_output_container">
-      </div>
-
-      <div class="showMore" onclick="showMoreComment()">
-        <b>Show More Comments</b>
-      </div>
-      <div class="showLess" onclick="showLessComment()" id="showLessComment">
-        <b>Show Less Comments</b>
-      </div>
+      <div id="postSuggestionContainer"></div>
     </div>
   </div>
   <!--footer-->
   <footer>
-    <ul>
-      <li><a href="AboutUs.html">About us</a></li>
-      <li><a href="ContactUs.html">Contact us</a></li>
-      <li><a href="privacyPrivacy.html">Privacy Policy</a></li>
-      <li><a href="TermsAndConditions.html">Terms and conditions</a></li>
-      <li><a href="Disclaimer.html">Disclaimer</a></li>
-      <li><a href="Sitemap.xml">Sitemap</a></li>
-    </ul>
-    <ul>
-      <b>Follow Me</b>
-      <li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i> YouTube</a></li>
-      <li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
-    </ul>
-    <p>
-      All Rights reserved by Manoarya
-    </p>
-
   </footer>
-  <script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+  </div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
   <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
-  <script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
-
 </body>

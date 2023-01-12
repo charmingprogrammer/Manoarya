@@ -10,7 +10,7 @@
 
 	<script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="ManoaryaPost2.css" type="text/css" />
+	<link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
 
 	<!--code highlighter links-->
 	<link rel="stylesheet"
@@ -36,12 +36,21 @@
 	<!--navigation bar top-->
 	<nav>
 		<a href="https://manoarya.com/" class="navLeft">
-			<img src="ManoaryaLogo.png" alt="Manoarya Logo" />
+			<img src="../Main_Logo.png" alt="Manoarya Logo" />
+			<div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+				<b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+				<i style="font-size: 10px;">A platform for coders.</i>
+			</div>
 		</a>
 		<div class="navRight">
 			<i class="fas fa-search" id="search_opener"></i>
-			<img src="" alt="" id="userPic" />
-			<button id="subBtn">Subscribe</button>
+			<!-- dark mode buttons -->
+			<div id="dark_Mode_box">
+				<button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+					id="DarkOn"></button>
+			</div>
+			<button id="subBtn"
+				onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
 		</div>
 	</nav>
 	<!--search-->
@@ -59,7 +68,7 @@
 			<!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
 			<!--post image -->
 			<div class="post_Img_Con">
-				<img src="https://i.ibb.co/dgJq0Rm/20220207-081830-0000.png" alt="Navigation" />
+				<img src="../Manoarya All Post/Images/What_is_Api.png" alt="Navigation" />
 			</div>
 			<!--Main Post-->
 			<div class="postContainer">
@@ -78,7 +87,7 @@
 
 				</ul>
 				<br>
-		
+
 				<h2>What is API and How it Works ?</h2>
 				<p>
 					Assume we are at a hotel and I order something and here we have our order.
@@ -232,13 +241,12 @@
 					creating a web gallery. <br> <br> First of all let's create the code environment. <br> <br> Open
 					your code editor (visual studio code) and make three files first html file , second css file and
 					third js file. You can name it whatever you want. <br> <br> Now go to pixabay.com and create your
-					account for API keys without API keys you can't access this API. <br> <br>After that scroll down and
-					inside of green box your API keys.
+					account for API keys without API keys you can't access this API. <br> <br>After that click on the explore button that exist on the top right corner then scroll down and you get your API key into the green box. copy it.
 					<br> <br>
-					<img src="https://i.ibb.co/Ns3fdsj/Picsart-22-02-08-20-21-12-825.jpg" alt="Api Kay pixabay"> <br>
+					<img src="../Manoarya All Post/Images/pixabay_API_key.png" alt="Api Kay pixabay"> <br>
 					<br> Now again scroll down and copy this url that you can see on this image 👇
 					<br><br>
-					<img src="https://i.ibb.co/FJCXBtG/Picsart-22-02-08-20-20-09-534.jpg" alt="pixabay api url" /> <br>
+					<img src="../Manoarya All Post/Images/Pixapay_API_URL.png" alt="pixabay api url" /> <br>
 					<br>
 
 					On this page lots of things to explore. I suggest you to explore that. <br> <br> Now back to you
@@ -248,7 +256,7 @@
 					Now create the structure of the website.Using the following code. You can make your own structure
 					and style it. <br> <br>
 
-					<a href="https://manoarya.com/Demo/Webgallery.html">Live Demo</a>
+					<a href="../Demo/Webgallery.html">Live Demo</a>
 				</p>
 
 				<h2>HTML code For page structure</h2>
@@ -382,7 +390,7 @@ getData();
 				</pre>
 
 				</p>
-		
+
 				<!--outro-->
 				<p>
 					I hope you like this project please subscribe and comment your thoughts and suggestions.
@@ -397,101 +405,30 @@ getData();
 		</div>
 		<div id="page2">
 			<!--post suggestions-->
-			<div id="postSuggestionContainer">
-			</div>
-			<!--expand more-->
-			<div class="showMore" onclick="showMoreSugg()">
-				<b>Show More Suggestions</b>
-			</div>
-
-			<div class="showLess" onclick="showLessSugg()" id="showLessSugg">
-				<b>Show Less Suggestions</b>
-			</div>
-
-			<!--comment input-->
-			<div id="comment_input_container">
-				<form accept-charset="utf-8" id="commentForm" onsubmit="return false">
-					<textarea id="comment_input" rows="8" cols="40" placeholder="Write Your Comment..."
-						required></textarea>
-					<button type="submit">Submit</button>
-				</form>
-			</div>
-
-			<!--comment output-->
-			<div id="comment_output_container">
-			</div>
-
-			<div class="showMore" onclick="showMoreComment()">
-				<b>Show More Comments</b>
-			</div>
-			<div class="showLess" onclick="showLessComment()" id="showLessComment">
-				<b>Show Less Comments</b>
-			</div>
+			<div id="postSuggestionContainer"></div>
 		</div>
-	</div>
-	<!--top scrolling-->
-	<div id="gotoTop">
-		<i class="fas fa-chevron-up" onclick="GoTop()"></i>
 	</div>
 	<!--footer-->
 	<footer>
-		<ul>
-			<li><a href="AboutUs.html">About us</a></li>
-			<li><a href="ContactUs.html">Contact us</a></li>
-			<li><a href="privacyPrivacy.html">Privacy Policy</a></li>
-			<li><a href="TermsAndConditions.html">Terms and conditions</a></li>
-			<li><a href="Disclaimer.html">Disclaimer</a></li>
-			<li><a href="Sitemap.xml">Sitemap</a></li>
-		</ul>
-		<ul>
-			<b>Follow Me</b>
-			<li><a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook"></i> Facebook</a></li>
-			<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-			<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-			<li><a href="https://youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg"><i class="fab fa-youtube"></i>
-					YouTube</a></li>
-			<li><a href="https://www.linkedin.com/in/manohar-anand-4177701b6"><i class="fab fa-linkedin"></i>
-					LinkedIn</a></li>
-			<li><a href="https://github.com/charmingprogrammer"><i class="fab fa-github"></i> Guthub</a></li>
-		</ul>
-		<p>
-			All Rights reserved by Manoarya
-		</p>
-
 	</footer>
-	<script src="https://charmingprogrammer.github.io/Manoarya/AddPost.js" type="text/javascript"
-		charset="utf-8"></script>
+	<!-- subscribe form -->
+	<div id="subscribe_form_container">
+		<!-- hide the main contianer when click -->
+		<div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+		<!-- Sfc content -->
+		<div id="sfc_content">
+			<iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+		</div>
+	</div>
+	<!-- surprise surprise -->
+	<div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+	</div>
+	<!--top scrolling-->
+	<div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+		<i class="fas fa-chevron-up"></i>
+	</div>
+	<script src="Footer.js"></script>
+	<script src="Surprise.js"></script>
+	<script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
 	<script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
-	<script src="manoarya_firebase.js" type="module" charset="utf-8"></script>
-
-	<script type="text/javascript" charset="utf-8">
-
-		//script for quick access
-
-		const container = document.querySelector('.postContainer');
-
-		const h2 = container.getElementsByTagName('h2');
-
-		console.log(h2);
-
-		for (var i = 0; i < h2.length; i++) {
-			h2[i].id = h2[i].innerHTML
-			document.getElementById('topics').insertAdjacentHTML('afterbegin', `<li><a href="#${h2[i].innerHTML}">${h2[i].innerHTML}</a></li>`)
-			console.log(h2[i].id = h2[i].innerHTML);
-
-		}
-
-		const gotoTop = document.getElementById('gotoTop');
-
-		function GoTop() {
-			window.scrollTo(0, 0);
-		}
-
-		//hide and show qr code btn using onscroll event 
-		var prevScrollpos = window.pageYOffset; window.onscroll = function () { var currentScrollPos = window.pageYOffset; if (prevScrollpos < currentScrollPos) { document.getElementById("gotoTop").style.bottom = "-100%"; } else { document.getElementById("gotoTop").style.bottom = "10px"; } prevScrollpos = currentScrollPos; }
-
-
-
-
-	</script>
 </body>

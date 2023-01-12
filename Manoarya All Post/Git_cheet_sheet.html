@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>
+        A Basic Git Cheat Sheet for you to starting verson control.
+    </title>
+    <meta name="description"
+        content="Git is a popular version control system that is widely used by developers for managing and tracking
+        changes to their codebase. It allows teams to work on code simultaneously, and helps to prevent
+        conflicts when multiple people are making changes to the same files." />
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+    <!--code highlighter links-->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-SRT0FM6SCD");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation bar top-->
+    <nav>
+        <a href="https://manoarya.com/" class="navLeft">
+            <img src="../Main_Logo.png" alt="Manoarya Logo" />
+            <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+                <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+                <i style="font-size: 10px;">A platform for coders.</i>
+            </div>
+        </a>
+        <div class="navRight">
+            <i class="fas fa-search" id="search_opener"></i>
+            <!-- dark mode buttons -->
+            <div id="dark_Mode_box">
+                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+                    id="DarkOn"></button>
+            </div>
+            <button id="subBtn"
+                onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
+        </div>
+    </nav>
+    <!--search-->
+    <div id="searchContainer">
+        <div class="search_header">
+            <i class="fas fa-arrow-left" id="search_closer"></i>
+            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+        </div>
+        <ul id="myUL"></ul>
+    </div>
+    <div id="container">
+        <div id="page1">
+            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+            <!--post image -->
+            <div class="post_Img_Con">
+                <img src="../Manoarya All Post/Images/Git_CheatSheet.png"
+                    alt="Git Cheat Sheet by Manoarya" />
+            </div>
+            <!--Main Post-->
+            <div class="postContainer">
+                <h1 id="postTitle">
+                    A Basic Git Cheat Sheet for you to starting verson control.
+                </h1>
+                <p><b>Category : </b> <span id="category">Explanation</span></p>
+                <p>
+                    Git is a popular version control system that is widely used by developers for managing and tracking
+                    changes to their codebase. It allows teams to work on code simultaneously, and helps to prevent
+                    conflicts when multiple people are making changes to the same files.
+                </p>
+                <p>
+                    To help you get started with Git, here is a cheat sheet of some common Git commands:
+                </p>
+                <!-- ads space -->
+                <p>
+                    <b>git init</b>: This command is used to initialize a new Git repository. It creates a hidden .git
+                    folder in the current directory, which is used to store all of the repository's metadata. <br><br>
+
+                    <b>git clone &lt;repository&gt;
+                    </b>: This command is used to create a local copy of a remote Git repository. It allows you to
+                    download all of the files and history of the repository to your local machine. <br><br>
+
+                    <b>git add &lt;file&gt</b>: This command is used to stage a file for commit. It tells Git that you
+                    want to include the file in the next commit. <br><br>
+
+                    <b>git commit -m "message"</b>: This command is used to save your staged changes to the repository.
+                    The -m flag is used to specify a commit message, which is a brief description of the changes you are
+                    committing. <br><br>
+
+                    <b>git push</b>: This command is used to upload your local commits to a remote repository. It allows
+                    you to share your changes with other people. <br><br>
+
+                    <b>git pull</b>: This command is used to download the latest changes from a remote repository and
+                    merge them into your local copy. It allows you to stay up to date with the latest changes made by
+                    other people. <br><br>
+
+                    <b>git status</b>: This command is used to view the current status of your repository. It shows you
+                    which files have been modified, staged, or are untracked. <br><br>
+
+                    <b>git log</b>: This command is used to view the commit history of your repository. It shows you a
+                    list of all the commits that have been made, along with the commit message and author.
+                </p>
+                <!-- Ads space -->
+                <p>
+                    I hope this cheat sheet helps you get started with Git! If you have any questions or need more
+                    information, there are many resources available online that can help you learn more about Git and
+                    version control.
+                </p>
+            </div>
+            <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+        </div>
+        <div id="page2">
+            <!--post suggestions-->
+            <div id="postSuggestionContainer"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+    </footer>
+    <!-- subscribe form -->
+    <div id="subscribe_form_container">
+        <!-- hide the main contianer when click -->
+        <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+        <!-- Sfc content -->
+        <div id="sfc_content">
+            <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- surprise surprise -->
+    <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+    </div>
+    <!--top scrolling-->
+    <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="Footer.js"></script>
+    <script src="Surprise.js"></script>
+    <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+    <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

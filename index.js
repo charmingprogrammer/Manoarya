@@ -5,9 +5,7 @@ function searchCloser() {
   document.getElementById("search_container").style.top = "-200%";
 }
 
-setTimeout(() => {
-  document.getElementById('user_login_con').style.top='0';
-}, 50000);
+
 
 function searchNow() {
   // Declare variables
@@ -41,10 +39,13 @@ document.getElementById('myUL').insertAdjacentHTML(
 //user auth script
 
 function user() {
-    document.getElementById('user_login_con').style.top = '0';
+    document.getElementById('user_login_con').style.bottom = '0';
 }
 
 function userClose() {
-  document.getElementById('user_login_con').style.top = '-100%'; 
+  document.getElementById('user_login_con').style.bottom = '-100%'; 
 }
 
+setTimeout(() => {
+  document.getElementById('user_login_con').style.bottom='0';
+}, 5000);
