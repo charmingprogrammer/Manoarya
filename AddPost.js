@@ -246,7 +246,7 @@ const AllPost = [
     recommend:'yes'
   },
   {
-    category: "CheatSheet",
+    category: "Cheet_sheet",
     Title: "HTML Complete Cheat Sheet By Manoaya.",
     ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/HTML_Cheat_sheet.png",
     PostUrl:
@@ -470,7 +470,7 @@ const AllPost = [
     alt: "How IOT Works? Explained Easily",
   },
   {
-    category: "Explanation",
+    category: "Cheet_sheet",
     Title: "CSS Cheat Sheet 2023",
     ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/CSS_Cheat_Sheet.png",
     PostUrl:
@@ -478,7 +478,7 @@ const AllPost = [
     alt: "CSS Cheat Sheet 2023",
   },
   {
-    category: "Explanation",
+    category: "Cheet_sheet",
     Title: "Javascript Cheat Sheet 2023.",
     ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/JS_Cheat_Sheet.png",
     PostUrl:
