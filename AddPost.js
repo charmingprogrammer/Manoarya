@@ -482,7 +482,7 @@ const AllPost = [
     Title: "Javascript Cheat Sheet 2023.",
     ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/JS_Cheat_Sheet.png",
     PostUrl:
-      "../Manoarya%20All%20Post/What_is_difference_between_Machine_learning_and_Data_Science.html",
+      "../Manoarya%20All%20Post/Js_Cheat_Sheet.html",
     alt: "Javascript Cheat Sheet 2023.",
   },
 ];
