@@ -110,8 +110,8 @@ function Cources() {
            <h2>Explanation</h2>
            </div>
            <div class='category_box' onclick="CheatSheet()">
-           <i class="fas fa-question"></i>
-           <h2>Q&A</h2>
+           <i class="fas fa-book"></i>
+           <h2>CheatSheet</h2>
            </div>
         </div>`
   );
@@ -163,8 +163,8 @@ function Demo() {
            <h2>Explanation</h2>
            </div>
            <div class='category_box' onclick="CheatSheet()">
-           <i class="fas fa-question"></i>
-           <h2>Q&A</h2>
+           <i class="fas fa-book"></i>
+           <h2>CheatSheet</h2>
            </div>
         </div>`
   );
@@ -216,8 +216,8 @@ function HTM() {
            <h2>Explanation</h2>
            </div>
            <div class='category_box' onclick="CheatSheet()">
-           <i class="fas fa-question"></i>
-           <h2>Q&A</h2>
+           <i class="fas fa-book"></i>
+           <h2>CheatSheet</h2>
            </div>
         </div>`
   );
@@ -270,8 +270,8 @@ function Explanation() {
            <h2>Explanation</h2>
            </div>
            <div class='category_box' onclick="CheatSheet()">
-           <i class="fas fa-question"></i>
-           <h2>Q&A</h2>
+           <i class="fas fa-book"></i>
+           <h2>CheatSheet</h2>
            </div>
         </div>`
   );
