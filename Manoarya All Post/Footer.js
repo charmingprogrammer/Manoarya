@@ -36,7 +36,7 @@ function footer_Content() {
   <!-- Call to action btn -->
   <div id="cta_Container">
     <a href="#">Themes</a>
-    <a href="#">Hire Me</a>
+    <a href="mailto:manoaryaforyou@gmail.com">Hire Me</a>
     <a href="#">Courses</a>
   </div>
     `);
