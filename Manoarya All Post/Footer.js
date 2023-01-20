@@ -12,10 +12,10 @@ function footer_Content() {
     </a>
     <div class="footer_box">
     <h3>HELPFUL LINKS</h3>
-    <a href="./Manoarya All Post/AboutUs.html">About Us</a>
-    <a href="./Manoarya All Post/privacyPrivacy.html">Privacy policy</a>
+    <a href="../Manoarya All Post/AboutUs.html">About Us</a>
+    <a href="../Manoarya All Post/privacyPrivacy.html">Privacy policy</a>
     <a href="#">Refund & Cancellation Policy</a>
-    <a href="./Manoarya All Post/TermsAndConditions.html">Terms & Condition</a>
+    <a href="../Manoarya All Post/TermsAndConditions.html">Terms & Condition</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScFuSx8QisX9-lKX7Xf_l_IMptzNa0pGsBsLL3VOwx80HvX8A/viewform">Refer
       & Earn</a>
   </div>
