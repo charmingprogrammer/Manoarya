@@ -485,4 +485,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/Js_Cheat_Sheet.html",
     alt: "Javascript Cheat Sheet 2023.",
   },
+  {
+    category: "Explanation",
+    Title: "Unlocking the Power of Coding: A Guide to the Most In-Demand Programming Languages",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/coding.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Unlocking_the_Power_of_Coding_A_Guide_to_the_Most_In-Demand_Programming_Languages.html",
+    alt: "Unlocking the Power of Coding: A Guide to the Most In-Demand Programming Languages",
+  },
 ];
