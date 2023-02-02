@@ -503,8 +503,8 @@ const AllPost = [
   },
   {
     category: "Explanation",
-    Title: "Visual Studio Code: The Ultimate Code Editor for DevelopersUnlocking the Power of Python: A Comprehensive Guide to Python Programming",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/vs_code.png",
+    Title: "Unlocking the Power of Python: A Comprehensive Guide to Python Programming",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/python_programming.png",
     PostUrl:
       "../Manoarya%20All%20Post/python_programming_guide.html",
     alt: "Python programming",
