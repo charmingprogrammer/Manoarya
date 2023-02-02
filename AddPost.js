@@ -493,4 +493,20 @@ const AllPost = [
       "../Manoarya%20All%20Post/Unlocking_the_Power_of_Coding_A_Guide_to_the_Most_In-Demand_Programming_Languages.html",
     alt: "Unlocking the Power of Coding: A Guide to the Most In-Demand Programming Languages",
   },
+  {
+    category: "Explanation",
+    Title: "Visual Studio Code: The Ultimate Code Editor for Developers",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/vs_code.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Visual_Studio_Code_The_Ultimate_Code_Editor_for_Developers.html",
+    alt: "Visual Studio Code",
+  },
+  {
+    category: "Explanation",
+    Title: "Visual Studio Code: The Ultimate Code Editor for DevelopersUnlocking the Power of Python: A Comprehensive Guide to Python Programming",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/vs_code.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/python_programming_guide.html",
+    alt: "Python programming",
+  },
 ];

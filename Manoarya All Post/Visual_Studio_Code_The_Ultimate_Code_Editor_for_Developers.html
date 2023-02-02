@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>
+        Visual Studio Code: The Ultimate Code Editor for Developers
+    </title>
+    <meta name="description"
+        content="A comprehensive guide to Visual Studio Code, the powerful code editor for developers">
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+    <!--code highlighter links-->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-SRT0FM6SCD");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation bar top-->
+    <nav>
+        <a href="https://manoarya.com/" class="navLeft">
+            <img src="../Main_Logo.png" alt="Manoarya Logo" />
+            <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+                <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+                <i style="font-size: 10px;">A platform for coders.</i>
+            </div>
+        </a>
+        <div class="navRight">
+            <i class="fas fa-search" id="search_opener"></i>
+            <!-- dark mode buttons -->
+            <div id="dark_Mode_box">
+                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+                    id="DarkOn"></button>
+            </div>
+            <button id="subBtn"
+                onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
+        </div>
+    </nav>
+    <!--search-->
+    <div id="searchContainer">
+        <div class="search_header">
+            <i class="fas fa-arrow-left" id="search_closer"></i>
+            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+        </div>
+        <ul id="myUL">
+            </ol>
+    </div>
+    <div id="container">
+        <div id="page1">
+            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+            <!--post image -->
+            <div class="post_Img_Con">
+                <img src="../Manoarya All Post/Images/vs_code.png" alt="Visual Studio Code" />
+            </div>
+            <!--Main Post-->
+            <div class="postContainer">
+                <h1 id="postTitle">
+                    Visual Studio Code: The Ultimate Code Editor for Developers
+                </h1>
+                <p><b>Category : </b> <span id="category">Explanation</span></p>
+                <p>Visual Studio Code is a powerful code editor, that is designed specifically for developers. It
+                    provides a rich set of features, that makes it easy to write, debug, and deploy code, across
+                    multiple platforms and programming languages.</p>
+                <h2>Top Features of Visual Studio Code</h2>
+                <ol style="padding: 10px 40px;">
+                    <li style="padding: 10px 20px;">Intelligent Code Completion: Visual Studio Code provides intelligent
+                        code completion, which
+                        suggests completions for your code, based on the context of your code, and the libraries and
+                        frameworks, you are using. With intelligent code completion, you can write code faster, and with
+                        less effort, compared to manually typing out every line of code.</li>
+                    <li style="padding: 10px 20px;">Debugging: Visual Studio Code provides debugging features, that make
+                        it easy to identify and fix
+                        errors, in your code. With the integrated debugger, you can set breakpoints, inspect variables,
+                        and step through your code, to find and fix bugs, more efficiently.</li>
+                    <li style="padding: 10px 20px;">Extensions: Visual Studio Code provides a large marketplace of
+                        extensions, that you can use, to
+                        add additional functionality, to the code editor. With extensions, you can extend the
+                        capabilities of Visual Studio Code, and customize it, to suit your needs and preferences, making
+                        it a highly flexible and adaptable code editor.</li>
+                    <li style="padding: 10px 20px;">Integrated Terminal: Visual Studio Code provides a built-in
+                        terminal, which makes it easy for
+                        you to run command-line tools and scripts, directly from the code editor. Whether you need to
+                        run a Git command, or execute a Python script, you can do it all from the integrated terminal,
+                        without switching to a separate window.</li>
+                    <li style="padding: 10px 20px;">Code Linting: Visual Studio Code provides code linting, which can
+                        help you identify and fix
+                        syntax and style issues, in your code, as you write it. With code linting, you can catch
+                        mistakes early, and maintain a high standard of quality, in your code, without having to spend
+                        time manually reviewing your code.</li>
+                    <li style="padding: 10px 20px;">Customizable Themes: Visual Studio Code provides a variety of
+                        customizable themes, which can
+                        help you personalize the look and feel of the code editor, to suit your preferences. Whether you
+                        prefer a light theme, or a dark theme, or anything in between, you can find a theme that fits
+                        your style, and makes working with code, a more enjoyable and comfortable experience.</li>
+                    <li style="padding: 10px 20px;">Integrated Git Support: Visual Studio Code provides integrated Git
+                        support, which makes it easy
+                        for you to manage version control, and collaborate with other developers, on your projects. With
+                        the integrated Git client, you can perform actions such as committing, pushing, and pulling,
+                        directly from the code editor, without having to switch to a separate Git client.</li>
+                    <li style="padding: 10px 20px;">Syntax Highlighting: Visual Studio Code provides syntax
+                        highlighting, which makes it easy for
+                        you to see the structure of your code, and identify different elements, at a glance. With syntax
+                        highlighting, you can write and read code, more efficiently, as you can quickly identify
+                        different elements, such as keywords, variables, and comments, by their color.</li>
+                </ol>
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h2>Why Choose Visual Studio Code Over Other Code Editors?</h2>
+                <p>There are many reasons why developers choose Visual Studio Code over other code editors. Some of the
+                    key reasons include:</p>
+                <ol style="padding: 10px 40px;">
+                    <li style="padding: 10px 20px;">Cross-Platform Support: Visual Studio Code is available for Windows,
+                        Mac, and Linux, which makes
+                        it accessible to a wide range of developers, regardless of the platform, they are using. With
+                        cross-platform support, developers can use Visual Studio Code, on the platform that they are
+                        most comfortable with, and work on their projects, from anywhere.</li>
+                    <li style="padding: 10px 20px;">Free and Open-Source: Visual Studio Code is a free and open-source
+                        code editor, which makes it
+                        accessible to developers, regardless of their budget. With the open-source license, developers
+                        can access the source code, and contribute to the development of Visual Studio Code, making it a
+                        better code editor, for everyone.</li>
+                    <li style="padding: 10px 20px;">Highly Customizable: As mentioned earlier, Visual Studio Code
+                        provides a large marketplace of
+                        extensions, which makes it highly customizable. With the ability to add extensions, and
+                        customize the code editor, developers can make Visual Studio Code, their own, and create a
+                        development environment, that is tailored to their specific needs and preferences.</li>
+                    <li style="padding: 10px 20px;">Excellent Performance: Visual Studio Code is designed to be fast and
+                        lightweight, which makes it
+                        an excellent choice, for developers, who need a code editor, that can handle large projects, and
+                        complex codebases. With its excellent performance, Visual Studio Code provides a smooth and
+                        responsive development experience, that helps developers, work more efficiently.</li>
+                </ol>
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+                <h1>Extensions for Visual Studio Code</h1>
+                <p>Visual Studio Code is a popular code editor, that provides a rich set of features, for developers.
+                    One of the key features of Visual Studio Code, is the ability to extend its functionality, through
+                    the use of extensions.</p>
+                <p>Extensions are add-ons, that provide additional features and functionality, to Visual Studio Code.
+                    With extensions, developers can customize Visual Studio Code, to fit their specific needs, and
+                    enhance their development workflow.</p>
+
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h2>How to Install Extensions in Visual Studio Code</h2>
+                <p>Installing extensions in Visual Studio Code, is a simple process. Here's how:</p>
+                <ol style="padding: 10px 40px;">
+                    <li style="padding: 10px 20px;">Open Visual Studio Code.</li>
+                    <li style="padding: 10px 20px;">Click on the Extensions icon, on the Activity Bar, on the side of
+                        the editor (it looks like a
+                        square with an upward-facing arrow).</li>
+                    <li style="padding: 10px 20px;">Type the name of the extension, you want to install, in the search
+                        bar.</li>
+                    <li style="padding: 10px 20px;">Click the Install button, next to the extension, you want to
+                        install.</li>
+                    <li style="padding: 10px 20px;">Once the installation is complete, click the Reload button, to
+                        reload Visual Studio Code, and
+                        activate the extension.</li>
+                </ol>
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <p>Once you have installed an extension, you can configure it, by clicking on the Extensions icon, on
+                    the Activity Bar, and then clicking on the gear icon, next to the extension, you want to configure.
+                </p>
+                <h2>Popular Extensions for Visual Studio Code</h2>
+                <p>There are thousands of extensions available for Visual Studio Code, that provide a wide range of
+                    features and functionality. Here are a few popular extensions, that you may find useful:</p>
+                <ol style="padding: 10px 40px;">
+                    <li style="padding: 10px 20px;"><b>Live Server</b> - a development server, that automatically
+                        reloads the browser, when changes
+                        are made to the code.</li>
+                    <li style="padding: 10px 20px;"><b>Auto Rename Tag</b> - automatically renames paired HTML/XML tag,
+                        when one tag is modified.
+                    </li>
+                    <li style="padding: 10px 20px;"><b>Material Icon Theme</b> - provides Material Design icons, for
+                        Visual Studio Code.</li>
+                    <li style="padding: 10px 20px;"><b>ESLint</b> - a linter tool, that helps you find and fix problems,
+                        with your JavaScript code.
+                    </li>
+                    <li style="padding: 10px 20px;"><b>Prettier</b> - a code formatter, that automatically formats your
+                        code, to ensure, that it is
+                        consistent, and easy to read.</li>
+                </ol>
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <p>These are just a few examples of the many extensions, that are available for Visual Studio Code. To
+                    find more extensions, you can visit the Visual Studio Code marketplace, by clicking on the
+                    Extensions icon, on the Activity Bar, and then clicking on the "Explore Visual Studio Code
+                    Extensions" link, on the Extensions view.</p>
+
+                <h1>How to Use Visual Studio Code Effectively</h1>
+                <p>Visual Studio Code is a popular and powerful code editor used by developers all around the world.
+                    Here are some tips and tricks to help you use Visual Studio Code effectively:</p>
+                <h2>1. Customize your settings</h2>
+                <p>Visual Studio Code offers a wide range of customization options to make the editor fit your needs.
+                    You can customize settings by going to File > Preferences > Settings or by using the keyboard
+                    shortcut `Ctrl + ,`. From here, you can change settings such as font size, theme, and more. You can
+                    also install extensions to add new features to Visual Studio Code.</p>
+                <h2>2. Use Keyboard Shortcuts</h2>
+                <p>Keyboard shortcuts can save you a lot of time when using Visual Studio Code. Some of the most common
+                    keyboard shortcuts include `Ctrl + P` to quickly open files, `Ctrl + Shift + P` to open the command
+                    palette, and `Ctrl + F` to search for text within a file. You can view a complete list of keyboard
+                    shortcuts by going to File > Preferences > Keyboard Shortcuts or by using the keyboard shortcut
+                    `Ctrl + K Ctrl + S`.</p>
+                <h2>3. Use integrated terminal</h2>
+                <p>Visual Studio Code includes an integrated terminal that allows you to run command-line tools directly
+                    from the editor. You can open the integrated terminal by using the keyboard shortcut `Ctrl + ` `.
+                    The terminal is particularly useful for running commands like Git, npm, and more. You can also split
+                    the terminal into multiple panels for multitasking.</p>
+                <h2>4. Use snippets</h2>
+                <p>Snippets are blocks of code that you can reuse in your projects. Visual Studio Code includes several
+                    built-in snippets, and you can also create your own custom snippets. To use a snippet, start typing
+                    its trigger and then press `Tab`. The code will automatically be inserted where you're typing. To
+                    access the list of built-in snippets, go to File > Preferences > User Snippets.</p>
+                <h2>5. Utilize code navigation</h2>
+                <p>Visual Studio Code provides several tools to help you navigate your code. You can use `Ctrl + T` to
+                    quickly search for symbols within your workspace, `Ctrl + G` to go to a specific line number, and
+                    `Ctrl + Tab` to switch between open files. Additionally, you can hover over a symbol to view its
+                    definition and click on it to jump to its location in the code.</p>
+                <h2>6. Debug your code</h2>
+                <p>Visual Studio Code includes a built-in debugger that allows you to easily find and fix errors in your
+                    code. You can set breakpoints, step through your code, and view the value of variables. To start
+                    debugging, open the Debug View by clicking on the bug icon in the View Bar. Then, click on the play
+                    button to start the debugger. You can also launch the debugger from the command palette by typing
+                    `Debug: Start Debugging` and pressing enter.</p>
+                <h2>7. Collaborate with others</h2>
+                <p>Visual Studio Code also provides tools to help you collaborate with others. You can use the Live
+                    Share extension to share your workspace with others, allowing them to see your code and make changes
+                    in real-time. You can also use the Git source control management system to manage your code and keep
+                    track of changes made by yourself and others. To access the Git tools, click on the Source Control
+                    icon in the View Bar.</p>
+                <p>In conclusion, Visual Studio Code is a powerful code editor that can help you be more productive. By
+                    utilizing these tips and tricks, you can make the most of Visual Studio Code and streamline your
+                    workflow.</p>
+                <h2>Conclusion</h2>
+                <p>Visual Studio Code is a powerful code editor, that provides a rich set of features, for developers.
+                    From intelligent code completion, to debugging, to integrated Git support, Visual Studio Code
+                    provides everything that developers need, to write, debug, and deploy code, efficiently. Whether you
+                    are a beginner, or an experienced developer, Visual Studio Code is an excellent choice, for anyone,
+                    who needs a high-quality code editor, that is easy to use, and highly customizable.</p>
+                <p>So if you're looking for a code editor, that will help you work more efficiently, and improve your
+                    development workflow, give Visual Studio Code a try. You won't regret it!</p>
+                    <p>
+                        <a href="https://code.visualstudio.com/">Download Vs Code</a>
+                    </p>
+                    <br><br>
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h1 style="text-align: center;">Thanks You, Happy Coding</h1> <br><br>
+
+            </div>
+            <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+        </div>
+        <div id="page2">
+            <!--post suggestions-->
+            <div id="postSuggestionContainer"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+    </footer>
+    <!-- subscribe form -->
+    <div id="subscribe_form_container">
+        <!-- hide the main contianer when click -->
+        <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+        <!-- Sfc content -->
+        <div id="sfc_content">
+            <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- surprise surprise -->
+    <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+    </div>
+    <!--top scrolling-->
+    <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="Footer.js"></script>
+    <script src="Surprise.js"></script>
+    <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+    <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>
