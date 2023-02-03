@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>
+        ChatGPT : The Revolution of AI
+    </title>
+    <meta name="description"
+        content="Get an overview of ChatGPT, the state-of-the-art language generation model developed by OpenAI. Learn about its features, applications, and limitations in this comprehensive guide. Discover the power of ChatGPT for conversational text generation today!">
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+    <!--code highlighter links-->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-SRT0FM6SCD");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation bar top-->
+    <nav>
+        <a href="https://manoarya.com/" class="navLeft">
+            <img src="../Main_Logo.png" alt="Manoarya Logo" />
+            <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
+                <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
+                <i style="font-size: 10px;">A platform for coders.</i>
+            </div>
+        </a>
+        <div class="navRight">
+            <i class="fas fa-search" id="search_opener"></i>
+            <!-- dark mode buttons -->
+            <div id="dark_Mode_box">
+                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+                    id="DarkOn"></button>
+            </div>
+            <button id="subBtn"
+                onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
+        </div>
+    </nav>
+    <!--search-->
+    <div id="searchContainer">
+        <div class="search_header">
+            <i class="fas fa-arrow-left" id="search_closer"></i>
+            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+        </div>
+        <ul id="myUL">
+            </ol>
+    </div>
+    <div id="container">
+        <div id="page1">
+            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+            <!--post image -->
+            <div class="post_Img_Con">
+                <img src="../Manoarya All Post/Images/vs_code.png" alt="ChatGPT" />
+            </div>
+            <!--Main Post-->
+            <div class="postContainer">
+                <h1 id="postTitle">
+                    ChatGPT : The Revolution of AI
+                </h1>
+                <p><b>Category : </b> <span id="category">Explanation</span></p>
+                <h2>Introduction</h2>
+                <p>ChatGPT is a state-of-the-art language generation model developed by OpenAI, one of the world&apos;s
+                    leading AI research institutions. It is based on the Transformer architecture, which has
+                    revolutionized natural language processing (NLP) tasks such as machine translation and text
+                    summarization. The goal of ChatGPT is to generate human-like text in a conversational context,
+                    making it an ideal tool for various applications such as customer service, content generation, and
+                    personal assistants.</p>
+                    <!-- Ad space -->
+                    <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h2>What is ChatGPT?</h2>
+                <p>ChatGPT is a variant of the GPT (Generative Pretrained Transformer) model, which is a
+                    transformer-based architecture trained on a large corpus of text data. The original GPT model was
+                    trained on a massive dataset of over 40GB of text data, which included books, articles, and
+                    websites, among others. The model was then fine-tuned on smaller, more specific datasets to perform
+                    specific NLP tasks.</p>
+                <p>ChatGPT, on the other hand, was fine-tuned specifically for conversational text generation. This
+                    means that it has been trained on large datasets of conversations, making it more adept at
+                    generating text in a conversational context.</p>
+                    <!-- Ad space -->
+                    <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h2>How does ChatGPT work?</h2>
+                <p>ChatGPT works by predicting the next word in a sequence given a prompt. The model is trained to
+                    generate coherent and grammatically correct text, and it can also incorporate context from previous
+                    turns in a conversation to generate more relevant responses.</p>
+                <p>To generate text, ChatGPT starts with a prompt, which could be a question, a statement, or a context,
+                    and then predicts the next word. The process is repeated until the model reaches the end of the text
+                    sequence or a stopping condition, such as a maximum length or a specific end-of-sentence token.</p>
+                <p>The model uses a combination of deep learning and NLP techniques to generate text, including the
+                    attention mechanism and the transformer architecture. The attention mechanism allows the model to
+                    focus on specific parts of the input when generating text, while the transformer architecture
+                    enables parallel processing of the input, making the model faster and more efficient.</p>
+                    <!-- Ad space -->
+                    <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <h2>Applications of ChatGPT</h2>
+                <p>ChatGPT has a wide range of applications, including:</p>
+                <ol>
+                    <li>
+                        <p>Customer service: ChatGPT can be used to handle customer inquiries, reducing the workload of
+                            human customer service agents. The model can provide quick and accurate responses to common
+                            questions, freeing up human agents to handle more complex issues.</p>
+                    </li>
+                    <li>
+                        <p>Content generation: ChatGPT can be used to generate articles, stories, and other types of
+                            content. This can be especially useful for businesses and organizations that need to produce
+                            a large volume of content in a short amount of time.</p>
+                    </li>
+                    <li>
+                        <p>Personal assistants: ChatGPT can be integrated into personal assistants, such as virtual
+                            assistants and smart speakers, to provide a more natural and human-like interaction. The
+                            model can answer questions, provide information, and perform tasks, making it an essential
+                            tool for making these devices more user-friendly.</p>
+                    </li>
+                    <li>
+                        <p>Chatbots: ChatGPT can be used to build chatbots for various applications, such as e-commerce
+                            websites, online forums, and social media platforms. The model can handle a wide range of
+                            conversation topics and provide relevant and appropriate responses.</p>
+                    </li>
+                </ol>
+                <!-- Ad space -->
+                <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                crossorigin="anonymous"></script>
+            <!-- Manoarya Ads -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+                <h2>Limitations of ChatGPT</h2>
+                <p>While ChatGPT is a powerful tool for generating human-like text, it is not perfect. Some of the
+                    limitations of the model include:</p>
+                <ol>
+                    <li>
+                        <p>Bias: Like all AI models, ChatGPT is only as unbiased as the data it was trained on. If the
+                            training data contains biases, the model may generate biased text.</p>
+                    </li>
+                    <li>
+                        <p>Limited knowledge: ChatGPT is limited by the knowledge it was trained on. While the model has
+                            been trained on a large corpus of text data, it may not have the knowledge of current events
+                            or specific domain-specific information.</p>
+                    </li>
+                </ol>
+                <ol start="3">
+                    <li>
+                        <p>Unintended consequences: ChatGPT is a generative model, which means that it can generate text
+                            that is unintended or offensive. Care must be taken when using the model to avoid any
+                            negative consequences.</p>
+                    </li>
+                </ol>
+                <!-- Ad space -->
+                <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                crossorigin="anonymous"></script>
+            <!-- Manoarya Ads -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+                <h2>Conclusion</h2>
+                <p>ChatGPT is a powerful language generation model developed by OpenAI that is designed for
+                    conversational text generation. It is based on the transformer architecture and has been trained on
+                    large datasets of conversations, making it an ideal tool for various applications such as customer
+                    service, content generation, and personal assistants. While it has its limitations, ChatGPT is a
+                    significant advancement in the field of NLP and has the potential to revolutionize the way we
+                    interact with technology.</p>
+                    <!-- Ad space -->
+                    <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+                <h1 style="text-align: center;">Thanks You, Happy Coding</h1> <br><br>
+
+            </div>
+            <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+        </div>
+        <div id="page2">
+            <!--post suggestions-->
+            <div id="postSuggestionContainer"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+    </footer>
+    <!-- subscribe form -->
+    <div id="subscribe_form_container">
+        <!-- hide the main contianer when click -->
+        <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
+        <!-- Sfc content -->
+        <div id="sfc_content">
+            <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- surprise surprise -->
+    <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+    </div>
+    <!--top scrolling-->
+    <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="Footer.js"></script>
+    <script src="Surprise.js"></script>
+    <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+    <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

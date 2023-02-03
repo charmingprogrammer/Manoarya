@@ -509,4 +509,20 @@ const AllPost = [
       "../Manoarya%20All%20Post/python_programming_guide.html",
     alt: "Python programming",
   },
+  {
+    category: "Explanation",
+    Title: "ChatGPT : The Revolution of AI",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/ChatGPT.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/ChatGPT_the_revolution_of_AI.html",
+    alt: "ChatGPT : The Revolution of AI",
+  },
+  {
+    category: "Explanation",
+    Title: "The Metaverse: Exploring the Future of Virtual Reality",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Metaverse.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/The_Metaverse.html",
+    alt: "The Metaverse: Exploring the Future of Virtual Reality",
+  },
 ];
