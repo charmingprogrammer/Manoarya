@@ -421,14 +421,14 @@ const AllPost = [
       "../Manoarya%20All%20Post/Amazon_UI_Clone_using_HTML_CSS_JS.html",
     alt: "Amazon UI clone created by Manoarya using html css and js.",
   },
-  {
-    category: "Demo",
-    Title: "[Demo] Amazon UI clone created by Manoarya using html css and js.",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Amazon%20UI%20clone%20poster.png",
-    PostUrl:
-      "./Demo/Amazon UI Clone/index.html",
-    alt: "Amazon UI clone created by Manoarya using html css and js.",
-  },
+  // {
+  //   category: "Demo",
+  //   Title: "[Demo] Amazon UI clone created by Manoarya using html css and js.",
+  //   ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Amazon%20UI%20clone%20poster.png",
+  //   PostUrl:
+  //     "./Demo/Amazon UI Clone/index.html",
+  //   alt: "Amazon UI clone created by Manoarya using html css and js.",
+  // },
   {
     category: "Explanation",
     Title: "An Overview of Machine Learning: What it is and How it Works",
