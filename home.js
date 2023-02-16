@@ -10,7 +10,7 @@ function home() {
     //   inject data from hare
     container.insertAdjacentHTML(
       "afterbegin",
-      `<a target='_blank' href="${data.PostUrl}" class="box"><img src="${data.ImageUrl}" alt="${data.alt}" />
+      `<a target='_blank' href="${data.PostUrl}" class="box"><img loading="lazy" src="${data.ImageUrl}" alt="${data.alt}" />
     <h2>${data.Title}</h2></a>`
     );
   }
@@ -39,7 +39,7 @@ function randomUniqueNum(range) {
     const recommendDom = document.getElementById("recommend");
     recommendDom.insertAdjacentHTML(
       "afterbegin",
-      `<a target='_blank' href="${recommendPost.PostUrl}" class="box"><img src="${recommendPost.ImageUrl}" alt="${recommendPost.alt}" />
+      `<a target='_blank' href="${recommendPost.PostUrl}" class="box"><img loading="lazy" src="${recommendPost.ImageUrl}" alt="${recommendPost.alt}" />
       <h2>${recommendPost.Title}</h2></a>`
     );
   }

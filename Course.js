@@ -28,7 +28,7 @@ for (var i = 0; i < AllNotes.length; i++) {
     ${AllNotes[i].Title}
     </h1>
     <div id="img_container">
-    <img src="${AllNotes[i].ImgUrl}" alt="${AllNotes[i].ImgAlt}" />
+    <img loading="lazy" src="${AllNotes[i].ImgUrl}" alt="${AllNotes[i].ImgAlt}" />
     </div>
     <div class="topic_explaning" id='topic_explaning'>
     ${AllNotes[i].Topic}
