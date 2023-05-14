@@ -533,4 +533,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/npm_introduction.html",
     alt: "Introduction to npm",
   },
+    {
+    category: "Explanation",
+    Title: "Top 10 Programming Languages to Learn in 2023: A Software Engineer's Perspective",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/You_should_learn.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/To_10_Programming_Languages_to_Learn_in_2023_A_Software_Engineer's_Perspective.html",
+    alt: "Top 10 Programming Languages to Learn in 2023: A Software Engineer's Perspective",
+  },
 ];
