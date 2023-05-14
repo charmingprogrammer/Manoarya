@@ -549,4 +549,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/How_to_Create_Your_First_Website_with_HTML_and_CSS_for_beginners.html",
     alt: "How to Create Your First Website with HTML and CSS for beginners?",
   },
+  {
+    category: "Explanation",
+    Title: "10 Best Online Coding Courses for Beginners.",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/10_Best_Online_Coding_Courses.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/10_Best_Online_Coding_Courses_for_Beginners.html",
+    alt: "10 Best Online Coding Courses for Beginners.",
+  },
 ];
