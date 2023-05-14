@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>
+    How to Create Your First Website with HTML and CSS for beginners?
+  </title>
+  <meta
+    name="description"
+    content="Creating a website can seem like a daunting task for beginners, but with the right guidance, anyone can do it. In this blog post, we will go over the basics of creating a website using HTML and CSS."
+  />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="../Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <button
+        id="subBtn"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+      >
+        Subscribe
+      </button>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img
+          src="../Manoarya All Post/Images/How_to_Make_Website_using_HTML_CSS_Beginner.png"
+          alt="How to Create Your First Website with HTML and CSS for beginners?"
+        />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">
+          How to Create Your First Website with HTML and CSS for beginners?
+        </h1>
+
+        <p>
+          Creating a website can seem like a daunting task for beginners, but
+          with the right guidance, anyone can do it. In this blog post, we will
+          go over the basics of creating a website using HTML and CSS.
+        </p>
+        <p><br /></p>
+        <p>
+          HTML and CSS are the building blocks of the web. HTML is used to
+          structure the content of a web page, while CSS is used to style and
+          format the content. To create a website, you will need to have a basic
+          understanding of both languages.
+        </p>
+        <p><br /></p>
+        <p>
+          Here are the steps to create your first website with HTML and CSS:
+        </p>
+        <!-- Ad space -->
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Manoarya Ads -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4365651039511906"
+          data-ad-slot="4021494427"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <p><br /></p>
+        <h2>Step 1: Plan Your Website</h2>
+        <p>
+          Before you start coding, it&apos;s important to plan out your website.
+          Think about the purpose of your website and what content you want to
+          include. Consider the layout of your website and how you want it to
+          look. Sketching out a rough design on paper can be helpful.
+        </p>
+        <p><br /></p>
+        <h2>Step 2: Set Up Your Development Environment</h2>
+        <p>
+          To start coding, you will need a code editor. There are many free code
+          editors available, such as Visual Studio Code, Atom, and Sublime Text.
+          Choose the one that works best for you and install it on your
+          computer.
+        </p>
+        <!-- Ad space -->
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Manoarya Ads -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4365651039511906"
+          data-ad-slot="4021494427"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <p><br /></p>
+        <h2>Step 3: Create Your HTML Document</h2>
+        <p>
+          The first step in creating your website is to create an HTML document.
+          Open your code editor and create a new file. Save the file with the
+          .html extension. In the file, you will need to include the basic
+          structure of an HTML document.
+        </p>
+        <p><br /></p>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&nbsp; &lt;title&gt;My Website&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+        <p>
+          This is the basic structure of an HTML document. The &lt;!DOCTYPE
+          html&gt; declaration tells the browser that this is an HTML document.
+          The &lt;html&gt; element is the root element of the document, and the
+          &lt;head&gt; element contains information about the document. The
+          &lt;title&gt; element sets the title of the document, which is
+          displayed in the browser&apos;s title bar. The &lt;body&gt; element
+          contains the content of the document.
+        </p>
+        <p><br /></p>
+        <h2>Step 4: Add Content to Your Website</h2>
+        <p>
+          Now that you have created the basic structure of your website, you can
+          start adding content. Add headings, paragraphs, and images to your
+          website using HTML tags.
+        </p>
+        <p><br /></p>
+        <p>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;</p>
+        <p>&lt;p&gt;This is my first website.&lt;/p&gt;</p>
+        <p>&lt;img src=&quot;image.jpg&quot; alt=&quot;My Image&quot;&gt;</p>
+        <p><br /></p>
+        <p>
+          The &lt;h1&gt; tag creates a heading, and the &lt;p&gt; tag creates a
+          paragraph. The &lt;img&gt; tag is used to insert an image. The src
+          attribute specifies the URL of the image, and the alt attribute
+          provides a description of the image for users who cannot see the
+          image.
+        </p>
+        <!-- Ad space -->
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Manoarya Ads -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4365651039511906"
+          data-ad-slot="4021494427"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <p><br /></p>
+        <h2>Step 5: Style Your Website with CSS</h2>
+        <p>
+          Now that you have added content to your website, you can style it with
+          CSS. Create a new file in your code editor and save it with the .css
+          extension. In your HTML document, link to the CSS file using the
+          &lt;link&gt; tag.
+        </p>
+        <p><br /></p>
+        <p>&lt;head&gt;</p>
+        <p>&nbsp; &lt;title&gt;My Website&lt;/title&gt;</p>
+        <p>
+          &nbsp; &lt;link rel=&quot;stylesheet&quot;
+          href=&quot;style.css&quot;&gt;
+        </p>
+        <p>&lt;/head&gt;</p>
+        <p>
+          In your CSS file, you can style the elements in your HTML document.
+        </p>
+        <p><br /></p>
+        <p>h1 {</p>
+        <p>color: red;</p>
+        <p>font-size: 36px;</p>
+        <p>}</p>
+        <p><br /></p>
+        <p>p {</p>
+        <p>font-size: 24px;</p>
+        <p>}</p>
+        <p><br /></p>
+        <p>img {</p>
+        <p>width: 100%;</p>
+        <p>}</p>
+        <p><br /></p>
+        <p>
+          This CSS code sets the color and font size of the &lt;h1&gt; and
+          &lt;p&gt; tags and sets the width of the &lt;img&gt; tag to 100%.
+        </p>
+        <!-- Ad space -->
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Manoarya Ads -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-4365651039511906"
+          data-ad-slot="4021494427"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <p><br /></p>
+        <h2>Step 6: Publish Your Website</h2>
+        <p>
+          Once you have created your website, it&apos;s time to publish it.
+          There are many web hosting services available, such as GitHub Pages,
+          Netlify, and Firebase Hosting. Choose the one that works best for you
+          and follow their instructions to publish your website.
+        </p>
+        <p><br /></p>
+        <h2>Congratulations, you</h2>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

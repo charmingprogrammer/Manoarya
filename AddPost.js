@@ -541,4 +541,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/To_10_Programming_Languages_to_Learn_in_2023_A_Software_Engineer's_Perspective.html",
     alt: "Top 10 Programming Languages to Learn in 2023: A Software Engineer's Perspective",
   },
+  {
+    category: "Explanation",
+    Title: "How to Create Your First Website with HTML and CSS for beginners?",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/How_to_Make_Website_using_HTML_CSS_Beginner.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/How_to_Create_Your_First_Website_with_HTML_and_CSS_for_beginners.html",
+    alt: "How to Create Your First Website with HTML and CSS for beginners?",
+  },
 ];
