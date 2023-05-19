@@ -565,4 +565,100 @@ const AllPost = [
       "../Manoarya%20All%20Post/The_Importance_of_Code_Quality_Best_Practices_to_Follow.html",
     alt: "The Importance of Code Quality_ Best Practices to Follow.png",
   },
+  {
+    category: "Explanation",
+    Title: "10 Tips for Debugging Your Code Effectively",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/10 Tips for Debugging Your Code Effectively.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/10_Tips_for_Debugging_Your_Code_Effectively.html",
+    alt: "10 Tips for Debugging Your Code Effectively",
+  },
+  {
+    category: "Explanation",
+    Title: "Introduction to Data Structures and Algorithms",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Introduction to Data Structures and Algorithms.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Introduction_to_Data_Structures_and_Algorithms.html",
+    alt: "Introduction to Data Structures and Algorithms",
+  },
+  {
+    category: "Explanation",
+    Title: "How to Build a Responsive Website from Scratch",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/How to Build a Responsive Website from Scratch.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/How_to_Build_a_Responsive_Website_Scratch.html",
+    alt: "How to Build a Responsive Website from Scratch",
+  },
+  {
+    category: "Explanation",
+    Title: "The Basics of Object-Oriented Programming (OOP)",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Basics of Object-Oriented Programming (OOP).png",
+    PostUrl:
+      "../Manoarya%20All%20Post/The_Basics_of_Object_Oriented_Programming_(OOP).html",
+    alt: "The Basics of Object-Oriented Programming (OOP)",
+  },
+  {
+    category: "Explanation",
+    Title: "How to Write Clean, Readable Code",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/How to Write Clean, Readable Code.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/How_to_Write_Clean_Readable_Code.html",
+    alt: "How to Write Clean, Readable Code",
+  },
+  {
+    category: "Explanation",
+    Title: "The Fundamentals of Web Development: HTML, CSS, and JavaScript",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Fundamentals of Web Development: HTML, CSS, and JavaScript.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/The_Fundamentals_of_Web_Development_HTM_CSS_and_JavaScript.html",
+    alt: "The Fundamentals of Web Development: HTML, CSS, and JavaScript",
+  },
+  {
+    category: "Explanation",
+    Title: "Building a RESTful API: Best Practices and Common Pitfalls",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Building a RESTful API: Best Practices and Common Pitfalls.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Building_a_RESTful_API_Best_Practices_and_Common_Pitfalls.html",
+    alt: "Building a RESTful API: Best Practices and Common Pitfalls",
+  },
+  {
+    category: "Explanation",
+    Title: "Introduction to Machine Learning for Programmers",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Introduction to Machine Learning for Programmers.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Introduction_to_Machine_Learning_for_Programmers.html",
+    alt: "Introduction to Machine Learning for Programmers",
+  },
+  {
+    category: "Explanation",
+    Title: "The Top 10 JavaScript Frameworks for Web Development",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Top 10 JavaScript Frameworks for Web Development.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/The_Top_10_JavaScript_Frameworks_for_Web_Development.html",
+    alt: "The Top 10 JavaScript Frameworks for Web Development",
+  },
+  {
+    category: "Explanation",
+    Title: "Best Practices for Database Design and Management",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Best Practices for Database Design and Management.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Best_Practices_for_Database_Design_and_Management.html",
+    alt: "Best Practices for Database Design and Management",
+  },
+  {
+    category: "Explanation",
+    Title: "The Advantages of Test-Driven Development (TDD)",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Advantages of Test-Driven Development (TDD).png",
+    PostUrl:
+      "../Manoarya%20All%20Post/The_Advantages_of_Test_Driven_Development_(TDD).html",
+    alt: "The Advantages of Test-Driven Development (TDD)",
+  },
+  {
+    category: "Explanation",
+    Title: "A Beginner's Guide to WordPress Theme Development",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/A Beginner's Guide to WordPress Theme Development.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/A_Beginner_Guide_to_WordPress_Theme_Development.html",
+    alt: "A Beginner's Guide to WordPress Theme Development",
+  },
 ];

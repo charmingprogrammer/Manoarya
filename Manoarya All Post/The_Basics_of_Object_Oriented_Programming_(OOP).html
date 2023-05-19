@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>The Basics of Object-Oriented Programming (OOP)</title>
+    <meta name="description"
+        content="In the ever-evolving world of software development, Object-Oriented Programming (OOP) stands as a fundamental and powerful paradigm. It provides a structured approach to designing and building applications, enabling developers to create modular, reusable, and scalable code. To help you gain a comprehensive understanding of OOP, we will explore its core concepts, principles, and benefits in this article" />
+
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+    <!--code highlighter links-->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-SRT0FM6SCD");
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation bar top-->
+    <nav>
+        <a href="https://manoarya.com/" class="navLeft">
+            <img src="../Main_Logo.png" alt="Manoarya Logo" />
+            <div style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        ">
+                <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+                <i style="font-size: 10px">A platform for coders.</i>
+            </div>
+        </a>
+        <div class="navRight">
+            <i class="fas fa-search" id="search_opener"></i>
+            <!-- dark mode buttons -->
+            <div id="dark_Mode_box">
+                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
+                    id="DarkOn"></button>
+            </div>
+            <button id="subBtn" onclick="{document.getElementById('subscribe_form_container').style.right='0'}">
+                Subscribe
+            </button>
+        </div>
+    </nav>
+    <!--search-->
+    <div id="searchContainer">
+        <div class="search_header">
+            <i class="fas fa-arrow-left" id="search_closer"></i>
+            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
+        </div>
+        <ul id="myUL"></ul>
+    </div>
+    <div id="container">
+        <div id="page1">
+            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+            <!--post image -->
+            <div class="post_Img_Con">
+                <img src="../Manoarya All Post/Images/The Basics of Object-Oriented Programming (OOP).png"
+                    alt="The Basics of Object-Oriented Programming (OOP)" />
+            </div>
+            <!--Main Post-->
+            <div class="postContainer">
+                <h1 id="postTitle">The Basics of Object-Oriented Programming (OOP)</h1>
+                <p><b>Category : </b> <span id="category">Explanation</span></p>
+                <p>In the ever-evolving world of software development, Object-Oriented Programming (OOP) stands as a
+                    fundamental and powerful paradigm. It provides a structured approach to designing and building
+                    applications, enabling developers to create modular, reusable, and scalable code. To help you gain a
+                    comprehensive understanding of OOP, we will explore its core concepts, principles, and benefits in
+                    this article.</p>
+                      <!-- Ad space -->
+                <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                crossorigin="anonymous"></script>
+            <!-- Manoarya Ads -->
+            <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4365651039511906"
+                data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+                <h2>1. Introduction to Object-Oriented Programming</h2>
+                <p>Object-Oriented Programming is a programming paradigm that organizes code around objects, which are
+                    instances of classes. Objects encapsulate data and behaviors, allowing developers to model
+                    real-world entities or abstract concepts within their applications. The key concepts of OOP include:
+                </p>
+                <ul>
+                    <li>
+                        <p>Classes:&nbsp;Classes serve as blueprints or templates for creating objects. They define the
+                            properties and behaviors that objects of a particular type should possess.</p>
+                    </li>
+                    <li>
+                        <p>Objects:&nbsp;Objects are instances of classes. They represent individual entities with their
+                            own state and behavior. Through objects, we can interact with the data and invoke the
+                            methods defined in their corresponding classes.</p>
+                    </li>
+                    <li>
+                        <p>Encapsulation:&nbsp;Encapsulation is the principle of bundling data and related methods
+                            together, hiding the internal implementation details from outside entities. It promotes data
+                            integrity and code reusability.</p>
+                    </li>
+                    <li>
+                        <p>Inheritance:&nbsp;Inheritance allows classes to inherit properties and methods from other
+                            classes, establishing a hierarchical relationship. This promotes code reuse and facilitates
+                            the creation of specialized classes based on existing ones.</p>
+                    </li>
+                    <li>
+                        <p>Polymorphism:&nbsp;Polymorphism enables objects to take on multiple forms or behave
+                            differently based on the context. It allows for more flexible and extensible code by
+                            providing a way to work with objects of different types through a common interface.</p>
+                    </li>
+                </ul>
+                  <!-- Ad space -->
+                  <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                  crossorigin="anonymous"></script>
+              <!-- Manoarya Ads -->
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4365651039511906"
+                  data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+                <h2>2. Benefits of Object-Oriented Programming</h2>
+                <p>Now that we have a grasp of the core concepts, let&apos;s delve into the advantages offered by
+                    Object-Oriented Programming:</p>
+                <ul>
+                    <li>
+                        <p>Modularity:&nbsp;OOP promotes modularity by dividing complex systems into smaller,
+                            self-contained objects. This makes code more organized, easier to understand, and
+                            facilitates code reuse.</p>
+                    </li>
+                    <li>
+                        <p>Reusability:&nbsp;With the ability to create and extend classes, OOP encourages code reuse.
+                            Developers can leverage existing classes and build upon them, saving time and effort in the
+                            development process.</p>
+                    </li>
+                    <li>
+                        <p>Scalability:&nbsp;OOP provides a scalable approach to software development. As the complexity
+                            of a system grows, new classes and objects can be added without affecting existing code,
+                            making it easier to maintain and extend applications over time.</p>
+                    </li>
+                    <li>
+                        <p>Abstraction:&nbsp;OOP enables developers to create abstract representations of real-world
+                            entities. By focusing on essential characteristics and behaviors, unnecessary complexities
+                            can be hidden, leading to cleaner and more manageable code.</p>
+                    </li>
+                    <li>
+                        <p>Code Maintenance: The modular and organized structure of OOP code simplifies maintenance
+                            tasks. Bugs and issues can be localized to specific classes or objects, making
+                            troubleshooting and debugging more efficient.</p>
+                    </li>
+                </ul>
+                <h2>3. Implementing Object-Oriented Programming in Practice</h2>
+                <p>To apply Object-Oriented Programming effectively, it is essential to follow best practices:</p>
+                <ul>
+                    <li>
+                        <p>Identify and define classes:&nbsp;Analyze the problem domain and identify the key entities
+                            and their relationships. Define classes that accurately represent these entities and capture
+                            their attributes and behaviors.</p>
+                    </li>
+                    <li>
+                        <p>Encapsulate data:&nbsp;Encapsulate data within classes and provide access to it through
+                            methods. This promotes data integrity and ensures that the internal state of objects remains
+                            consistent.</p>
+                    </li>
+                    <li>
+                        <p>Design cohesive classes:&nbsp;Aim for high cohesion within classes, ensuring that each class
+                            has a clear and well-defined purpose. Avoid bloated classes that handle multiple
+                            responsibilities, as this can hinder code readability and maintainability.</p>
+                    </li>
+                    <li>
+                        <p>Leverage inheritance and polymorphism:&nbsp;Use inheritance to establish relationships
+                            between classes and promote code reuse. Embrace polymorphism to design flexible and
+                            extensible systems that can accommodate changes and variations.</p>
+                    </li>
+                    <li>
+                        <p>Follow naming conventions:&nbsp;Adhere to consistent and meaningful naming conventions for
+                            classes, methods, and variables. This enhances code readability and helps other developers
+                            understand the purpose and usage of different elements.</p>
+                    </li>
+                </ul>
+                  <!-- Ad space -->
+                  <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                  crossorigin="anonymous"></script>
+              <!-- Manoarya Ads -->
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4365651039511906"
+                  data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+                <h2>4. Conclusion</h2>
+                <p>Object-Oriented Programming (OOP) offers a robust and efficient approach to software development. By
+                    focusing on encapsulation, inheritance, polymorphism, and other core concepts, developers can create
+                    modular, reusable, and scalable code. The benefits of OOP include enhanced modularity, reusability,
+                    scalability, abstraction, and streamlined code maintenance.</p>
+                <p>To excel in OOP, it is crucial to identify and define classes, encapsulate data effectively, design
+                    cohesive classes, leverage inheritance and polymorphism, and follow consistent naming conventions.
+                    By applying these best practices, developers can harness the power of OOP and create high-quality
+                    software solutions.</p>
+
+                <!-- Ad space -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+                    crossorigin="anonymous"></script>
+                <!-- Manoarya Ads -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4365651039511906"
+                    data-ad-slot="4021494427" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+            </div>
+            <div id="page2">
+                <!--post suggestions-->
+                <div id="postSuggestionContainer"></div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer></footer>
+        <!-- subscribe form -->
+        <div id="subscribe_form_container">
+            <!-- hide the main contianer when click -->
+            <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}">
+            </div>
+            <!-- Sfc content -->
+            <div id="sfc_content">
+                <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
+            </div>
+        </div>
+        <!-- surprise surprise -->
+        <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}"></div>
+        <!--top scrolling-->
+        <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <script src="Footer.js"></script>
+        <script src="Surprise.js"></script>
+        <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+        <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>
