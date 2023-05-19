@@ -557,4 +557,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/10_Best_Online_Coding_Courses_for_Beginners.html",
     alt: "10 Best Online Coding Courses for Beginners.",
   },
+  {
+    category: "Explanation",
+    Title: "The Importance of Code Quality_ Best Practices to Follow",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Importance of Code Quality_ Best Practices to Follow.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/The_Importance_of_Code_Quality_Best_Practices_to_Follow.html",
+    alt: "The Importance of Code Quality_ Best Practices to Follow.png",
+  },
 ];
