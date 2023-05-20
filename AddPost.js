@@ -608,7 +608,7 @@ const AllPost = [
   {
     category: "Explanation",
     Title: "The Fundamentals of Web Development: HTML, CSS, and JavaScript",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Fundamentals of Web Development: HTML, CSS, and JavaScript.png",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The%20Fundamentals%20of%20Web%20Development_%20HTML,%20CSS,%20and%20JavaScript.png",
     PostUrl:
       "../Manoarya%20All%20Post/The_Fundamentals_of_Web_Development_HTM_CSS_and_JavaScript.html",
     alt: "The Fundamentals of Web Development: HTML, CSS, and JavaScript",
@@ -616,7 +616,7 @@ const AllPost = [
   {
     category: "Explanation",
     Title: "Building a RESTful API: Best Practices and Common Pitfalls",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Building a RESTful API: Best Practices and Common Pitfalls.png",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Building%20a%20RESTful%20API_%20Best%20Practices%20and%20Common%20Pitfalls.png",
     PostUrl:
       "../Manoarya%20All%20Post/Building_a_RESTful_API_Best_Practices_and_Common_Pitfalls.html",
     alt: "Building a RESTful API: Best Practices and Common Pitfalls",
