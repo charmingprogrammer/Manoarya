@@ -243,7 +243,7 @@ const AllPost = [
     ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/web_dev_explain.png",
     PostUrl: "../Manoarya All Post/Who-is-Web-developer.html",
     alt: "Who-is-Web-developer.html",
-    recommend:'yes'
+    recommend: 'yes'
   },
   {
     category: "Cheet_sheet",
@@ -533,7 +533,7 @@ const AllPost = [
       "../Manoarya%20All%20Post/npm_introduction.html",
     alt: "Introduction to npm",
   },
-    {
+  {
     category: "Explanation",
     Title: "Top 10 Programming Languages to Learn in 2023: A Software Engineer's Perspective",
     ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/You_should_learn.png",
@@ -600,7 +600,7 @@ const AllPost = [
   {
     category: "Explanation",
     Title: "How to Write Clean, Readable Code",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/How to Write Clean, Readable Code.png",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The%20Importance%20of%20Code%20Quality_%20Best%20Practices%20to%20Follow.png",
     PostUrl:
       "../Manoarya%20All%20Post/How_to_Write_Clean_Readable_Code.html",
     alt: "How to Write Clean, Readable Code",
