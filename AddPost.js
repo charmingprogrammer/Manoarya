@@ -624,7 +624,7 @@ const AllPost = [
   {
     category: "Explanation",
     Title: "Introduction to Machine Learning for Programmers",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Introduction to Machine Learning for Programmers.png",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Introduction%20to%20Machine%20Learning%20for%20Programmer.png",
     PostUrl:
       "../Manoarya%20All%20Post/Introduction_to_Machine_Learning_for_Programmers.html",
     alt: "Introduction to Machine Learning for Programmers",
