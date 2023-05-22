@@ -218,6 +218,10 @@ nav {
   text-transform: capitalize;
   position: sticky;
 }
+.postContainer h3 {
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
 .postContainer p {
   padding: 10px 20px;
   font-size: 18px;

@@ -2,10 +2,10 @@
 const Cources_data = AllPost.filter((filter) => filter.category === "Cources");
 const Demo_data = AllPost.filter((filter) => filter.category === "Demo");
 const HTM_data = AllPost.filter((filter) => filter.category === "HTM");
-const Explanation_data = AllPost.filter(
-  (filter) => filter.category === "Explanation"
-);
+const Explanation_data = AllPost.filter((filter) => filter.category === "Explanation");
 const CheatSheet_data = AllPost.filter((filter) => filter.category === "Cheet_sheet");
+const ChatGPT_data = AllPost.filter((filter) => filter.category === "ChatGPT");
+
 // get Massage refarence from Dom
 const Message = document.getElementById("Message");
 
@@ -57,6 +57,10 @@ function explore() {
            <div class='category_box' onclick="CheatSheet()">
            <i class="fas fa-book"></i>
            <h2>CheatSheet</h2>
+           </div>
+           <div class='category_box' onclick="ChatGPT()">
+           <i class="fas fa-fan"></i>
+           <h2>ChatGPT</h2>
            </div>
         </div>`
   );
@@ -113,6 +117,10 @@ function Cources() {
            <i class="fas fa-book"></i>
            <h2>CheatSheet</h2>
            </div>
+           <div class='category_box' onclick="ChatGPT()">
+           <i class="fas fa-fan"></i>
+           <h2>ChatGPT</h2>
+           </div>
         </div>`
   );
 }
@@ -166,6 +174,10 @@ function Demo() {
            <i class="fas fa-book"></i>
            <h2>CheatSheet</h2>
            </div>
+           <div class='category_box' onclick="ChatGPT()">
+           <i class="fas fa-fan"></i>
+           <h2>ChatGPT</h2>
+           </div>
         </div>`
   );
 }
@@ -218,6 +230,10 @@ function HTM() {
            <div class='category_box' onclick="CheatSheet()">
            <i class="fas fa-book"></i>
            <h2>CheatSheet</h2>
+           </div>
+           <div class='category_box' onclick="ChatGPT()">
+           <i class="fas fa-fan"></i>
+           <h2>ChatGPT</h2>
            </div>
         </div>`
   );
@@ -273,6 +289,10 @@ function Explanation() {
            <i class="fas fa-book"></i>
            <h2>CheatSheet</h2>
            </div>
+           <div class='category_box' onclick="ChatGPT()">
+           <i class="fas fa-fan"></i>
+           <h2>ChatGPT</h2>
+           </div>
         </div>`
   );
 }
@@ -325,6 +345,67 @@ function CheatSheet() {
             <div class='category_box' onclick="CheatSheet()">
             <i class="fas fa-book"></i>
             <h2>CheatSheet</h2>
+            </div>
+            <div class='category_box' onclick="ChatGPT()">
+            <i class="fas fa-fan"></i>
+            <h2>ChatGPT</h2>
+            </div>
+         </div>`
+  );
+}
+function ChatGPT() {
+  //  clear the container
+  document.querySelector("*").scrollTo(0, 0);
+  container.innerHTML = "";
+  // open the message box
+  Message.style.top = "0";
+  Message.innerHTML = ChatGPT_data.length + ' ChatGPT Post Found';
+  if (ChatGPT_data.length === 0) {
+    container.insertAdjacentHTML(
+      "afterbegin",
+      `
+    <h2 style="padding:200px 50px;">No ChatGPT Post Found </h2>
+   `
+    );
+  } else {
+    // loop Data
+    for (let i = 0; i < ChatGPT_data.length; i++) {
+      container.insertAdjacentHTML(
+        "afterbegin",
+        ` <a  target='_blank' href="${ChatGPT_data[i].PostUrl}" class="box"><img loading="lazy" src="${ChatGPT_data[i].ImageUrl}" alt="${ChatGPT_data[i].alt}" />
+     <h2>${ChatGPT_data[i].Title}</h2>
+    </a>`
+      );
+    }
+  }
+
+  //   category page
+  container.insertAdjacentHTML(
+    "afterbegin",
+    `<div id="category_container">
+            <div class='category_box' onclick="Cources()">
+            <i class="fas fa-graduation-cap"></i>
+             <h2>Cources</h2>
+            </div>
+            <div class='category_box' onclick="Demo()">
+            <i class="fas fa-eye"></i>
+            <h2>Demo</h2>
+            </div>
+            <div class='category_box' onclick="HTM()">
+            <i class="fas fa-magic"></i>
+             <h2>HTM</h2>
+            </div>
+            <div class='category_box' onclick="Explanation()">
+            <i class="fas fa-lightbulb"></i>
+            <h2>Explanation</h2>
+            </div>
+            <div class='category_box' onclick="CheatSheet()">
+            <i class="fas fa-book"></i>
+            <h2>CheatSheet</h2>
+            </div>
+            <div class='category_box' onclick="ChatGPT()">
+            <i class="fas fa-fan"></i>
+            <h2>ChatGPT</h2>
             </div>
          </div>`
   );

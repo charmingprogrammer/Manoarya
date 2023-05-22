@@ -661,4 +661,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/A_Beginner_Guide_to_WordPress_Theme_Development.html",
     alt: "A Beginner's Guide to WordPress Theme Development",
   },
+  {
+    category: "ChatGPT",
+    Title: "Chat-GPT: Revolutionizing Conversational AI for Software Engineers",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Chat-GPT Revolutionizing Conversational AI for Software Engineers.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Chat-GPT_Revolutionizing_Conversational_AI_for_Software_Engineers.html",
+    alt: "Chat-GPT: Revolutionizing Conversational AI for Software Engineers",
+  },
 ];
