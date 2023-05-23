@@ -680,7 +680,7 @@ const AllPost = [
   {
     category: "ChatGPT",
     Title: "Building Intelligent Chatbots with Chat-GPT: A Game Changer for Software Engineers",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Building Intelligent Chatbots with Chat-GPT: A Game Changer for Software Engineers.png",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Building Intelligent Chatbots with Chat-GPT A Game Changer for Software Engineers.png",
     PostUrl:
       "../Manoarya%20All%20Post/Building_Intelligent_Chatbots_with_Chat-GPT_A_Game_Changer_for_Software_Engineers.html",
     alt: "Building Intelligent Chatbots with Chat-GPT: A Game Changer for Software Engineers",
