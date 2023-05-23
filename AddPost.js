@@ -672,7 +672,7 @@ const AllPost = [
   {
     category: "ChatGPT",
     Title: "The Future of Chat-GPT: Enhancing Software Engineering Collaboration and Efficiency",
-    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Future of Chat-GPT: Enhancing Software Engineering Collaboration and Efficiency.png",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/The Future of Chat-GPT Enhancing Software Engineering Collaboration and Efficiency.png",
     PostUrl:
       "../Manoarya%20All%20Post/The_Future_of_Chat-GPT_Enhancing_Software_Engineering_Collaboration_and_Efficiency.html",
     alt: "The Future of Chat-GPT: Enhancing Software Engineering Collaboration and Efficiency",
