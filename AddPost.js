@@ -677,4 +677,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/The_Future_of_Chat-GPT_Enhancing_Software_Engineering_Collaboration_and_Efficiency.html",
     alt: "The Future of Chat-GPT: Enhancing Software Engineering Collaboration and Efficiency",
   },
+  {
+    category: "ChatGPT",
+    Title: "Building Intelligent Chatbots with Chat-GPT: A Game Changer for Software Engineers",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Building Intelligent Chatbots with Chat-GPT: A Game Changer for Software Engineers.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Building_Intelligent_Chatbots_with_Chat-GPT_A_Game_Changer_for_Software_Engineers.html",
+    alt: "Building Intelligent Chatbots with Chat-GPT: A Game Changer for Software Engineers",
+  },
 ];
