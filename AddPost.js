@@ -693,4 +693,12 @@ const AllPost = [
       "../Manoarya%20All%20Post/Leveraging_Chat-GPT_in_Software_Engineering_Empowering_Developers_with_Natural_Language_Interfaces.html",
     alt: "Leveraging Chat-GPT in Software Engineering: Empowering Developers with Natural Language Interfaces",
   },
+  {
+    category: "ChatGPT",
+    Title: "Leveraging Chat-GPT in Software Engineering: Empowering Developers with Natural Language Interfaces",
+    ImageUrl: "https://manoarya.com/Manoarya%20All%20Post/Images/Leveraging_Chat-GPT_in_Software_Engineering.png",
+    PostUrl:
+      "../Manoarya%20All%20Post/Leveraging_Chat-GPT_in_Software_Engineering_Empowering_Developers_with_Natural_Language_Interfaces.html",
+    alt: "Leveraging Chat-GPT in Software Engineering: Empowering Developers with Natural Language Interfaces",
+  },
 ];
