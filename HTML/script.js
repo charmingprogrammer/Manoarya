@@ -7,7 +7,7 @@ const forth_container = document.getElementById("forth_container");
 const fifth_container = document.getElementById("fifth_container");
 
 const fetchData = async () => {
-    const data_fetch = await fetch("./html_index.json");
+    const data_fetch = await fetch("https://manoarya.com/HTML/Html_index.json");
     const data = await data_fetch.json();
     // first container data
     const first = data.first;
