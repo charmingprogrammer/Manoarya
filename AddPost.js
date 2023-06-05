@@ -694,11 +694,12 @@ const AllPost = [
     alt: "Leveraging Chat-GPT in Software Engineering: Empowering Developers with Natural Language Interfaces",
   },
   {
-    category: "Course",
+    category: "Cources",
     Title: "The Adventure of HTML | HTML Course",
     ImageUrl: "https://manoarya.com/HTML/HTML_poster.png",
     PostUrl:
       "../HTML/index.html",
     alt: "The Adventure of HTML | HTML Course",
+    recommend:'yes'
   },
 ];
