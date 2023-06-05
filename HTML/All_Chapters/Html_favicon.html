@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Favicon | HFU 16</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/16.png" alt="HTML favicone" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">16. HTML Favicon</h1>
+        <p>
+          Favicons are small icons that are used to represent a website or web
+          page in the browser&apos;s address bar, bookmarks, and tabs. They are
+          an important part of a website&apos;s branding and can help to make it
+          more recognizable and memorable to users. In this blog post, we will
+          explore how to add a favicon to an HTML document.
+        </p>
+        <p>What is a Favicon?</p>
+        <p>
+          A favicon is a small icon that is associated with a website or web
+          page. It is typically displayed in the browser&apos;s address bar,
+          bookmarks, and tabs. Favicons can be in the form of an image file,
+          such as a PNG or ICO file, and are usually square in shape with
+          dimensions ranging from 16x16 to 64x64 pixels.
+        </p>
+        <p>How to Add a Favicon to an HTML Document</p>
+        <p>
+          Adding a favicon to an HTML document is a simple process that involves
+          adding a link tag to the head section of the HTML document. Here is an
+          example of how to add a favicon to an HTML document:
+        </p>
+        <pre><div><div>
+</div><div><code>&lt;head&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;/head&gt;
+</code></div></div></pre>
+        <p>
+          In this example, we use the <code>&lt;link&gt;</code> tag with the
+          <code>rel</code> attribute set to &quot;icon&quot; to specify that we
+          are linking to a favicon. The <code>href</code> attribute specifies
+          the location of the favicon file, and the <code>type</code> attribute
+          specifies the MIME type of the favicon file.
+        </p>
+        <p>
+          The favicon file can be in any format that is supported by the
+          browser, such as PNG, GIF, or ICO. However, ICO is the most widely
+          used format for favicons.
+        </p>
+        <p>
+          It is important to note that the favicon file should be placed in the
+          root directory of the website or web page. This is because the browser
+          looks for the favicon file in the root directory by default.
+        </p>
+        <p>
+          In addition to the <code>&lt;link&gt;</code> tag, there are other ways
+          to add a favicon to an HTML document. For example, the
+          <code>&lt;meta&gt;</code> tag can be used to specify the favicon file
+          in the head section of the HTML document:
+        </p>
+        <pre><div><div>
+</div><div><code>&lt;head&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;/head&gt;
+</code></div></div></pre>
+        <p>
+          In this example, we use the <code>&lt;meta&gt;</code> tag with the
+          <code>name</code> attribute set to &quot;viewport&quot; to specify the
+          viewport settings for the web page. We also use the
+          <code>&lt;link&gt;</code> tag with the <code>rel</code> attribute set
+          to &quot;shortcut icon&quot; to specify the favicon file.
+        </p>
+        <p>
+          In conclusion, favicons are an important part of a website&apos;s
+          branding and can help to make it more recognizable and memorable to
+          users. Adding a favicon to an HTML document is a simple process that
+          involves adding a link tag to the head section of the HTML document.
+          By following the steps outlined in this blog post, you can easily add
+          a favicon to your website or web page.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

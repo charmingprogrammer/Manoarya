@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Head | HFU 15</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/15.png" alt="HTML Head" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">15. HTML Head</h1>
+        <p>
+          The HTML <code>&lt;head&gt;</code> element is an essential part of
+          every web page. It contains meta data, links to external resources,
+          and other information that is necessary for the proper functioning of
+          the web page. In this blog post, we will explore the different
+          elements that can be included in the HTML head and their importance.
+        </p>
+        <p>What is the HTML <code>&lt;head&gt;</code> Element?</p>
+        <p>
+          The <code>&lt;head&gt;</code> element is a container element that
+          comes before the <code>&lt;body&gt;</code> element in the HTML
+          document. It contains information about the web page that is not
+          visible to the user, such as metadata, links to external resources,
+          and other information.
+        </p>
+        <p>
+          What are the Elements that can be Included in the HTML
+          <code>&lt;head&gt;</code>?
+        </p>
+        <ol>
+          <li>
+            <code>&lt;title&gt;</code> element: The
+            <code>&lt;title&gt;</code> element specifies the title of the web
+            page. It is displayed in the browser&apos;s title bar and is also
+            used by search engines to display the title of the web page in
+            search results.
+          </li>
+        </ol>
+        <p>Example:</p>
+        <pre><div><code>&lt;head&gt;
+          &lt;title&gt;My Website&lt;/title&gt;
+        &lt;/head&gt;
+        </code></div></pre>
+        <ol start="2">
+          <li>
+            <code>&lt;meta&gt;</code> elements: The
+            <code>&lt;meta&gt;</code> element provides metadata about the web
+            page, such as the character encoding, description, and keywords.
+            These elements are used by search engines to index the web page.
+          </li>
+        </ol>
+        <p>Example:</p>
+        <pre><div><div><code>&lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta name=&quot;description&quot; content=&quot;This is my website.&quot;&gt;
+          &lt;meta name=&quot;keywords&quot; content=&quot;web development, HTML, CSS, JavaScript&quot;&gt;
+        &lt;/head&gt;
+        </code></div></div></pre>
+        <ol start="3">
+          <li>
+            <code>&lt;link&gt;</code> elements: The
+            <code>&lt;link&gt;</code> element is used to link to external
+            resources, such as stylesheets, JavaScript files, and icons.
+          </li>
+        </ol>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>&lt;head&gt;
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+          &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot;&gt;
+          &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        </code></div></div></pre>
+        <ol start="4">
+          <li>
+            Other elements: Other elements that can be included in the
+            <code>&lt;head&gt;</code> element include
+            <code>&lt;style&gt;</code> elements for inline CSS styles,
+            <code>&lt;script&gt;</code> elements for inline JavaScript code, and
+            <code>&lt;base&gt;</code> elements for specifying the base URL for
+            all relative URLs in the web page.
+          </li>
+        </ol>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>&lt;head&gt;
+          &lt;style&gt;
+            body {
+              background-color: #f5f5f5;
+            }
+          &lt;/style&gt;
+          &lt;script&gt;
+            console.log(&quot;Hello, world!&quot;);
+          &lt;/script&gt;
+          &lt;base href=&quot;https://www.example.com/&quot;&gt;
+        &lt;/head&gt;
+        </code></div></div></pre>
+        <p>
+          In conclusion, the HTML <code>&lt;head&gt;</code> element is an
+          essential part of every web page. It contains important information
+          about the web page, such as metadata, links to external resources, and
+          other information. By understanding the different elements that can be
+          included in the HTML head, you can create web pages that are optimized
+          for search engines, load quickly, and provide a great user experience.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Responsive | HFU 18</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/18.png" alt="HTML Responsive " />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">18. HTML Responsive</h1>
+        <p>
+          HTML responsive layout is a design technique used to create websites
+          that adjust automatically to different screen sizes and devices. It is
+          a way of designing web pages that allows them to be viewed on
+          desktops, tablets, and smartphones without losing their functionality
+          or aesthetics.
+        </p>
+        <p>
+          The importance of responsive design cannot be overstated. With the
+          rise of mobile devices and the increasing use of smartphones and
+          tablets to access the web, it has become essential for websites to be
+          designed with a mobile-first approach. Responsive design ensures that
+          the website adapts to different screen sizes and device types,
+          providing users with a seamless experience, regardless of the device
+          they are using.
+        </p>
+        <p>
+          To achieve responsive design in HTML, there are several techniques
+          that developers can use. Here are some of the most commonly used
+          techniques:
+        </p>
+        <ol>
+          <li>
+            <p>
+              Fluid Layouts: Fluid layouts use percentage-based widths and
+              heights instead of fixed pixel values. This ensures that elements
+              on the page adjust proportionally as the screen size changes.
+            </p>
+          </li>
+          <li>
+            <p>
+              Media Queries: Media queries allow developers to apply different
+              CSS styles based on the screen size of the device. By using media
+              queries, developers can create styles that apply to devices with
+              different screen sizes, making the website more responsive.
+            </p>
+          </li>
+          <li>
+            <p>
+              Flexible Grids: Flexible grids are a popular technique for
+              creating responsive layouts. They use a combination of flexible
+              widths and media queries to create a layout that adapts to
+              different screen sizes.
+            </p>
+          </li>
+          <li>
+            <p>
+              Responsive Images: Responsive images use a combination of media
+              queries and CSS to provide images that adapt to different screen
+              sizes. This ensures that the images on the page look good,
+              regardless of the device the user is using.
+            </p>
+          </li>
+          <li>
+            <p>
+              Mobile-First Design: Mobile-first design is a design philosophy
+              that prioritizes the mobile user experience. By designing for
+              mobile devices first, developers ensure that the website is
+              optimized for smaller screens and lower bandwidths.
+            </p>
+          </li>
+        </ol>
+        <p>
+          There are many benefits to using responsive design in HTML. Responsive
+          design ensures that websites are accessible to a wider range of users,
+          regardless of the device they are using. It also ensures that the
+          website is future-proof, as new devices with different screen sizes
+          and resolutions are developed.
+        </p>
+        <p>
+          In conclusion, HTML responsive design is an essential technique for
+          creating websites that work seamlessly on all devices. By using
+          techniques like fluid layouts, media queries, flexible grids,
+          responsive images, and mobile-first design, developers can create
+          websites that adapt to the needs of their users, regardless of the
+          device they are using. By prioritizing responsive design in their HTML
+          development, developers can ensure that their websites remain relevant
+          and accessible in the ever-evolving world of web design.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

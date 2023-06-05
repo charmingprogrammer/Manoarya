@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Text Formatting | HFU 6</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/6.png" alt="HTML Text Formatting" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">6. HTML Text Formatting</h1>
+        <p>
+          HTML, or Hypertext Markup Language, is the standard language used to
+          create web pages. HTML allows you to structure content on a web page,
+          including text, images, videos, and other multimedia. One important
+          aspect of web page design is text formatting. Proper text formatting
+          makes content easier to read and understand, as well as more visually
+          appealing. In this blog post, we will cover some of the basic text
+          formatting elements in HTML.
+        </p>
+        <ol>
+          <li>Headings</li>
+        </ol>
+        <p>
+          Headings are used to organize content into sections and subsections.
+          There are six levels of headings in HTML, ranging from H1 (the most
+          important) to H6 (the least important). Headings are typically used to
+          introduce new sections of content, as well as to highlight key
+          information. Headings are also important for search engine
+          optimization (SEO), as search engines use them to determine the
+          structure of a web page.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+</div><div><code>&lt;h1&gt;This is a Level 1 Heading&lt;/h1&gt;
+&lt;h2&gt;This is a Level 2 Heading&lt;/h2&gt;
+&lt;h3&gt;This is a Level 3 Heading&lt;/h3&gt;
+</code></div></div></pre>
+        <ol start="2">
+          <li>Paragraphs</li>
+        </ol>
+        <p>
+          Paragraphs are used to separate blocks of text into distinct sections.
+          They are typically used for longer blocks of text, such as articles or
+          blog posts. Paragraphs are also important for readability, as they
+          break up large blocks of text into smaller, more manageable chunks.
+        </p>
+        <p>Example:</p>
+        <pre><div><code>&lt;p&gt;This is a paragraph of text. It can contain multiple sentences and paragraphs. The purpose of a paragraph is to separate blocks of text and make the content easier to read.&lt;/p&gt;
+</code></div></pre>
+        <ol start="3">
+          <li>Bold and Italic</li>
+        </ol>
+        <p>
+          Bold and italic are used to emphasize text. Bold is typically used to
+          highlight important words or phrases, while italic is used to indicate
+          emphasis or to denote a different tone or voice. Bold and italic can
+          be used on their own or in combination with other formatting elements,
+          such as headings or paragraphs.
+        </p>
+        <p>Example:</p>
+        <pre><div><code>&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;
+&lt;p&gt;This is &lt;em&gt;italic&lt;/em&gt; text.&lt;/p&gt;
+</code></div></pre>
+        <ol start="4">
+          <li>Lists</li>
+        </ol>
+        <p>
+          Lists are used to organize information into bullet points or numbered
+          lists. There are two types of lists in HTML: unordered lists (bullet
+          points) and ordered lists (numbered lists). Lists can be used to
+          highlight key points, to break up long blocks of text, or to organize
+          information in a clear and concise manner.
+        </p>
+        <p>Example:</p>
+        <pre><div><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+</code></div></pre>
+        <ol start="5">
+          <li>Links</li>
+        </ol>
+        <p>
+          Links are used to connect web pages or to link to specific sections of
+          a web page. Links can be created using the anchor tag (&lt;a&gt;) and
+          the href attribute. Links are typically underlined and displayed in a
+          different color than regular text.
+        </p>
+        <p>Example:</p>
+        <pre><div><div><code>&lt;a href=&quot;https://www.example.com&quot;&gt;Link to Example Website&lt;/a&gt;
+</code></div></div></pre>
+        <p>
+          In conclusion, text formatting is an important aspect of web page
+          design. Proper formatting can make content easier to read and
+          understand, as well as more visually appealing. By using headings,
+          paragraphs, bold and italic, lists, and links, you can create a web
+          page that is both informative and engaging.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

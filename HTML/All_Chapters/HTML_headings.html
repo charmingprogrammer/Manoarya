@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Headings | HFU 4</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/4.png" alt="HTML Headings" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">4. HTML Headings</h1>
+        <p>
+          HTML headings are an important element of any webpage as they provide
+          structure and hierarchy to the content. Headings are used to divide
+          content into sections and sub-sections, making it easier for users to
+          navigate and understand the information on the page.
+        </p>
+        <p>
+          HTML offers six levels of headings, from h1 to h6, with h1 being the
+          most important and h6 being the least important. It is important to
+          use headings in the correct order and not skip any levels, as this can
+          confuse users and affect the accessibility of the page.
+        </p>
+        <p>
+          Here are some best practices to keep in mind when using HTML headings:
+        </p>
+        <ol>
+          <li>
+            <p>
+              Use headings to create a clear hierarchy of information on the
+              page. The main heading of the page should be an h1 tag, followed
+              by h2 tags for sub-sections, h3 tags for sub-sub-sections, and so
+              on.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use descriptive and concise text for headings. Headings should
+              provide a brief summary of the content that follows and make it
+              easier for users to understand the topic.
+            </p>
+          </li>
+          <li>
+            <p>
+              Avoid using headings for formatting purposes. Headings should only
+              be used to denote sections of content, not to change the
+              appearance of the text.
+            </p>
+          </li>
+          <li>
+            <p>
+              Make sure that headings are visually distinct from the rest of the
+              content on the page. This can be achieved through the use of CSS
+              styles to change the font size, color, and weight of the text.
+            </p>
+          </li>
+          <li>
+            <p>
+              Ensure that headings are accessible to all users, including those
+              who use screen readers. This can be achieved by providing
+              descriptive text for each heading using the aria-label or title
+              attributes.
+            </p>
+          </li>
+        </ol>
+        <p>
+          In addition to providing structure and hierarchy to the content on the
+          page, headings also have SEO benefits. Search engines use headings to
+          understand the content of a page and determine its relevance to search
+          queries. Therefore, it is important to use relevant keywords in
+          headings to improve the visibility of the page in search results.
+        </p>
+        <p>
+          In summary, HTML headings are an essential element of any webpage as
+          they provide structure and hierarchy to the content. By following best
+          practices and using headings correctly, you can improve the
+          accessibility and SEO of your website while also making it easier for
+          users to understand and navigate the information on the page.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

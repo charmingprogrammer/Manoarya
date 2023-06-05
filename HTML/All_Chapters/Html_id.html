@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Id | HFU 13</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/13.png" alt="HTML Id" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">13. HTML Id</h1>
+        <p>
+          HTML ID is a crucial concept in web development that allows you to
+          identify and manipulate specific elements on a web page. In this blog
+          post, we will cover the basics of working with HTML IDs.
+        </p>
+        <p>What is an HTML ID?</p>
+        <p>
+          An HTML ID is a unique identifier that you can assign to an element on
+          a web page. This ID is used to identify the element in JavaScript,
+          CSS, and other web development tools. Unlike HTML classes, which can
+          be applied to multiple elements, IDs must be unique within a web page.
+        </p>
+        <p>How to Define an HTML ID?</p>
+        <p>
+          To define an HTML ID, you need to use the <code>id</code> attribute.
+          The value of the <code>id</code> attribute is the name of the ID that
+          you want to assign to the element.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+</div><div><code>&lt;div id=&quot;header&quot;&gt;
+  &lt;h1&gt;Welcome to my website!&lt;/h1&gt;
+&lt;/div&gt;
+</code></div></div></pre>
+        <p>
+          In this example, we have defined an ID called &quot;header&quot; and
+          applied it to a <code>&lt;div&gt;</code> element.
+        </p>
+        <p>How to Access an HTML Element by ID in JavaScript?</p>
+        <p>
+          To access an HTML element by ID in JavaScript, you can use the
+          <code>getElementById()</code> method. This method takes the ID of the
+          element as a parameter and returns the element object.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+</div><div><code>let header = document.getElementById(&quot;header&quot;);
+header.innerHTML = &quot;Welcome to my new website!&quot;;
+</code></div></div></pre>
+        <p>
+          In this example, we have accessed the element with the ID
+          &quot;header&quot; using the <code>getElementById()</code> method and
+          updated its inner HTML to display a new message.
+        </p>
+        <p>How to Style an HTML Element by ID in CSS?</p>
+        <p>
+          To style an HTML element by ID in CSS, you can use the ID selector
+          (#). This selector selects the element with the specified ID and
+          applies the specified styles.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+</div><div><code>#header {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+}
+</code></div></div></pre>
+        <p>
+          In this example, we have selected the element with the ID
+          &quot;header&quot; using the ID selector (#) and applied a background
+          color of #333, a text color of #fff, and a font size of 24px.
+        </p>
+        <p>
+          In conclusion, HTML IDs are a powerful tool in web development that
+          allow you to identify and manipulate specific elements on a web page.
+          By using the <code>id</code> attribute and JavaScript and CSS, you can
+          create dynamic and engaging web experiences for your audience. By
+          understanding HTML IDs, you can take your web development skills to
+          the next level and create web pages that stand out from the crowd.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

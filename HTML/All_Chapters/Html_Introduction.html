@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Introduction | HFU 1</title>
+  <meta
+    name="description"
+    content="Discover the basics of HTML, the standard markup language used to create web pages. Learn about HTML's purpose, structure, and syntax, and understand why it's important in web development. Explore how HTML is used to create semantic and accessible web pages, and how it relates to other technologies like CSS and JavaScript. Start building your foundation in web development with this essential introduction to HTML."
+  />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/1.png" alt="HTML Introduction" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">1. HTML Introduction</h1>
+        <h2>What is HTML and Why is it Important?</h2>
+        <p>
+          HTML, or Hypertext Markup Language, is the standard markup language
+          used to create web pages. It is the foundation of the World Wide Web
+          and plays a critical role in web development. HTML is used to
+          structure content on the web and create a semantic and accessible
+          experience for users.
+        </p>
+        <p>
+          In this blog post, we will explore the basics of HTML, including its
+          purpose, structure, and syntax. We&apos;ll also discuss why HTML is
+          important and how it relates to other web development technologies.
+        </p>
+        <h2>What is HTML?</h2>
+        <p>
+          HTML is a markup language used to create structured
+          content on the web. It provides a way to describe the structure and
+          content of a web page using tags, which are elements that define the
+          meaning and function of content. HTML tags are enclosed in angle
+          brackets, such as &lt;p&gt; for paragraphs, &lt;h1&gt; for headings,
+          and &lt;a&gt; for links.
+        </p>
+        <p>
+          HTML documents consist of tags, attributes, and content. Tags define
+          the type of content, attributes provide additional information about
+          the content, and content is the text or other media that is displayed
+          on the web page.
+        </p>
+        <p>
+          HTML Structure and Syntax HTML documents have a specific structure and
+          syntax that must be followed to ensure the web page displays correctly
+          in web browsers. <br><br><b>The basic structure of an HTML document consists of
+            the following elements:</b>
+        </p>
+        <ul>
+          <li>
+            &lt;!DOCTYPE html&gt; declaration: specifies the version of HTML
+            being used.
+          </li>
+          <li>&lt;html&gt; element: the root element of an HTML document.</li>
+          <li>
+            &lt;head&gt; element: contains information about the web page, such
+            as the title and meta data.
+          </li>
+          <li>
+            &lt;body&gt; element: contains the main content of the web page.
+          </li>
+        </ul>
+        <p>
+          HTML syntax consists of tags, attributes, and content. Tags are
+          enclosed in angle brackets, such as &lt;tagname&gt;. Attributes
+          provide additional information about the tag, such as &lt;tagname
+          attribute=&quot;value&quot;&gt;. Content is the text or media
+          displayed on the web page, such as
+          &lt;tagname&gt;Content&lt;/tagname&gt;.
+        </p>
+        <h2>Why is HTML Important?</h2>
+        <p>
+          HTML is important because it provides a
+          standard way to structure and present content on the web. It allows
+          web developers to create semantic and accessible web pages that are
+          easily understood by search engines and assistive technologies. HTML
+          is also the foundation of web development and is used in conjunction
+          with other technologies, such as CSS and JavaScript, to create dynamic
+          and interactive web pages.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          HTML is the foundation of the web and plays a critical
+          role in web development. Understanding the basics of HTML is essential
+          for anyone interested in building web pages and creating a meaningful
+          web experience for users. As you continue to learn and explore HTML,
+          you will gain a deeper understanding of its importance and how it
+          relates to other web development technologies.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

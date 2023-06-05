@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Lists | HFU 11</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/11.png" alt="HTML Lists" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">11. HTML Lists</h1>
+        <p>
+          HTML lists are a useful way to organize information in a structured
+          and easy-to-read format on a web page. Lists can be used to create
+          bullet points, numbered lists, and nested lists. In this blog post, we
+          will cover the basics of working with HTML lists.
+        </p>
+        <ol>
+          <li>Unordered Lists</li>
+        </ol>
+        <p>
+          Unordered lists are used to create bullet points on a web page. To
+          create an unordered list in HTML, you need to use the
+          <code>&lt;ul&gt;</code> tag. Within the <code>&lt;ul&gt;</code> tag,
+          you can create list items using the <code>&lt;li&gt;</code> tag.
+        </p>
+        <p>Example:</p>
+        <pre><div><code>&lt;ul&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        </code></div></pre>
+        <ol start="2">
+          <li>Ordered Lists</li>
+        </ol>
+        <p>
+          Ordered lists are used to create numbered lists on a web page. To
+          create an ordered list in HTML, you need to use the
+          <code>&lt;ol&gt;</code> tag. Within the <code>&lt;ol&gt;</code> tag,
+          you can create list items using the <code>&lt;li&gt;</code> tag.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>&lt;ol&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+        </code></div></div></pre>
+        <ol start="3">
+          <li>Nested Lists</li>
+        </ol>
+        <p>
+          You can also create nested lists in HTML, where one list is nested
+          inside another list. To create a nested list, you simply create a new
+          <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tag within an
+          existing <code>&lt;li&gt;</code> tag.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>&lt;ul&gt;
+          &lt;li&gt;Item 1
+            &lt;ul&gt;
+              &lt;li&gt;Sub-item 1&lt;/li&gt;
+              &lt;li&gt;Sub-item 2&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+          &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        </code></div></div></pre>
+        <ol start="4">
+          <li>Styling Lists</li>
+        </ol>
+        <p>
+          You can style HTML lists using CSS. This allows you to customize the
+          appearance of the list, including the font, color, and bullet style.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>ul {
+          list-style-type: square;
+          font-family: Arial, sans-serif;
+          color: #333;
+        }
+        
+        ol {
+          list-style-type: decimal;
+          font-family: Arial, sans-serif;
+          color: #333;
+        }
+        
+        li {
+          margin-bottom: 10px;
+        }
+        </code></div></div></pre>
+        <p>
+          In conclusion, HTML lists are a simple but effective way to organize
+          information on a web page. By using the <code>&lt;ul&gt;</code>,
+          <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> tags, you can
+          create a structured and easy-to-read list. You can also create nested
+          lists and style the list using CSS. By using HTML lists effectively,
+          you can create a user-friendly and engaging web experience for your
+          audience.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

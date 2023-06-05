@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Links | HFU 8</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/8.png" alt="HTML Links" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">8. HTML Links</h1>
+        <p>
+            Links are an essential element of the web. They allow users to
+            navigate between different pages and websites, and they help to create
+            a web of interconnected information. HTML, or Hypertext Markup
+            Language, provides a straightforward way to create links between
+            different pages or sections of a page. In this blog post, we will
+            cover some of the basics of working with links in HTML.
+          </p>
+          <ol>
+            <li>Creating Links</li>
+          </ol>
+          <p>
+            To create a link in HTML, you need to use the &lt;a&gt; tag. This tag
+            has an href attribute that specifies the URL of the destination page.
+            You can also add a text description of the link, which is displayed to
+            users.
+          </p>
+          <p>Example:</p>
+          <pre><div><code>&lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example Website&lt;/a&gt;
+           </code></div></pre>
+          <ol start="2">
+            <li>Linking to Other Pages</li>
+          </ol>
+          <p>
+            Links are most commonly used to navigate between different pages on a
+            website. To create a link to another page on your website, you can use
+            a relative URL. A relative URL specifies the path to the destination
+            page relative to the current page.
+          </p>
+          <p>Example:</p>
+          <pre><div><div>
+  </div><div><code>&lt;a href=&quot;about.html&quot;&gt;About Us&lt;/a&gt;
+  </code></div></div></pre>
+          <ol start="3">
+            <li>Linking to Email Addresses</li>
+          </ol>
+          <p>
+            Links can also be used to open an email client with a pre-populated
+            email address. To create a link to an email address, you can use the
+            mailto: protocol in the href attribute.
+          </p>
+          <p>Example:</p>
+          <pre><div><div>
+  </div><div><code>&lt;a href=&quot;mailto:info@example.com&quot;&gt;Email Us&lt;/a&gt;
+  </code></div></div></pre>
+          <ol start="4">
+            <li>Linking to Sections on the Same Page</li>
+          </ol>
+          <p>
+            Links can also be used to navigate to specific sections of a web page.
+            To do this, you need to create an anchor tag around the section you
+            want to link to and give it an id attribute. Then, you can create a
+            link to that section by including the id in the href attribute.
+          </p>
+          <p>Example:</p>
+          <pre><div><div>
+  </div><div><code>&lt;a href=&quot;#section2&quot;&gt;Jump to Section 2&lt;/a&gt;
+  
+  &lt;h2 id=&quot;section2&quot;&gt;Section 2&lt;/h2&gt;
+  &lt;p&gt;This is the content of section 2.&lt;/p&gt;
+  </code></div></div></pre>
+          <ol start="5">
+            <li>Linking to External Websites</li>
+          </ol>
+          <p>
+            Links can also be used to navigate to external websites. To create a
+            link to an external website, you need to specify the full URL in the
+            href attribute.
+          </p>
+          <p>Example:</p>
+          <pre><div><div>
+  </div><div><code>&lt;a href=&quot;https://www.google.com&quot;&gt;Visit Google&lt;/a&gt;
+  </code></div></div></pre>
+          <p>
+            In conclusion, links are an essential part of the web. With HTML, you
+            can easily create links to other pages, sections of a page, email
+            addresses, and external websites. By using links effectively, you can
+            create a user-friendly and engaging web experience for your audience.
+          </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Layout | HFU 17</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/17.png" alt="HTML Layout" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">17. HTML Layout</h1>
+        <p>
+          HTML layout is an important aspect of web development. The layout of a
+          website refers to the way that content is arranged and presented on a
+          page. A well-designed layout can make a website more attractive and
+          user-friendly, while a poorly-designed layout can make it difficult
+          for users to find what they are looking for. In this blog post, we
+          will explore some of the key concepts and techniques involved in HTML
+          layout.
+        </p>
+        <p>Box Model</p>
+        <p>
+          The box model is a fundamental concept in HTML layout. Every element
+          on a web page is treated as a box, with a content area, padding,
+          borders, and margins. The content area is the space inside the box
+          where the actual content is displayed. Padding is the space between
+          the content and the border, while borders are the lines that surround
+          the content area. Margins are the space between the border of one box
+          and the border of another box.
+        </p>
+        <p>
+          The box model is important because it allows web developers to control
+          the size and position of elements on a web page. By adjusting the
+          padding, borders, and margins of an element, developers can change its
+          position on the page and control the amount of space around it.
+        </p>
+        <p>Layout Techniques</p>
+        <p>
+          There are several layout techniques that web developers can use to
+          arrange content on a web page. These include:
+        </p>
+        <ol>
+          <li>
+            <p>
+              Floats - Floats are a technique that allows elements to be
+              positioned side-by-side, allowing for more efficient use of space
+              on a web page.
+            </p>
+          </li>
+          <li>
+            <p>
+              Flexbox - Flexbox is a layout mode that is designed to make it
+              easier to create flexible, responsive layouts. It allows
+              developers to control the size, position, and order of elements on
+              a web page.
+            </p>
+          </li>
+          <li>
+            <p>
+              Grid - Grid is a layout system that allows developers to create
+              complex, multi-column layouts. It is particularly useful for
+              creating responsive designs that adapt to different screen sizes
+              and devices.
+            </p>
+          </li>
+          <li>
+            <p>
+              Positioning - Positioning is a technique that allows developers to
+              control the position of elements on a web page. Elements can be
+              positioned relative to their parent container, or absolute
+              positioning can be used to position an element relative to the
+              entire page.
+            </p>
+          </li>
+        </ol>
+        <p>Best Practices</p>
+        <p>
+          When designing a layout for a web page, it is important to keep a few
+          best practices in mind. These include:
+        </p>
+        <ol>
+          <li>
+            <p>
+              Use responsive design - With the increasing use of mobile devices
+              to access the web, it is important to design layouts that are
+              responsive and adapt to different screen sizes and devices.
+            </p>
+          </li>
+          <li>
+            <p>
+              Keep it simple - Simple layouts are often more effective than
+              complex ones. Focus on creating a layout that is easy to navigate
+              and visually appealing.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use whitespace effectively - Whitespace can be used to create
+              visual separation between different elements on a web page, making
+              it easier for users to read and navigate.
+            </p>
+          </li>
+          <li>
+            <p>
+              Test your layout - It is important to test your layout on
+              different devices and screen sizes to ensure that it is working
+              effectively.
+            </p>
+          </li>
+        </ol>
+        <p>Conclusion</p>
+        <p>
+          HTML layout is an important aspect of web development. By
+          understanding the box model, layout techniques, and best practices,
+          web developers can create attractive and user-friendly layouts for
+          their websites. With the increasing use of mobile devices to access
+          the web, responsive design has become more important than ever, and
+          developers should be sure to test their layouts on different devices
+          to ensure that they are working effectively.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML iframe | HFU 14</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/14.png" alt="HTML iframe" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">14. HTML Iframes</h1>
+        <p>
+          HTML iframes are a powerful tool in web development that allow you to
+          embed another web page or document within a page. In this blog post,
+          we will cover the basics of working with HTML iframes.
+        </p>
+        <p>What is an HTML Iframe?</p>
+        <p>
+          An HTML iframe is an inline frame that can display another web page or
+          document within a web page. The content of the iframe is contained
+          within a separate HTML document, and it is displayed within the parent
+          web page.
+        </p>
+        <p>How to Define an HTML Iframe?</p>
+        <p>
+          To define an HTML iframe, you need to use the <code>iframe</code> tag.
+          The <code>iframe</code> tag has several attributes, including the
+          <code>src</code> attribute, which specifies the URL of the web page or
+          document that you want to display within the iframe.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>&lt;iframe src=&quot;https://www.example.com&quot;&gt;&lt;/iframe&gt;
+        </code></div></div></pre>
+        <p>
+          In this example, we have defined an iframe that displays the web page
+          at the URL <br><br>
+          <a href="https://www.example.com/" target="_new"
+            >https://www.example.com</a
+          >
+        </p>
+        <p>How to Style an HTML Iframe?</p>
+        <p>
+          To style an HTML iframe, you can use CSS. However, it&apos;s important
+          to note that styles applied to the parent page will not affect the
+          content within the iframe, and styles applied to the iframe will not
+          affect the parent page.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>iframe {
+          width: 100%;
+          height: 500px;
+          border: none;
+        }
+        </code></div></div></pre>
+        <p>
+          In this example, we have applied some basic styles to the iframe
+          element, including a width of 100%, a height of 500px, and no border.
+        </p>
+        <p>How to Control an HTML Iframe?</p>
+        <p>
+          To control an HTML iframe, you can use JavaScript. You can access the
+          iframe object using the <code>contentWindow</code> property, which
+          allows you to manipulate the content within the iframe.
+        </p>
+        <p>Example:</p>
+        <pre><div><div>
+        </div><div><code>let iframe = document.getElementById(&quot;my-iframe&quot;);
+        let iframeDocument = iframe.contentWindow.document;
+        let iframeBody = iframeDocument.body;
+        iframeBody.style.backgroundColor = &quot;#333&quot;;
+        </code></div></div></pre>
+        <p>
+          In this example, we have accessed the iframe object using the
+          <code>getElementById()</code> method and the
+          <code>contentWindow</code> property. We then accessed the
+          iframe&apos;s document and body elements and changed the background
+          color to #333.
+        </p>
+        <p>
+          In conclusion, HTML iframes are a powerful tool in web development
+          that allow you to embed another web page or document within a page. By
+          using the <code>iframe</code> tag and JavaScript and CSS, you can
+          create dynamic and engaging web experiences for your audience. By
+          understanding HTML iframes, you can take your web development skills
+          to the next level and create web pages that stand out from the crowd.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

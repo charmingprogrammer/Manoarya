@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML With CSS | HFU 19</title>
+  <meta name="description" content="" />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/19.png" alt="HTML with css " />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">19. HTML With CSS</h1>
+        <p>
+          HTML and CSS are two essential languages that work together to create
+          the visual aspects of a website. HTML provides the structure and
+          content of a web page, while CSS provides the styling and layout.
+        </p>
+        <p>
+          HTML, or Hypertext Markup Language, is used to create the structure of
+          a webpage. It uses various tags to define elements such as headings,
+          paragraphs, images, and links. HTML is a markup language, which means
+          it doesn&apos;t have the capability to style a web page on its own.
+        </p>
+        <p>
+          CSS, or Cascading Style Sheets, is used to style the web page created
+          with HTML. CSS can be used to define font styles, color schemes,
+          layout, and much more. It allows developers to separate the
+          presentation of a web page from its content.
+        </p>
+        <p>
+          HTML and CSS work together to create a visually appealing and
+          functional web page. HTML is used to structure the content, and CSS is
+          used to style it. By using CSS with HTML, developers can create unique
+          and visually stunning websites.
+        </p>
+        <p>
+          There are several ways to include CSS in an HTML document. One way is
+          to use inline CSS, which is CSS code that is included within the HTML
+          tags. This method is not recommended for larger websites as it can
+          make the code difficult to read and manage.
+        </p>
+        <p>
+          Another way is to use internal CSS, which is included within the head
+          section of the HTML document. This method is useful for smaller
+          websites as it keeps the CSS code separate from the HTML content.
+        </p>
+        <p>
+          The most common method of including CSS in an HTML document is to use
+          external CSS. This involves creating a separate CSS file and linking
+          it to the HTML document. This method is recommended for larger
+          websites as it keeps the CSS code separate from the HTML content,
+          making it easier to read and manage.
+        </p>
+        <p>
+          Using CSS with HTML allows developers to create responsive designs
+          that adapt to different screen sizes and devices. By using media
+          queries and responsive design techniques, developers can create
+          websites that are accessible on desktops, tablets, and smartphones.
+        </p>
+        <p>
+          In conclusion, HTML and CSS are two essential languages that work
+          together to create visually appealing and functional websites. By
+          using CSS with HTML, developers can create unique and responsive
+          designs that provide a seamless user experience on all devices.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>

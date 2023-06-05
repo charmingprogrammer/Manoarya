@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>HTML Elements | HFU 2</title>
+  <meta
+    name="description"
+    content="Explore the fundamental building blocks of web development with this introduction to HTML Elements. Learn about tags, attributes, and content, and understand how they work together to structure and format web page content. Discover the basic structure of an HTML document and the most common HTML elements used in web development, including headings, paragraphs, links, images, lists, tables, and forms. Start building your knowledge of web development with this essential guide to HTML Elements."
+  />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="./Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <a href="../index.html">
+        <i class="fas fa-clipboard-list" id="header_right_icon"></i>
+      </a>
+      <i
+        class="fas fa-bell"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+        id="header_right_icon"
+      ></i>
+      <a href="#page2" id="all_Chapter_navigator">
+        <i class="fas fa-bars" id="header_right_icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img src="../Images/2.png" alt="HTML Introduction" />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">2. HTML Elements</h1>
+        <p>
+          HTML Elements in an HTML Document: Understanding the Building Blocks
+          of Web Pages
+        </p>
+        <p>
+          HTML, or Hypertext Markup Language, is the foundation of web
+          development. HTML elements are the building blocks of web pages,
+          allowing web developers to structure and format content for display in
+          web browsers. In this blog post, we will explore the basic HTML
+          elements that make up an HTML document and discuss how they work
+          together to create a web page.
+        </p>
+        <p>
+          HTML Elements: Tags, Attributes, and Content HTML elements are made up
+          of three components: tags, attributes, and content. Tags are the most
+          fundamental part of an HTML element and define the type of content.
+          Attributes provide additional information about the element, such as
+          the color of a heading or the source of an image. Content is the
+          actual text, images, or other media displayed on the web page.
+        </p>
+        <p>
+          HTML tags are enclosed in angle brackets, such as &lt;tagname&gt;.
+          Some tags are self-closing, meaning they don&apos;t require a closing
+          tag, such as &lt;br&gt; for line breaks or &lt;img&gt; for images.
+          Other tags require both an opening and closing tag, such as &lt;p&gt;
+          for paragraphs or &lt;div&gt; for content containers.
+        </p>
+        <p>
+          Attributes are added to tags using the attribute name and value
+          enclosed in quotes, such as &lt;img src=&quot;image.jpg&quot;&gt;.
+          Some tags have specific attributes, such as the &lt;a&gt; tag, which
+          uses the href attribute to specify the link URL.
+        </p>
+        <p>
+          HTML Document Structure An HTML document has a specific structure that
+          must be followed for the web page to display correctly in web
+          browsers. The basic structure of an HTML document includes the
+          following elements:
+        </p>
+        <ul>
+          <li>
+            &lt;!DOCTYPE html&gt; declaration: specifies the version of HTML
+            being used.
+          </li>
+          <li>&lt;html&gt; element: the root element of an HTML document.</li>
+          <li>
+            &lt;head&gt; element: contains information about the web page, such
+            as the title and meta data.
+          </li>
+          <li>
+            &lt;body&gt; element: contains the main content of the web page.
+          </li>
+        </ul>
+        <p>
+          Within the &lt;body&gt; element, web developers can add any number of
+          HTML elements to structure and format content. Some of the most common
+          HTML elements include:
+        </p>
+        <ul>
+          <li>
+            Headings: &lt;h1&gt; through &lt;h6&gt; tags for different levels of
+            headings.
+          </li>
+          <li>Paragraphs: &lt;p&gt; tags for grouping text into paragraphs.</li>
+          <li>
+            Links: &lt;a&gt; tags for creating hyperlinks to other web pages.
+          </li>
+          <li>
+            Images: &lt;img&gt; tags for displaying images on the web page.
+          </li>
+          <li>
+            Lists: &lt;ul&gt; and &lt;ol&gt; tags for unordered and ordered
+            lists, respectively.
+          </li>
+          <li>
+            Tables: &lt;table&gt; and related tags for creating tables on the
+            web page.
+          </li>
+          <li>
+            Forms: &lt;form&gt; and related tags for creating interactive forms
+            for user input.
+          </li>
+        </ul>
+        <p>
+          Understanding how HTML elements work together is essential for
+          creating effective and functional web pages. By properly structuring
+          and formatting content, web developers can create a semantic and
+          accessible experience for users, improve search engine optimization,
+          and create dynamic and interactive web pages.
+        </p>
+        <p>
+          In conclusion, HTML elements are the building blocks of web pages and
+          play a critical role in web development. By understanding how HTML
+          tags, attributes, and content work together to structure and format
+          content, web developers can create effective and functional web pages
+          that provide a meaningful experience for users.
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
+    </div>
+    <div id="page2">
+          <div id="navigation_perfect"></div>
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../Html_index.json"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+</body>
