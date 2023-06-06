@@ -61,8 +61,7 @@ const GetData = async () => {
   console.log("Before update: ", filterPost[objIndex])
 
   //Update object's name property.
-  filterPost[objIndex].title = `<h3 style="background:'dodgerblue'">${title}</h3>
-</a>`
+  filterPost[objIndex].title = `<div style="color:dodgerblue">${title}</div>`
 
   //Log object to console again.
   console.log("After update: ", filterPost[objIndex])
