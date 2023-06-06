@@ -47,7 +47,12 @@ const GetData = async () => {
   // Highlight active post
   const gettitle = document.getElementById("postTitle");
   const title = gettitle.innerText;
-  console.log(title)
+  const post_location = getCurrentURL();
+  const post_img_src = document.getElementsByClassName("post_Img_Con").children;
+
+  console.log(post_location);
+  console.log(post_img_src);
+  console.log(title);
 
   const filterPost = combinedArray.filter((filter) => filter.title === title);
 
@@ -62,7 +67,10 @@ const GetData = async () => {
   console.log("Before update: ", filterPost[objIndex])
 
   //Update object's name property.
-  filterPost[objIndex].title = `<h3 style="background: dodgerblue; color:white;">${title}</h3>`
+  filterPost[objIndex].title = `<a href="${post_location}" class="box" style="background:'dodgerblue'; ">
+  ${post_img_src}
+  <h3>${title}</h3>
+</a>`
 
   //Log object to console again.
   console.log("After update: ", filterPost[objIndex])
