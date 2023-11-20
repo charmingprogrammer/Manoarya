@@ -1,152 +1,201 @@
 <!DOCTYPE html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>
-        Javascript Cheat Sheet 2023.
-    </title>
-    <meta name="description" content="Get the full cheat sheet for javascript latest 2023." />
-    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
-    <!--code highlighter links-->
-    <link rel="stylesheet"
-        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css" />
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.goog<b>let</b>agmanager.com/gtag/js?id=G-SRT0FM6SCD"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>Javascript Cheat Sheet 2023.</title>
+  <meta
+    name="description"
+    content="Get the full cheat sheet for javascript latest 2023."
+  />
+  <script
+    src="https://kit.fontawesome.com/9e0ab445c3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="Manoarya_Post.css" type="text/css" />
+  <!--code highlighter links-->
+  <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.goog<b>let</b>agmanager.com/gtag/js?id=G-SRT0FM6SCD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-        gtag("config", "G-SRT0FM6SCD");
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4365651039511906"
-        crossorigin="anonymous"></script>
+    gtag("config", "G-SRT0FM6SCD");
+  </script>
 </head>
 
 <body>
-    <!--navigation bar top-->
-    <nav>
-        <a href="https://manoarya.com/" class="navLeft">
-            <img src="../Main_Logo.png" alt="Manoarya Logo" />
-            <div style="display: flex;justify-content:center; align-items: flex-start; flex-direction: column;">
-                <b style="color: #4e93f6; font-size: 10px;">Manoarya</b>
-                <i style="font-size: 10px;">A platform for coders.</i>
-            </div>
-        </a>
-        <div class="navRight">
-            <i class="fas fa-search" id="search_opener"></i>
-            <!-- dark mode buttons -->
-            <div id="dark_Mode_box">
-                <button id="DarkOff" onclick="DarkModeOff()"></button><button onclick="DarkModeOn()"
-                    id="DarkOn"></button>
-            </div>
-            <button id="subBtn"
-                onclick="{document.getElementById('subscribe_form_container').style.right='0'}">Subscribe</button>
-        </div>
-    </nav>
-    <!--search-->
-    <div id="searchContainer">
-        <div class="search_header">
-            <i class="fas fa-arrow-left" id="search_closer"></i>
-            <input type="search" placeholder="Search" id="searchInput" onkeyup="keyPress()" />
-        </div>
-        <ul id="myUL"></ul>
+  <!--navigation bar top-->
+  <nav>
+    <a href="https://manoarya.com/" class="navLeft">
+      <img src="../Main_Logo.png" alt="Manoarya Logo" />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        "
+      >
+        <b style="color: #4e93f6; font-size: 10px">Manoarya</b>
+        <i style="font-size: 10px">A platform for coders.</i>
+      </div>
+    </a>
+    <div class="navRight">
+      <i class="fas fa-search" id="search_opener"></i>
+      <!-- dark mode buttons -->
+      <div id="dark_Mode_box">
+        <button id="DarkOff" onclick="DarkModeOff()"></button
+        ><button onclick="DarkModeOn()" id="DarkOn"></button>
+      </div>
+      <button
+        id="subBtn"
+        onclick="{document.getElementById('subscribe_form_container').style.right='0'}"
+      >
+        Subscribe
+      </button>
     </div>
-    <div id="container">
-        <div id="page1">
-            <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
-            <!--post image -->
-            <div class="post_Img_Con">
-                <img src="../Manoarya All Post/Images/JS_Cheat_Sheet.png" alt="JS_Cheat_Sheet" />
-            </div>
-            <!--Main Post-->
-            <div class="postContainer">
-                <h1 id="postTitle">
-                    Javascript Cheat Sheet 2023.
-                </h1>
-                <p><b>Category : </b> <span id="category">Explanation</span></p>
-                <h2>Here is a basic JavaScript cheat sheet that you can use as a reference:</h2>
-                <p>
-                    1. JavaScript is a programming language that is commonly used to add interactivity to web pages
-                    <br><br>
-                    2. JavaScript code is written in plain text and executed by a web browser. <br><br>
-                    3. JavaScript is often used in conjunction with HTML and CSS to create dynamic and interactive
-                    websites. <br><br>
-                </p>
-                <!-- Ad Space -->
-                <h2>Variables</h2>
-                <p>
-
-                    Variables are used to store values in JavaScript. You can declare a variable using the <b>'var'</b>
-                    keyword, like this:
-                </p>
-                <pre>
+  </nav>
+  <!--search-->
+  <div id="searchContainer">
+    <div class="search_header">
+      <i class="fas fa-arrow-left" id="search_closer"></i>
+      <input
+        type="search"
+        placeholder="Search"
+        id="searchInput"
+        onkeyup="keyPress()"
+      />
+    </div>
+    <ul id="myUL"></ul>
+  </div>
+  <div id="container">
+    <div id="page1">
+      <!--👇👇👇👇👇👇👇👇👇👇👇👇👇-->
+      <!--post image -->
+      <div class="post_Img_Con">
+        <img
+          src="../Manoarya All Post/Images/JS_Cheat_Sheet.png"
+          alt="JS_Cheat_Sheet"
+        />
+      </div>
+      <!--Main Post-->
+      <div class="postContainer">
+        <h1 id="postTitle">Javascript Cheat Sheet 2023.</h1>
+        <p><b>Category : </b> <span id="category">Explanation</span></p>
+        <h2>
+          Here is a basic JavaScript cheat sheet that you can use as a
+          reference:
+        </h2>
+        <p>
+          1. JavaScript is a programming language that is commonly used to add
+          interactivity to web pages
+          <br /><br />
+          2. JavaScript code is written in plain text and executed by a web
+          browser. <br /><br />
+          3. JavaScript is often used in conjunction with HTML and CSS to create
+          dynamic and interactive websites. <br /><br />
+        </p>
+        <!-- Ad Space -->
+        <h2>Variables</h2>
+        <p>
+          Variables are used to store values in JavaScript. You can declare a
+          variable using the <b>'var'</b>
+          keyword, like this:
+        </p>
+        <pre>
                     <code>
                         var myVariable; 
                         // You can also assign a value to a variable when you declare it:
                         var myVariable = 'hello';
                     </code>
                 </pre>
-                <p>
-                    In modern JavaScript, you can also use the <b>let</b> and <b>const</b> keywords to declare
-                    variables. <br><br> <b>let</b> is similar to <b>var</b>, but the variable's value can be
-                    re-assigned. <br><br> <b>const</b> is used to declare variables whose values cannot be re-assigned.
-                </p> <br><br>
-                <!-- Ad space -->
-                <h2>Data types</h2>
-                <p>
+        <p>
+          In modern JavaScript, you can also use the <b>let</b> and
+          <b>const</b> keywords to declare variables. <br /><br />
+          <b>let</b> is similar to <b>var</b>, but the variable's value can be
+          re-assigned. <br /><br />
+          <b>const</b> is used to declare variables whose values cannot be
+          re-assigned.
+        </p>
+        <br /><br />
+        <!-- Ad space -->
+        <h2>Data types</h2>
+        <p>
+          JavaScript has several different <b>data types</b>, including:
+          <br /><br />
 
-                    JavaScript has several different <b>data types</b>, including: <br><br>
-
-                    <b>String:</b> A sequence of characters, written with single or double quotes (e.g., 'hello' or
-                    "world") <br><br>
-                    <b>Number: </b>A numerical value (e.g., 42 or 3.14) <br><br>
-                    <b>Boolean:</b> A value that is either true or false <br><br>
-                    <b>null:</b> A value that represents the absence of a value <br><br>
-                    <b>undefined:</b> A value that indicates that a variable has not been assigned a value <br><br>
-                    You can use the typeof operator to determine the data type of a value:
-                </p>
-                <pre>
+          <b>String:</b> A sequence of characters, written with single or double
+          quotes (e.g., 'hello' or "world") <br /><br />
+          <b>Number: </b>A numerical value (e.g., 42 or 3.14) <br /><br />
+          <b>Boolean:</b> A value that is either true or false <br /><br />
+          <b>null:</b> A value that represents the absence of a value
+          <br /><br />
+          <b>undefined:</b> A value that indicates that a variable has not been
+          assigned a value <br /><br />
+          You can use the typeof operator to determine the data type of a value:
+        </p>
+        <pre>
                     <code>
 console.log(typeof 'hello'); // Output string
 console.log(typeof 42); // Outputs: 'number'
 console.log(typeof true); // Outputs: 'boolean'
                     </code>
                 </pre>
-                <h2>Arrays</h2>
-                <p>
-                  An array is a collection of values that are stored in a single variable. You can create an array by enclosing a comma-separated list of values in square brackets: <br><br>
-
-                </p>
-                <pre>
+        <h2>Arrays</h2>
+        <p>
+          An array is a collection of values that are stored in a single
+          variable. You can create an array by enclosing a comma-separated list
+          of values in square brackets: <br /><br />
+        </p>
+        <pre>
                     <code>var myArray = [1, 2, 3];</code>
                 </pre>
-                <p>
-                    You can access the elements of an array using their index, which is the position of the element in the array. Array indexes start at 0, so the first element of an array is at index 0, the second element is at index 1, and so on. <br><br>
+        <p>
+          You can access the elements of an array using their index, which is
+          the position of the element in the array. Array indexes start at 0, so
+          the first element of an array is at index 0, the second element is at
+          index 1, and so on. <br /><br />
 
-                    You can use the <b>length</b> property to determine the number of elements in an array:
-                </p>
-                <pre>
+          You can use the <b>length</b> property to determine the number of
+          elements in an array:
+        </p>
+        <pre>
                     <code>console.log(myArray.length); // Outputs: 3</code>
                 </pre>
-                <p>
-                    You can also use array methods to manipulate the elements of an array. Some common array methods include <b>push</b> (to add an element to the end of an array), <b>pop</b> (to remove the last element of an array), and <b>splice</b> (to remove or add elements to an array at a specific index).
-                </p>
-                <br><br>
-                <!-- Ad space -->
-                <h2>Objects</h2>
-                <p>
-                    An object is a collection of key-value pairs that can be used to store data. You can create an object by enclosing a comma-separated list of key-value pairs in curly braces:
-                </p>
-                <pre>
+        <p>
+          You can also use array methods to manipulate the elements of an array.
+          Some common array methods include <b>push</b> (to add an element to
+          the end of an array), <b>pop</b> (to remove the last element of an
+          array), and <b>splice</b> (to remove or add elements to an array at a
+          specific index).
+        </p>
+        <br /><br />
+        <!-- Ad space -->
+        <h2>Objects</h2>
+        <p>
+          An object is a collection of key-value pairs that can be used to store
+          data. You can create an object by enclosing a comma-separated list of
+          key-value pairs in curly braces:
+        </p>
+        <pre>
                     <code>
 var myObject = {
 key1: 'value1',
@@ -154,30 +203,39 @@ key2: 'value2'
 };
                     </code>
                 </pre>
-                <p>
-                    You can access the values of an object using dot notation or bracket notation:
-                </p>
-                <pre>
+        <p>
+          You can access the values of an object using dot notation or bracket
+          notation:
+        </p>
+        <pre>
                     <code>console.log(myObject.key1); // Outputs:</code>
                 </pre>
-                <!-- Ad space -->
-                <h2>Functions</h2>
-                <p>
-                    Functions are blocks of code that can be defined and then called by name. You can define a function by using the function keyword, followed by the function name, a list of parameters in parentheses, and the function body in curly braces:
-                </p>
-                <pre>
+        <!-- Ad space -->
+        <h2>Functions</h2>
+        <p>
+          Functions are blocks of code that can be defined and then called by
+          name. You can define a function by using the function keyword,
+          followed by the function name, a list of parameters in parentheses,
+          and the function body in curly braces:
+        </p>
+        <pre>
                     <code>
 function myFunction(param1, param2) {
 // Function body
 }
 </code>
                 </pre>
-            <p>You can call a function by using its name followed by a list of arguments in parentheses:</p>
-            <pre>
+        <p>
+          You can call a function by using its name followed by a list of
+          arguments in parentheses:
+        </p>
+        <pre>
                 <code>myFunction(arg1, arg2);</code>
             </pre>
-            <p>Functions can also return a value using the <b>return</b> keyword:</p>
-            <pre>
+        <p>
+          Functions can also return a value using the <b>return</b> keyword:
+        </p>
+        <pre>
                 <code>
                     function myFunction(param) {
                         return param + 1;
@@ -186,31 +244,37 @@ function myFunction(param1, param2) {
                       console.log(myFunction(1)); // Outputs: 2
                 </code>
             </pre>
-            <!-- Ad Space -->
-            <h2>Control structures</h2>
-            <p>
-                JavaScript has several control structures that you can use to execute code conditionally or repeatedly: <br><br>
-                <b>If</b> statements are used to execute code if a certain condition is true:
-            </p>
-            <pre>
+        <!-- Ad Space -->
+        <h2>Control structures</h2>
+        <p>
+          JavaScript has several control structures that you can use to execute
+          code conditionally or repeatedly: <br /><br />
+          <b>If</b> statements are used to execute code if a certain condition
+          is true:
+        </p>
+        <pre>
                 <code>
                     if (condition) {
                         // Code to execute
                         }
                 </code>
             </pre>
-            <p><b>for</b> loops are used to repeat a block of code a certain number of times:</p>
-            <pre>
+        <p>
+          <b>for</b> loops are used to repeat a block of code a certain number
+          of times:
+        </p>
+        <pre>
                 <code>
                     for (var i = 0; i < 10; i++) {
                         // Code to execute
                       }
                 </code>
             </pre>
-            <p>
-                <b>while</b> loops are used to repeat a block of code as long as a certain condition is true:
-            </p>
-            <pre>
+        <p>
+          <b>while</b> loops are used to repeat a block of code as long as a
+          certain condition is true:
+        </p>
+        <pre>
                 <code>
                     while (condition) {
                         // Code to execute
@@ -218,42 +282,60 @@ function myFunction(param1, param2) {
                 </code>
             </pre>
 
-            <h2>Events</h2>
-            <p>JavaScript can respond to events that occur on a web page, such as a user clicking a button or a page loading. You can use event listeners to specify code that should be executed in response to an event:</p>
-            <pre>
+        <h2>Events</h2>
+        <p>
+          JavaScript can respond to events that occur on a web page, such as a
+          user clicking a button or a page loading. You can use event listeners
+          to specify code that should be executed in response to an event:
+        </p>
+        <pre>
                 <code>
                     element.addEventListener('event', function() {
                         // Code to execute
                       });
                 </code>
             </pre>
-            <p>
-                Some common events include <b>click</b>, <b>click</b>, and <b>load</b>.
-            </p> <br><br>
-            <!-- Ad space -->
-            <h2>DOM manipulation</h2>
-            <p>The Document Object Model (DOM) is a tree-like representation of a web page, and JavaScript can be used to manipulate the DOM to change the content, layout, and appearance of a web page. <br><br>
+        <p>
+          Some common events include <b>click</b>, <b>click</b>, and
+          <b>load</b>.
+        </p>
+        <br /><br />
+        <!-- Ad space -->
+        <h2>DOM manipulation</h2>
+        <p>
+          The Document Object Model (DOM) is a tree-like representation of a web
+          page, and JavaScript can be used to manipulate the DOM to change the
+          content, layout, and appearance of a web page. <br /><br />
 
-                You can use DOM methods and properties to select elements, modify their attributes, and change their content:</p>
-                <pre>
+          You can use DOM methods and properties to select elements, modify
+          their attributes, and change their content:
+        </p>
+        <pre>
                     <code>
 var element = document.getElementById('my-element');
 element.innerHTML = 'Hello';
 element.style.color = 'red';
                     </code>
                 </pre>
-                <p>
-                    You can also use DOM events to respond to changes in the DOM and update the page accordingly.
-                </p><br><br>
-                <!-- AD Space -->
-                <h2>ES6 features</h2>
-                <p>
-                    ECMAScript 6 (also known as ES6 or ECMAScript 2015) is the latest version of the ECMAScript standard, which is the standard that defines the syntax and semantics of JavaScript. ES6 introduces several new features that can make your code more concise and easier to read, including:
-                </p>
-                <p>
-                    <b>Arrow functions : </b> A shorter syntax for defining functions, using the <b>=></b> operator:
-                </p>
-                <pre>
+        <p>
+          You can also use DOM events to respond to changes in the DOM and
+          update the page accordingly.
+        </p>
+        <br /><br />
+        <!-- AD Space -->
+        <h2>ES6 features</h2>
+        <p>
+          ECMAScript 6 (also known as ES6 or ECMAScript 2015) is the latest
+          version of the ECMAScript standard, which is the standard that defines
+          the syntax and semantics of JavaScript. ES6 introduces several new
+          features that can make your code more concise and easier to read,
+          including:
+        </p>
+        <p>
+          <b>Arrow functions : </b> A shorter syntax for defining functions,
+          using the <b>=></b> operator:
+        </p>
+        <pre>
                     <code>
 // ES5
 var add = function(x, y) {
@@ -264,19 +346,21 @@ var add = function(x, y) {
 const add = (x, y) => x + y;
                     </code>
                 </pre>
-                <p>
-                    <b>Template strings : </b> A way to create strings that can include variables and expressions, using <b>backticks (``)</b>:
-                </p>
-                <pre>
+        <p>
+          <b>Template strings : </b> A way to create strings that can include
+          variables and expressions, using <b>backticks (``)</b>:
+        </p>
+        <pre>
                     <code>
 const name = 'John';
 console.log(`Hello, ${name}`); // Outputs: 'Hello, John'
                     </code>
                 </pre>
-                <p>
-                    <b>Destructuring  : </b> A way to extract values from arrays and objects into variables, using a shorthand syntax:
-                </p>
-                <pre>
+        <p>
+          <b>Destructuring : </b> A way to extract values from arrays and
+          objects into variables, using a shorthand syntax:
+        </p>
+        <pre>
                     <code>
 const arr = [1, 2, 3];
 const [x, y, z] = arr;
@@ -287,10 +371,11 @@ const {a, b, c} = obj;
 console.log(a); // Outputs: 1
                     </code>
                 </pre>
-                <p>
-                    <b>Spread operator : </b> A way to expand an array or object into a list of values or key-value pairs, using the <b>'...'</b> operator:
-                </p>
-                <pre>
+        <p>
+          <b>Spread operator : </b> A way to expand an array or object into a
+          list of values or key-value pairs, using the <b>'...'</b> operator:
+        </p>
+        <pre>
                     <code>
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
@@ -303,10 +388,12 @@ const obj3 = {...obj1, ...obj2};
 console.log(obj3); // Outputs: {a: 1, b: 2, c: 3, d: 4}
                     </code>
                 </pre>
-                <p>
-                   <b> Promises : </b> A way to handle asynchronous operations, using a pattern that makes it easier to chain together multiple asynchronous actions:
-                </p>
-                <pre>
+        <p>
+          <b> Promises : </b> A way to handle asynchronous operations, using a
+          pattern that makes it easier to chain together multiple asynchronous
+          actions:
+        </p>
+        <pre>
                     <code>
    fetch('url')
   .then(response => response.json())
@@ -314,43 +401,90 @@ console.log(obj3); // Outputs: {a: 1, b: 2, c: 3, d: 4}
   .catch(error => console.error(error));
                     </code>
                 </pre>
-                <h2>Additional resources</h2>
-                <p>
-                    <b>Here are some additional resources that you might find useful when learning JavaScript:</b> <br><br>
-<a  style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN JavaScript Guide : </a> A comprehensive guide to JavaScript, covering all of the core concepts and features of the language <br><br>
-<a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;" href="https://www.javascript.com/">JavaScript.com : </a> A beginner-friendly website that provides tutorials and interactive exercises to help you learn JavaScript <br><br>
-<a style="background: none; font-weight: bold; color: #4e93f6; cursor: pointer; padding: 0;" href="https://eloquentjavascript.net/">Eloquent JavaScript:</a> A free online book that covers the basics of JavaScript, as well as more advanced topics such as functional programming and asynchronous programming <br><br>
-                </p>
-
-            </div>
-            <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
-        </div>
-        <div id="page2">
-            <!--post suggestions-->
-            <div id="postSuggestionContainer"></div>
-        </div>
+        <h2>Additional resources</h2>
+        <p>
+          <b
+            >Here are some additional resources that you might find useful when
+            learning JavaScript:</b
+          >
+          <br /><br />
+          <a
+            style="
+              background: none;
+              font-weight: bold;
+              color: #4e93f6;
+              cursor: pointer;
+              padding: 0;
+            "
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            >MDN JavaScript Guide :
+          </a>
+          A comprehensive guide to JavaScript, covering all of the core concepts
+          and features of the language <br /><br />
+          <a
+            style="
+              background: none;
+              font-weight: bold;
+              color: #4e93f6;
+              cursor: pointer;
+              padding: 0;
+            "
+            href="https://www.javascript.com/"
+            >JavaScript.com :
+          </a>
+          A beginner-friendly website that provides tutorials and interactive
+          exercises to help you learn JavaScript <br /><br />
+          <a
+            style="
+              background: none;
+              font-weight: bold;
+              color: #4e93f6;
+              cursor: pointer;
+              padding: 0;
+            "
+            href="https://eloquentjavascript.net/"
+            >Eloquent JavaScript:</a
+          >
+          A free online book that covers the basics of JavaScript, as well as
+          more advanced topics such as functional programming and asynchronous
+          programming <br /><br />
+        </p>
+      </div>
+      <!--👆👆👆👆👆👆👆👆👆👆👆👆👆-->
     </div>
-    <!--footer-->
-    <footer>
-    </footer>
-    <!-- subscribe form -->
-    <div id="subscribe_form_container">
-        <!-- hide the main contianer when click -->
-        <div id="hide_sfc" onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"></div>
-        <!-- Sfc content -->
-        <div id="sfc_content">
-            <iframe src="https://forms.gle/BGeAkbqzwj6Pnwen8" frameborder="0"></iframe>
-        </div>
+    <div id="page2">
+      <!--post suggestions-->
+      <div id="postSuggestionContainer"></div>
     </div>
-    <!-- surprise surprise -->
-    <div id="surprise_container" onclick="{document.getElementById('surprise_container').style.top='-100%'}">
+  </div>
+  <!--footer-->
+  <footer></footer>
+  <!-- subscribe form -->
+  <div id="subscribe_form_container">
+    <!-- hide the main contianer when click -->
+    <div
+      id="hide_sfc"
+      onclick="{document.getElementById('subscribe_form_container').style.right = '-100%'}"
+    ></div>
+    <!-- Sfc content -->
+    <div id="sfc_content">
+      <iframe
+        src="https://forms.gle/BGeAkbqzwj6Pnwen8"
+        frameborder="0"
+      ></iframe>
     </div>
-    <!--top scrolling-->
-    <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    <script src="Footer.js"></script>
-    <script src="Surprise.js"></script>
-    <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
-    <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
+  </div>
+  <!-- surprise surprise -->
+  <div
+    id="surprise_container"
+    onclick="{document.getElementById('surprise_container').style.top='-100%'}"
+  ></div>
+  <!--top scrolling-->
+  <div id="gotoTop" onclick="{window.scrollTo(0,0)}">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <script src="Footer.js"></script>
+  <script src="Surprise.js"></script>
+  <script src="../AddPost.js" type="text/javascript" charset="utf-8"></script>
+  <script src="manoaryaPost.js" type="text/javascript" charset="utf-8"></script>
 </body>
