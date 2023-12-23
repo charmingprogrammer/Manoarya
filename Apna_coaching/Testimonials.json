@@ -4,5 +4,23 @@
   "ProfilePic" : "https://avatars.githubusercontent.com/u/71115307?v=4",
   "Thaughts":"The coaching that provide education for your new generation child. A coaching for new generation.",
   "Proffesion":"Software Developer"
+  },
+  {
+    "Name": "Sarah Johnson",
+    "ProfilePic": "https://randomuser.me/api/portraits/women/65.jpg",
+    "Thoughts": "This coaching program has been a game-changer for my child's education. The innovative approach to learning is exactly what the new generation needs.",
+    "Profession": "Marketing Manager"
+  },
+  {
+    "Name": "David Rodriguez",
+    "ProfilePic": "https://randomuser.me/api/portraits/men/82.jpg",
+    "Thoughts": "I highly recommend this coaching program for its modern teaching methods. It's tailored perfectly for the needs of today's youth.",
+    "Profession": "Business Analyst"
+  },
+  {
+    "Name": "Emily Chen",
+    "ProfilePic": "https://randomuser.me/api/portraits/women/12.jpg",
+    "Thoughts": "As a parent, I'm thrilled with the results I've seen in my child's academic performance after enrolling in this coaching program. It's truly designed for the new generation.",
+    "Profession": "HR Manager"
   }
 ]
