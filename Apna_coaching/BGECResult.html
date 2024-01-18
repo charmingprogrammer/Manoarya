@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Countdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #countdown {
+            font-size: 2em;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body style="height:100vh, flex; justify-content: center; align-items: center; flex-direction: column;">
+
+<h1 style="margin-top: 250px;">Result Announcement</h1>
+<div id="countdown"></div>
+
+<script>
+    // Set the date we're counting down to (replace this with your result announcement date)
+    var countDownDate = new Date("Feb 01, 2024 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var x = setInterval(function() {
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Calculate the time remaining
+        var timeRemaining = countDownDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the countdown is over, display a message
+        if (timeRemaining < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "The results are out!";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
